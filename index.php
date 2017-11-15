@@ -1,11 +1,14 @@
-<h1>SITE UNDER CONSTRUCTION</h1>
-<style>
-    h1 {
-        width: 100%;
-        text-align: center;
-        color: dodgerblue;
-        font-family: fantasy;
-        margin-top: 45vh;
-        font-size: 5em;
+<?php
+
+if (isset($_GET["page"]) && $_GET["page"] != "") {
+    if (file_exists("views/" . $_GET["page"] . ".php")) {
+        @include_once "views/" . $_GET["page"] . ".php";
+    } elseif ($_GET["page"] == "home") {
+        @include_once "views/index.php";
+    } else {
+        @include_once "views/errors/404.php";
     }
-</style>
+
+} else {
+    @include_once "views/index.php";
+}
