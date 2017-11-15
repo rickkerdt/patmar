@@ -1,0 +1,6 @@
+Options -Indexes
+
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^page/([^/]+)/?$ index.php?page=$1 [L,QSA]
