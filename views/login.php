@@ -3,4 +3,4 @@ include_once "../classes/User.php";
 
 $user = new User();
 
-$user->getUser()
+$user->getUser(1);
