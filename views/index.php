@@ -7,31 +7,54 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Patmar Zonweringen</title>
     <link rel="stylesheet" href="/resource/css/bootstrap.css">
+    <link rel="stylesheet" href="/resource/css/custom.css">
 </head>
 <header>
     <!-- Image and text -->
+
     <nav class="navbar navbar-light bg-light navbar-expand-lg sticky-top">
-        <a class="navbar-brand" href="#">
-            <img src="/resource/assets/PcWXuuG.png" height="30" class="d-inline-block align-top" alt="">
-            Patmar Zonwering
-        </a>
-        <div class="float-right">
-            <div class="navbar-nav">
-                <a class="nav-link nav-item" href="#!">Home</a>
-                <a class="nav-link nav-item" href="#!">Openingstijden</a>
-                <a class="nav-link nav-item" href="#!">Samenwerking</a>
-                <a class="nav-link nav-item" href="#!">Storing Melden</a>
-                <a class="nav-link nav-item" href="#!">Offerte Aanvraag</a>
-            </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand col" href="#">
+                <img src="/resource/assets/PcWXuuG.png" height="30" class="d-inline-block align-top" alt="">
+                Patmar Zonwering
+            </a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </div>
     </nav>
+    </div>
 </header>
 <body>
-<div class="jumbotron">
-    <h1 style="font-size: 5em">Patmar</h1>
-    <p>A<span style="font-size: 10px">5</span> Deco | Het bedrijf dat bij u past!</p>
-</div>
+<div class="">
+    <div class="float-right col-sm-0 col-md-2">
+        <p>Vindt ons op facebook<br>
+            Bel ons op 06-00011122</p>
+    </div>
+    <div class="jumbotron jumbotron-fluid float-left col-md-10 col-sm-12">
 
+        <h1 style="font-size: 5em" class="">Patmar</h1>
+        <p class="">A<span style="font-size: 10px">5</span> Deco | Het bedrijf dat bij u past!</p>
+
+    </div>
+
+</div>
 </body>
 <footer>
 
