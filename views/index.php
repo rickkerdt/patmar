@@ -12,7 +12,7 @@
     <!-- Image and text -->
     <nav class="navbar navbar-light bg-light navbar-expand-lg sticky-top">
         <a class="navbar-brand" href="#">
-            <img src="/resource/assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            <img src="/resource/assets/PcWXuuG.png" height="30" class="d-inline-block align-top" alt="">
             Patmar Zonwering
         </a>
         <div class="float-right">
@@ -27,6 +27,10 @@
     </nav>
 </header>
 <body>
+<div class="jumbotron">
+    <h1 style="font-size: 5em">Patmar</h1>
+    <p>A<span style="font-size: 10px">5</span> Deco | Het bedrijf dat bij u past!</p>
+</div>
 
 </body>
 <footer>
