@@ -1,6 +1,8 @@
 <?php
 include_once "../classes/User.php";
 
-$user = new User();
+echo "test";
 
-$user->getUser(1);
+//$user = new User();
+
+//$user->getUser(1);
