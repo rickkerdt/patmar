@@ -55,8 +55,8 @@
 </header>
 <body>
 <div class="">
-    <div class="float-right col-sm-0 col-md-2">
-        <p style="background-color: dodgerblue">Vindt ons op facebook<br>
+    <div class="float-right col-sm-0 col-md-2" style="background-color: dodgerblue; border-radius: 15% ">
+        <p>Vindt ons op facebook<br>
             Bel ons op 06-00011122</p>
     </div>
     <div class="jumbotron jumbotron-fluid float-left col-md-10 col-sm-12">
