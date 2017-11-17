@@ -55,7 +55,7 @@
 </header>
 <body>
 <div class="">
-    <div class="float-right col-sm-0 col-md-2" style="background-color: dodgerblue; border-radius: 5% ">
+    <div class="float-right col-sm-0 col-md-2" style="background-color: dodgerblue;">
         <p>Vindt ons op facebook<br>
             Bel ons op 06-00011122</p>
     </div>
