@@ -84,6 +84,7 @@
     </div>
 
 </div>
+<div class="container-fluid">
 <div class="col-md-2 d-none d-lg-block d-xl-block" style="padding-top: 50px;padding-left: 20px; border: 2px #00769f">
     <div class="card" style="width: 20rem; padding-left: 5px; border-color: #00769f">
         <div class="card-block">
@@ -131,6 +132,7 @@
         <p>Sinds langere tijd zijn wij al dealer van VEKA Kunststof kozijnen deze kozijnen zijn een begrip in Nederland vanwege de goede kwaliteit en afwerking. Heeft u nieuwe kozijnen nodig bel of mail en wij zullen op al uw vragen een passend antwoord geven.</p>
         </div>
         </div>
+</div>
 </div>
 </body>
 <footer>
