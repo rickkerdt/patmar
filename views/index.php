@@ -12,43 +12,38 @@
 <header>
     <!-- Image and text -->
 
-    <nav class="navbar navbar-light navbar-expand-lg sticky-top" style="background-color: #00769f">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-left col" href="#">
-                <img src="/resource/assets/logodummie.png" height="128" class="logo align-top" alt="">
-            </a>
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Openingstijden</a>
-                </li>
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                   Samenwerking
-                </a>
-
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Partners</a>
+    <nav class="navbar navbar-inverse navbar-main">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand visible-xs" href="index.php">Logo</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.php">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="about-us.php">About Us</a></li>
+                    <li><a href="media.php">Media</a></li>
+                    <li><a href="events.php">Events</a></li>
+                </ul>
+                <div class="navbar-brand hidden-xs">
+                    <a class="white-circle" href="index.php">
+                        <img class="logo" src="http://excitive.me/demo/temp/logo.svg" alt="Logo">
+                    </a>
                 </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Storing Melden</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Offerte Aanvraag</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="things-to-do.php">Things To Do</a></li>
+                    <li><a href="offers.php">Offers</a></li>
+                    <li><a href="index.php#location">Location</a></li>
+                    <li><a href="book-now.php">Book Now</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
     </nav>
     </div>
 </header>
