@@ -13,7 +13,8 @@
 <header>
     <!-- Image and text -->
 
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top" style="background-color: #00769f;">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top" style="background-color: #00769f;">
+        <div class="d-lg-none d-xl-none navbar-brand">A5 Deco - Patmar</div>
         <button class="navbar-toggler navbar-right ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -22,9 +23,6 @@
             <a class="navbar-left col" href="#">
                 <div class="d-none d-lg-block d-xl-block">
                 <img src="/resource/assets/logo.png" height="128" width="128" style="padding-top: 0px; position: absolute; border-radius: 35%" class="d-block" alt="1">
-                </div>
-                <div class="d-lg-none d-xl-none">
-                    <img src="/resource/assets/logo.png" height="64" width="64" style="padding-top: 0px; position: sticky; border-radius: 35%" class="d-block" alt="">
                 </div>
             </a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0" >
