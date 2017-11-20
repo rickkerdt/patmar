@@ -64,7 +64,7 @@
         <p>Vindt ons op fbook<br>
             Bel ons op 06-00011122</p>
     </div> -->
-    <div class="jumbotron jumbotron-fluid float-left col-md-12 col-sm-12">
+    <div class="carousel col-md-12 col-lg-12 ">
 
         <h1 style="font-size: 5em" class="">Patmar</h1>
         <p class="">A<span style="font-size: 10px">5</span> Deco | Het bedrijf dat bij u past!</p>
