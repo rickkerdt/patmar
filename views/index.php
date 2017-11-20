@@ -14,17 +14,17 @@
     <!-- Image and text -->
 
     <nav class="navbar navbar-light navbar-expand-lg fixed-top" style="background-color: #00769f;">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        <button class="navbar-toggler navbar-right ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01" >
             <a class="navbar-left col" href="#">
                 <div class="d-none d-lg-block d-xl-block">
-                <img id="header-logo" src="/resource/assets/logo.png" height="256" width="256" style="padding-top: 0px; position: absolute; border-radius: 35%" class="d-block" alt="1">
+                <img src="/resource/assets/logo.png" height="128" width="128" style="padding-top: 0px; position: absolute; border-radius: 35%" class="d-block" alt="1">
                 </div>
                 <div class="d-lg-none d-xl-none">
-                    <img src="/resource/assets/logo.png" height="64" width="64" style="padding-top: 0px; position: absolute; border-radius: 35%" class="d-block" alt="">
+                    <img src="/resource/assets/logo.png" height="64" width="64" style="padding-top: 0px; position: sticky; border-radius: 35%" class="d-block" alt="">
                 </div>
             </a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0" >
@@ -85,10 +85,9 @@
 
 </div>
 <div class="row">
-    <div class="col-md-2 d-none d-lg-block d-xl-block" style="padding-left: 30px; padding-top: 50px">
+    <div class="col-md-2 d-none d-lg-block d-xl-block" style="padding-left: 4%; padding-top: 50px">
         <div class="card">
             <div class="card-block" style="padding-left: 5px; border-color: #00769f ">
-                <p class="card-text">
                 <h3 class="card-title">Contact</h3>
                 <p class="card-text">
                 <h6 class="card-subtitle">A5 Patmar Marknesse</h6>
@@ -112,7 +111,7 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-12 col-md-9 d-block" style="padding-right: 30px;padding-left: 30px; padding-top: 50px">
+    <div class="col-sm-12 col-md-10 d-block" style="padding-right: 4%;padding-left: 30px; padding-top: 50px">
         <div class="card ">
             <div class="card-block" style="padding-left: 5px; border-color: #00769f">
                 <h3 class="card-title">Over Patmar</h3>
