@@ -108,8 +108,11 @@
             <a href="#" class="btn btn-primary">Route</a>
         </div>
     </div>
+</div>
     <div class="col-md-9 col-sm-12">
     <div class="card wd-75" style="padding-left: 5px; border-color: #00769f">
+        <div class="card-block">
+            <H3 class="card-title">Over Patmar</H3>
         <p>Ons bedrijf Patmar is al meer dan 58 jaar een toonaangevend zonwering bedrijf in de regio Flevoland / Drenthe</p>
 
         <p>Wij leveren aan particulieren en bedrijven, alle soorten zonwering, kunststof kozijnen, dakkapellen, garagedeuren, glasschuifwanden, terrasoverkappingen o.a. veranda's en tuinkamers. Ook raamdecoratie hebben wij in ons assortiment.</p>
@@ -126,8 +129,8 @@
             En er zijn verschillende soorten dakplaten veiligheidsglas, helder, opaal en de zonwerende plaat.</p>
 
         <p>Sinds langere tijd zijn wij al dealer van VEKA Kunststof kozijnen deze kozijnen zijn een begrip in Nederland vanwege de goede kwaliteit en afwerking. Heeft u nieuwe kozijnen nodig bel of mail en wij zullen op al uw vragen een passend antwoord geven.</p>
-    </div>
-</div>
+        </div>
+        </div>
 </div>
 </body>
 <footer>
