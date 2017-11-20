@@ -13,7 +13,7 @@
 <header>
     <!-- Image and text -->
 
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top" style="background-color: #00769f; height: 96px;">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" style="background-color: #00769f;">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -21,7 +21,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <a class="navbar-left col" href="#">
                 <div class="d-none">
-                <img src="/resource/assets/logo.png" height="256" width="256" style="padding-top: 100px" class="d-md-none d-lg-block" alt="">
+                <img src="/resource/assets/logo.png" height="256" width="256" style="padding-top: 100px; position: absolute" class="d-lg-block" alt="">
                 </div>
                 <div class="d-sm-block d-md-block">
                     <img src="/resource/assets/logo.png" height="64" width="64" style="padding-top: 100px" class="d-sm-block d-md-block" alt="">
