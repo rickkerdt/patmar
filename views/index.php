@@ -110,7 +110,7 @@
         </div>
     </div>
 </div>
-    <div class="col-md-9 col-sm-12" style="padding-top: 50px;padding-left: 20px;">
+    <div class="col-md-9 col-sm-12" style="padding-top: 50px; padding-left: 40px;">
     <div class="card wd-75" style=" padding-left: 5px;border-color: #00769f">
         <div class="card-block">
             <H3 class="card-title">Over Patmar</H3>
