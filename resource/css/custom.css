@@ -1,0 +1,21 @@
+.navbar .container {
+    text-align: center;
+}
+.navbar-collapse .navbar-brand {
+    display: inline-block;
+    float: none;
+    padding: 0;
+    margin: 0 !important;
+    overflow: visible;
+}
+.navbar-collapse .navbar-brand .white-circle {
+    display: block;
+    width: 161px;
+    height: 161px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px dotted red;
+}
+.navbar-collapse .navbar-brand .white-circle .logo {
+    width: 144px;
+}
