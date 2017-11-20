@@ -84,8 +84,8 @@
     </div>
 
 </div>
-<div class="col-md-2 col-sm-12" style="padding-top: 50px;padding-left: 100px; border: 2px #00769f">
-    <div class="card" style="width: 20rem; padding-left: 5px">
+<div class="col-md-2 col-sm-12" style="padding-top: 50px;padding-left: 20px; border: 2px #00769f">
+    <div class="card" style="width: 20rem; padding-left: 5px; border-color: #00769f">
         <div class="card-block">
             <h3 class="card-title">Contact</h3>
             <p class="card-text">
@@ -105,7 +105,7 @@
             <p>info@patmar.nl<br>
                 www.patmar.nl</p>
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="#" class="btn btn-primary">Route</a>
         </div>
     </div>
 </div>
