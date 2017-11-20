@@ -65,7 +65,7 @@
             Bel ons op 06-00011122</p>
     </div> -->
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner" role="listbox" data-interval="2000">
             <div class="carousel-item active">
                 <img class="d-block img-fluid" src="..\resource\slides\13.jpg" alt="First slide">
             </div>
