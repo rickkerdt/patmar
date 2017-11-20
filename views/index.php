@@ -64,6 +64,7 @@
         <p>Vindt ons op fbook<br>
             Bel ons op 06-00011122</p>
     </div> -->
+    <div class="d-lg-block d-xl-block">
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" role="listbox" data-interval="2000">
             <div class="carousel-item active">
@@ -79,6 +80,7 @@
                 <img class="d-lg-block d-xl-block img-fluid" src="..\resource\slides\19.jpg" alt="Third slide">
             </div>
         </div>
+    </div>
     </div>
 
 </div>
