@@ -19,7 +19,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <a class="navbar-left col" href="#">
-                <img src="/resource/assets/logodummie.png" height="256" width="256" style="padding-top: 100px" class="d-inline-bl" alt="">
+                <img src="/resource/assets/logodummie.png" height="256" width="256" style="padding-top: 100px" class="d-inline-block" alt="">
             </a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
