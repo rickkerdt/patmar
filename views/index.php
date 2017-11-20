@@ -108,7 +108,7 @@
             <a href="#" class="btn btn-primary">Route</a>
         </div>
     </div>
-    <div class="card col-md-10 col-sm-12" style="padding-left: 5px; border-color: #00769f">
+    <div class="card col-md-9 col-sm-12" style="padding-left: 5px; border-color: #00769f">
         <p>Ons bedrijf Patmar is al meer dan 58 jaar een toonaangevend zonwering bedrijf in de regio Flevoland / Drenthe</p>
 
         <p>Wij leveren aan particulieren en bedrijven, alle soorten zonwering, kunststof kozijnen, dakkapellen, garagedeuren, glasschuifwanden, terrasoverkappingen o.a. veranda's en tuinkamers. Ook raamdecoratie hebben wij in ons assortiment.</p>
