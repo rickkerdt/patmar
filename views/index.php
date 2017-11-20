@@ -85,7 +85,7 @@
 
 </div>
 <div class="col-md-2 col-sm-12" style="padding-top: 50px;padding-left: 100px; border: 2px #00769f">
-    <div class="card" style="width: 20rem;">
+    <div class="card" style="width: 20rem; padding-left: 5px">
         <div class="card-block">
             <h4 class="card-title">Contact</h4>
             <p class="card-text">
@@ -107,24 +107,6 @@
             </p>
             <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
-    </div>
-    <div class="container-fluid">
-        <h2 class="display-4">Contact</h2>
-        <b>A5 Patmar Marknesse</b><br>
-        Hoge Sluiswal 47<br>
-        8316 AA Marknesse<br>
-        TEL: 0527 - 61 22 77<br>
-
-        <p>info@patmar.nl<br>
-            www.patmar.nl</p>
-
-        <b>A5 Patmar Meppel</b><br>
-        Johan van Oldenbarneveltstraat 3<br>
-        7942  GZ  MEPPEL<br>
-        Tel. 0522 - 24 48 88<br>
-
-        <p>info@patmar.nl<br>
-            www.patmar.nl</p>
     </div>
 </div>
 </body>
