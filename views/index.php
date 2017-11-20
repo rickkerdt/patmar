@@ -13,7 +13,7 @@
 <header>
     <!-- Image and text -->
 
-    <nav class="navbar navbar-light navbar-expand-lg sticky-top" style="background-color: #00769f; height: 96px;">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" style="background-color: #00769f; height: 96px;">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -86,7 +86,7 @@
 </div>
 <div class="row">
 <div class="col-md-2 d-none d-lg-block d-xl-block" style="padding-top: 50px;padding-left: 30px; border: 2px #00769f">
-    <div class="card" style="width: 20rem; padding-left: 5px; border-color: #00769f">
+    <div class="card" style="width: 20rem; padding-left: 5px; >
         <div class="card-block">
             <h3 class="card-title">Contact</h3>
             <p class="card-text">
@@ -110,8 +110,8 @@
         </div>
     </div>
 </div>
-    <div class="col-md-9 col-sm-12">
-    <div class="card" style="padding-top: 50px;padding-left: 20px; border: 2px #00769f">
+    <div class="col-md-9 col-sm-12" style="padding-top: 50px;padding-left: 30px;">
+    <div class="card" style="padding-left: 5px; border-color: #00769f">
         <div class="card-block">
             <H3 class="card-title">Over Patmar</H3>
         <p>Ons bedrijf Patmar is al meer dan 58 jaar een toonaangevend zonwering bedrijf in de regio Flevoland / Drenthe</p>
