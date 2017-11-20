@@ -19,11 +19,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <a class="navbar-left col" href="#">
-                <div class="visible-lg">
-                <img src="/resource/assets/logodummie.png" height="256" width="256" style="padding-top: 100px" class="d-inline-bl" alt="">
+                <div class="">
+                <img src="/resource/assets/logodummie.png" height="256" width="256" style="padding-top: 100px" class="d-lg-inline-block" alt="">
                 </div>
-                <div class="visible-sm">
-                    <img src="/resource/assets/logodummie.png" height="64" width="64" style="padding-top: 100px" class="d-inline-bl" alt="">
+                <div class="">
+                    <img src="/resource/assets/logodummie.png" height="64" width="64" style="padding-top: 100px" class="d-sm-inline-block" alt="">
                 </div>
             </a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
