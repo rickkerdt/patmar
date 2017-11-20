@@ -24,7 +24,7 @@
                 <img src="/resource/assets/logo.png" height="256" width="256" style="padding-top: 100px" class="d-md-none d-lg-block" alt="">
                 </div>
                 <div class="d-sm-block d-md-block">
-                    <img src="/resource/assets/logo.png" height="64" width="64" style="padding-top: 100px" class="d-none d-sm-block" alt="">
+                    <img src="/resource/assets/logo.png" height="64" width="64" style="padding-top: 100px" class="d-sm-block d-md-block" alt="">
                 </div>
             </a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
