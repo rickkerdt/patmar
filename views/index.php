@@ -8,6 +8,7 @@
     <title>Patmar Zonweringen</title>
     <link rel="stylesheet" href="/resource/css/bootstrap.css">
     <link rel="stylesheet" href="/resource/css/custom.css">
+    <script src="..\resource\js\bootstrap.js"></script>
 </head>
 <header>
     <!-- Image and text -->
