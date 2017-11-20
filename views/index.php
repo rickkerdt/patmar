@@ -87,9 +87,9 @@
 <div class="col-md-2 col-sm-12" style="padding-top: 50px;padding-left: 100px; border: 2px #00769f">
     <div class="card" style="width: 20rem; padding-left: 5px">
         <div class="card-block">
-            <h4 class="card-title">Contact</h4>
+            <h3 class="card-title">Contact</h3>
             <p class="card-text">
-                <h1 class="card-subtitle">A5 Patmar Marknesse</h1><br>
+                <h6 class="card-subtitle">A5 Patmar Marknesse</h6><br>
                 Hoge Sluiswal 47<br>
                 8316 AA Marknesse<br>
                 TEL: 0527 - 61 22 77<br>
@@ -97,7 +97,7 @@
             <p>info@patmar.nl<br>
                 www.patmar.nl</p>
 
-            <h1 class="card-subtitle">A5 Patmar Meppel</h1><br>
+            <h6 class="card-subtitle">A5 Patmar Meppel</h6><br>
             Johan van Oldenbarneveltstraat 3<br>
             7942  GZ  MEPPEL<br>
             Tel. 0522 - 24 48 88<br>
