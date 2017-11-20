@@ -13,7 +13,7 @@
 <header>
     <!-- Image and text -->
 
-    <nav class="navbar navbar-light navbar-expand-lg sticky-top" style="background-color: #00769f; height: 96px;">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" style="background-color: #00769f; height: 96px;">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
