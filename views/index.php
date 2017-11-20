@@ -34,7 +34,7 @@
                     <li><a href="events.php">Events</a></li>
                 </ul>
                 <div class="navbar-brand hidden-xs">
-                    <a class="white-circle" href="index.php">
+                    <a class="white-circle" href="inde.php">
                         <img class="logo" src="http://excitive.me/demo/temp/logo.svg" alt="Logo">
                     </a>
                 </div>
