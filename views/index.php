@@ -108,6 +108,7 @@
             <a href="#" class="btn btn-primary">Route</a>
         </div>
     </div>
+    <div class="col-md-9 col-sm-12">
     <div class="card wd-75" style="padding-left: 5px; border-color: #00769f">
         <p>Ons bedrijf Patmar is al meer dan 58 jaar een toonaangevend zonwering bedrijf in de regio Flevoland / Drenthe</p>
 
@@ -126,6 +127,7 @@
 
         <p>Sinds langere tijd zijn wij al dealer van VEKA Kunststof kozijnen deze kozijnen zijn een begrip in Nederland vanwege de goede kwaliteit en afwerking. Heeft u nieuwe kozijnen nodig bel of mail en wij zullen op al uw vragen een passend antwoord geven.</p>
     </div>
+</div>
 </div>
 </body>
 <footer>
