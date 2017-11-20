@@ -87,7 +87,7 @@
 <div class="row">
     <div class="col-md-2 d-none d-lg-block d-xl-block" style="padding-left: 30px; padding-top: 50px">
         <div class="card">
-            <p class="card-block" style="padding-left: 5px; border-color: #00769f ">
+            <div class="card-block" style="padding-left: 5px; border-color: #00769f ">
                 <p class="card-text">
                 <h3 class="card-title">Contact</h3>
                 <p class="card-text">
@@ -111,6 +111,7 @@
 
             </div>
         </div>
+    </div>
     <div class="col-sm-12 col-md-9" style="padding-right: 30px; padding-top: 50px">
         <div class="card ">
             <div class="card-block" style="padding-left: 5px; border-color: #00769f">
