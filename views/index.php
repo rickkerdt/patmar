@@ -86,6 +86,7 @@
 </div>
 <div class="col-md-2 col-sm-12" style="padding-top: 50px; border: 2px #00769f">
     <div class="container-fluid">
+        <h2 class="display-4">Contact</h2>
         <b>A5 Patmar Marknesse</b><br>
         Hoge Sluiswal 47<br>
         8316 AA Marknesse<br>
