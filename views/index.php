@@ -85,7 +85,7 @@
 
 </div>
 <div class="row">
-    <div class="col-sm-6">
+    <div class="col-sm-2">
         <div class="card">
             <p class="card-block">
                 <p class="card-text">
@@ -111,8 +111,7 @@
 
             </div>
         </div>
-    </div>
-    <div class="col-sm-2">
+    <div class="col-sm-6">
         <div class="card">
             <div class="card-block">
                 <h3 class="card-title">Over Patmar</h3>
