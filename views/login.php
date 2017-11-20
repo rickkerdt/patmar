@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Patmar - Login</title>
     <link rel="stylesheet" href="/resource/css/bootstrap.css">
-    <link rel="stylesheet" href="/resource/css/custom.css">
+    <!--    <link rel="stylesheet" href="/resource/css/custom.css">-->
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top" style="background-color: #00769f; height: 96px;">
+    <nav class="navbar navbar-light navbar-expand-lg">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -62,19 +62,19 @@
 <div class="container">
     <div class="row">
         <div class="col">&nbsp;</div>
-        <div class="col-md-6">
-            <h1>Login</h1>
-            <form action="">
+        <div class="col-md-4 jumbotron">
+            <h1 class="text-center">Login</h1>
+            <form action="?page=login" method="post">
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email">
+                    <input type="email" class="form-control" id="email" placeholder="voorbeeld@mail.nl">
                 </div>
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password">
+                    <input type="password" class="form-control" id="password" placeholder="********">
                 </div>
                 <div class="form-group">
-                    <input type="submit" class="form-control btn" value="Login">
+                    <input type="submit" class="form-control btn btn-primary" value="Login">
                 </div>
             </form>
         </div>
