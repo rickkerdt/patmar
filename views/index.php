@@ -111,7 +111,7 @@
     </div>
 </div>
     <div class="col-md-9 col-sm-12 float-right" style="padding-top: 50px; padding-right: 30px;">
-    <div class="card wd-75" style=" padding-right: 5px;border-color: #00769f">
+    <div class="card" style=" padding-left: 5px;border-color: #00769f">
         <div class="card-block">
             <H3 class="card-title">Over Patmar</H3>
         <p>Ons bedrijf Patmar is al meer dan 58 jaar een toonaangevend zonwering bedrijf in de regio Flevoland / Drenthe</p>
