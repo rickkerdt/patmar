@@ -84,7 +84,7 @@
     </div>
 
 </div>
-<div class="container-fluid">
+<div class="row">
 <div class="col-md-2 d-none d-lg-block d-xl-block" style="padding-top: 50px;padding-left: 20px; border: 2px #00769f">
     <div class="card" style="width: 20rem; padding-left: 5px; border-color: #00769f">
         <div class="card-block">
