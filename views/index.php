@@ -111,8 +111,8 @@
 
             </div>
         </div>
-    <div class="col-sm-12 col-md-9" style="padding-right: 30px; padding-top: 50px>
-        <div class="card">
+    <div class="col-sm-12 col-md-9" style="padding-right: 30px; padding-top: 50px">
+        <div class="card ">
             <div class="card-block">
                 <h3 class="card-title">Over Patmar</h3>
                 <p class="card-text">
