@@ -75,6 +75,9 @@
             <div class="carousel-item">
                 <img class="d-block img-fluid" src="..\resource\slides\17.jpg" alt="Third slide">
             </div>
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="..\resource\slides\19.jpg" alt="Third slide">
+            </div>
         </div>
     </div>
 
