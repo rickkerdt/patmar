@@ -112,7 +112,7 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-12 col-md-9" style="padding-right: 30px; padding-top: 50px">
+    <div class="col-sm-12 col-md-9 d-block" style="padding-right: 30px; padding-top: 50px">
         <div class="card ">
             <div class="card-block" style="padding-left: 5px; border-color: #00769f">
                 <h3 class="card-title">Over Patmar</h3>
