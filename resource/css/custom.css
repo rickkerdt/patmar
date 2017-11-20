@@ -31,3 +31,9 @@
 .navbar-toggler .icon-bar + .icon-bar {
     margin-top: 4px;
 }
+#header-logo {
+    height: 256px;
+}
+body {
+    height: 5000px;
+}

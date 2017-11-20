@@ -20,14 +20,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <a class="navbar-left col" href="#">
-                <div class="">
-                <img src="/resource/assets/logo.png" height="256" width="256" style="padding-top: 10px; position: absolute; border-radius: 35%" class="d-block" alt="1">
+                <div class="d-none d-lg-block d-xl-block">
+                <img id="header-logo" src="/resource/assets/logo.png" height="256" width="256" style="padding-top: 0px; position: absolute; border-radius: 35%" class="d-block" alt="1">
                 </div>
-                <div class="d-none d-sm-block d-md-block">
-                    <img src="/resource/assets/logo.png" height="64" width="64" style="padding-top: 10px" class="d-block" alt="">
+                <div class="d-lg-none d-xl-none">
+                    <img src="/resource/assets/logo.png" height="64" width="64" style="padding-top: 0px; position: absolute; border-radius: 35%" class="d-block" alt="">
                 </div>
             </a>
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0" >
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
@@ -64,7 +64,7 @@
         <p>Vindt ons op fbook<br>
             Bel ons op 06-00011122</p>
     </div> -->
-    <div class="d-none d-lg-block d-xl-block" style="padding-top: 95px">
+    <div class="d-none d-lg-block d-xl-block" style="padding-top: 50px">
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" role="listbox" data-interval="2000">
             <div class="carousel-item active">
