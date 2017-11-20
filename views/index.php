@@ -12,14 +12,14 @@
 <header>
     <!-- Image and text -->
 
-    <nav class="navbar navbar-light navbar-expand-lg sticky-top" style="background-color: #00769f; height: 64px;">
+    <nav class="navbar navbar-light navbar-expand-lg sticky-top" style="background-color: #00769f; height: 96px;">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <a class="navbar-left col" href="#">
-                <img src="/resource/assets/logodummie.png" height="128" class="d-inline-bl align-top" alt="">
+                <img src="/resource/assets/logodummie.png" height="256" style="padding-top: 20px" class="d-inline-bl align-top" alt="">
             </a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
