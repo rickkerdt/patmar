@@ -64,11 +64,18 @@
         <p>Vindt ons op fbook<br>
             Bel ons op 06-00011122</p>
     </div> -->
-    <div class="carousel col-md-12 col-lg-12 ">
-
-        <h1 style="font-size: 5em" class="">Patmar</h1>
-        <p class="">A<span style="font-size: 10px">5</span> Deco | Het bedrijf dat bij u past!</p>
-
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img class="d-block img-fluid" src="..." alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="..." alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="..." alt="Third slide">
+            </div>
+        </div>
     </div>
 
 </div>
