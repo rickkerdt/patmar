@@ -112,7 +112,7 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-2">
         <div class="card">
             <div class="card-block">
                 <h3 class="card-title">Over Patmar</h3>
