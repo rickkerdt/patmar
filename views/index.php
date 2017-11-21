@@ -21,7 +21,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01" >
             <a class="navbar-left col" href="#">
-                <div class="d-none d-lg-block d-xl-block">
+                <div class=" d-none d-lg-block d-xl-block">
                 <img src="/resource/assets/logo.png" height="128" width="128" style="padding-top: 0px; position: absolute; border-radius: 35%" class="d-block" alt="1">
                 </div>
             </a>
@@ -47,6 +47,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Offerte Aanvraag</a>
                 </li>
+            </ul>
+            <ul class="navbar-nav ml-auto justify-content-end">
                 <li class="nav-item">
                     <a class="nav-link" href="patmar.win?page=login">Login</a>
                 </li>
