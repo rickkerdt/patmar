@@ -13,9 +13,9 @@
 <header>
     <!-- Image and text -->
 
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top" style="background-color: #00769f;">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top navbar-custom mx-auto" style=" background-color: #00769f;">
         <div class="d-lg-none d-xl-none navbar-brand">A5 Deco - Patmar</div>
-        <button class="navbar-toggler navbar-right ml-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,7 +25,7 @@
                 <img src="/resource/assets/logo.png" height="128" width="128" style="padding-top: 0px; position: absolute; border-radius: 35%" class="d-block" alt="1">
                 </div>
             </a>
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0" >
+            <ul class="navbar-nav mx-auto w-100 justify-content-center" >
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
@@ -47,11 +47,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Offerte Aanvraag</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="patmar.win?page=login">Login</a>
+                </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
         </div>
     </nav>
     </div>
@@ -131,7 +130,6 @@
 
                 <p>Sinds langere tijd zijn wij al dealer van VEKA Kunststof kozijnen deze kozijnen zijn een begrip in Nederland vanwege de goede kwaliteit en afwerking. Heeft u nieuwe kozijnen nodig bel of mail en wij zullen op al uw vragen een passend antwoord geven.</p>
                 </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
         </div>
     </div>
