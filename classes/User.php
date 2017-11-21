@@ -2,48 +2,37 @@
 /**
  * Created by PhpStorm.
  * User: patip
- * Date: 11/16/2017
- * Time: 13:15
+ * Date: 11/21/2017
+ * Time: 15:20
  */
+
+
 
 class User
 {
-    private $username;
-    private $hash;
-    private $password;
-    private $token;
-    private $function;
-    private $userID;
+    public $UserID;
+    public $AddressID;
+    public $ContactID;
+    public $FirstName;
+    public $LastName;
+    public $CreationDate;
+    public $Function;
 
-    public function __construct()
+    public function addUser($firstname, $lastname, $function)
     {
+        $values = [$firstname, $lastname, $function];
 
+        $db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");;
+
+        $q = $db->prepare("INSERT INTO user(FirstName, LastName, Function) VALUES (?,?,?)");
+
+        $q->bindValue(1, $firstname, PDO::PARAM_STR);
+        $q->bindValue(2, $lastname, PDO::PARAM_STR);
+        $q->bindValue(3, $function, PDO::PARAM_STR);
+
+        $q->execute();
+
+        return $db->lastInsertId();
     }
 
-    public function getUser($userID)
-    {
-        $pdo = new PDO("mysql:host=localhost;db=patmar;", "root", "Patmar!");
-
-        $q = $pdo->prepare("SELECT * FROM Account WHERE UserID = :userID");
-        $q->bindValue(":userID", $userID);
-        try {
-            $q->execute();
-
-            if ($q->rowCount() > 0) {
-                $result = $q->fetchAll()[0];
-
-                $this->userID = $result["UserID"];
-                $this->hash = $result["PassHash"];
-                $this->function = $result["Function"];
-            } else {
-                die("user does not exist");
-            }
-        } catch (PDOException $PDOException) {
-            die("pdo error");
-        }
-    }
-
-    public function register($username, $password, $userID){
-
-    }
 }
