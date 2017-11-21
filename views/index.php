@@ -50,7 +50,7 @@
             </ul>
             <ul class="navbar-nav ml-auto justify-content-end">
                 <li class="nav-item">
-                    <a class="nav-link" href="patmar.win?page=login">Login</a>
+                    <a class="nav-link" href="?page=login">Login</a>
                 </li>
             </ul>
         </div>
