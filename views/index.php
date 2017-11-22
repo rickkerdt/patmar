@@ -186,10 +186,10 @@
     <div class="card-body tab-content">
         <div class="tab-pane active" id="tabc" role="tabpanel">
 
-
+<!-- carousel 1 -->
                 <div class="row">
-                    <div class="insideSize col-sm-12 col-lg-6">
-            <div id="carouselleft" class="carousel slide" data-ride="carousel">
+                    <div class="col-sm-12 col-lg-4">
+            <div id="carouselleft" class="carousel slide" data-ride="false">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselleft" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselleft" data-slide-to="1"></li>
@@ -197,23 +197,23 @@
                     <li data-target="#carouselleft" data-slide-to="3"></li>
                 </ol>
                 <div class="d-sm-block d-md-block d-lg-block d-xl-block col-12" style="padding-bottom: 5px;">
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner" role="listbox" data-interval="2000">
+                    <div id="carouselleft" class="carousel slide" data-ride="false">
+                        <div class="carousel-inner" role="listbox" data-interval="10000">
                             <div class="carousel-item active">
-                                <img class="d-block img-fluid" src="..\resource\slides\13.jpg" alt="First slide">
+                                <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/71_7_full.jpg?20150521" alt="First slide">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h3>Rolluiken</h3>
                                     <p>Blabla rolluiken blabla</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block img-fluid" src="..\resource\slides\16.jpg" alt="Second slide">
+                                <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/72_8_full.jpg?20150521" alt="Second slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block img-fluid" src="..\resource\slides\17.jpg" alt="Third slide">
+                                <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/71_7_full.jpg?20150521" alt="Third slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block img-fluid" src="..\resource\slides\19.jpg" alt="Third slide">
+                                <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/72_8_full.jpg?20150521" alt="Third slide">
                             </div>
                         </div>
                     </div>
@@ -228,32 +228,74 @@
                 </a>
             </div>
                     </div>
-                    <div class="insideSize col-sm-12 col-lg-6">
-                        <div id="carouselright" class="carousel slide" data-ride="carousel">
+                  <!-- carousel 2 -->
+                    <div class="insideSize col-sm-12 col-lg-4">
+                        <div id="carouselmiddle" class="carousel slide" data-ride="false">
                             <ol class="carousel-indicators">
-                                <li data-target="#carouselright" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselright" data-slide-to="1"></li>
-                                <li data-target="#carouselright" data-slide-to="2"></li>
-                                <li data-target="#carouselright" data-slide-to="3"></li>
+                                <li data-target="#carouselmiddle" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselmiddle" data-slide-to="1"></li>
+                                <li data-target="#carouselmiddle" data-slide-to="2"></li>
+                                <li data-target="#carouselmiddle" data-slide-to="3"></li>
                             </ol>
                             <div class="d-sm-block d-md-block d-lg-block d-xl-block col-12">
-                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner" role="listbox" data-interval="2000">
+                                <div id="carouselmiddle" class="carousel slide">
+                                    <div class="carousel-inner" role="listbox" data-interval="5000">
                                         <div class="carousel-item active">
-                                            <img class="d-block img-fluid" src="..\resource\slides\13.jpg" alt="First slide">
+                                            <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/71_7_full.jpg?20150521" alt="First slide">
                                             <div class="carousel-caption d-none d-md-block">
                                                 <h3>Rolluiken</h3>
                                                 <p>Blabla rolluiken blabla</p>
                                             </div>
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block img-fluid" src="..\resource\slides\16.jpg" alt="Second slide">
+                                            <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/72_8_full.jpg?20150521" alt="Second slide">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block img-fluid" src="..\resource\slides\17.jpg" alt="Third slide">
+                                            <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/71_7_full.jpg?20150521" alt="Third slide">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block img-fluid" src="..\resource\slides\19.jpg" alt="Third slide">
+                                            <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/72_8_full.jpg?20150521" alt="Third slide">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselmiddle" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselmiddle" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- carousel 3 -->
+                    <div class="col-sm-12 col-lg-4">
+                        <div id="carouselright" class="carousel slide" data-ride="false">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselright" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselright" data-slide-to="1"></li>
+                                <li data-target="#carouselright" data-slide-to="2"></li>
+                                <li data-target="#carouselright" data-slide-to="3"></li>
+                            </ol>
+                            <div class="d-sm-block d-md-block d-lg-block d-xl-block col-12" style="padding-bottom: 5px;">
+                                <div id="carouselright" class="carousel slide" data-ride="false">
+                                    <div class="carousel-inner" role="listbox" data-interval="10000">
+                                        <div class="carousel-item active">
+                                            <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/71_7_full.jpg?20150521" alt="First slide">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h3>Rolluiken</h3>
+                                                <p>Blabla rolluiken blabla</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/72_8_full.jpg?20150521" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/71_7_full.jpg?20150521" alt="Third slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/72_8_full.jpg?20150521" alt="Third slide">
                                         </div>
                                     </div>
                                 </div>
@@ -280,6 +322,7 @@
 
     </div>
 </div>
+<!-- end multitab -->
 
 <!-- <ul class="nav nav-tabs justify-content-center" style="padding-top: 10px" role="tablist">
     <li class="nav-item">
