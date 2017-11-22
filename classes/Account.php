@@ -53,7 +53,7 @@ class Account
 
         $values = [$email, $hash];
 
-        $db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");;
+        $db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
 
         $q = $db->prepare("INSERT INTO account(Email, UserID, PassHash, Function) VALUES (?,?,?,'klant')");
 
@@ -62,5 +62,31 @@ class Account
         $q->bindValue(3, $hash);
 
         $q->execute();
+    }
+
+    public function login($email, $password)
+    {
+        $db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
+        $hash = hash("sha512", $password . $this->salt);
+        $q = $db->prepare("SELECT * FROM account WHERE Email = :email AND PassHash = :passhash LIMIT 1");
+        $q->bindValue(":email", $email);
+        $q->bindValue(":passhash", $hash);
+
+
+        if ($q->execute())
+        {
+            if ($q->rowCount() > 0) {
+                $result = $q->fetchAll()[0];
+
+                $_SESSION["loggedIn"] = "true";
+                $_SESSION["username"] = $result["Email"];
+
+                header("Location: /index.php?page=home");
+            } else {
+                die("incorrect password or username");
+            }
+        } else {
+            die("errors");
+        }
     }
 }

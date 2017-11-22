@@ -1,5 +1,9 @@
 <?php
 
+if (isset($_SESSION["loggedIn"])) {
+    header("Location: /index.php?page=home");
+}
+
 if (isset($_POST["register"])) {
     $account = new Account();
 
