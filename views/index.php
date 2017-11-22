@@ -192,7 +192,7 @@
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
-                <div class="d-none d-lg-block d-xl-block" style="padding-top: 0px">
+                <div class="d-sm-block d-md-block d-lg-block d-xl-block" style="padding-top: 0px">
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner" role="listbox" data-interval="2000">
                             <div class="carousel-item active">
