@@ -8,7 +8,7 @@
     <title>Patmar Zonweringen</title>
     <link rel="stylesheet" href="/resource/css/bootstrap.css">
     <link rel="stylesheet" href="/resource/css/custom.css">
-    <!--<script src="..\resource\js\bootstrap.js"></script>-->
+    <!--<script src="..\resource\js\bootstrap.js"></html>-->
 </head>
 <header>
     <!-- Image and text -->
@@ -167,7 +167,74 @@
     </div>
 </div>
 
-<ul class="nav nav-tabs justify-content-center" style="padding-top: 10px" role="tablist">
+<!-- Multitab panes -->
+<div class="card">
+    <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs" id="outerTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#tabc" aria-controls="tabc" role="tab" aria-expanded="true">Buitenzonnewering</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tabb" aria-controls="tabb" role="tab">Tab-2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#taba" aria-controls="taba" role="tab">Tab-3</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card-body tab-content">
+        <div class="tab-pane active" id="tabc" role="tabpanel">
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="d-none d-lg-block d-xl-block" style="padding-top: 0px">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox" data-interval="2000">
+                            <div class="carousel-item active">
+                                <img class="d-block img-fluid" src="..\resource\slides\13.jpg" alt="First slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Rolluiken</h3>
+                                    <p>Blabla rolluiken blabla</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block img-fluid" src="..\resource\slides\16.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block img-fluid" src="..\resource\slides\17.jpg" alt="Third slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block img-fluid" src="..\resource\slides\19.jpg" alt="Third slide">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+        </div>
+        <div class="tab-pane" id="tabb" role="tabpanel">
+            Content for Tab-2
+        </div>
+        <div class="tab-pane" id="taba" role="tabpanel">
+            Content for Tab-3
+        </div>
+    </div>
+</div>
+
+<!-- <ul class="nav nav-tabs justify-content-center" style="padding-top: 10px" role="tablist">
     <li class="nav-item">
         <a class="nav-link active" href="#profile" role="tab" data-toggle="tab">Buitenzonnewering</a>
     </li>
@@ -190,6 +257,7 @@
 </ul>
 
 <!-- Tab panes -->
+<!--
 <div class="tab-content">
     <div role="tabpanel" class="tab-pane fade in active" id="profile">
         <ul class="nav nav-tabs justify-content-center" style="padding-top: 10px" role="tablist">
@@ -229,11 +297,12 @@
     </div>
     <div role="tabpanel" class="tab-pane fade" id="buzz">bbb</div>
     <div role="tabpanel" class="tab-pane fade" id="references">ccc</div>
-</div>
+</div> -->
 </body>
 <footer>
 
 </footer>
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
