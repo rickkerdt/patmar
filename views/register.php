@@ -3,7 +3,7 @@
 if (isset($_POST["register"])) {
     $account = new Account();
 
-    if($_POST["password"] != $_POST["passwordrepeat"])
+    if ($_POST["password"] != $_POST["passwordrepeat"])
         die("incorrect password");
 
     try {
@@ -83,7 +83,7 @@ if (isset($_POST["register"])) {
 <div class="container" style="margin-top: 100px">
     <div class="row">
         <div class="col">&nbsp;</div>
-        <div class="col-md-4 jumbotron">
+        <div class="col-md-6 jumbotron">
             <h1 class="text-center">Registreren</h1>
             <form action="?page=register" method="post">
                 <div class="form-group">
@@ -91,12 +91,21 @@ if (isset($_POST["register"])) {
                     <input type="email" class="form-control" name="email" id="email" placeholder="voorbeeld@mail.nl">
                 </div>
                 <div class="form-group">
-                    <label for="firstname">Voornaam</label>
-                    <input type="text" class="form-control" name="firstname" id="firstname" placeholder="Jan">
-                </div>
-                <div class="form-group">
-                    <label for="lastname">Achternaam</label>
-                    <input type="text" class="form-control" name="lastname" id="lastname" placeholder="de Vries">
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <label for="firstname">Voornaam</label>
+                            <input type="text" class="form-control" name="firstname" id="firstname" placeholder="Jan">
+                        </div>
+                        <div class="col-md-6">
+
+                            <label for="lastname">Achternaam</label>
+                            <input type="text" class="form-control" name="lastname" id="lastname"
+                                   placeholder="de Vries">
+                        </div>
+                    </div>
+                    <!--                </div>-->
+                    <!--                <div class="form-group">-->
                 </div>
                 <div class="form-group">
                     <label for="password">Wachtwoord</label>
