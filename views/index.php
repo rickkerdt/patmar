@@ -200,20 +200,20 @@
                     <div id="carouselleft" class="carousel slide" data-ride="false">
                         <div class="carousel-inner" role="listbox" data-interval="10000">
                             <div class="carousel-item active">
-                                <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/71_7_full.jpg?20150521" alt="First slide">
+                                <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/71_7_full.jpg?20150521" alt="Rolluik1">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h3>Rolluiken</h3>
                                     <p>Blabla rolluiken blabla</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/72_8_full.jpg?20150521" alt="Second slide">
+                                <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/69_5_full.jpg?20150521" alt="Rolluik2">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/71_7_full.jpg?20150521" alt="Third slide">
+                                <img class="d-block img-fluid" src="../resource/assets/open.png" alt="Rolluik3">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/72_8_full.jpg?20150521" alt="Third slide">
+                                <img class="d-block img-fluid" src="../resource/assets/dicht.png" alt="Rolluik4">
                             </div>
                         </div>
                     </div>
@@ -289,13 +289,13 @@
                                             </div>
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/72_8_full.jpg?20150521" alt="Second slide">
+                                            <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/69_5_full.jpg?20150521" alt="Second slide">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/71_7_full.jpg?20150521" alt="Third slide">
+                                            <img class="d-block img-fluid" src="../resource/assets/open.png" alt="Third slide">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/72_8_full.jpg?20150521" alt="Third slide">
+                                            <img class="d-block img-fluid" src="../resource/assets/dicht.png" alt="Third slide">
                                         </div>
                                     </div>
                                 </div>
