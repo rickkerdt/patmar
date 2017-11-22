@@ -60,7 +60,7 @@
 <div class="container" style="margin-top: 100px">
     <div class="row">
         <div class="col">&nbsp;</div>
-        <div class="col-md-4 jumbotron">
+        <div class="col-md-6 jumbotron">
             <h1 class="text-center">Login</h1>
             <form action="?page=login" method="post">
                 <div class="form-group">
