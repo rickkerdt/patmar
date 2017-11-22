@@ -1,3 +1,17 @@
+<?php
+
+if(isset($_SESSION["loggedIn"])) {
+    header("Location: /index.php?page=home");
+}
+
+if (isset($_POST["login"])) {
+    $account = new Account();
+
+    $account->login($_POST["email"], $_POST["password"]);
+}
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -13,19 +27,21 @@
 <header>
     <!-- Image and text -->
 
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top navbar-custom mx-auto" style=" background-color: #00769f;">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top navbar-custom mx-auto"
+         style=" background-color: #00769f;">
         <div class="d-lg-none d-xl-none navbar-brand">A5 Deco - Patmar</div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01" >
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <a class="navbar-left col" href="#">
                 <div class=" d-none d-lg-block d-xl-block">
-                    <img src="/resource/assets/logo.png" height="128" width="128" style="padding-top: 0px; position: absolute; border-radius: 35%" class="d-block" alt="1">
+                    <img src="/resource/assets/logo.png" height="128" width="128"
+                         style="padding-top: 0px; position: absolute; border-radius: 35%" class="d-block" alt="1">
                 </div>
             </a>
-            <ul class="navbar-nav mx-auto w-100 justify-content-center" >
+            <ul class="navbar-nav mx-auto w-100 justify-content-center">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
@@ -33,7 +49,8 @@
                     <a class="nav-link" href="#">Openingstijden</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
                         Samenwerking
                     </a>
 
@@ -62,17 +79,17 @@
         <div class="col">&nbsp;</div>
         <div class="col-md-6 jumbotron">
             <h1 class="text-center">Login</h1>
-            <form action="?page=login" method="post">
+            <form action="/index.php?page=login" method="post">
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="voorbeeld@mail.nl">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="voorbeeld@mail.nl">
                 </div>
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="********">
+                    <input type="password" class="form-control" name="password" id="password" placeholder="********">
                 </div>
                 <div class="form-group">
-                    <input type="submit" class="form-control btn btn-primary" value="Login">
+                    <input type="submit" class="form-control btn btn-primary" name="login" value="Login">
                 </div>
                 <div class="form-group">
                     <span>Geen account?</span>
