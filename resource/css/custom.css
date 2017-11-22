@@ -65,7 +65,7 @@ nav{
 
 /* Banier CSS */
 #ks_banier {
-    width:200px;
+    width:90%;
     margin:0;
 }
 #ks_kop {
@@ -86,7 +86,7 @@ nav{
 }
 #ks_score {
     float:left;
-    width:56px;
+    width:28%;
     text-align:center;
     font-weight:bold;
 }
@@ -118,7 +118,7 @@ nav{
 }
 .ks_link {
     display:block;
-    width:100px;
+    width:50%;
     height:16px;
     line-height:16px;
     font-size:12px;
@@ -154,7 +154,7 @@ nav{
     font-size:11px;
     font-style:italic;
     float:right;
-    width:112px;
+    width:56%;
     margin-top:-4px;
 }
 .clear {

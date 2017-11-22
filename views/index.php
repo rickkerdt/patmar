@@ -84,7 +84,7 @@
 
 </div>
 <div class="row">
-    <div class="col-md-3 d-none d-lg-block d-xl-block" style="padding-left: 4%; padding-top: 50px">
+    <div class="col-md-3 d-none d-lg-block d-xl-block" style="padding-left: 4%; padding-top: 50px; width: 220px;">
         <div class="card">
             <div class="card-block" style="padding-left: 5px; border-color: #00769f ">
                 <h3 class="card-title">Contact</h3>
@@ -167,28 +167,68 @@
     </div>
 </div>
 
-<div class="d-sm-none d-md-none d-lg-block d-xl-block" style="padding-left: 3%; padding-top: 50px; Padding-right: 3%; padding-bottom: 50px">
-    <div class="card" style="padding-left: 5px">
-        <div class="card-header">
-            <ul class="nav nav-tabs card-header-tabs">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-            </ul>
-        </div>
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-block">
-            <h4 class="card-title">Special title treatment</h4>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+<ul class="nav nav-tabs justify-content-center" style="padding-top: 10px" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" href="#profile" role="tab" data-toggle="tab">Buitenzonnewering</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#buzz" role="tab" data-toggle="tab">Binnenzonnewering</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#references" role="tab" data-toggle="tab">Garagedeuren</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#references" role="tab" data-toggle="tab">Terrasoverkappingen</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#references" role="tab" data-toggle="tab">Glazen schuifwanden</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#references" role="tab" data-toggle="tab">Kunstof kozijnen</a>
+    </li>
+
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="profile">
+        <ul class="nav nav-tabs justify-content-center" style="padding-top: 10px" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" href="#rolluiken" role="tab" data-toggle="tab">Rolluiken</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#screens" role="tab" data-toggle="tab">Screens</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#markiezen" role="tab" data-toggle="tab">Markiezen</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#uitvalschermen" role="tab" data-toggle="tab">Uitvalschermen</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#ktschermen" role="tab" data-toggle="tab">Knikarm- /Terrasschermen</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#zonweringsdoeken" role="tab" data-toggle="tab">Zonweringsdoeken</a>
+            </li>
+
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="rolluiken">
+                <div class="col-sm-12 col-md-3">
+                    <img src="http://www.patmar.nl/data/projects/72_8_full.jpg?20150521" alt="rolluik1" class="img-fluid" />
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="screens">bbb</div>
+            <div role="tabpanel" class="tab-pane fade" id="markiezen">ccc</div>
+            <div role="tabpanel" class="tab-pane fade" id="uitvalschermen">
+
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="ktschermen">bbb</div>
+            <div role="tabpanel" class="tab-pane fade" id="zonweringsdoeken">ccc</div>
     </div>
+    <div role="tabpanel" class="tab-pane fade" id="buzz">bbb</div>
+    <div role="tabpanel" class="tab-pane fade" id="references">ccc</div>
 </div>
 </body>
 <footer>
