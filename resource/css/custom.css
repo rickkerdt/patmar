@@ -62,3 +62,101 @@ nav{
     float: inherit;
     display: inline-block;
 }
+
+/* Banier CSS */
+#ks_banier {
+    width:200px;
+    margin:0;
+}
+#ks_kop {
+    background:url(logoS.png) top left no-repeat #000000;
+    height:28px;
+    line-height:28px;
+    font-size:12px;
+    color:#FFFFFF;
+    font-weight:bold;
+    text-align:left;
+    padding-left:34px;
+}
+#ks_inhoud {
+    height:73px;
+    background-color:#00769E;
+    padding: 8px 8px 8px 8px;
+
+}
+#ks_score {
+    float:left;
+    width:56px;
+    text-align:center;
+    font-weight:bold;
+}
+#ks_scorekop, #ks_scoreinhoud, .ks_link {
+    background-color:#FFFFFF;
+    color:#000000;
+}
+#ks_scorekop {
+    height:12px;
+    line-height:12px;
+    font-size:11px;
+    margin-bottom:1px;
+}
+#ks_scoreinhoud {
+    height:27px;
+    line-height:27px;
+    font-size:24px;
+    color:#00769E;
+}
+#ks_scoresterren {
+    color:#FFFFFF;
+    font-weight:bold;
+    font-size:26px;
+}
+#ks_scoresterren #ks_scoregedoofd {
+    color:#00769E;
+    text-shadow:0 0 2px #FFFFFF; /* Firefox 3.5+, Opera 9+, Safari 1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Glow(Color=,Strength=1); /* IE<10 */
+}
+.ks_link {
+    display:block;
+    width:100px;
+    height:16px;
+    line-height:16px;
+    font-size:12px;
+    color:#000000;
+    text-decoration:none;
+    margin: 0 8px 8px 0;
+    float:right;
+    padding:0 8px;
+    position:relative;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    text-shadow:none;
+    font-weight:normal;
+}
+.ks_link:hover {
+    text-decoration:underline;
+}
+.ks_pijl {
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid transparent;  /* left arrow slant */
+    border-top: 8px solid transparent; /* right arrow slant */
+    border-left: 8px solid #000000; /* bottom, add background color here */
+    font-size: 0;
+    line-height: 0;
+    position:absolute;
+    right:-8px;
+    top:0;
+}
+#ks_copyright {
+    color:#FFFFFF;
+    font-size:11px;
+    font-style:italic;
+    float:right;
+    width:112px;
+    margin-top:-4px;
+}
+.clear {
+    clear:both;
+}

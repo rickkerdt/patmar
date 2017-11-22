@@ -106,7 +106,37 @@
                     www.patmar.nl</p>
             </p>
                 <a href="#" class="btn btn-primary">Route</a>
-
+                <div id="ks_banier">
+                    <div id="ks_kop">
+                        <div id="ks_koptekst">
+                            Wat schrijven onze klanten?
+                        </div>
+                    </div>
+                    <div id="ks_inhoud">
+                        <div id="ks_score">
+                            <div id="ks_scorekop">
+                                Score
+                            </div>
+                            <div id="ks_scoreinhoud">
+                                9,3            </div>
+                            <div id="ks_scoresterren">
+                                *****<span id='ks_scoregedoofd'></span>            </div>
+                        </div>
+                        <div id="ks_pijlhouder">
+                            <a href="/beoordeling/patmar-bv" target="_blank" class="ks_link">
+                                Dit schrijven ze
+                                <div class="ks_pijl"></div>
+                            </a>
+                            <a href="/oordeel/patmar-bv" target="_blank" class="ks_link">
+                                Beoordeel ons
+                                <div class="ks_pijl"></div>
+                            </a>
+                        </div>
+                        <div id="ks_copyright">
+                            © Klantenschrijven.nl
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -136,6 +166,7 @@
         </div>
     </div>
 </div>
+
 <div class="d-sm-none d-md-none d-lg-block d-xl-block" style="padding-left: 3%; padding-top: 50px; Padding-right: 3%; padding-bottom: 50px">
     <div class="card" style="padding-left: 5px">
         <div class="card-header">
