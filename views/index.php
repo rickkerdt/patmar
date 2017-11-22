@@ -186,13 +186,17 @@
     <div class="card-body tab-content">
         <div class="tab-pane active" id="tabc" role="tabpanel">
 
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+                <div class="row">
+                    <div class="insideSize col-sm-12 col-lg-6">
+            <div id="carouselleft" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselleft" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselleft" data-slide-to="1"></li>
+                    <li data-target="#carouselleft" data-slide-to="2"></li>
+                    <li data-target="#carouselleft" data-slide-to="3"></li>
                 </ol>
-                <div class="d-sm-block d-md-block d-lg-block d-xl-block" style="padding-top: 0px">
+                <div class="d-sm-block d-md-block d-lg-block d-xl-block col-12" style="padding-bottom: 5px;">
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner" role="listbox" data-interval="2000">
                             <div class="carousel-item active">
@@ -214,23 +218,66 @@
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#carouselleft" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#carouselleft" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-
+                    </div>
+                    <div class="insideSize col-sm-12 col-lg-6">
+                        <div id="carouselright" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselright" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselright" data-slide-to="1"></li>
+                                <li data-target="#carouselright" data-slide-to="2"></li>
+                                <li data-target="#carouselright" data-slide-to="3"></li>
+                            </ol>
+                            <div class="d-sm-block d-md-block d-lg-block d-xl-block col-12">
+                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner" role="listbox" data-interval="2000">
+                                        <div class="carousel-item active">
+                                            <img class="d-block img-fluid" src="..\resource\slides\13.jpg" alt="First slide">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h3>Rolluiken</h3>
+                                                <p>Blabla rolluiken blabla</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="..\resource\slides\16.jpg" alt="Second slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="..\resource\slides\17.jpg" alt="Third slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block img-fluid" src="..\resource\slides\19.jpg" alt="Third slide">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselright" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselright" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
         </div>
+            </div>
+
         <div class="tab-pane" id="tabb" role="tabpanel">
             Content for Tab-2
         </div>
         <div class="tab-pane" id="taba" role="tabpanel">
             Content for Tab-3
         </div>
+
     </div>
 </div>
 
