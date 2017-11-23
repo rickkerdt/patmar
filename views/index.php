@@ -189,7 +189,7 @@
 
         <!-- carousel 1 -->
                 <div class="row">
-                    <div class="col-sm-12 col-lg-4">
+                    <div class="col-sm-12 col-lg-4" style="padding-top: 10px;">
                         <div id="carouseltopleft" class="carousel slide" data-ride="false">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouseltopleft" data-slide-to="0" class="active"></li>
@@ -197,7 +197,7 @@
                                 <li data-target="#carouseltopleft" data-slide-to="2"></li>
                                 <li data-target="#carouseltopleft" data-slide-to="3"></li>
                             </ol>
-                            <div class="d-sm-block d-md-block d-lg-block d-xl-block col-12" style="padding-bottom: 5px;">
+                            <div class="d-sm-block d-md-block d-lg-block d-xl-block col-12">
                                 <div id="carouseltopleft" class="carousel slide" data-ride="false">
                                     <div class="carousel-inner" role="listbox" data-interval="10000">
                                         <div class="carousel-item active">
@@ -228,8 +228,8 @@
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
-                        <div class="" style="padding-left: 14px">
-                            <h3 class="card-subtitle">Rolluiken</h3>
+                        <div class="" style="padding-left: 14px;">
+                            <h3 class="card-subtitle" style="padding-top: 10px; ">Rolluiken</h3>
 
                             Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
                             Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
@@ -239,7 +239,7 @@
                         </div>
                     </div>
                   <!-- carousel 2 -->
-                    <div class="insideSize col-sm-12 col-lg-4">
+                    <div class="insideSize col-sm-12 col-lg-4" style="padding-top: 10px;">
                         <div id="carouseltopmiddle" class="carousel slide" data-ride="false">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouseltopmiddle" data-slide-to="0" class="active"></li>
@@ -279,7 +279,7 @@
                             </a>
                         </div>
                         <div class="" style="padding-left: 14px">
-                            <h3 class="card-subtitle">Screens</h3>
+                            <h3 class="card-subtitle" style="padding-top: 10px;">Screens</h3>
 
                             Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
                             Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
@@ -289,7 +289,7 @@
                         </div>
                     </div>
                     <!-- carousel 3 -->
-                    <div class="col-sm-12 col-lg-4">
+                    <div class="col-sm-12 col-lg-4" style="padding-top: 10px;">
                         <div id="carouseltopright" class="carousel slide" data-ride="false">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouseltopright" data-slide-to="0" class="active"></li>
@@ -329,7 +329,7 @@
                             </a>
                         </div>
                         <div class="" style="padding-left: 14px">
-                            <h3 class="card-subtitle">Markiezen</h3>
+                            <h3 class="card-subtitle" style="padding-top: 10px;">Markiezen</h3>
 
                             Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
                             Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
@@ -343,7 +343,7 @@
             <!-- start carousel row 2 -->
             <!-- carousel 1 -->
             <div class="row">
-                <div class="col-sm-12 col-lg-4">
+                <div class="col-sm-12 col-lg-4" style="padding-top: 10px;">
                     <div id="carouselbottomleft" class="carousel slide" data-ride="false">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselbottomleft" data-slide-to="0" class="active"></li>
@@ -383,7 +383,7 @@
                         </a>
                     </div>
                     <div class="" style="padding-left: 14px">
-                        <h3 class="card-subtitle">Uitvalschermen</h3>
+                        <h3 class="card-subtitle" style="padding-top: 10px;">Uitvalschermen</h3>
 
                         Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
                         Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
@@ -393,7 +393,7 @@
                     </div>
                 </div>
                 <!-- carousel 2 -->
-                <div class="insideSize col-sm-12 col-lg-4">
+                <div class="insideSize col-sm-12 col-lg-4" style="padding-top: 10px;">
                     <div id="carouselbottommiddle" class="carousel slide" data-ride="false">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselbottommiddle" data-slide-to="0" class="active"></li>
@@ -433,7 +433,7 @@
                         </a>
                     </div>
                     <div class="" style="padding-left: 14px">
-                        <h3 class="card-subtitle">Knikarm/Terrasschermen</h3>
+                        <h3 class="card-subtitle" style="padding-top: 10px;">Knikarm/Terrasschermen</h3>
 
                         Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
                         Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
@@ -443,7 +443,7 @@
                     </div>
                 </div>
                 <!-- carousel 3 -->
-                <div class="col-sm-12 col-lg-4">
+                <div class="col-sm-12 col-lg-4" style="padding-top: 10px;">
                     <div id="carouselbottomright" class="carousel slide" data-ride="false">
                         <div class="d-sm-block d-md-block d-lg-block d-xl-block col-12" style="padding-bottom: 5px;">
                             <div id="carouselbottomright" class="carousel slide" data-ride="false">
@@ -461,7 +461,7 @@
 
                     </div>
                     <div class="" style="padding-left: 14px">
-                        <h3 class="card-subtitle">Zonweringsdoeken</h3>
+                        <h3 class="card-subtitle" style="padding-top: 10px;">Zonweringsdoeken</h3>
 
                         Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
                         Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
