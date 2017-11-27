@@ -482,9 +482,9 @@
             </div>
             <!-- end of carousel row -->
         </div>
-        <!-- start tabpanel 2 -->
+        <!-- start tabpanel 2-->
         <div class="tab-pane" id="tabb" role="tabpanel">
-            <div class="row">
+            <div class="row justify-content-center mx-auto">
                 <div class="col-sm-12 col-lg-4" style="padding-top: 10px;">
                     <div id="carouseltopleft" class="carousel slide" data-ride="false">
                         <ol class="carousel-indicators">
