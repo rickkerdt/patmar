@@ -199,15 +199,15 @@
         <!-- carousel 1 -->
                 <div class="row">
                     <div class="col-sm-12 col-lg-4" style="padding-top: 10px;">
-                        <div id="carouseltopleft" class="carousel slide" data-ride="false">
+                        <div id="carousel1topleft" class="carousel slide" data-ride="false">
                             <ol class="carousel-indicators">
-                                <li data-target="#carouseltopleft" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouseltopleft" data-slide-to="1"></li>
-                                <li data-target="#carouseltopleft" data-slide-to="2"></li>
-                                <li data-target="#carouseltopleft" data-slide-to="3"></li>
+                                <li data-target="#carousel1topleft" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel1topleft" data-slide-to="1"></li>
+                                <li data-target="#carousel1topleft" data-slide-to="2"></li>
+                                <li data-target="#carousel1topleft" data-slide-to="3"></li>
                             </ol>
                             <div class="d-sm-block d-md-block d-lg-block d-xl-block col-12">
-                                <div id="carouseltopleft" class="carousel slide" data-ride="false">
+                                <div id="carousel1topleft" class="carousel slide" data-ride="false">
                                     <div class="carousel-inner" role="listbox" data-interval="10000">
                                         <div class="carousel-item active">
                                             <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/71_7_full.jpg?20150521" alt="Rolluik1">
@@ -228,11 +228,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <a class="carousel-control-prev" href="#carouseltopleft" role="button" data-slide="prev">
+                            <a class="carousel-control-prev" href="#carousel1topleft" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouseltopleft" role="button" data-slide="next">
+                            <a class="carousel-control-next" href="#carousel1topleft" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
@@ -249,12 +249,12 @@
                     </div>
                   <!-- carousel 2 -->
                     <div class="insideSize col-sm-12 col-lg-4" style="padding-top: 10px;">
-                        <div id="carouseltopmiddle" class="carousel slide" data-ride="false">
+                        <div id="carousel1topmiddle" class="carousel slide" data-ride="false">
                             <ol class="carousel-indicators">
-                                <li data-target="#carouseltopmiddle" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouseltopmiddle" data-slide-to="1"></li>
-                                <li data-target="#carouseltopmiddle" data-slide-to="2"></li>
-                                <li data-target="#carouseltopmiddle" data-slide-to="3"></li>
+                                <li data-target="#carousel1topmiddle" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel1topmiddle" data-slide-to="1"></li>
+                                <li data-target="#carousel1topmiddle" data-slide-to="2"></li>
+                                <li data-target="#carousel1topmiddle" data-slide-to="3"></li>
                             </ol>
                             <div class="d-sm-block d-md-block d-lg-block d-xl-block col-12">
                                 <div id="carouseltopmiddle" class="carousel slide">
@@ -278,11 +278,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <a class="carousel-control-prev" href="#carouseltopmiddle" role="button" data-slide="prev">
+                            <a class="carousel-control-prev" href="#carousel1topmiddle" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouseltopmiddle" role="button" data-slide="next">
+                            <a class="carousel-control-next" href="#carousel1topmiddle" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
@@ -299,15 +299,15 @@
                     </div>
                     <!-- carousel 3 -->
                     <div class="col-sm-12 col-lg-4" style="padding-top: 10px;">
-                        <div id="carouseltopright" class="carousel slide" data-ride="false">
+                        <div id="carousel1topright" class="carousel slide" data-ride="false">
                             <ol class="carousel-indicators">
-                                <li data-target="#carouseltopright" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouseltopright" data-slide-to="1"></li>
-                                <li data-target="#carouseltopright" data-slide-to="2"></li>
-                                <li data-target="#carouseltopright" data-slide-to="3"></li>
+                                <li data-target="#carousel1topright" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel1topright" data-slide-to="1"></li>
+                                <li data-target="#carousel1topright" data-slide-to="2"></li>
+                                <li data-target="#carousel1topright" data-slide-to="3"></li>
                             </ol>
                             <div class="d-sm-block d-md-block d-lg-block d-xl-block col-12" style="padding-bottom: 5px;">
-                                <div id="carouseltopright" class="carousel slide" data-ride="false">
+                                <div id="carousel1topright" class="carousel slide" data-ride="false">
                                     <div class="carousel-inner" role="listbox" data-interval="10000">
                                         <div class="carousel-item active">
                                             <img class="d-block img-fluid" src="../resource/assets/markies2.jpg" alt="markies2">
@@ -328,11 +328,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <a class="carousel-control-prev" href="#carouseltopright" role="button" data-slide="prev">
+                            <a class="carousel-control-prev" href="#carousel1topright" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouseltopright" role="button" data-slide="next">
+                            <a class="carousel-control-next" href="#carousel1topright" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
@@ -353,15 +353,15 @@
             <!-- carousel 1 -->
             <div class="row">
                 <div class="col-sm-12 col-lg-4" style="padding-top: 10px;">
-                    <div id="carouselbottomleft" class="carousel slide" data-ride="false">
+                    <div id="carousel1bottomleft" class="carousel slide" data-ride="false">
                         <ol class="carousel-indicators">
-                            <li data-target="#carouselbottomleft" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselbottomleft" data-slide-to="1"></li>
-                            <li data-target="#carouselbottomleft" data-slide-to="2"></li>
-                            <li data-target="#carouselbottomleft" data-slide-to="3"></li>
+                            <li data-target="#carousel1bottomleft" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel1bottomleft" data-slide-to="1"></li>
+                            <li data-target="#carousel1bottomleft" data-slide-to="2"></li>
+                            <li data-target="#carousel1bottomleft" data-slide-to="3"></li>
                         </ol>
                         <div class="d-sm-block d-md-block d-lg-block d-xl-block col-12" style="padding-bottom: 5px;">
-                            <div id="carouselbottomleft" class="carousel slide" data-ride="false">
+                            <div id="carousel1bottomleft" class="carousel slide" data-ride="false">
                                 <div class="carousel-inner" role="listbox" data-interval="10000">
                                     <div class="carousel-item active">
                                         <img class="d-block img-fluid" src="../resource/assets/uitvalscherm1.png" alt="Uitval1">
@@ -382,11 +382,11 @@
                                 </div>
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselbottomleft" role="button" data-slide="prev">
+                        <a class="carousel-control-prev" href="#carousel1bottomleft" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#carouselbottomleft" role="button" data-slide="next">
+                        <a class="carousel-control-next" href="#carousel1bottomleft" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
@@ -403,15 +403,15 @@
                 </div>
                 <!-- carousel 2 -->
                 <div class="insideSize col-sm-12 col-lg-4" style="padding-top: 10px;">
-                    <div id="carouselbottommiddle" class="carousel slide" data-ride="false">
+                    <div id="carousel1bottommiddle" class="carousel slide" data-ride="false">
                         <ol class="carousel-indicators">
-                            <li data-target="#carouselbottommiddle" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselbottommiddle" data-slide-to="1"></li>
-                            <li data-target="#carouselbottommiddle" data-slide-to="2"></li>
-                            <li data-target="#carouselbottommiddle" data-slide-to="3"></li>
+                            <li data-target="#carousel1bottommiddle" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel1bottommiddle" data-slide-to="1"></li>
+                            <li data-target="#carousel1bottommiddle" data-slide-to="2"></li>
+                            <li data-target="#carousel1bottommiddle" data-slide-to="3"></li>
                         </ol>
                         <div class="d-sm-block d-md-block d-lg-block d-xl-block col-12">
-                            <div id="carouselbottommiddle" class="carousel slide">
+                            <div id="carousel1bottommiddle" class="carousel slide">
                                 <div class="carousel-inner" role="listbox" data-interval="5000">
                                     <div class="carousel-item active">
                                         <img class="d-block img-fluid" src="../resource/assets/knikarm1.jpg" alt="knikarm1">
@@ -432,11 +432,11 @@
                                 </div>
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselbottommiddle" role="button" data-slide="prev">
+                        <a class="carousel-control-prev" href="#carousel1bottommiddle" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#carouselbottommiddle" role="button" data-slide="next">
+                        <a class="carousel-control-next" href="#carousel1bottommiddle" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
@@ -453,9 +453,9 @@
                 </div>
                 <!-- carousel 3 -->
                 <div class="col-sm-12 col-lg-4" style="padding-top: 10px;">
-                    <div id="carouselbottomright" class="carousel slide" data-ride="false">
+                    <div id="carousel1bottomright" class="carousel slide" data-ride="false">
                         <div class="d-sm-block d-md-block d-lg-block d-xl-block col-12" style="padding-bottom: 5px;">
-                            <div id="carouselbottomright" class="carousel slide" data-ride="false">
+                            <div id="carousel1bottomright" class="carousel slide" data-ride="false">
                                 <div class="carousel-inner" role="listbox" data-interval="10000">
                                     <div class="carousel-item active">
                                         <img class="d-block img-fluid" src="../resource/assets/zonweringsdoek1.png" alt="zonweringsdoek1">
@@ -483,18 +483,20 @@
             <!-- end of carousel row -->
         </div>
         <!-- start tabpanel 2-->
+        <!-- start carousel row -->
+        <!-- start carousel 1 -->
         <div class="tab-pane" id="tabb" role="tabpanel">
             <div class="row justify-content-center mx-auto">
                 <div class="col-sm-12 col-lg-4" style="padding-top: 10px;">
-                    <div id="carouseltopleft" class="carousel slide" data-ride="false">
+                    <div id="carousel2left" class="carousel slide" data-ride="false">
                         <ol class="carousel-indicators">
-                            <li data-target="#carouseltopleft" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouseltopleft" data-slide-to="1"></li>
-                            <li data-target="#carouseltopleft" data-slide-to="2"></li>
-                            <li data-target="#carouseltopleft" data-slide-to="3"></li>
+                            <li data-target="#carousel2left" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel2left" data-slide-to="1"></li>
+                            <li data-target="#carousel2left" data-slide-to="2"></li>
+                            <li data-target="#carousel2left" data-slide-to="3"></li>
                         </ol>
                         <div class="d-sm-block d-md-block d-lg-block d-xl-block col-12">
-                            <div id="carouseltopleft" class="carousel slide" data-ride="false">
+                            <div id="carousel2left" class="carousel slide" data-ride="false">
                                 <div class="carousel-inner" role="listbox" data-interval="10000">
                                     <div class="carousel-item active">
                                         <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/71_7_full.jpg?20150521" alt="Rolluik1">
@@ -515,11 +517,11 @@
                                 </div>
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouseltopleft" role="button" data-slide="prev">
+                        <a class="carousel-control-prev" href="#carousel2left" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#carouseltopleft" role="button" data-slide="next">
+                        <a class="carousel-control-next" href="#carousel2left" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
@@ -536,15 +538,15 @@
                 </div>
                 <!-- carousel 2 -->
                 <div class="insideSize col-sm-12 col-lg-4" style="padding-top: 10px;">
-                    <div id="carouseltopmiddle" class="carousel slide" data-ride="false">
+                    <div id="carousel2right" class="carousel slide" data-ride="false">
                         <ol class="carousel-indicators">
-                            <li data-target="#carouseltopmiddle" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouseltopmiddle" data-slide-to="1"></li>
-                            <li data-target="#carouseltopmiddle" data-slide-to="2"></li>
-                            <li data-target="#carouseltopmiddle" data-slide-to="3"></li>
+                            <li data-target="#carousel2right" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel2right" data-slide-to="1"></li>
+                            <li data-target="#carousel2right" data-slide-to="2"></li>
+                            <li data-target="#carousel2right" data-slide-to="3"></li>
                         </ol>
                         <div class="d-sm-block d-md-block d-lg-block d-xl-block col-12">
-                            <div id="carouseltopmiddle" class="carousel slide">
+                            <div id="carousel2right" class="carousel slide">
                                 <div class="carousel-inner" role="listbox" data-interval="5000">
                                     <div class="carousel-item active">
                                         <img class="d-block img-fluid" src="../resource/assets/screen1.png" alt="screen1">
@@ -565,11 +567,11 @@
                                 </div>
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouseltopmiddle" role="button" data-slide="prev">
+                        <a class="carousel-control-prev" href="#carousel2right" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#carouseltopmiddle" role="button" data-slide="next">
+                        <a class="carousel-control-next" href="#carousel2right" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
@@ -595,17 +597,17 @@
         </div>
 
         <!-- start tabpanel 4 -->
-        <div class="tab-pane" id="taba" role="tabpanel">
+        <div class="tab-pane" id="tabd" role="tabpanel">
             Content for Tab-3
         </div>
 
         <!-- start tabpanel 5 -->
-        <div class="tab-pane" id="taba" role="tabpanel">
+        <div class="tab-pane" id="tabe" role="tabpanel">
             Content for Tab-3
         </div>
 
         <!-- start tabpanel 6 -->
-        <div class="tab-pane" id="taba" role="tabpanel">
+        <div class="tab-pane" id="tabf" role="tabpanel">
             Content for Tab-3
         </div>
     </div>
