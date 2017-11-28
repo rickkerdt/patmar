@@ -55,7 +55,6 @@
             </ul>
         </div>
     </nav>
-    </div>
 </header>
 <body>
 <div class="">
