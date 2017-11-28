@@ -612,15 +612,6 @@
                         </div>
 
                     </div>
-                    <div class="" style="padding-left: 14px">
-                        <h3 class="card-subtitle" style="padding-top: 10px;">Zonweringsdoeken</h3>
-
-                        Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
-                        Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
-                        Heeft u weinig ruimte: <br>
-                        er zijn al rolluiken met een kastmaat van 125 mm. <br>
-                        Tevens kunnen rolluiken gebruikt worden als een garagedeur.
-                    </div>
                 </div>
                 <!-- Carousel 2 -->
                 <div class="col-sm-12 col-lg-4" style="padding-top: 10px;">
@@ -639,15 +630,6 @@
                             </div>
                         </div>
 
-                    </div>
-                    <div class="" style="padding-left: 14px">
-                        <h3 class="card-subtitle" style="padding-top: 10px;">Zonweringsdoeken</h3>
-
-                        Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
-                        Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
-                        Heeft u weinig ruimte: <br>
-                        er zijn al rolluiken met een kastmaat van 125 mm. <br>
-                        Tevens kunnen rolluiken gebruikt worden als een garagedeur.
                     </div>
                 </div>
                 <!-- Carousel 3 -->
@@ -668,18 +650,22 @@
                         </div>
 
                     </div>
-                    <div class="" style="padding-left: 14px">
-                        <h3 class="card-subtitle" style="padding-top: 10px;">Zonweringsdoeken</h3>
-
-                        Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
-                        Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
-                        Heeft u weinig ruimte: <br>
-                        er zijn al rolluiken met een kastmaat van 125 mm. <br>
-                        Tevens kunnen rolluiken gebruikt worden als een garagedeur.
-                    </div>
                 </div>
             </div>
-            <!-- End of row -->
+            <!-- End of carousel row -->
+            <!-- Start text row -->
+            <div class="row">
+                <div class="col-sm-12 text-sm-left col-md-10 mx-auto text-md-center" style="padding-left: 14px;">
+                    <h3 class="card-subtitle" style="padding-top: 10px;">Zonweringsdoeken</h3>
+
+                    Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
+                    Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
+                    Heeft u weinig ruimte: <br>
+                    er zijn al rolluiken met een kastmaat van 125 mm. <br>
+                    Tevens kunnen rolluiken gebruikt worden als een garagedeur.
+                </div>
+            </div>
+            <!-- End text row -->
         </div>
         <!-- start tabpanel 4 -->
         <div class="tab-pane" id="tabd" role="tabpanel">
@@ -702,15 +688,6 @@
                         </div>
 
                     </div>
-                    <div class="" style="padding-left: 14px">
-                        <h3 class="card-subtitle" style="padding-top: 10px;">Zonweringsdoeken</h3>
-
-                        Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
-                        Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
-                        Heeft u weinig ruimte: <br>
-                        er zijn al rolluiken met een kastmaat van 125 mm. <br>
-                        Tevens kunnen rolluiken gebruikt worden als een garagedeur.
-                    </div>
                 </div>
                 <!-- Carousel 2 -->
                 <div class="col-sm-12 col-lg-4" style="padding-top: 10px;">
@@ -729,15 +706,6 @@
                             </div>
                         </div>
 
-                    </div>
-                    <div class="" style="padding-left: 14px">
-                        <h3 class="card-subtitle" style="padding-top: 10px;">Zonweringsdoeken</h3>
-
-                        Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
-                        Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
-                        Heeft u weinig ruimte: <br>
-                        er zijn al rolluiken met een kastmaat van 125 mm. <br>
-                        Tevens kunnen rolluiken gebruikt worden als een garagedeur.
                     </div>
                 </div>
                 <!-- Carousel 3 -->
@@ -758,18 +726,22 @@
                         </div>
 
                     </div>
-                    <div class="" style="padding-left: 14px">
-                        <h3 class="card-subtitle" style="padding-top: 10px;">Zonweringsdoeken</h3>
-
-                        Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
-                        Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
-                        Heeft u weinig ruimte: <br>
-                        er zijn al rolluiken met een kastmaat van 125 mm. <br>
-                        Tevens kunnen rolluiken gebruikt worden als een garagedeur.
-                    </div>
                 </div>
             </div>
             <!-- End of row -->
+            <!-- Start text row -->
+            <div class="row">
+                <div class="col-sm-12 text-sm-left col-md-10 mx-auto text-md-center" style="padding-left: 14px;">
+                    <h3 class="card-subtitle" style="padding-top: 10px;">Zonweringsdoeken</h3>
+
+                    Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
+                    Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
+                    Heeft u weinig ruimte: <br>
+                    er zijn al rolluiken met een kastmaat van 125 mm. <br>
+                    Tevens kunnen rolluiken gebruikt worden als een garagedeur.
+                </div>
+            </div>
+            <!-- End text row -->
         </div>
 
         <!-- start tabpanel 5 -->
@@ -793,15 +765,6 @@
                         </div>
 
                     </div>
-                    <div class="" style="padding-left: 14px">
-                        <h3 class="card-subtitle" style="padding-top: 10px;">Zonweringsdoeken</h3>
-
-                        Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
-                        Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
-                        Heeft u weinig ruimte: <br>
-                        er zijn al rolluiken met een kastmaat van 125 mm. <br>
-                        Tevens kunnen rolluiken gebruikt worden als een garagedeur.
-                    </div>
                 </div>
                 <!-- Carousel 2 -->
                 <div class="col-sm-12 col-lg-4" style="padding-top: 10px;">
@@ -820,15 +783,6 @@
                             </div>
                         </div>
 
-                    </div>
-                    <div class="" style="padding-left: 14px">
-                        <h3 class="card-subtitle" style="padding-top: 10px;">Zonweringsdoeken</h3>
-
-                        Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
-                        Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
-                        Heeft u weinig ruimte: <br>
-                        er zijn al rolluiken met een kastmaat van 125 mm. <br>
-                        Tevens kunnen rolluiken gebruikt worden als een garagedeur.
                     </div>
                 </div>
                 <!-- Carousel 3 -->
@@ -849,18 +803,22 @@
                         </div>
 
                     </div>
-                    <div class="" style="padding-left: 14px">
-                        <h3 class="card-subtitle" style="padding-top: 10px;">Zonweringsdoeken</h3>
-
-                        Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
-                        Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
-                        Heeft u weinig ruimte: <br>
-                        er zijn al rolluiken met een kastmaat van 125 mm. <br>
-                        Tevens kunnen rolluiken gebruikt worden als een garagedeur.
-                    </div>
                 </div>
             </div>
             <!-- End of row -->
+            <!-- Start text row -->
+            <div class="row">
+                <div class="col-sm-12 text-sm-left col-md-10 mx-auto text-md-center" style="padding-left: 14px;">
+                    <h3 class="card-subtitle" style="padding-top: 10px;">Zonweringsdoeken</h3>
+
+                    Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
+                    Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
+                    Heeft u weinig ruimte: <br>
+                    er zijn al rolluiken met een kastmaat van 125 mm. <br>
+                    Tevens kunnen rolluiken gebruikt worden als een garagedeur.
+                </div>
+            </div>
+            <!-- End text row -->
         </div>
 
         <!-- start tabpanel 6 -->
@@ -884,15 +842,6 @@
                         </div>
 
                     </div>
-                    <div class="" style="padding-left: 14px">
-                        <h3 class="card-subtitle" style="padding-top: 10px;">Zonweringsdoeken</h3>
-
-                        Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
-                        Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
-                        Heeft u weinig ruimte: <br>
-                        er zijn al rolluiken met een kastmaat van 125 mm. <br>
-                        Tevens kunnen rolluiken gebruikt worden als een garagedeur.
-                    </div>
                 </div>
                 <!-- Carousel 2 -->
                 <div class="col-sm-12 col-lg-4" style="padding-top: 10px;">
@@ -911,15 +860,6 @@
                             </div>
                         </div>
 
-                    </div>
-                    <div class="" style="padding-left: 14px">
-                        <h3 class="card-subtitle" style="padding-top: 10px;">Zonweringsdoeken</h3>
-
-                        Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
-                        Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
-                        Heeft u weinig ruimte: <br>
-                        er zijn al rolluiken met een kastmaat van 125 mm. <br>
-                        Tevens kunnen rolluiken gebruikt worden als een garagedeur.
                     </div>
                 </div>
                 <!-- Carousel 3 -->
@@ -940,18 +880,22 @@
                         </div>
 
                     </div>
-                    <div class="" style="padding-left: 14px">
-                        <h3 class="card-subtitle" style="padding-top: 10px;">Zonweringsdoeken</h3>
-
-                        Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
-                        Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
-                        Heeft u weinig ruimte: <br>
-                        er zijn al rolluiken met een kastmaat van 125 mm. <br>
-                        Tevens kunnen rolluiken gebruikt worden als een garagedeur.
-                    </div>
                 </div>
             </div>
             <!-- End of row -->
+            <!-- Start text row -->
+            <div class="row">
+                <div class="col-sm-12 text-sm-left col-md-10 mx-auto text-md-center" style="padding-left: 14px;">
+                    <h3 class="card-subtitle" style="padding-top: 10px;">Zonweringsdoeken</h3>
+
+                    Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
+                    Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
+                    Heeft u weinig ruimte: <br>
+                    er zijn al rolluiken met een kastmaat van 125 mm. <br>
+                    Tevens kunnen rolluiken gebruikt worden als een garagedeur.
+                </div>
+            </div>
+            <!-- End text row -->
         </div>
     </div>
 </div>
