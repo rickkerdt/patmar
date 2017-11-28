@@ -45,7 +45,7 @@
                     <a class="nav-link" href="#">Storing Melden</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Offerte Aanvraag</a>
+                    <a class="nav-link" href="?page=quotation">Offerte Aanvraag</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto justify-content-end">
