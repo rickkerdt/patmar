@@ -57,6 +57,7 @@
     </nav>
 </header>
 <body>
+<div class="row d-none d-sm-block d-md-block" style="padding-top: 50px;"></div>
 <div class="">
    <!-- <div class="float-right col-sm-0 col-md-2" style="background-color: dodgerblue; border-radius: 5% ">
         <p>Vindt ons op fbook<br>
@@ -139,7 +140,7 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-12 col-md-9 d-block mx-auto" style="padding-right: 4%;padding-left: 30px; padding-top: 50px">
+    <div class="col-sm-12 col-md-9 d-block mx-auto" style="padding-right: 4%;padding-left: 30px; padding-top: 50px; padding-bottom: 50px;">
         <div class="card ">
             <div class="card-block" style="padding-left: 5px; border-color: #00769f">
                 <h3 class="card-title text-center">Over Patmar</h3>
