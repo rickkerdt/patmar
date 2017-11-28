@@ -57,7 +57,7 @@
     </nav>
 </header>
 <body>
-<div class="row d-none d-xs-block d-sm-block d-md-none d-lg-none d-xl-none" style="padding-top: 50px;"></div>
+<div class="row d-none d-xs-block d-sm-block d-md-block d-lg-none d-xl-none" style="padding-top: 50px;"></div>
 <div class="">
    <!-- <div class="float-right col-sm-0 col-md-2" style="background-color: dodgerblue; border-radius: 5% ">
         <p>Vindt ons op fbook<br>
