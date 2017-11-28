@@ -83,7 +83,7 @@
 
 </div>
 <div class="row">
-    <div class="col-md-3 d-none d-lg-block d-xl-block" style="padding-left: 4%; padding-top: 50px; width: 220px;">
+    <div class="col-md-3 d-none d-lg-block d-xl-block mx-auto" style="padding-left: 4%; padding-top: 50px; padding-bottom: 50px; width: 220px;">
         <div class="card">
             <div class="card-block" style="padding-left: 5px; border-color: #00769f ">
                 <h3 class="card-title">Contact</h3>
@@ -139,7 +139,7 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-12 col-md-9 d-block" style="padding-right: 4%;padding-left: 30px; padding-top: 50px">
+    <div class="col-sm-12 col-md-9 d-block mx-auto" style="padding-right: 4%;padding-left: 30px; padding-top: 50px">
         <div class="card ">
             <div class="card-block" style="padding-left: 5px; border-color: #00769f">
                 <h3 class="card-title text-center">Over Patmar</h3>
