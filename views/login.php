@@ -42,7 +42,7 @@ if (isset($_POST["login"])) {
                 </div>
             </a>
             <ul class="navbar-nav mx-auto w-100 justify-content-center">
-                <li class="nav-item active">
+                <li class="nav-item ">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
@@ -66,7 +66,7 @@ if (isset($_POST["login"])) {
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto justify-content-end">
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="?page=login">Login</a>
                 </li>
             </ul>
