@@ -1,17 +1,3 @@
-<?php
-
-if(isset($_SESSION["loggedIn"])) {
-    header("Location: /index.php?page=home");
-}
-
-if (isset($_POST["login"])) {
-    $account = new Account();
-
-    $account->login($_POST["email"], $_POST["password"]);
-}
-
-?>
-
 <!doctype html>
 <html lang="en">
 <head>

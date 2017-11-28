@@ -1,27 +1,3 @@
-<?php
-
-if (isset($_SESSION["loggedIn"])) {
-    header("Location: /index.php?page=home");
-}
-
-if (isset($_POST["register"])) {
-    $account = new Account();
-
-    if ($_POST["password"] != $_POST["passwordrepeat"])
-        die("incorrect password");
-
-    try {
-        $account->register($_POST["firstname"], $_POST["lastname"], $_POST["email"], $_POST["password"]);
-
-        http_redirect("/?page=login");
-    } catch (PDOException $error) {
-        die(var_dump($error));
-    }
-}
-
-
-?>
-
 <!doctype html>
 <html lang="en">
 <head>
