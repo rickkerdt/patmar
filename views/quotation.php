@@ -79,32 +79,32 @@
 
                 <div class="form-group">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="form-group">
 
                             <label for="firstname">Naam</label>
                             <input type="text" class="form-control" name="name" id="name"
                                    placeholder="Naam*">
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="form-group">
 
                             <label for="Adres">Adres</label>
                             <input type="text" class="form-control" name="adres" id="adres"
                                    placeholder="Adres*">
                         </div>
-                        <div class="col-md-6">
+                        <div class="form-group">
 
                             <label for="Woonplaats">Woonplaats</label>
                             <input type="text" class="form-control" name="woonplaats" id="woonplaats"
                                    placeholder="Woonplaats*">
                         </div>
-                        <div class="col-md-6">
+                        <div>
 
                             <label for="Telefoonnummer">Telefoonnummer</label>
                             <input type="text" class="form-control" name="Telefoonnummer" id="Telefoonnummer"
                                    placeholder="Telefoonnummer*">
                         </div>
-                        <div class="col-md-6">
+                        <div class="form-group">
                             <label for="Verzoek">Vraag/Verzoek</label>
                             <textarea rows="4"cols="50" class="from-control" name="vraag/verzoek" id="vraag/veroek" placeholder="vraag/verzoek*"></textarea>
                         </div>
