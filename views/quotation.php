@@ -68,7 +68,7 @@
         <div class="col">&nbsp;</div>
         <div class="col-md-6 jumbotron">
             <h1 class="text-center">Contact</h1>
-            <form action="?page=register" method="post">
+            <form action="?page=quotation" method="post">
 
                 <div class="form-group">
 
@@ -106,7 +106,10 @@
                         </div>
                         <div class="form-group">
                             <label for="Verzoek">Vraag/Verzoek</label>
-                            <textarea rows="4"cols="50" class="from-control" name="vraag/verzoek" id="vraag/veroek" placeholder="vraag/verzoek*"></textarea>
+                            <textarea rows="4"cols="40" class="from-control" name="vraag/verzoek" id="vraag/veroek" placeholder="vraag/verzoek*"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="form-control btn btn-primary">
                         </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
