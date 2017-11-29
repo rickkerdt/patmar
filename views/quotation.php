@@ -67,7 +67,14 @@
     <div class="row">
         <div class="col">&nbsp;</div>
         <div class="col-md-6 jumbotron">
-            <h1 class="text-center">Contact</h1>
+            <h1 class="text">Contact</h1>
+
+            <br>
+            <p>Heeft u vragen? &nbsp;<span style="line-height: 1.4;">Vul dan onderstaand formulier in.<br />
+            Wij nemen dan zo spoedig mogelijk contact met u op.<br />
+            Wilt u rechtstreeks contact dan kunt u ons bellen.</span></p>
+            <br>
+
             <form action="?page=quotation" method="post">
 
 
@@ -79,31 +86,43 @@
                             <input type="email" class="form-control" name="email" id="email"
                                    placeholder="voorbeeld@mail.nl">
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="form-group">
 
                             <input type="text" class="form-control" name="name" id="name"
                                    placeholder="Naam*">
                         </div>
-
+                    </div>
+                        <div class="row">
                         <div class="form-group">
 
                             <input type="text" class="form-control" name="adres" id="adres"
                                    placeholder="Adres*">
                         </div>
+                        </div>
+                            <div class="row">
                         <div class="form-group">
 
                             <input type="text" class="form-control" name="woonplaats" id="woonplaats"
                                    placeholder="Woonplaats*">
                         </div>
-                        <div>
+                            </div>
+                                <div class="row">
+                        <div class="form-group">
 
                             <input type="text" class="form-control" name="Telefoonnummer" id="Telefoonnummer"
                                    placeholder="Telefoonnummer*">
                         </div>
+                                </div>
+                                    <div class="row">
+
                         <div class="form-group">
 
                             <textarea rows="4"cols="40" class="from-control" name="Bericht" id="Bericht" placeholder="Bericht*"></textarea>
                         </div>
+                                    </div>
+                                        <div class="row">
                         <div class="form-group">
                             <input type="submit" class="form-control btn btn-primary">
                         </div>
