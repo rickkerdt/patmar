@@ -70,15 +70,16 @@
             <h1 class="text-center">Contact</h1>
             <form action="?page=quotation" method="post">
 
-                <div class="form-group">
 
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" name="email" id="email"
-                           placeholder="voorbeeld@mail.nl">
-                </div>
 
                 <div class="form-group">
                     <div class="row">
+                        <div class="form-group">
+
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" name="email" id="email"
+                                   placeholder="voorbeeld@mail.nl">
+                        </div>
                         <div class="form-group">
 
                             <label for="firstname">Naam</label>
