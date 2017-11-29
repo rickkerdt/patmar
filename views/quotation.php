@@ -63,11 +63,15 @@
     </nav>
 </header>
 <body>
+<section id="maincontent" class="clearfix ">
+    <div class="container">
+        <div id="headertitle"><h2><span>Contactpagina</span></h2></div>
+    </div>
 <div class="container" style="margin-top: 100px">
     <div class="row">
         <div class="col">&nbsp;</div>
         <div class="col-md-6 jumbotron">
-            <h1 class="text-center">Registreren</h1>
+            <h1 class="text-center">Contact</h1>
             <form action="?page=register" method="post">
                 <div class="form-group">
                     <label for="email">Email</label>
