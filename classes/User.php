@@ -24,7 +24,7 @@ class User
         $this->email = $email;
 
         if ($this->validate($this->email, $password, $repeatpassword)) {
-            $db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
+            $db = new PDO("mysql:host=localhost;dbname=patmar;", "root", "Patmar!");
 
             $q = $db->prepare("INSERT INTO user(Email, PassHash, FunctionID) VALUES (?, ?, 2)");
 
@@ -47,7 +47,7 @@ class User
         $this->passhash = hash("sha512", $password . $this->salt . $email);
         $this->email = $email;
 
-        $db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
+        $db = new PDO("mysql:host=localhost;dbname=patmar;", "root", "Patmar!");
 
         $q = $db->prepare("SELECT * FROM user WHERE Email = ? AND PassHash = ?");
 
