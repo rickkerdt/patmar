@@ -1,3 +1,20 @@
+<?php
+if ($_SESSION["loggedIn"])
+    header("Location: /index.php?page=home");
+
+$errors = [];
+
+if (isset($_POST["register"])) {
+    $user = new User();
+    if ($user->register($_POST["email"], $_POST["password"], $_POST["passwordrepeat"])) {
+        header("Location: /index.php?page=login");
+    } else {
+        $errors = $user->errorList;
+    }
+}
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -66,6 +83,15 @@
         <div class="col-md-6 jumbotron">
             <h1 class="text-center">Registreren</h1>
             <form action="?page=register" method="post">
+                <div class="row">
+                    <?php if (count($errors) > 0) : ?>
+                        <?php foreach ($errors as $error) : ?>
+                            <div class="alert alert-warning">
+                                <strong>Fout!</strong> <?php echo $error; ?>
+                            </div>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
+                </div>
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" class="form-control" name="email" id="email" placeholder="voorbeeld@mail.nl">

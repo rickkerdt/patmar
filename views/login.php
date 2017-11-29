@@ -1,3 +1,19 @@
+<?php
+if($_SESSION["loggedIn"])
+    header("Location: /index.php?page=home");
+
+$errors = [];
+
+if (isset($_POST["login"])) {
+    $user = new User();
+    if ($user->login($_POST["email"], $_POST["password"])) {
+        header("Location: /index.php?page=home");
+    } else {
+        $errors = $user->errorList;
+    }
+}
+
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -66,6 +82,15 @@
         <div class="col-md-6 jumbotron">
             <h1 class="text-center">Login</h1>
             <form action="/index.php?page=login" method="post">
+                <div class="row">
+                    <?php if (count($errors) > 0) : ?>
+                        <?php foreach ($errors as $error) : ?>
+                            <div class="alert alert-warning">
+                                <strong>Fout!</strong> <?php echo $error; ?>
+                            </div>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
+                </div>
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" class="form-control" name="email" id="email" placeholder="voorbeeld@mail.nl">
