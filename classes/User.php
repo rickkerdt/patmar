@@ -78,7 +78,7 @@ class User
         $number = preg_match('@[0-9]@', $password);
 
         if (!$uppercase || !$lowercase || !$number || strlen($password) < 8) {
-            array_push($this->errorList, "Het wachtwoord moet Minimaal 8 karakters bevatten met een hoofdletter en nummers.");
+            array_push($this->errorList, "Het wachtwoord moet Hoofdletter, Nummer bevatten en minimaal 8 letters lang zijn.");
             $valid = false;
         }
 
