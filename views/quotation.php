@@ -5,7 +5,7 @@
  * Time: 10:13
  */
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -63,33 +63,50 @@
     </nav>
 </header>
 <body>
-<section id="maincontent" class="clearfix ">
-    <div class="container">
-        <div id="headertitle"><h2><span>Contactpagina</span></h2></div>
-    </div>
 <div class="container" style="margin-top: 100px">
     <div class="row">
         <div class="col">&nbsp;</div>
         <div class="col-md-6 jumbotron">
             <h1 class="text-center">Contact</h1>
             <form action="?page=register" method="post">
+
                 <div class="form-group">
+
                     <label for="email">Email</label>
-                    <input type="email" class="form-control" name="email" id="email" placeholder="voorbeeld@mail.nl">
+                    <input type="email" class="form-control" name="email" id="email"
+                           placeholder="voorbeeld@mail.nl">
                 </div>
+
                 <div class="form-group">
                     <div class="row">
                         <div class="col-md-6">
 
-                            <label for="firstname">Voornaam</label>
-                            <input type="text" class="form-control" name="firstname" id="firstname" placeholder="Jan">
+                            <label for="firstname">Naam</label>
+                            <input type="text" class="form-control" name="name" id="name"
+                                   placeholder="Naam*">
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <label for="Adres">Adres</label>
+                            <input type="text" class="form-control" name="adres" id="adres"
+                                   placeholder="Adres*">
                         </div>
                         <div class="col-md-6">
 
-                            <label for="lastname">Achternaam</label>
-                            <input type="text" class="form-control" name="lastname" id="lastname"
-                                   placeholder="de Vries">
+                            <label for="Woonplaats">Woonplaats</label>
+                            <input type="text" class="form-control" name="woonplaats" id="woonplaats"
+                                   placeholder="Woonplaats*">
                         </div>
-                    </div>
+                        <div class="col-md-6">
+
+                            <label for="Telefoonnummer">Telefoonnummer</label>
+                            <input type="text" class="form-control" name="Telefoonnummer" id="Telefoonnummer"
+                                   placeholder="Telefoonnummer*">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="Verzoek">Vraag/Verzoek</label>
+                            <textarea rows="4"cols="50" class="from-control" name="vraag/verzoek" id="vraag/veroek" placeholder="vraag/verzoek*"></textarea>
+                        </div>
 </body>
 </html>
