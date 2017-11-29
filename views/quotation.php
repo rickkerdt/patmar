@@ -67,46 +67,80 @@
     <div class="row">
         <div class="col">&nbsp;</div>
         <div class="col-md-6 jumbotron">
-            <h1 class="text-center">Contact</h1>
-            <form action="?page=register" method="post">
+            <h1 class="text">Contact</h1>
 
-                <div class="form-group">
+            <br>
+            <p>Heeft u vragen? &nbsp;<span style="line-height: 1.4;">Vul dan onderstaand formulier in.<br />
+            Wij nemen dan zo spoedig mogelijk contact met u op.<br />
+            Wilt u rechtstreeks contact dan kunt u ons bellen.</span></p>
+            <br>
 
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" name="email" id="email"
-                           placeholder="voorbeeld@mail.nl">
-                </div>
+            <form action="?page=quotation" method="post">
+
+
 
                 <div class="form-group">
                     <div class="row">
                         <div class="form-group">
 
-                            <label for="firstname">Naam</label>
+                            <input type="email" class="form-control" name="email" id="email"
+                                   placeholder="voorbeeld@mail.nl">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+
                             <input type="text" class="form-control" name="name" id="name"
                                    placeholder="Naam*">
                         </div>
-
+                    </div>
+                        <div class="row">
                         <div class="form-group">
 
-                            <label for="Adres">Adres</label>
                             <input type="text" class="form-control" name="adres" id="adres"
                                    placeholder="Adres*">
                         </div>
+                        </div>
+                            <div class="row">
                         <div class="form-group">
 
-                            <label for="Woonplaats">Woonplaats</label>
                             <input type="text" class="form-control" name="woonplaats" id="woonplaats"
                                    placeholder="Woonplaats*">
                         </div>
-                        <div>
+                            </div>
+                                <div class="row">
+                        <div class="form-group">
 
-                            <label for="Telefoonnummer">Telefoonnummer</label>
                             <input type="text" class="form-control" name="Telefoonnummer" id="Telefoonnummer"
                                    placeholder="Telefoonnummer*">
                         </div>
+                                </div>
+                                    <div class="row">
+
                         <div class="form-group">
-                            <label for="Verzoek">Vraag/Verzoek</label>
-                            <textarea rows="4"cols="50" class="from-control" name="vraag/verzoek" id="vraag/veroek" placeholder="vraag/verzoek*"></textarea>
+
+                            <textarea rows="4"cols="40" class="from-control" name="Bericht" id="Bericht" placeholder="Bericht*"></textarea>
                         </div>
+                                    </div>
+                                        <div class="row">
+                        <div class="form-group">
+                            <input type="submit" class="form-control btn btn-primary">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col">&nbsp;</div>
+    </div>
+
 </body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
 </html>
