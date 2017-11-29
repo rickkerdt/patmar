@@ -76,38 +76,33 @@
                     <div class="row">
                         <div class="form-group">
 
-                            <label for="email">Email</label>
                             <input type="email" class="form-control" name="email" id="email"
                                    placeholder="voorbeeld@mail.nl">
                         </div>
                         <div class="form-group">
 
-                            <label for="firstname">Naam</label>
                             <input type="text" class="form-control" name="name" id="name"
                                    placeholder="Naam*">
                         </div>
 
                         <div class="form-group">
 
-                            <label for="Adres">Adres</label>
                             <input type="text" class="form-control" name="adres" id="adres"
                                    placeholder="Adres*">
                         </div>
                         <div class="form-group">
 
-                            <label for="Woonplaats">Woonplaats</label>
                             <input type="text" class="form-control" name="woonplaats" id="woonplaats"
                                    placeholder="Woonplaats*">
                         </div>
                         <div>
 
-                            <label for="Telefoonnummer">Telefoonnummer</label>
                             <input type="text" class="form-control" name="Telefoonnummer" id="Telefoonnummer"
                                    placeholder="Telefoonnummer*">
                         </div>
                         <div class="form-group">
-                            <label for="Verzoek">Vraag/Verzoek</label>
-                            <textarea rows="4"cols="40" class="from-control" name="vraag/verzoek" id="vraag/veroek" placeholder="vraag/verzoek*"></textarea>
+
+                            <textarea rows="4"cols="40" class="from-control" name="Bericht" id="Bericht" placeholder="Bericht*"></textarea>
                         </div>
                         <div class="form-group">
                             <input type="submit" class="form-control btn btn-primary">
