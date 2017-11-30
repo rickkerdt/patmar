@@ -33,10 +33,10 @@
             </a>
             <ul class="navbar-nav mx-auto w-100 justify-content-center" >
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Openingstijden</a>
+                    <a class="nav-link" href="">Openingstijden</a>
                 </li>
                 <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -97,7 +97,7 @@
             <h1 class="text">Contact</h1>
 
             <br>
-            <p>Heeft u vragen? &nbsp;<span style="line-height: 1.4;">Vul dan onderstaand formulier in.<br />
+            <p>Heeft u vragen? &nbsp;<span style="line-height: 1.4;">Vul dan onderstaand formulier in.<br/>
             Wij nemen dan zo spoedig mogelijk contact met u op.<br />
             Wilt u rechtstreeks contact dan kunt u ons bellen.</span></p>
             <br>
