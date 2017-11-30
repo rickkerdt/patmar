@@ -840,3 +840,43 @@
         </div>
     </div>
 </div>
+<div id="jssor_1" class="col-12 mx-auto" style="padding-top:50px;">
+    <!-- Loading Screen -->
+
+    <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+        <img style="margin-top:-19px;position:relative;top:50%;width:28px;height:28px;" src="" />
+    </div>
+    <div data-u="slides" class="row"style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:150px;overflow:hidden;">
+        <div>
+            <img data-u="image" src="../resource/assets/logo1.jpg" />
+        </div>
+        <div>
+            <img data-u="image" src="../resource/assets/logo2.jpg" />
+        </div>
+        <div>
+            <img data-u="image" src="../resource/assets/logo3.jpg" />
+        </div>
+        <div>
+            <img data-u="image" src="../resource/assets/logo4.jpg" />
+        </div>
+        <div>
+            <img data-u="image" src="../resource/assets/logo5.jpg" />
+        </div>
+        <div>
+            <img data-u="image" src="../resource/assets/logo6.jpg" />
+        </div>
+        <div>
+            <img data-u="image" src="../resource/assets/logo7.jpg" />
+        </div>
+        <div>
+            <img data-u="image" src="../resource/assets/logo8.jpg" />
+        </div>
+        <div>
+            <img data-u="image" src="../resource/assets/logo9.jpg" />
+        </div>
+        <div>
+            <img data-u="image" src="../resource/assets/logo10.jpg" />
+        </div>
+    </div>
+</div>
+<script type="text/javascript">jssor_1_slider_init();</script>
