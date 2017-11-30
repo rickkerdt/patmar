@@ -1,5 +1,5 @@
 <?php
-if($_SESSION["loggedIn"])
+if ($_SESSION["loggedIn"])
     header("Location: /index.php?page=home");
 
 $errors = [];

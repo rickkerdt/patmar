@@ -17,7 +17,7 @@ class User
 
     public $errorList = [];
 
-    public function register($email, $password, $repeatpassword)
+    public function register($email, $password, $repeatpassword, $firstname, $lastname)
     {
         $this->passhash = hash("sha512", $password . $this->salt . $email);
 
@@ -32,7 +32,18 @@ class User
             $q->bindValue(2, $this->passhash);
 
             if ($q->execute()) {
-                return true;
+                $q2 = $db->prepare("INSERT INTO Userinfo(UserID, FirstName, LastName) VALUES ((SELECT UserID FROM User WHERE Email = ?),?,?)");
+
+                $q2->bindValue(1, $this->email);
+                $q2->bindValue(2, $firstname);
+                $q2->bindValue(3, $lastname);
+
+                if ($q2->execute()) {
+                    return true;
+                } else {
+                    array_push($this->errorList, "Er is iets fout gegaan.");
+                    return false;
+                }
             } else {
                 array_push($this->errorList, "Er is iets fout gegaan.");
                 return false;

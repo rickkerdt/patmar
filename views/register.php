@@ -6,7 +6,7 @@ $errors = [];
 
 if (isset($_POST["register"])) {
     $user = new User();
-    if ($user->register($_POST["email"], $_POST["password"], $_POST["passwordrepeat"])) {
+    if ($user->register($_POST["email"], $_POST["password"], $_POST["passwordrepeat"], $_POST["firstname"], $_POST["lastname"])) {
         header("Location: /index.php?page=login");
     } else {
         $errors = $user->errorList;
