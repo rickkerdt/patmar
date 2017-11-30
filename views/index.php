@@ -1,126 +1,26 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Patmar Zonweringen</title>
-    <link rel="stylesheet" href="/resource/css/bootstrap.css">
-    <link rel="stylesheet" href="/resource/css/custom.css">
-    <!--<script src="..\resource\js\bootstrap.js"></html>-->
-    <script src="js/logoslider.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        jssor_1_slider_init = function() {
-
-            var jssor_1_options = {
-                $AutoPlay: 1,
-                $AutoPlaySteps: 2,
-                $SlideDuration: 160,
-                $SlideWidth: 200,
-                $SlideSpacing: 3,
-                $Cols: 5,
-                $Align: 390,
-            };
-
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-
-            var MAX_WIDTH = 980;
-
-            function ScaleSlider() {
-                var containerElement = jssor_1_slider.$Elmt.parentNode;
-                var containerWidth = containerElement.clientWidth;
-
-                if (containerWidth) {
-
-                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-
-                    jssor_1_slider.$ScaleWidth(expectedWidth);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-
-            ScaleSlider();
-
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-        };
-    </script>
-
-</head>
-<header>
-    <!-- Image and text -->
-
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top navbar-custom mx-auto" style=" background-color: #00769f;">
-        <div class="d-lg-none d-xl-none navbar-brand">A5 Deco - Patmar</div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01" >
-            <a class="navbar-left col" href="#">
-                <div class=" d-none d-lg-block d-xl-block">
-                <img src="/resource/assets/logo.png" height="128" width="128" style="padding-top: 0px; position: absolute; border-radius: 35%" class="d-block" alt="1">
-                </div>
-            </a>
-            <ul class="navbar-nav mx-auto w-100 justify-content-center" >
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Openingstijden</a>
-                </li>
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                   Samenwerking
-                </a>
-
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Partners</a>
-                </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Storing Melden</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="?page=quotation">Offerte Aanvraag</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav ml-auto justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link" href="?page=login">Login</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
-<body>
 <div class="row d-none d-xs-block d-sm-block d-md-block d-lg-none d-xl-none" style="padding-top: 50px;"></div>
 <div class="">
-   <!-- <div class="float-right col-sm-0 col-md-2" style="background-color: dodgerblue; border-radius: 5% ">
-        <p>Vindt ons op fbook<br>
-            Bel ons op 06-00011122</p>
-    </div> -->
+    <!-- <div class="float-right col-sm-0 col-md-2" style="background-color: dodgerblue; border-radius: 5% ">
+         <p>Vindt ons op fbook<br>
+             Bel ons op 06-00011122</p>
+     </div> -->
     <div class="d-none d-lg-block d-xl-block" style="padding-top: 50px">
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox" data-interval="2000">
-            <div class="carousel-item active">
-                <img class="d-block img-fluid" src="..\resource\slides\13.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block img-fluid" src="..\resource\slides\16.jpg" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block img-fluid" src="..\resource\slides\17.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block img-fluid" src="..\resource\slides\19.jpg" alt="Third slide">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox" data-interval="2000">
+                <div class="carousel-item active">
+                    <img class="d-block img-fluid" src="..\resource\slides\13.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid" src="..\resource\slides\16.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid" src="..\resource\slides\17.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid" src="..\resource\slides\19.jpg" alt="Third slide">
+                </div>
             </div>
         </div>
-    </div>
     </div>
 
 </div>
@@ -145,7 +45,7 @@
 
                 <p>info@patmar.nl<br>
                     www.patmar.nl</p>
-            </p>
+                </p>
                 <a href="#" class="btn btn-primary">Route</a>
                 <div id="ks_banier">
                     <div id="ks_kop">
@@ -237,158 +137,158 @@
         <!-- start tabpanel 1 -->
         <div class="tab-pane active" id="taba" role="tabpanel">
 
-        <!-- carousel 1 -->
-                <div class="row">
-                    <div class="col-sm-12 col-lg-4" style="padding-top: 10px;">
-                        <div id="carousel1topleft" class="carousel slide" data-ride="false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel1topleft" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel1topleft" data-slide-to="1"></li>
-                                <li data-target="#carousel1topleft" data-slide-to="2"></li>
-                                <li data-target="#carousel1topleft" data-slide-to="3"></li>
-                            </ol>
-                            <div class="d-sm-block d-md-block d-lg-block d-xl-block col-12">
-                                <div id="carousel1topleft" class="carousel slide" data-ride="false">
-                                    <div class="carousel-inner" role="listbox" data-interval="10000">
-                                        <div class="carousel-item active">
-                                            <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/71_7_full.jpg?20150521" alt="Rolluik1">
-                                            <div class="carousel-caption d-none d-md-block">
-                                                <h3>Rolluiken</h3>
-                                                <p>Blabla rolluiken blabla</p>
-                                            </div>
+            <!-- carousel 1 -->
+            <div class="row">
+                <div class="col-sm-12 col-lg-4" style="padding-top: 10px;">
+                    <div id="carousel1topleft" class="carousel slide" data-ride="false">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel1topleft" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel1topleft" data-slide-to="1"></li>
+                            <li data-target="#carousel1topleft" data-slide-to="2"></li>
+                            <li data-target="#carousel1topleft" data-slide-to="3"></li>
+                        </ol>
+                        <div class="d-sm-block d-md-block d-lg-block d-xl-block col-12">
+                            <div id="carousel1topleft" class="carousel slide" data-ride="false">
+                                <div class="carousel-inner" role="listbox" data-interval="10000">
+                                    <div class="carousel-item active">
+                                        <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/71_7_full.jpg?20150521" alt="Rolluik1">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>Rolluiken</h3>
+                                            <p>Blabla rolluiken blabla</p>
                                         </div>
-                                        <div class="carousel-item">
-                                            <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/69_5_full.jpg?20150521" alt="Rolluik2">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img class="d-block img-fluid" src="../resource/assets/open.png" alt="Rolluik3">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img class="d-block img-fluid" src="../resource/assets/dicht.png" alt="Rolluik4">
-                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/69_5_full.jpg?20150521" alt="Rolluik2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" src="../resource/assets/open.png" alt="Rolluik3">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" src="../resource/assets/dicht.png" alt="Rolluik4">
                                     </div>
                                 </div>
                             </div>
-                            <a class="carousel-control-prev" href="#carousel1topleft" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carousel1topleft" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
                         </div>
-                        <div class="" style="padding-left: 14px;">
-                            <h3 class="card-subtitle" style="padding-top: 10px; ">Rolluiken</h3>
-
-                            Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
-                            Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
-                            Heeft u weinig ruimte: <br>
-                            er zijn al rolluiken met een kastmaat van 125 mm. <br>
-                            Tevens kunnen rolluiken gebruikt worden als een garagedeur.
-                        </div>
+                        <a class="carousel-control-prev" href="#carousel1topleft" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel1topleft" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-                  <!-- carousel 2 -->
-                    <div class="insideSize col-sm-12 col-lg-4" style="padding-top: 10px;">
-                        <div id="carousel1topmiddle" class="carousel slide" data-ride="false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel1topmiddle" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel1topmiddle" data-slide-to="1"></li>
-                                <li data-target="#carousel1topmiddle" data-slide-to="2"></li>
-                                <li data-target="#carousel1topmiddle" data-slide-to="3"></li>
-                            </ol>
-                            <div class="d-sm-block d-md-block d-lg-block d-xl-block col-12">
-                                <div id="carouseltopmiddle" class="carousel slide">
-                                    <div class="carousel-inner" role="listbox" data-interval="5000">
-                                        <div class="carousel-item active">
-                                            <img class="d-block img-fluid" src="../resource/assets/screen1.png" alt="screen1">
-                                            <div class="carousel-caption d-sm-block d-md-block">
-                                                <h3>Screens</h3>
-                                                <p>Blabla screens blabla</p>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img class="d-block img-fluid" src="../resource/assets/screen2.png" alt="screen2">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img class="d-block img-fluid" src="../resource/assets/screen3.png" alt="screen3">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img class="d-block img-fluid" src="../resource/assets/screen4.jpg" alt="screen4">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carousel1topmiddle" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carousel1topmiddle" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                        <div class="" style="padding-left: 14px">
-                            <h3 class="card-subtitle" style="padding-top: 10px;">Screens</h3>
+                    <div class="" style="padding-left: 14px;">
+                        <h3 class="card-subtitle" style="padding-top: 10px; ">Rolluiken</h3>
 
-                            Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
-                            Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
-                            Heeft u weinig ruimte: <br>
-                            er zijn al rolluiken met een kastmaat van 125 mm. <br>
-                            Tevens kunnen rolluiken gebruikt worden als een garagedeur.
-                        </div>
-                    </div>
-                    <!-- carousel 3 -->
-                    <div class="col-sm-12 col-lg-4" style="padding-top: 10px;">
-                        <div id="carousel1topright" class="carousel slide" data-ride="false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel1topright" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel1topright" data-slide-to="1"></li>
-                                <li data-target="#carousel1topright" data-slide-to="2"></li>
-                                <li data-target="#carousel1topright" data-slide-to="3"></li>
-                            </ol>
-                            <div class="d-sm-block d-md-block d-lg-block d-xl-block col-12" style="padding-bottom: 5px;">
-                                <div id="carousel1topright" class="carousel slide" data-ride="false">
-                                    <div class="carousel-inner" role="listbox" data-interval="10000">
-                                        <div class="carousel-item active">
-                                            <img class="d-block img-fluid" src="../resource/assets/markies2.jpg" alt="markies2">
-                                            <div class="carousel-caption d-none d-md-block">
-                                                <h3>Markiezen</h3>
-                                                <p>Blabla markiezen blabla</p>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img class="d-block img-fluid" src="../resource/assets/markies1.jpg" alt="markies1">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img class="d-block img-fluid" src="../resource/assets/markies3.jpg" alt="markies3">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img class="d-block img-fluid" src="../resource/assets/markies4.jpg" alt="markies4">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carousel1topright" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carousel1topright" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                        <div class="" style="padding-left: 14px">
-                            <h3 class="card-subtitle" style="padding-top: 10px;">Markiezen</h3>
-
-                            Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
-                            Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
-                            Heeft u weinig ruimte: <br>
-                            er zijn al rolluiken met een kastmaat van 125 mm. <br>
-                            Tevens kunnen rolluiken gebruikt worden als een garagedeur.
-                        </div>
+                        Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
+                        Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
+                        Heeft u weinig ruimte: <br>
+                        er zijn al rolluiken met een kastmaat van 125 mm. <br>
+                        Tevens kunnen rolluiken gebruikt worden als een garagedeur.
                     </div>
                 </div>
+                <!-- carousel 2 -->
+                <div class="insideSize col-sm-12 col-lg-4" style="padding-top: 10px;">
+                    <div id="carousel1topmiddle" class="carousel slide" data-ride="false">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel1topmiddle" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel1topmiddle" data-slide-to="1"></li>
+                            <li data-target="#carousel1topmiddle" data-slide-to="2"></li>
+                            <li data-target="#carousel1topmiddle" data-slide-to="3"></li>
+                        </ol>
+                        <div class="d-sm-block d-md-block d-lg-block d-xl-block col-12">
+                            <div id="carouseltopmiddle" class="carousel slide">
+                                <div class="carousel-inner" role="listbox" data-interval="5000">
+                                    <div class="carousel-item active">
+                                        <img class="d-block img-fluid" src="../resource/assets/screen1.png" alt="screen1">
+                                        <div class="carousel-caption d-sm-block d-md-block">
+                                            <h3>Screens</h3>
+                                            <p>Blabla screens blabla</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" src="../resource/assets/screen2.png" alt="screen2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" src="../resource/assets/screen3.png" alt="screen3">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" src="../resource/assets/screen4.jpg" alt="screen4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel1topmiddle" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel1topmiddle" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="" style="padding-left: 14px">
+                        <h3 class="card-subtitle" style="padding-top: 10px;">Screens</h3>
+
+                        Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
+                        Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
+                        Heeft u weinig ruimte: <br>
+                        er zijn al rolluiken met een kastmaat van 125 mm. <br>
+                        Tevens kunnen rolluiken gebruikt worden als een garagedeur.
+                    </div>
+                </div>
+                <!-- carousel 3 -->
+                <div class="col-sm-12 col-lg-4" style="padding-top: 10px;">
+                    <div id="carousel1topright" class="carousel slide" data-ride="false">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel1topright" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel1topright" data-slide-to="1"></li>
+                            <li data-target="#carousel1topright" data-slide-to="2"></li>
+                            <li data-target="#carousel1topright" data-slide-to="3"></li>
+                        </ol>
+                        <div class="d-sm-block d-md-block d-lg-block d-xl-block col-12" style="padding-bottom: 5px;">
+                            <div id="carousel1topright" class="carousel slide" data-ride="false">
+                                <div class="carousel-inner" role="listbox" data-interval="10000">
+                                    <div class="carousel-item active">
+                                        <img class="d-block img-fluid" src="../resource/assets/markies2.jpg" alt="markies2">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>Markiezen</h3>
+                                            <p>Blabla markiezen blabla</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" src="../resource/assets/markies1.jpg" alt="markies1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" src="../resource/assets/markies3.jpg" alt="markies3">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" src="../resource/assets/markies4.jpg" alt="markies4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel1topright" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel1topright" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="" style="padding-left: 14px">
+                        <h3 class="card-subtitle" style="padding-top: 10px;">Markiezen</h3>
+
+                        Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
+                        Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
+                        Heeft u weinig ruimte: <br>
+                        er zijn al rolluiken met een kastmaat van 125 mm. <br>
+                        Tevens kunnen rolluiken gebruikt worden als een garagedeur.
+                    </div>
+                </div>
+            </div>
             <!-- end of carousel row -->
             <!-- start carousel row 2 -->
             <!-- carousel 1 -->
@@ -940,19 +840,3 @@
         </div>
     </div>
 </div>
-
-</body>
-<footer>
-
-</footer>
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
-        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
-        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-        crossorigin="anonymous"></script>
-</html>

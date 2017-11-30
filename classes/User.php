@@ -41,12 +41,12 @@ class User
                 if ($q2->execute()) {
                     return true;
                 } else {
-                    die($q2->errorCode());
+                    die(var_dump($q2->errorCode()));
                     array_push($this->errorList, "Er is iets fout gegaan.");
                     return false;
                 }
             } else {
-                die($q2->errorCode());
+                die(var_dump($q->errorCode()));
                 array_push($this->errorList, "Er is iets fout gegaan.");
                 return false;
             }
