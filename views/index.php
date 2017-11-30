@@ -737,7 +737,7 @@
                             <div id="carousel1bottomright" class="carousel slide" data-ride="false">
                                 <div class="carousel-inner" role="listbox" data-interval="10000">
                                     <div class="carousel-item active">
-                                        <img class="d-block img-fluid" src="../resource/assets/overkapping2.png" alt="overkapping2">
+                                        <img class="d-block img-fluid" src="../resource/assets/Overkapping2.png" alt="overkapping2">
                                         <div class="carousel-caption d-none d-md-block">
                                             <h3>Overkapping</h3>
                                             <p>Blabla overkapping blabla</p>
@@ -756,7 +756,7 @@
                             <div id="carousel1bottomright" class="carousel slide" data-ride="false">
                                 <div class="carousel-inner" role="listbox" data-interval="10000">
                                     <div class="carousel-item active">
-                                        <img class="d-block img-fluid" src="../resource/assets/overkapping3.png" alt="overkapping3">
+                                        <img class="d-block img-fluid" src="../resource/assets/Overkapping3.png" alt="overkapping3">
                                         <div class="carousel-caption d-none d-md-block">
                                             <h3>Overkapping</h3>
                                             <p>Blabla overkapping blabla</p>
