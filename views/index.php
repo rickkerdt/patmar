@@ -9,6 +9,47 @@
     <link rel="stylesheet" href="/resource/css/bootstrap.css">
     <link rel="stylesheet" href="/resource/css/custom.css">
     <!--<script src="..\resource\js\bootstrap.js"></html>-->
+    <script src="js/logoslider.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_options = {
+                $AutoPlay: 1,
+                $AutoPlaySteps: 2,
+                $SlideDuration: 160,
+                $SlideWidth: 200,
+                $SlideSpacing: 3,
+                $Cols: 5,
+                $Align: 390,
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            var MAX_WIDTH = 980;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+        };
+    </script>
+
 </head>
 <header>
     <!-- Image and text -->
@@ -601,10 +642,10 @@
                             <div id="carousel1bottomright" class="carousel slide" data-ride="false">
                                 <div class="carousel-inner" role="listbox" data-interval="10000">
                                     <div class="carousel-item active">
-                                        <img class="d-block img-fluid" src="../resource/assets/zonweringsdoek1.png" alt="zonweringsdoek1">
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h3>Zonweringsdoek</h3>
-                                            <p>Blabla zonweringsdoek blabla</p>
+                                        <img class="d-block img-fluid" src="../resource/assets/garagedeur1.png" alt="garagedeur1">
+                                        <div class="carousel-caption d-none d-md-block" style="background: rgba(0,0,0,0.5);">
+                                            <h3>Garagedeuren</h3>
+                                            <p>Blabla garagedeuren blabla</p>
                                         </div>
                                     </div>
                                 </div>
@@ -620,10 +661,10 @@
                             <div id="carousel1bottomright" class="carousel slide" data-ride="false">
                                 <div class="carousel-inner" role="listbox" data-interval="10000">
                                     <div class="carousel-item active">
-                                        <img class="d-block img-fluid" src="../resource/assets/zonweringsdoek1.png" alt="zonweringsdoek1">
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h3>Zonweringsdoek</h3>
-                                            <p>Blabla zonweringsdoek blabla</p>
+                                        <img class="d-block img-fluid" src="../resource/assets/garagedeur2.png" alt="garagedeur2">
+                                        <div class="carousel-caption d-none d-md-block" style="background: rgba(0,0,0,0.5);">
+                                            <h3>Garagedeur</h3>
+                                            <p>Blabla garagedeur blabla</p>
                                         </div>
                                     </div>
                                 </div>
@@ -639,10 +680,10 @@
                             <div id="carousel1bottomright" class="carousel slide" data-ride="false">
                                 <div class="carousel-inner" role="listbox" data-interval="10000">
                                     <div class="carousel-item active">
-                                        <img class="d-block img-fluid" src="../resource/assets/zonweringsdoek1.png" alt="zonweringsdoek1">
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h3>Zonweringsdoek</h3>
-                                            <p>Blabla zonweringsdoek blabla</p>
+                                        <img class="d-block img-fluid" src="../resource/assets/garagedeur3.png" alt="garagedeur3">
+                                        <div class="carousel-caption d-none d-md-block" style="background: rgba(0,0,0,0.5);">
+                                            <h3>Garagedeur</h3>
+                                            <p>Blabla garagedeur blabla</p>
                                         </div>
                                     </div>
                                 </div>
@@ -656,7 +697,7 @@
             <!-- Start text row -->
             <div class="row">
                 <div class="col-sm-12 text-sm-left col-md-10 mx-auto text-md-center" style="padding-left: 14px;">
-                    <h3 class="card-subtitle" style="padding-top: 10px;">Zonweringsdoeken</h3>
+                    <h3 class="card-subtitle" style="padding-top: 10px;">Garagedeur</h3>
 
                     Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
                     Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
@@ -677,10 +718,10 @@
                             <div id="carousel1bottomright" class="carousel slide" data-ride="false">
                                 <div class="carousel-inner" role="listbox" data-interval="10000">
                                     <div class="carousel-item active">
-                                        <img class="d-block img-fluid" src="../resource/assets/zonweringsdoek1.png" alt="zonweringsdoek1">
+                                        <img class="d-block img-fluid" src="../resource/assets/Overkapping1.png" alt="overkapping1">
                                         <div class="carousel-caption d-none d-md-block">
-                                            <h3>Zonweringsdoek</h3>
-                                            <p>Blabla zonweringsdoek blabla</p>
+                                            <h3>Overkapping</h3>
+                                            <p>Blabla overkapping blabla</p>
                                         </div>
                                     </div>
                                 </div>
@@ -696,10 +737,10 @@
                             <div id="carousel1bottomright" class="carousel slide" data-ride="false">
                                 <div class="carousel-inner" role="listbox" data-interval="10000">
                                     <div class="carousel-item active">
-                                        <img class="d-block img-fluid" src="../resource/assets/zonweringsdoek1.png" alt="zonweringsdoek1">
+                                        <img class="d-block img-fluid" src="../resource/assets/overkapping2.png" alt="overkapping2">
                                         <div class="carousel-caption d-none d-md-block">
-                                            <h3>Zonweringsdoek</h3>
-                                            <p>Blabla zonweringsdoek blabla</p>
+                                            <h3>Overkapping</h3>
+                                            <p>Blabla overkapping blabla</p>
                                         </div>
                                     </div>
                                 </div>
@@ -715,10 +756,10 @@
                             <div id="carousel1bottomright" class="carousel slide" data-ride="false">
                                 <div class="carousel-inner" role="listbox" data-interval="10000">
                                     <div class="carousel-item active">
-                                        <img class="d-block img-fluid" src="../resource/assets/zonweringsdoek1.png" alt="zonweringsdoek1">
+                                        <img class="d-block img-fluid" src="../resource/assets/overkapping3.png" alt="overkapping3">
                                         <div class="carousel-caption d-none d-md-block">
-                                            <h3>Zonweringsdoek</h3>
-                                            <p>Blabla zonweringsdoek blabla</p>
+                                            <h3>Overkapping</h3>
+                                            <p>Blabla overkapping blabla</p>
                                         </div>
                                     </div>
                                 </div>
