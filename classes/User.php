@@ -39,6 +39,7 @@ class User
                 $q2->bindValue(3, $lastname);
 
                 if ($q2->execute()) {
+                    die($q2->errorCode());
                     return true;
                 } else {
                     array_push($this->errorList, "Er is iets fout gegaan.");
