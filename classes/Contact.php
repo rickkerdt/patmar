@@ -24,16 +24,16 @@ class Contact
                 $toEmail = 'test@mail.com';
                 $emailSubject = 'Gegevens verstuurd door '.$name;
                 $contentsrequest = '<h2>Contact aanvraag verstuurd.</h2>
-                <h4>Email</h4><p>'.$email.'</p>
-                <h4>Name</h4><p>'.$name.'</p>
-                <h4>Addres</h4><p>'.$adres.'</p>
-                <h4>Telefoonnummer</h4><p>'.$telefoonnumer.'</p>
-                <h4>Woonplaats</h4><p>'.$woonplaats.'</p>
-                <h4>Bericht</h4><p>'.$bericht.'</p>';
+                <p><h4>Email</h4><br>'.$email.'</p>
+                <p><h4>Naam</h4><br>'.$name.'</p>
+                <p><h4>Adres</h4><br>'.$adres.'</p>
+                <p><h4>Telefoonnummer</h4><br>'.$telefoonnumer.'</p>
+                <p><h4>Woonplaats</h4><br>'.$woonplaats.'</p>
+                <p><h4>Bericht</h4><br>'.$bericht.'</p>';
             }
-        }
-
+            }
     }
 }
 
 
+K
