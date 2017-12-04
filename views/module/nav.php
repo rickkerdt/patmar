@@ -13,7 +13,7 @@
                     <img src="/resource/assets/logo.png" height="128" width="128" style="padding-top: 0px; position: absolute; border-radius: 35%" class="d-block" alt="1">
                 </div>
             </a>
-            <ul class="navbar-nav mx-auto w-100 justify-content-center" >
+            <ul class="navbar-nav mx-auto w-100 justify-content-center">
                 <li class="nav-item active">
                     <a class="nav-link" href="?page=index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
