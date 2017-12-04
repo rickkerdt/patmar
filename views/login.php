@@ -35,7 +35,7 @@ if (isset($_POST["login"])) {
                     <input type="email" class="form-control" name="email" id="email" placeholder="voorbeeld@mail.nl">
                 </div>
                 <div class="form-group">
-                    <label for="password">Password</label>
+                    <label for="password">Wachtwoord</label>
                     <input type="password" class="form-control" name="password" id="password" placeholder="********">
                 </div>
                 <div class="form-group">
