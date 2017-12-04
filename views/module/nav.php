@@ -30,7 +30,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="?page=storing">Storing Melden</a>
+                    <a class="nav-link" href="#">Storing Melden</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="?page=quotation">Offerte Aanvraag</a>
