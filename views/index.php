@@ -440,20 +440,20 @@
                             <div id="carousel2left" class="carousel slide" data-ride="false">
                                 <div class="carousel-inner" role="listbox" data-interval="10000">
                                     <div class="carousel-item active">
-                                        <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/71_7_full.jpg?20150521" alt="Rolluik1">
+                                        <img class="d-block img-fluid" src="../resource/assets/raamdecoratie1.png" alt="Raamdecoratie1">
                                         <div class="carousel-caption d-none d-md-block">
-                                            <h3>Rolluiken</h3>
-                                            <p>Blabla rolluiken blabla</p>
+                                            <h3>Raamdecoratie</h3>
+                                            <p>Blabla raamdecoratie blabla</p>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img class="d-block img-fluid" src="http://www.patmar.nl/data/projects/69_5_full.jpg?20150521" alt="Rolluik2">
+                                        <img class="d-block img-fluid" src="../resource/assets/raamdecoratie2.png" alt="Raamdecoratie2">
                                     </div>
                                     <div class="carousel-item">
-                                        <img class="d-block img-fluid" src="../resource/assets/open.png" alt="Rolluik3">
+                                        <img class="d-block img-fluid" src="../resource/assets/raamdecoratie3.png" alt="Raamdecoratie3">
                                     </div>
                                     <div class="carousel-item">
-                                        <img class="d-block img-fluid" src="../resource/assets/dicht.png" alt="Rolluik4">
+                                        <img class="d-block img-fluid" src="../resource/assets/raamdecoratie4.png" alt="Raamdecoratie4">
                                     </div>
                                 </div>
                             </div>
@@ -468,7 +468,7 @@
                         </a>
                     </div>
                     <div class="" style="padding-left: 14px;">
-                        <h3 class="card-subtitle" style="padding-top: 10px; ">Rolluiken</h3>
+                        <h3 class="card-subtitle" style="padding-top: 10px; ">Raamdecoratie</h3>
 
                         Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
                         Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
@@ -490,20 +490,20 @@
                             <div id="carousel2right" class="carousel slide">
                                 <div class="carousel-inner" role="listbox" data-interval="5000">
                                     <div class="carousel-item active">
-                                        <img class="d-block img-fluid" src="../resource/assets/screen1.png" alt="screen1">
+                                        <img class="d-block img-fluid" src="../resource/assets/hor1.png" alt="screen1">
                                         <div class="carousel-caption d-sm-block d-md-block">
-                                            <h3>Screens</h3>
-                                            <p>Blabla screens blabla</p>
+                                            <h3>Horren / hordeuren</h3>
+                                            <p>Blabla horren / hordeuren blabla</p>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img class="d-block img-fluid" src="../resource/assets/screen2.png" alt="screen2">
+                                        <img class="d-block img-fluid" src="../resource/assets/hor2.png" alt="screen2">
                                     </div>
                                     <div class="carousel-item">
-                                        <img class="d-block img-fluid" src="../resource/assets/screen3.png" alt="screen3">
+                                        <img class="d-block img-fluid" src="../resource/assets/hor3.png" alt="screen3">
                                     </div>
                                     <div class="carousel-item">
-                                        <img class="d-block img-fluid" src="../resource/assets/screen4.jpg" alt="screen4">
+                                        <img class="d-block img-fluid" src="../resource/assets/hor4.png" alt="screen4">
                                     </div>
                                 </div>
                             </div>
@@ -518,7 +518,7 @@
                         </a>
                     </div>
                     <div class="" style="padding-left: 14px">
-                        <h3 class="card-subtitle" style="padding-top: 10px;">Screens</h3>
+                        <h3 class="card-subtitle" style="padding-top: 10px;">Horren / hordeuren</h3>
 
                         Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
                         Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
@@ -695,16 +695,25 @@
                             <div id="carousel1bottomright" class="carousel slide" data-ride="false">
                                 <div class="carousel-inner" role="listbox" data-interval="10000">
                                     <div class="carousel-item active">
-                                        <img class="d-block img-fluid" src="../resource/assets/zonweringsdoek1.png" alt="zonweringsdoek1">
+                                        <img class="d-block img-fluid" src="../resource/assets/schuifwand1.png" alt="schuifwand1">
                                         <div class="carousel-caption d-none d-md-block">
-                                            <h3>Zonweringsdoek</h3>
-                                            <p>Blabla zonweringsdoek blabla</p>
+                                            <h3>Glazen schuifwanden</h3>
+                                            <p>Blabla glazen schuifwanden blabla</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
+                    </div>
+                    <div class="" style="padding-left: 14px">
+                        <h3 class="card-subtitle" style="padding-top: 10px;">Zonweringsdoeken</h3>
+
+                        Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
+                        Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
+                        Heeft u weinig ruimte: <br>
+                        er zijn al rolluiken met een kastmaat van 125 mm. <br>
+                        Tevens kunnen rolluiken gebruikt worden als een garagedeur.
                     </div>
                 </div>
                 <!-- Carousel 2 -->
@@ -714,16 +723,25 @@
                             <div id="carousel1bottomright" class="carousel slide" data-ride="false">
                                 <div class="carousel-inner" role="listbox" data-interval="10000">
                                     <div class="carousel-item active">
-                                        <img class="d-block img-fluid" src="../resource/assets/zonweringsdoek1.png" alt="zonweringsdoek1">
+                                        <img class="d-block img-fluid" src="../resource/assets/schuifwand2.png" alt="schuifwand2">
                                         <div class="carousel-caption d-none d-md-block">
-                                            <h3>Zonweringsdoek</h3>
-                                            <p>Blabla zonweringsdoek blabla</p>
+                                            <h3>Glazen schuifwanden</h3>
+                                            <p>Blabla glazen schuifwanden blabla</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
+                    </div>
+                    <div class="" style="padding-left: 14px">
+                        <h3 class="card-subtitle" style="padding-top: 10px;">Zonweringsdoeken</h3>
+
+                        Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
+                        Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
+                        Heeft u weinig ruimte: <br>
+                        er zijn al rolluiken met een kastmaat van 125 mm. <br>
+                        Tevens kunnen rolluiken gebruikt worden als een garagedeur.
                     </div>
                 </div>
                 <!-- Carousel 3 -->
@@ -733,10 +751,10 @@
                             <div id="carousel1bottomright" class="carousel slide" data-ride="false">
                                 <div class="carousel-inner" role="listbox" data-interval="10000">
                                     <div class="carousel-item active">
-                                        <img class="d-block img-fluid" src="../resource/assets/zonweringsdoek1.png" alt="zonweringsdoek1">
+                                        <img class="d-block img-fluid" src="../resource/assets/schuifwand3.png" alt="schuifwand3">
                                         <div class="carousel-caption d-none d-md-block">
-                                            <h3>Zonweringsdoek</h3>
-                                            <p>Blabla zonweringsdoek blabla</p>
+                                            <h3>Glazen schuifwanden</h3>
+                                            <p>Blabla glazen schuifwanden blabla</p>
                                         </div>
                                     </div>
                                 </div>
@@ -747,6 +765,7 @@
                 </div>
             </div>
             <!-- End of row -->
+
             <!-- Start text row -->
             <div class="row">
                 <div class="col-sm-12 text-sm-left col-md-10 mx-auto text-md-center" style="padding-left: 14px;">
@@ -772,7 +791,7 @@
                             <div id="carousel1bottomright" class="carousel slide" data-ride="false">
                                 <div class="carousel-inner" role="listbox" data-interval="10000">
                                     <div class="carousel-item active">
-                                        <img class="d-block img-fluid" src="../resource/assets/zonweringsdoek1.png" alt="zonweringsdoek1">
+                                        <img class="d-block img-fluid" src="../resource/assets/kozijn1.png" alt="kozijn1">
                                         <div class="carousel-caption d-none d-md-block">
                                             <h3>Zonweringsdoek</h3>
                                             <p>Blabla zonweringsdoek blabla</p>
@@ -782,6 +801,15 @@
                             </div>
                         </div>
 
+                    </div>
+                    <div class="" style="padding-left: 14px">
+                        <h3 class="card-subtitle" style="padding-top: 10px;">Zonweringsdoeken</h3>
+
+                        Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
+                        Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
+                        Heeft u weinig ruimte: <br>
+                        er zijn al rolluiken met een kastmaat van 125 mm. <br>
+                        Tevens kunnen rolluiken gebruikt worden als een garagedeur.
                     </div>
                 </div>
                 <!-- Carousel 2 -->
@@ -791,7 +819,7 @@
                             <div id="carousel1bottomright" class="carousel slide" data-ride="false">
                                 <div class="carousel-inner" role="listbox" data-interval="10000">
                                     <div class="carousel-item active">
-                                        <img class="d-block img-fluid" src="../resource/assets/zonweringsdoek1.png" alt="zonweringsdoek1">
+                                        <img class="d-block img-fluid" src="../resource/assets/kozijn2.png" alt="kozijn2">
                                         <div class="carousel-caption d-none d-md-block">
                                             <h3>Zonweringsdoek</h3>
                                             <p>Blabla zonweringsdoek blabla</p>
@@ -802,6 +830,15 @@
                         </div>
 
                     </div>
+                    <div class="" style="padding-left: 14px">
+                        <h3 class="card-subtitle" style="padding-top: 10px;">Zonweringsdoeken</h3>
+
+                        Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
+                        Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
+                        Heeft u weinig ruimte: <br>
+                        er zijn al rolluiken met een kastmaat van 125 mm. <br>
+                        Tevens kunnen rolluiken gebruikt worden als een garagedeur.
+                    </div>
                 </div>
                 <!-- Carousel 3 -->
                 <div class="col-sm-12 col-lg-4" style="padding-top: 10px;">
@@ -810,7 +847,7 @@
                             <div id="carousel1bottomright" class="carousel slide" data-ride="false">
                                 <div class="carousel-inner" role="listbox" data-interval="10000">
                                     <div class="carousel-item active">
-                                        <img class="d-block img-fluid" src="../resource/assets/zonweringsdoek1.png" alt="zonweringsdoek1">
+                                        <img class="d-block img-fluid" src="../resource/assets/kozijn3.png" alt="kozijn3">
                                         <div class="carousel-caption d-none d-md-block">
                                             <h3>Zonweringsdoek</h3>
                                             <p>Blabla zonweringsdoek blabla</p>
@@ -824,22 +861,8 @@
                 </div>
             </div>
             <!-- End of row -->
-            <!-- Start text row -->
-            <div class="row">
-                <div class="col-sm-12 text-sm-left col-md-10 mx-auto text-md-center" style="padding-left: 14px;">
-                    <h3 class="card-subtitle" style="padding-top: 10px;">Zonweringsdoeken</h3>
 
-                    Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing! <br>
-                    Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
-                    Heeft u weinig ruimte: <br>
-                    er zijn al rolluiken met een kastmaat van 125 mm. <br>
-                    Tevens kunnen rolluiken gebruikt worden als een garagedeur.
-                </div>
-            </div>
-            <!-- End text row -->
         </div>
-    </div>
-</div>
 <div class="container justify-content-center mx-auto">
 <script src="../resource/js/logoslider.js" type="text/javascript"></script>
 <script type="text/javascript">
