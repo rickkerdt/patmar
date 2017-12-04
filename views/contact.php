@@ -2,10 +2,11 @@
 if (isset($_POST["contactsend"])){
     $contact = new Contact();
     $errors = [];
+    $sent = false;
 
     if($contact->sendform($_POST["email"], $_POST["naam"],$_POST['adres'],$_POST['telefoonnumer'],$_POST['woonplaats'],$_POST['bericht']))
     {
-
+        $sent = true;
     } else {
         $errors = $contact->errorList;
         var_dump($errors);
@@ -53,7 +54,13 @@ if (isset($_POST["contactsend"])){
 
             <form action="?page=contact" method="post">
 
-
+                <?php if (count($errors) > 0) : ?>
+                    <?php foreach ($errors as $error) : ?>
+                        <div class="alert alert-warning">
+                            <strong>Fout!</strong> <?php echo $error; ?>
+                        </div>
+                    <?php endforeach; ?>
+                <?php endif; ?>
 
                 <div class="form-group">
                     <div class="row">
@@ -105,6 +112,11 @@ if (isset($_POST["contactsend"])){
                             <br>
                             <br>
                             <p>* Verplicht in te vullen</p>
+                        </div>
+                        <div class="form-group">
+                            <?php if($sent): ?>
+                                Het is verstuurd
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
