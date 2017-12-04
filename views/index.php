@@ -985,7 +985,7 @@
                 <img style="margin-top:-19px;position:relative;top:50%;width:0px;height:28px;" src=""/>
             </div>
             <div data-u="slides" class="row mx-auto"
-                 style="cursor:default;position:relative;top:0px;left:0px;width: 1200px;height:150px;overflow:hidden;">
+                 style="cursor:default;position:relative;top:0px;left:0px;width: 1200px;height:75px;overflow:hidden;">
                 <div>
                     <img data-u="image" src="../resource/assets/logo1.jpg"/>
                 </div>

@@ -44,7 +44,11 @@
             </ul>
             <ul class="navbar-nav ml-auto justify-content-end">
                 <li class="nav-item">
-                    <a class="nav-link" href="?page=login">Login</a>
+                    <?php if (!isset($_SESSION["loggedIn"])) : ?>
+                        <a class="nav-link" href="?page=login">Login</a>
+                    <?php elseif ($_SESSION["loggedIn"] != ""): ?>
+                        <a class="nav-link" href="?page=logout">Logout</a>
+                    <?php endif; ?>
                 </li>
             </ul>
         </div>
@@ -56,7 +60,7 @@
                     console.log("works");
                     $('#navlogo > img').fadeOut();
                 }
-                else if($(this).scrollTop() < 200) {
+                else if ($(this).scrollTop() < 200) {
                     $('#navlogo > img').fadeIn();
                 }
             });
