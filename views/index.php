@@ -861,7 +861,7 @@
                 </div>
             </div>
             <!-- End of row -->
-
+        </div>
         </div>
 <div class="container justify-content-center mx-auto">
 <script src="../resource/js/logoslider.js" type="text/javascript"></script>
