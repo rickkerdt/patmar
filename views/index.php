@@ -840,6 +840,7 @@
         </div>
     </div>
 </div>
+<div class="container justify-content-center mx-auto">
 <script src="../resource/js/logoslider.js" type="text/javascript"></script>
 <script type="text/javascript">
     jssor_1_slider_init = function() {
@@ -849,14 +850,14 @@
             $AutoPlaySteps: 2,
             $SlideDuration: 160,
             $SlideWidth: 200,
-            $SlideSpacing: 3,
-            $Cols: 5,
-            $Align: 390,
+            $SlideSpacing: 2,
+            $Cols: 12,
+            $Align: 400,
         };
 
         var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
 
-        var MAX_WIDTH = 980;
+        var MAX_WIDTH = 1200;
 
         function ScaleSlider() {
             var containerElement = jssor_1_slider.$Elmt.parentNode;
@@ -881,13 +882,13 @@
     };
 </script>
 
-<div id="jssor_1" class="col-12 mx-auto" style="padding-top:50px;">
+<div id="jssor_1" class="col" style="padding-top:50px;">
     <!-- Loading Screen -->
 
     <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-        <img style="margin-top:-19px;position:relative;top:50%;width:28px;height:28px;" src="" />
+        <img style="margin-top:-19px;position:relative;top:50%;width:0px;height:28px;" src="" />
     </div>
-    <div data-u="slides" class="row"style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:150px;overflow:hidden;">
+    <div data-u="slides" class="row mx-auto" style="cursor:default;position:relative;top:0px;left:0px;width: 1200px;height:150px;overflow:hidden;">
         <div>
             <img data-u="image" src="../resource/assets/logo1.jpg" />
         </div>
@@ -919,5 +920,6 @@
             <img data-u="image" src="../resource/assets/logo10.jpg" />
         </div>
     </div>
+</div>
 </div>
 <script type="text/javascript">jssor_1_slider_init();</script>
