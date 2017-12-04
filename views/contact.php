@@ -20,7 +20,6 @@
 
                     <p>info@patmar.nl<br>
                     </p>
-                    </p>
                     <a href="#" class="btn btn-primary">Route</a>
 
                 </div>
@@ -37,7 +36,7 @@
             Wilt u rechtstreeks contact dan kunt u ons bellen.</span></p>
             <br>
 
-            <form action="?page=quotation" method="post">
+            <form action="?page=contact" method="post">
 
 
 
@@ -88,6 +87,9 @@
                     <div class="row">
                         <div class="form-group">
                             <input type="submit" value="Versturen">
+                            <br>
+                            <br>
+                            <p>* Verplicht in te vullen</p>
                         </div>
                     </div>
                 </div>

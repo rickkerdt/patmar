@@ -15,7 +15,7 @@
             </a>
             <ul class="navbar-nav mx-auto w-100 justify-content-center" >
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="?page=index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Openingstijden</a>
@@ -34,6 +34,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="?page=quotation">Offerte Aanvraag</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="?page=contact">Contact</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto justify-content-end">
