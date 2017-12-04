@@ -1,3 +1,18 @@
+<?php
+if (isset($_POST["contactsend"])){
+    $contact = new Contact();
+    $errors = [];
+
+    if($contact->sendform($_POST["email"], $_POST["naam"],$_POST['adres'],$_POST['telefoonnumer'],$_POST['woonplaats'],$_POST['bericht']))
+    {
+
+    } else {
+        $errors = $contact->errorList;
+        var_dump($errors);
+    }
+}
+?>
+
 <div class="container" style="margin-top: 100px">
     <div class="row">
         <div class="col-md-3 d-none d-lg-block d-xl-block float-left" style="padding-left: 4%;padding-bottom: 50px;">
@@ -86,7 +101,7 @@
                     </div>
                     <div class="row">
                         <div class="form-group">
-                            <input type="submit" value="Versturen">
+                            <input type="submit" value="Versturen" name="contactsend">
                             <br>
                             <br>
                             <p>* Verplicht in te vullen</p>
