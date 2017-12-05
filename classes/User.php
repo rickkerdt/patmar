@@ -52,8 +52,6 @@ class User
                     return false;
                 }
             } else {
-                var_dump($q->errorCode());
-                die();
                 array_push($this->errorList, "Er is iets fout gegaan.1");
                 return false;
             }
