@@ -25,6 +25,7 @@ class User
 
         if ($this->validate($this->email, $password, $repeatpassword)) {
             $db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
+            $db2 = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
 
             $q = $db->prepare("INSERT INTO User(Email, PassHash, FunctionID) VALUES (?, ?, 2)");
 
@@ -32,7 +33,10 @@ class User
             $q->bindValue(2, $this->passhash);
 
             if ($q->execute()) {
-                $q2 = $db->prepare("INSERT INTO Userinfo(UserID, FirstName, LastName) VALUES ((SELECT UserID FROM User WHERE Email = ?),?,?)");
+
+                $q->closeCursor();
+
+                $q2 = $db2->prepare("INSERT INTO Userinfo(UserID, FirstName, LastName) VALUES ((SELECT UserID FROM User WHERE Email = ?),?,?)");
 
                 $q2->bindValue(1, $this->email);
                 $q2->bindValue(2, $firstname);
