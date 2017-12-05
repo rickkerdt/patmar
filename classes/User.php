@@ -35,11 +35,10 @@ class User
 
                 $q->closeCursor();
 
-                $q2 = $db->prepare("INSERT INTO Userinfo(UserInfoID, FirstName, LastName) VALUES ((SELECT UserInfoID FROM User WHERE Email = ?),?,?)");
+                $q2 = $db->prepare("INSERT INTO Userinfo(FirstName, LastName) VALUES (?,?)");
 
-                $q2->bindValue(1, $this->email);
-                $q2->bindValue(2, $firstname);
-                $q2->bindValue(3, $lastname);
+                $q2->bindValue(1, $firstname);
+                $q2->bindValue(2, $lastname);
 
                 if ($q2->execute()) {
                     return true;
