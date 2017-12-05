@@ -41,11 +41,11 @@ class User
                 if ($q2->execute()) {
                     return true;
                 } else {
-                    array_push($this->errorList, "Er is iets fout gegaan.");
+                    array_push($this->errorList, "Er is iets fout gegaan.2");
                     return false;
                 }
             } else {
-                array_push($this->errorList, "Er is iets fout gegaan.");
+                array_push($this->errorList, "Er is iets fout gegaan.1");
                 return false;
             }
         } else {
