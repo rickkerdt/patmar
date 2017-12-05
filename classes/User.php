@@ -25,7 +25,6 @@ class User
 
         if ($this->validate($this->email, $password, $repeatpassword)) {
             $db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
-            $db2 = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
 
             $q = $db->prepare("INSERT INTO User(Email, PassHash, FunctionID) VALUES (?, ?, 2)");
 
@@ -36,7 +35,7 @@ class User
 
                 $q->closeCursor();
 
-                $q2 = $db2->prepare("INSERT INTO Userinfo(UserID, FirstName, LastName) VALUES ((SELECT UserID FROM User WHERE Email = ?),?,?)");
+                $q2 = $db->prepare("INSERT INTO Userinfo(UserInfoID, FirstName, LastName) VALUES ((SELECT UserInfoID FROM User WHERE Email = ?),?,?)");
 
                 $q2->bindValue(1, $this->email);
                 $q2->bindValue(2, $firstname);
@@ -45,9 +44,6 @@ class User
                 if ($q2->execute()) {
                     return true;
                 } else {
-                    var_dump($q2->errorCode());
-
-                    die();
                     array_push($this->errorList, "Er is iets fout gegaan.2");
                     return false;
                 }
