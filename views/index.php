@@ -575,7 +575,7 @@
                                     <div class="carousel-item active">
                                         <img class="d-block img-fluid" src="../resource/assets/garagedeur2.png" alt="garagedeur2">
                                         <div class="carousel-caption d-none d-md-block" style="background: rgba(0,0,0,0.5);">
-                                            <h3>Garagedeur</h3>
+                                            <h3>Garagedeuren</h3>
 
                                         </div>
                                     </div>
@@ -596,7 +596,7 @@
                                     <div class="carousel-item active">
                                         <img class="d-block img-fluid" src="../resource/assets/garagedeur3.png" alt="garagedeur3">
                                         <div class="carousel-caption d-none d-md-block" style="background: rgba(0,0,0,0.5);">
-                                            <h3>Garagedeur</h3>
+                                            <h3>Garagedeuren</h3>
 
                                         </div>
                                     </div>
@@ -611,7 +611,7 @@
             <!-- Start text row -->
             <div class="row">
                 <div class="col-sm-12 text-sm-left col-md-10 mx-auto text-md-center" style="padding-left: 14px;">
-                    <h3 class="card-subtitle" style="padding-top: 10px;">Garagedeur</h3>
+                    <h3 class="card-subtitle" style="padding-top: 10px;">Garagedeuren</h3>
 
                     A5 PATMAR is leverancier van AW Wisniowski sectionaal garagedeuren. De deuren worden door ons ingemeten <br>
                     en door eigen monteurs geplaatst. Er is een keuze uit diverse uitvoeringen. De bediening kan naar
@@ -632,7 +632,7 @@
                                     <div class="carousel-item active">
                                         <img class="d-block img-fluid" src="../resource/assets/Overkapping1.png" alt="overkapping1">
                                         <div class="carousel-caption d-none d-md-block" style="background: rgba(0,0,0,0.5);">
-                                            <h3>Overkapping</h3>
+                                            <h3>Overkappingen</h3>
 
                                         </div>
                                     </div>
@@ -652,7 +652,7 @@
                                     <div class="carousel-item active">
                                         <img class="d-block img-fluid" src="../resource/assets/Overkapping2.png" alt="overkapping2">
                                         <div class="carousel-caption d-none d-md-block" style="background: rgba(0,0,0,0.5);">
-                                            <h3>Overkapping</h3>
+                                            <h3>Overkappingen</h3>
 
                                         </div>
                                     </div>
@@ -672,7 +672,7 @@
                                     <div class="carousel-item active">
                                         <img class="d-block img-fluid" src="../resource/assets/Overkapping3.png" alt="overkapping3">
                                         <div class="carousel-caption d-none d-md-block" style="background: rgba(0,0,0,0.5);">
-                                            <h3>Overkapping</h3>
+                                            <h3>Overkappingen</h3>
 
                                         </div>
                                     </div>
@@ -687,7 +687,7 @@
             <!-- Start text row -->
             <div class="row">
                 <div class="col-sm-12 text-sm-left col-md-10 mx-auto text-md-center" style="padding-left: 14px;">
-                    <h3 class="card-subtitle" style="padding-top: 10px;">Zonweringsdoeken</h3>
+                    <h3 class="card-subtitle" style="padding-top: 10px;">Terrasoverkappingen</h3>
 
                     Voor al uw houten en aluminium terrasoverkappingen, pergolazonwering, carport, veranda's en serre's
                     bent u bij A5 PATMAR <br> aan het juiste adres! Ook kunnen wij de veranda uitbreiden naar een tuinkamer met
@@ -792,7 +792,7 @@
                                     <div class="carousel-item active">
                                         <img class="d-block img-fluid" src="../resource/assets/kozijn1.png" alt="kozijn1">
                                         <div class="carousel-caption d-none d-md-block" style="background: rgba(0,0,0,0.5);">
-                                            <h3>Zonweringsdoek</h3>
+                                            <h3>Zonweringsdoeken</h3>
 
                                         </div>
                                     </div>
@@ -812,7 +812,7 @@
                                     <div class="carousel-item active">
                                         <img class="d-block img-fluid" src="../resource/assets/kozijn2.png" alt="kozijn2">
                                         <div class="carousel-caption d-none d-md-block" style="background: rgba(0,0,0,0.5);">
-                                            <h3>Zonweringsdoek</h3>
+                                            <h3>Zonweringsdoeken</h3>
 
                                         </div>
                                     </div>
@@ -832,7 +832,7 @@
                                     <div class="carousel-item active">
                                         <img class="d-block img-fluid" src="../resource/assets/kozijn3.png" alt="kozijn3">
                                         <div class="carousel-caption d-none d-md-block" style="background: rgba(0,0,0,0.5);">
-                                            <h3>Zonweringsdoek</h3>
+                                            <h3>Zonweringsdoeken</h3>
 
                                         </div>
                                     </div>
