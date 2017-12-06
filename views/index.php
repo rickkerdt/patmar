@@ -149,7 +149,7 @@
         </ul>
     </div>
     <!-- tab content -->
-    <div class="card-body tab-content">
+    <div class="card-body tab-content" >
         <!-- start tabpanel 1 -->
         <div class="tab-pane active" id="taba" role="tabpanel">
 
