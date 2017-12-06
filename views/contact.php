@@ -16,33 +16,8 @@ if (isset($_POST["contactsend"])){
 
 <div class="container" style="margin-top: 100px">
     <div class="row">
-        <div class="col-md-3 d-none d-lg-block d-xl-block float-left" style="padding-left: 4%;padding-bottom: 50px;">
-            <div class="card">
-                <div class="card-block" style="padding-left: 5px; border-color: #00769f ">
-                    <h3 class="card-title"></h3>
-                    <p class="card-text">
-                    <h6 class="card-subtitle">A5 Patmar Marknesse</h6>
-                    Hoge Sluiswal 47<br>
-                    8316 AA Marknesse<br>
-                    TEL: 0527 - 61 22 77<br>
 
-                    <p>info@patmar.nl<br>
-                    </p>
-
-                    <br><h6 class="card-subtitle">A5 Patmar Meppel</h6>
-                    Johan van Oldenbarneveltstraat 3<br>
-                    7942  GZ  MEPPEL<br>
-                    Tel. 0522 - 24 48 88<br>
-
-                    <p>info@patmar.nl<br>
-                    </p>
-                    <a href="#" class="btn btn-primary">Route</a>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="col d-none d-sm-block d-md-none"></div>
+        <div class="col">&nbsp;</div>
         <div class="col-md-6 jumbotron">
             <h1 class="text">Contact</h1>
 
@@ -122,5 +97,29 @@ if (isset($_POST["contactsend"])){
                 </div>
             </form>
         </div>
-        <div class="col d-none d-sm-block d-md-none">&nbsp;</div>
+        <div class="col d-none d-sm-block d-md-none"></div>
+        <div class="col-md-3 d-none d-lg-block d-xl-block float-left" style="padding-left: 4%;padding-bottom: 50px;">
+            <div class="card">
+                <div class="card-block" style="padding-left: 5px; border-color: #00769f">
+                    <h3 class="card-title"></h3>
+                    <p class="card-text">
+                    <h6 class="card-subtitle">A5 Patmar Marknesse</h6>
+                    Hoge Sluiswal 47<br>
+                    8316 AA Marknesse<br>
+                    TEL: 0527 - 61 22 77<br>
+
+                    <p>info@patmar.nl<br>
+                    </p>
+
+                    <br><h6 class="card-subtitle">A5 Patmar Meppel</h6>
+                    Johan van Oldenbarneveltstraat 3<br>
+                    7942  GZ  MEPPEL<br>
+                    Tel. 0522 - 24 48 88<br>
+
+                    <p>info@patmar.nl<br>
+                    </p>
+
+                </div>
+            </div>
+        </div>
     </div>
