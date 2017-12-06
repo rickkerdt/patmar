@@ -416,7 +416,7 @@
                                     <div class="carousel-item active">
                                         <img class="d-block img-fluid" src="../resource/assets/zonweringsdoek1.png" alt="zonweringsdoek1">
                                         <div class="carousel-caption d-none d-md-block" style="background: rgba(0,0,0,0.5);">
-                                            <h3>Zonweringsdoek</h3>
+                                            <h3>Zonweringsdoeken</h3>
 
                                         </div>
                                     </div>
