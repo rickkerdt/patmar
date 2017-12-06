@@ -69,12 +69,18 @@
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title mx-auto"  id="exampleModalLabel"><b>Openingstijden</b></h5>
+                <div class="col" style="padding-bottom: 50px">
+                <div class="modal-header ">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&nbsp &nbsp</span>
+                    </button>
+                    <h5 class="modal-title mx-auto"  style="text-align: center;" id="exampleModalLabel"><b> Openingstijden</b></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
+                </div>
+
                 <div class="modal-body text-center">
                     <b>A5 Patmar Marknesse</b><br>
                     maandag t/m vrijdag<br>
