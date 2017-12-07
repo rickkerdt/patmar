@@ -61,10 +61,8 @@ if (isset($_POST["register"])) {
                            placeholder="********">
                 </div>
                 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-                <form action="?" method="POST">
                     <div class="g-recaptcha" data-sitekey="6LdLDzwUAAAAAO4DFj_pzlNNfrDeZ_up8UjwA_xj"></div>
                     <br/>
-                </form>
 
                 <div class="form-group">
                     <input type="submit" class="form-control btn btn-primary" name="register" value="Registreren">
