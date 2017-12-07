@@ -41,6 +41,7 @@ if (isset($_POST["login"])) {
                 <div class="form-group">
                     <input type="submit" class="form-control btn btn-primary" name="login" value="Login">
                 </div>
+
                 <div class="form-group">
                     <span>Geen account?</span>
                     <a href="/index.php?page=register" class="btn-link">Registreren</a>

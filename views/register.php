@@ -60,6 +60,21 @@ if (isset($_POST["register"])) {
                     <input type="password" class="form-control" name="passwordrepeat" id="passwordrepeat"
                            placeholder="********">
                 </div>
+
+                <html>
+                <head>
+                    <title>reCAPTCHA</title>
+                    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                </head>
+                <body>
+                <form action="?" method="POST">
+                    <div class="g-recaptcha" data-sitekey="6LdLDzwUAAAAAO4DFj_pzlNNfrDeZ_up8UjwA_xj"></div>
+                    <br/>
+                    <input type="submit" value="Submit">
+                </form>
+                </body>
+                </html>
+
                 <div class="form-group">
                     <input type="submit" class="form-control btn btn-primary" name="register" value="Registreren">
                 </div>
