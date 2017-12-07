@@ -70,7 +70,6 @@ if (isset($_POST["register"])) {
                 <form action="?" method="POST">
                     <div class="g-recaptcha" data-sitekey="6LdLDzwUAAAAAO4DFj_pzlNNfrDeZ_up8UjwA_xj"></div>
                     <br/>
-                    <input type="submit" value="Submit">
                 </form>
                 </body>
                 </html>
