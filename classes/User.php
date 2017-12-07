@@ -91,17 +91,17 @@ class User
         $number = preg_match('@[0-9]@', $password);
 
         if (!$uppercase || !$lowercase || !$number || strlen($password) < 8) {
-            array_push($this->errorList, "Het wachtwoord moet Hoofdletter, Nummer bevatten en minimaal 8 letters lang zijn.");
+            array_push($this->errorList, "Het wachtwoord moet minimaal een hoofdletter, nummer en minimaal 8 letters bevatten.");
             $valid = false;
         }
 
         if ($password != $passwordRepeat) {
-            array_push($this->errorList, "Het wachtwoord komen niet met elkaar overeen.");
+            array_push($this->errorList, "Het wachtwoord komt niet met elkaar overeen.");
             $valid = false;
         }
 
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            array_push($this->errorList, "De email adres klopt niet.");
+            array_push($this->errorList, "Het email adres klopt niet.");
             $valid = false;
         }
 
