@@ -35,17 +35,17 @@ class User
 
                 $q->closeCursor();
 
-                $q2 = $db->prepare("INSERT INTO Userinfo(FirstName, LastName) VALUES (?,?)");
-
-                $q2->bindValue(1, $firstname);
-                $q2->bindValue(2, $lastname);
-
-                if ($q2->execute()) {
-                    return true;
-                } else {
-                    array_push($this->errorList, "Er is iets fout gegaan." . $q2->errorCode());
-                    return false;
-                }
+//                $q2 = $db->prepare("INSERT INTO Userinfo(, FirstName, LastName) VALUES (?,?)");
+//
+//                $q2->bindValue(1, $firstname);
+//                $q2->bindValue(2, $lastname);
+//
+//                if ($q2->execute()) {
+//                    return true;
+//                } else {
+//                    array_push($this->errorList, "Er is iets fout gegaan." . $q2->errorCode());
+//                    return false;
+//                }
             } else {
                 array_push($this->errorList, "Er is iets fout gegaan." . $q->errorCode());
                 return false;
