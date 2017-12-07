@@ -36,7 +36,7 @@ class Contact
         $valid = true;
 
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            array_push($this->errorList, "De email adres klopt niet.");
+            array_push($this->errorList, "Het email adres klopt niet.");
             $valid = false;
         }
 
