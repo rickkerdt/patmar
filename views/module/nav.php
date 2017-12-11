@@ -16,30 +16,30 @@
                 </div>
             </a>
             <ul class="navbar-nav mx-auto w-100 justify-content-center">
-                <li class="nav-item active">
-                    <a class="nav-link" href="?page=index">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item <?php if($_GET["page"]=="index"){echo "active";} ?>">
+                    <a class="nav-link" href="?page=index">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">Openingstijden</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle <?php if($_GET["page"]=="dealers" || $_GET["page"]=="partners"){echo "active";} ?>" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false">
                         Samenwerking
                     </a>
-
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Partners</a>
+                        <a class="dropdown-item" href="?page=dealers">Dealers</a>
+                        <a class="dropdown-item" href="?page=partners">Partners</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Storing Melden</a>
+                    <a class="nav-link <?php if($_GET["page"]=="storing"){echo "active";} ?>" href="?page=storing">Storing Melden</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="?page=quotation">Offerte Aanvraag</a>
+                    <a class="nav-link <?php if($_GET["page"]=="quotation"){echo "active";} ?>" href="?page=quotation">Offerte Aanvraag</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="?page=contact">Contact</a>
+                    <a class="nav-link <?php if($_GET["page"]=="contact"){echo "active";} ?>" href="?page=contact">Contact</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto justify-content-end">
