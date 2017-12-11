@@ -1,7 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: patip
- * Date: 12/7/2017
- * Time: 10:11
- */
+
+function __autoload($class_name) {
+    include "../classes/" . $class_name . '.php';
+}
+
+include_once "template.php";
