@@ -44,7 +44,7 @@ if (isset($_POST["login"])) {
 
                 <div class="form-group">
                     <span>Geen account?</span>
-                    <a href="/index.php?page=register" class="btn-link">Registreren</a>
+                    <a href="?page=register" class="btn-link">Registreren</a>
                 </div>
             </form>
         </div>
