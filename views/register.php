@@ -22,19 +22,19 @@ if (isset($_POST["register"])) {
     );
 
     $context  = stream_context_create($options);
-    $result = file_get_contents($url, false, $context);
+    $result = json_decode(file_get_contents($url, false, $context));
 
-    if ($result === FALSE) {
-        die("fout");
-    }
-
-    die(var_dump($result));
-
-    $user = new User();
-    if ($user->register($_POST["email"], $_POST["password"], $_POST["passwordrepeat"], $_POST["firstname"], $_POST["lastname"])) {
-        header("Location: /index.php?page=login");
+    if($result["success"] == true)
+    {
+        $user = new User();
+        if ($user->register($_POST["email"], $_POST["password"], $_POST["passwordrepeat"], $_POST["firstname"], $_POST["lastname"])) {
+            header("Location: /index.php?page=login");
+            die();
+        } else {
+            $errors = $user->errorList;
+        }
     } else {
-        $errors = $user->errorList;
+        die("<br><br><br> <h1>ERROR</h1>");
     }
 }
 
