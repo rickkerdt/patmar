@@ -20,7 +20,7 @@ if (isset($_POST["login"])) {
         <div class="col">&nbsp;</div>
         <div class="col-md-6 jumbotron">
             <h1 class="text-center">Login</h1>
-            <form action="/index.php?page=login" method="post">
+            <form action="?page=login" method="post">
                 <div class="row">
                     <?php if (count($errors) > 0) : ?>
                         <?php foreach ($errors as $error) : ?>
