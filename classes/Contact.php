@@ -11,9 +11,9 @@ class Contact
     public $errorList = [];
 
     //cheken of de benodigde velden niet leeg zijn.
-    public function sendform($email, $name, $adres, $telefoonnumer, $woonplaats, $bericht)
+    public function sendform($email, $naam, $telefoonnumer, $woonplaats, $bericht)
     {
-        if ($this->checkForm($email, $telefoonnumer)) {
+        if ($this->checkForm($email, $telefoonnumer,$naam,$woonplaats,$bericht)) {
 
             $to = "admin@patmar.com";
             $subject = "Contact";
@@ -30,7 +30,7 @@ class Contact
         }
     }
 
-    private function checkForm($email, $telefoonnumer)
+    private function checkForm($email,$naam,$woonplaats,$telefoonnumer, $bericht)
     {
 
         $valid = true;
@@ -39,17 +39,26 @@ class Contact
             array_push($this->errorList, "Het email adres klopt niet.");
             $valid = false;
         }
-
-//        if (!preg_match('@[0-9]@', $telefoonnumer)) {
-//            array_push($this->errorList, "Het telefoonnummer klopt niet.");
-//            $valid = false;
-//        }
+        if (!preg_match('@[a-zA-Z]@',$naam)) {
+            array_push($this->errorList, "U moet uw naam nog invullen.");
+            $valid = false;
+      }
+        if (!preg_match('@[a-zA-Z]@',$woonplaats)) {
+             array_push($this->errorList, "Woonplaats invullen is verplicht.");
+         $valid = false;
+        }
+        if (!preg_match('@[0-9]@', $telefoonnumer)) {
+            array_push($this->errorList, "Er moet een telefoon nummer ingevuld worden.");
+            $valid = false;
+        }
+        if (!preg_match('@[a-zA-Z0-9]@',$bericht)) {
+            array_push($this->errorList, "U moet een bericht invullen.");
+            $valid = false;
+        }
 
         if ($valid) {
             return true;
         }
-        return false;
+            return false;
     }
 }
-
-

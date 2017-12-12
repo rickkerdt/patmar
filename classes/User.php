@@ -96,7 +96,7 @@ class User
         }
 
         if ($password != $passwordRepeat) {
-            array_push($this->errorList, "Het wachtwoord komt niet met elkaar overeen.");
+            array_push($this->errorList, "De wachtwoorden komen niet met elkaar overeen.");
             $valid = false;
         }
 

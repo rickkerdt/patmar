@@ -9,7 +9,6 @@ if (isset($_POST["contactsend"])){
         $sent = true;
     } else {
         $errors = $contact->errorList;
-        var_dump($errors);
     }
 }
 ?>
