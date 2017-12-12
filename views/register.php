@@ -5,6 +5,16 @@ if ($_SESSION["loggedIn"])
 $errors = [];
 
 if (isset($_POST["register"])) {
+
+    $url = "https://www.google.com/recaptcha/api/siteverify";
+    $data = [
+        "secret" => "6LdLDzwUAAAAAFjh7PJWnBXmxKTs87I03ZSCMwV8",
+        "response" => $_POST["g-recaptcha-response"],
+        "remoteip" => $_SERVER['REMOTE_ADDR']
+    ];
+
+    die(var_dump($data));
+
     $user = new User();
     if ($user->register($_POST["email"], $_POST["password"], $_POST["passwordrepeat"], $_POST["firstname"], $_POST["lastname"])) {
         header("Location: /index.php?page=login");
