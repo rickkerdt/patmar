@@ -13,7 +13,22 @@ if (isset($_POST["register"])) {
         "remoteip" => $_SERVER['REMOTE_ADDR']
     ];
 
-    die(var_dump($data));
+    $options = array(
+        'http' => array(
+            'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+            'method'  => 'POST',
+            'content' => http_build_query($data)
+        )
+    );
+
+    $context  = stream_context_create($options);
+    $result = file_get_contents($url, false, $context);
+
+    if ($result === FALSE) {
+        die("fout");
+    }
+
+    die(var_dump($result));
 
     $user = new User();
     if ($user->register($_POST["email"], $_POST["password"], $_POST["passwordrepeat"], $_POST["firstname"], $_POST["lastname"])) {
