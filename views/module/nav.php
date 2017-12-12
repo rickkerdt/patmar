@@ -16,7 +16,7 @@
                 </div>
             </a>
             <ul class="navbar-nav mx-auto w-100 justify-content-center">
-                <li class="nav-item <?php if($_GET["page"]=="index"){echo "active";} ?>">
+                <li class="nav-item <?php if($_GET["page"]=="index" || !isset($_GET["page"])){echo "active";} ?>">
                     <a class="nav-link" href="?page=index">Home</a>
                 </li>
                 <li class="nav-item">
