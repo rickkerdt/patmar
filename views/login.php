@@ -5,50 +5,12 @@ if ($_SESSION["loggedIn"])
 $errors = [];
 
 if (isset($_POST["login"])) {
-    if (!isset($_SESSION["wrongpassword"])) {
-        $_SESSION["wrongpassword"] = 0;
-    }
-    if (isset($_SESSION["wrongpassword"]) && $_SESSION["wrongpassword"] < 5 && !isset($_SESSION["LAST_ACTIVITY"])) {
 
-        $user = new User();
-        if ($user->login($_POST["email"], $_POST["password"])) {
-            header("Location: /index.php?page=home");
-        } else {
-            $errors = $user->errorList;
-            if (!isset($_SESSION["worngpassword"])) {
-                $_SESSION["wrongpassword"] = 1;
-            } else {
-
-                $_SESSION["wrongpassword"] = $_SESSION["wrongpassword"] + 1;
-            }
-        }
+    $user = new User();
+    if ($user->login($_POST["email"], $_POST["password"])) {
+        header("Location: /index.php?page=home");
     } else {
-        array_push($errors, "U heeft te vaak verkeerde wachtwoord ingevoerd.");
-
-        $time = $_SERVER['REQUEST_TIME'];
-
-        /**
-         * for a 30 minute timeout, specified in seconds
-         */
-        $timeout_duration = 1800;
-
-        /**
-         * Here we look for the user's LAST_ACTIVITY timestamp. If
-         * it's set and indicates our $timeout_duration has passed,
-         * blow away any previous $_SESSION data and start a new one.
-         */
-        if (isset($_SESSION['LAST_ACTIVITY']) &&
-            ($time - $_SESSION['LAST_ACTIVITY']) > $timeout_duration) {
-            session_unset();
-            session_destroy();
-            session_start();
-        }
-
-        /**
-         * Finally, update LAST_ACTIVITY so that our timeout
-         * is based on it and not the user's login time.
-         */
-        $_SESSION['LAST_ACTIVITY'] = $time;
+        $errors = $user->errorList;
     }
 }
 
