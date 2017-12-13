@@ -47,6 +47,7 @@
                     <?php if (!isset($_SESSION["loggedIn"])) : ?>
                         <a class="nav-link" href="?page=login">Login</a>
                     <?php elseif ($_SESSION["loggedIn"] != ""): ?>
+                        <a class="nav-link" href="/dashboard/">Dashboard</a>
                         <a class="nav-link" href="?page=logout">Logout</a>
                     <?php endif; ?>
                 </li>
