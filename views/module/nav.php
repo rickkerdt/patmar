@@ -16,14 +16,18 @@
                 </div>
             </a>
             <ul class="navbar-nav mx-auto w-100 justify-content-center">
-                <li class="nav-item <?php if($_GET["page"]=="index" || !isset($_GET["page"])){echo "active";} ?>">
+                <li class="nav-item <?php if ($_GET["page"] == "index" || !isset($_GET["page"])) {
+                    echo "active";
+                } ?>">
                     <a class="nav-link" href="?page=index">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">Openingstijden</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle <?php if($_GET["page"]=="dealers" || $_GET["page"]=="partners"){echo "active";} ?>" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle <?php if ($_GET["page"] == "dealers" || $_GET["page"] == "partners") {
+                        echo "active";
+                    } ?>" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false">
                         Samenwerking
                     </a>
@@ -33,24 +37,34 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?php if($_GET["page"]=="storing"){echo "active";} ?>" href="?page=storing">Storing Melden</a>
+                    <a class="nav-link <?php if ($_GET["page"] == "storing") {
+                        echo "active";
+                    } ?>" href="?page=storing">Storing Melden</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?php if($_GET["page"]=="quotation"){echo "active";} ?>" href="?page=quotation">Offerte Aanvraag</a>
+                    <a class="nav-link <?php if ($_GET["page"] == "quotation") {
+                        echo "active";
+                    } ?>" href="?page=quotation">Offerte Aanvraag</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?php if($_GET["page"]=="contact"){echo "active";} ?>" href="?page=contact">Contact</a>
+                    <a class="nav-link <?php if ($_GET["page"] == "contact") {
+                        echo "active";
+                    } ?>" href="?page=contact">Contact</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto justify-content-end">
-                <li class="nav-item">
-                    <?php if (!isset($_SESSION["loggedIn"])) : ?>
+                <?php if (!isset($_SESSION["loggedIn"])) : ?>
+                    <li class="nav-item">
                         <a class="nav-link" href="?page=login">Login</a>
-                    <?php elseif ($_SESSION["loggedIn"] != ""): ?>
+                    </li>
+                <?php elseif ($_SESSION["loggedIn"] != ""): ?>
+                    <li class="nav-item">
                         <a class="nav-link" href="/dashboard/">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="?page=logout">Logout</a>
-                    <?php endif; ?>
-                </li>
+                    </li>
+                <?php endif; ?>
             </ul>
         </div>
     </nav>
@@ -67,19 +81,21 @@
             });
         });
     </script>
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="col" style="padding-bottom: 50px">
-                <div class="modal-header ">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&nbsp &nbsp</span>
-                    </button>
-                    <h5 class="modal-title mx-auto"  style="text-align: center;" id="exampleModalLabel"><b> Openingstijden</b></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
+                    <div class="modal-header ">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&nbsp &nbsp</span>
+                        </button>
+                        <h5 class="modal-title mx-auto" style="text-align: center;" id="exampleModalLabel"><b>
+                                Openingstijden</b></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
                 </div>
 
                 <div class="modal-body text-center">
