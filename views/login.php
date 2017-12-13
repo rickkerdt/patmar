@@ -8,7 +8,7 @@ if (isset($_POST["login"])) {
     if (!isset($_SESSION["wrongpassword"])) {
         $_SESSION["wrongpassword"] = 0;
     }
-    if (isset($_SESSION["wrongpassword"]) && $_SESSION["wrongpassword"] < 5) {
+    if (isset($_SESSION["wrongpassword"]) && $_SESSION["wrongpassword"] < 5 && !isset($_SESSION["LAST_ACTIVITY"])) {
 
         $url = "https://www.google.com/recaptcha/api/siteverify";
         $data = [
