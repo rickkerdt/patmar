@@ -22,8 +22,6 @@ if (isset($_POST["contactsend"])) {
     $context = stream_context_create($options);
     $result = file_get_contents($url, false, $context);
 
-    die(var_dump($result));
-
     if ($result["success"] == true) {
         if ($contact->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnumer'], $_POST['woonplaats'], $_POST['bericht'])) {
             $sent = true;
