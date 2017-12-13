@@ -1,4 +1,5 @@
-<?php if($sent){header("Location: ?page=index.php")}; ?>
+<?php if($sent){header("Location: ?page=index.php")};
+else:?>
 <div class="container" style="margin-top: 100px">
     <div class="row">
 
