@@ -12,6 +12,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
+<div style="padding-top:150px ">
+</div>
+
 <div class="container">
 <div class="row">
     <div class="col-sm-6 text-center dealer">
@@ -28,7 +31,7 @@
                     Zaterdag: 09:00 tot 13:00
 
                 </p>
-                <a href="#" class="btn btn-primary">website</a>
+                <a href="http://www.patmar.nl/" class="btn btn-primary">website</a>
             </div>
         </div>
     </div>
@@ -44,7 +47,7 @@
                     Openingstijden:<br>
                     Maandag t/m Vrijdag: 9:00 tot 17:00<br>
                     Zaterdag: 9:00 tot 12:30</p>
-                <a href="#" class="btn btn-primary">website</a>
+                <a href="http://www.a5decobarneveld.nl/" class="btn btn-primary">website</a>
             </div>
         </div>
     </div>
@@ -61,7 +64,7 @@
                     Maandag: gesloten<br>
                     Dinsdag t/m Vrijdag: 13:00 tot 18:00<br>
                     Zaterdag: 10:00 tot 13:00</p>
-                <a href="#" class="btn btn-primary">website</a>
+                <a href="http://www.a5decomiddelbeers.nl/" class="btn btn-primary">website</a>
             </div>
         </div>
     </div>
@@ -78,7 +81,7 @@
                     Maandag en Dinsdag: gesloten<br>
                     Woensdag t/m Vrijdag: 10:00 tot 18:00<br>
                     Zaterdag: 10:00 tot 16:00</p>
-                <a href="#" class="btn btn-primary">website</a>
+                <a href="http://www.patmar.nl/" class="btn btn-primary">website</a>
             </div>
         </div>
     </div>
@@ -95,7 +98,7 @@
                     Maandag: gesloten<br>
                     Dinsdag t/m Vrijdag van 10:00 tot 17:00<br>
                     Zaterdag van 10:00 tot 16:00</p>
-                <a href="#" class="btn btn-primary">website</a>
+                <a href="http://www.a5decozwolle.nl/" class="btn btn-primary">website</a>
             </div>
         </div>
     </div>
@@ -112,7 +115,7 @@
                     Maandag en Dinsdag: gesloten<br>
                     Woensdag t/m Vrijdag: 10:00 tot 18:00<br>
                     Zaterdag van 10:00 tot 16:00</p>
-                <a href="#" class="btn btn-primary">website</a>
+                <a href="http://www.a5decooosterhout.nl/" class="btn btn-primary">website</a>
             </div>
         </div>
     </div>
