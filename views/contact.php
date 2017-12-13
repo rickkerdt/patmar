@@ -32,7 +32,7 @@
                     <div class="row">
                         <div class="form-group">
 
-                            <input type="text" class="form-control" name="name" id="name"
+                            <input type="text" class="form-control" name="naam" id="name"
                                    placeholder="Naam *">
                         </div>
                     </div>
@@ -53,7 +53,7 @@
                     <div class="row">
                         <div class="form-group">
 
-                            <input cols="40" type="text" class="form-control" name="Telefoonnummer" id="Telefoonnummer"
+                            <input cols="40" type="text" class="form-control" name="telefoonnummer" id="Telefoonnummer"
                                    placeholder="Telefoonnummer *">
                         </div>
                     </div>
@@ -61,7 +61,7 @@
 
                         <div class="form-group">
 
-                            <textarea rows="4" cols="40" class="form-control" name="Bericht" id="Bericht"
+                            <textarea rows="4" cols="40" class="form-control" name="bericht" id="Bericht"
                                       placeholder="Bericht *"></textarea>
                         </div>
                     </div>
