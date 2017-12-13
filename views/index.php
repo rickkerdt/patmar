@@ -910,7 +910,7 @@
             <div data-u="slides" class="row mx-auto"
                  style="cursor:default;position:relative;top:0px;left:0px;width: 1200px;height:75px;overflow:hidden;">
                 <div>
-                    <a href="https://www.erhardt-markisen.de/nl"> <img data-u="image" src="../resource/assets/logo1.jpg"/></a>
+                    <a href="https://www.erhardt-markisen.de/nl"> <img data-u="image" src="../resource/assets/logo1.jpg"/> </a>
                 </div>
                 <div>
                     <a href="https://www.smitsrolluiken.nl/nl"> <img data-u="image" src="../resource/assets/logo2.jpg"/></a>
