@@ -5,7 +5,9 @@
  * Date: 11-12-2017
  * Time: 10:20
  */
+// De stylesheet voor de cards
 ?>
+
 <style>
     .card {
         position: relative;
@@ -322,6 +324,7 @@
             -moz-column-gap: 1.25rem;
             column-gap: 1.25rem;
         }
+
         .card-columns .card {
             display: inline-block;
             width: 100%;
@@ -329,7 +332,7 @@
         }
     }
 </style>
-
+<!--HTML code voor de cards -->
 <div style="padding-top:150px"></div>
 
 <link rel="stylesheet" href="" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
