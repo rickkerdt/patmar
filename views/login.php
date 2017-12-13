@@ -25,20 +25,20 @@ if (isset($_POST["login"])) {
     $result = file_get_contents($url, false, $context);
 
 
-    if ($result["success"] == true) {
-        if ($_POST["g-recaptcha-response"] != '') {
+//    if ($result["success"] == true) {
+//        if ($_POST["g-recaptcha-response"] != '') {
             $user = new User();
             if ($user->login($_POST["email"], $_POST["password"])) {
                 header("Location: /index.php?page=home");
             } else {
                 $errors = $user->errorList;
             }
-        } else {
-            array_push($errors, "Los de recaptcha a.u.b. op.");
-        }
-    } else {
-        array_push($errors, "Los de recaptcha a.u.b. op.");
-    }
+//        } else {
+//            array_push($errors, "Los de recaptcha a.u.b. op.");
+//        }
+//    } else {
+//        array_push($errors, "Los de recaptcha a.u.b. op.");
+//    }
 }
 
 ?>
@@ -66,10 +66,10 @@ if (isset($_POST["login"])) {
                     <label for="password">Wachtwoord</label>
                     <input type="password" class="form-control" name="password" id="password" placeholder="********">
                 </div>
-                <div class="form-group">
-                    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-                    <div class="g-recaptcha" data-sitekey="6LdLDzwUAAAAAO4DFj_pzlNNfrDeZ_up8UjwA_xj"></div>
-                </div>
+<!--                <div class="form-group">-->
+<!--                    <script src="https://www.google.com/recaptcha/api.js" async defer></script>-->
+<!--                    <div class="g-recaptcha" data-sitekey="6LdLDzwUAAAAAO4DFj_pzlNNfrDeZ_up8UjwA_xj"></div>-->
+<!--                </div>-->
                 <div class="form-group">
                     <input type="submit" class="form-control btn btn-primary" name="login" value="Login">
                 </div>
