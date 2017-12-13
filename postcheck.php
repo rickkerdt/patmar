@@ -58,7 +58,7 @@ if (isset($_POST["contactsend"])) {
         if ($_POST["g-recaptcha-response"] != '') {
             if ($contact->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnummer'], $_POST['woonplaats'], $_POST['bericht'])) {
                 //Contact formulier versturen naar back-end
-                if ($contact->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnumer'], $_POST['woonplaats'], $_POST['bericht'])) {
+                if ($contact->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnummer'], $_POST['woonplaats'], $_POST['bericht'])) {
                     $sent = true;
                     header("Location: ?page=index");
                 } else {
