@@ -1,47 +1,9 @@
 <?php
 if ($_SESSION["loggedIn"])
-    header("Location: /index.php?page=home");
-
-$errors = [];
-
-if (isset($_POST["register"])) {
-
-    $url = "https://www.google.com/recaptcha/api/siteverify";
-    $data = [
-        "secret" => "6LdLDzwUAAAAAFjh7PJWnBXmxKTs87I03ZSCMwV8",
-        "response" => $_POST["g-recaptcha-response"],
-        "remoteip" => $_SERVER['REMOTE_ADDR']
-    ];
-
-    $options = array(
-        'http' => array(
-            'header' => "Content-type: application/x-www-form-urlencoded\r\n",
-            'method' => 'POST',
-            'content' => http_build_query($data)
-        )
-    );
-
-    $context = stream_context_create($options);
-    $result = file_get_contents($url, false, $context);
-
-    if ($result["success"] == true) {
-        if($_POST["g-recaptcha-response"] != ''){
-            $user = new User();
-            if ($user->register($_POST["email"], $_POST["password"], $_POST["passwordrepeat"], $_POST["firstname"], $_POST["lastname"])) {
-                header("Location: /index.php?page=login");
-                die();
-            } else {
-                $errors = $user->errorList;
-            }
-
-        } else {
-            array_push($errors, "Los de recaptcha a.u.b. op.");
-        }
-    } else {
-        array_push($errors, "Los de recaptcha a.u.b. op.");
-    }
-}
-
+    echo "
+<script>
+    window.location.replace(\"?page=login\");
+</script>";
 ?>
 
 <div class="container" style="margin-top: 100px">
