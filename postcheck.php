@@ -6,7 +6,7 @@ if (isset($_POST["login"])) {
 
     $user = new User();
     if ($user->login($_POST["email"], $_POST["password"])) {
-        header("Location: /index.php?page=home");
+        header("Location: /dashboard/");
     } else {
         $errors = $user->errorList;
     }
