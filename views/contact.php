@@ -1,3 +1,4 @@
+<?php if($sent){header("Location: ?page=index.php")}; ?>
 <div class="container" style="margin-top: 100px">
     <div class="row">
 
@@ -22,7 +23,7 @@
                 <?php endif; ?>
                 <div class="form-group">
                     <?php if ($sent): ?>
-                        <div class="alert alert-success"><strong>Uw contactaanvraag is verzonden.</strong></div>
+                        <div class="alert alert-success"><strong>Uw contactaanvraag is succesvol verzonden.</strong></div>
                     <?php endif; ?>
                 </div>
                 <div class="form-group">

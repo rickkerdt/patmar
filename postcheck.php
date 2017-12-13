@@ -1,7 +1,7 @@
 <?php
 
 $errors = [];
-
+//Login form
 if (isset($_POST["login"])) {
 
     $user = new User();
@@ -12,6 +12,7 @@ if (isset($_POST["login"])) {
     }
 }
 
+//Contact form
 if (isset($_POST["contactsend"])) {
     $contact = new Contact();
     $sent = false;
@@ -49,6 +50,7 @@ if (isset($_POST["contactsend"])) {
     }
 }
 
+//Register form
 if (isset($_POST["register"])) {
 
     $url = "https://www.google.com/recaptcha/api/siteverify";
