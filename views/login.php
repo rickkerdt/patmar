@@ -26,11 +26,15 @@ if (isset($_POST["login"])) {
 
 
     if ($result["success"] == true) {
-        $user = new User();
-        if ($user->login($_POST["email"], $_POST["password"])) {
-            header("Location: /index.php?page=home");
+        if ($_POST["g-recaptcha-response"] != '') {
+            $user = new User();
+            if ($user->login($_POST["email"], $_POST["password"])) {
+                header("Location: /index.php?page=home");
+            } else {
+                $errors = $user->errorList;
+            }
         } else {
-            $errors = $user->errorList;
+            array_push($errors, "Los de recaptcha a.u.b. op.");
         }
     } else {
         array_push($errors, "Los de recaptcha a.u.b. op.");

@@ -25,12 +25,17 @@ if (isset($_POST["register"])) {
     $result = file_get_contents($url, false, $context);
 
     if ($result["success"] == true) {
-        $user = new User();
-        if ($user->register($_POST["email"], $_POST["password"], $_POST["passwordrepeat"], $_POST["firstname"], $_POST["lastname"])) {
-            header("Location: /index.php?page=login");
-            die();
+        if($_POST["g-recaptcha-response"] != ''){
+            $user = new User();
+            if ($user->register($_POST["email"], $_POST["password"], $_POST["passwordrepeat"], $_POST["firstname"], $_POST["lastname"])) {
+                header("Location: /index.php?page=login");
+                die();
+            } else {
+                $errors = $user->errorList;
+            }
+
         } else {
-            $errors = $user->errorList;
+            array_push($errors, "Los de recaptcha a.u.b. op.");
         }
     } else {
         array_push($errors, "Los de recaptcha a.u.b. op.");
