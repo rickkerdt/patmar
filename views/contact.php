@@ -75,7 +75,7 @@
 
                             <br>
                             <br>
-                            <p style="font-size: 0.5em;">Velden met een * zijn verplicht.</p>
+                            <p style="font-size: 0.9em;">Velden met een * zijn verplicht.</p>
                         </div>
                         <div class="form-group">
                             <?php if ($sent): ?>
