@@ -77,8 +77,6 @@ if (isset($_POST["login"])) {
          */
         $_SESSION['LAST_ACTIVITY'] = $time;
     }
-    var_dump($_SESSION);
-    die();
 }
 
 ?>
