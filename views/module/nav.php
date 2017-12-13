@@ -24,17 +24,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">Openingstijden</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle <?php if ($_GET["page"] == "dealers" || $_GET["page"] == "partners") {
+                <li class="nav-item">
+                    <a class="nav-link <?php if ($_GET["page"] == "dealers") {
                         echo "active";
-                    } ?>" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">
-                        Samenwerking
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="?page=dealers">Dealers</a>
-                        <a class="dropdown-item" href="?page=partners">Partners</a>
-                    </div>
+                    } ?>" href="?page=dealers">Samenwerking</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link <?php if ($_GET["page"] == "storing") {
