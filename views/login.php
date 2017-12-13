@@ -5,6 +5,9 @@ if ($_SESSION["loggedIn"])
 $errors = [];
 
 if (isset($_POST["login"])) {
+    if (!isset($_SESSION["wrongpassword"])) {
+        $_SESSION["wrongpassword"] = 0;
+    }
     if (isset($_SESSION["wrongpassword"]) && $_SESSION["wrongpassword"] < 5) {
 
         $url = "https://www.google.com/recaptcha/api/siteverify";
