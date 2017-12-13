@@ -59,8 +59,8 @@ if (isset($_POST["contactsend"])) {
             if ($contact->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnummer'], $_POST['woonplaats'], $_POST['bericht'])) {
                 //Contact formulier versturen naar back-end
                 if ($contact->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnummer'], $_POST['woonplaats'], $_POST['bericht'])) {
-                    $sent = true;
-                    header("Location: ?page=index");
+                    $_SESSION["sent"] = true;
+                    header("Location: ?page=contact");
                 } else {
                     //  Errors in een lijst neer zetten
                     $errors = $contact->errorList;
