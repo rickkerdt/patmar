@@ -21,7 +21,7 @@
                     <?php endforeach; ?>
                 <?php endif; ?>
                 <div class="form-group">
-                    <?php if ($_SESSION["sent"]): ?>
+                    <?php if ($_SESSION["sent"]): $_SESSION["sent"] = false; ?>
                         <div class="alert alert-success"><strong>Uw contactaanvraag is succesvol verzonden.</strong></div>
                     <?php endif; ?>
                 </div>
