@@ -22,7 +22,7 @@ if (isset($_POST["contactsend"])) {
     $context = stream_context_create($options);
     $result = file_get_contents($url, false, $context);
 
-    if ($result["success"] == "true") {
+    if ($result["success"] == true) {
         if ($contact->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnumer'], $_POST['woonplaats'], $_POST['bericht'])) {
             $sent = true;
         } else {
@@ -107,7 +107,18 @@ if (isset($_POST["contactsend"])) {
                     </div>
                     <div class="row">
                         <div class="form-group">
-                            <input type="submit" value="Versturen" name="contactsend">
+                            <input type="submit" disabled="disabled" value="Versturen" name="contactsend">
+                            <script type="text/javascript">
+                                if(grecaptcha.getResponse().length !== 0){
+                                    recaptcha_callback();
+                                }
+                                function recaptcha_callback() {
+
+                                    $('#sell_house_submit').removeAttr('disabled');
+
+                                }
+                            </script>
+
                             <br>
                             <br>
                             <p>* Verplicht in te vullen</p>
