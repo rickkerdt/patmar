@@ -20,7 +20,11 @@
                         </div>
                     <?php endforeach; ?>
                 <?php endif; ?>
-
+                <div class="form-group">
+                    <?php if ($sent): ?>
+                        <div class="alert alert-success"><strong>Uw contactaanvraag is verzonden.</strong></div>
+                    <?php endif; ?>
+                </div>
                 <div class="form-group">
                     <div class="row">
                         <div class="form-group">
@@ -77,11 +81,7 @@
                             <br>
                             <p style="font-size: 0.9em;">Velden met een * zijn verplicht.</p>
                         </div>
-                        <div class="form-group">
-                            <?php if ($sent): ?>
-                                Uw contactaanvraag is verzonden.
-                            <?php endif; ?>
-                        </div>
+
                     </div>
                 </div>
             </form>
