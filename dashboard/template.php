@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -24,6 +25,53 @@
 
 <?php include_once "views/modules/nav.php"; ?>
 <body>
+<div class="row">
+    <div class="col-md-2" style="padding: 50px 0 75px 0; background-color: #212529;">
+        <div class="dashboard-side-button active"><a href="#">Overzicht</a></div>
+        <div class="dashboard-side-button"><a href="#">Accounts</a></div>
+        <div class="dashboard-side-button"><a href="#">Offertes</a></div>
+        <div class="dashboard-side-button"><a href="#">Site Beheer</a></div>
+        <div class="dashboard-side-button"><a href="#">Storingen</a></div>
+    </div>
+    <div class="col">
+        <div class="jumbotron">
+            <h1>test</h1>
+        </div>
+    </div>
+</div>
+<style>
+    .dashboard-side-button {
+        width: inherit;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background-color: #2e3133;
+    }
+
+    .dashboard-side-button:hover {
+        background-color: #1b1e21;
+    }
+
+    .dashboard-side-button:hover > a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .dashboard-side-button a {
+        width: inherit;
+        height: inherit;
+        padding: 20px 60px;
+        color: grey;
+    }
+
+    .active {
+        background-color: #0c5460;
+    }
+
+    .active a {
+        color: white;
+    }
+</style>
 <?php
 
 if (isset($_GET["page"]) && $_GET["page"] != "") {
