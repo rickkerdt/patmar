@@ -910,34 +910,34 @@
             <div data-u="slides" class="row mx-auto"
                  style="cursor:default;position:relative;top:0px;left:0px;width: 1200px;height:75px;overflow:hidden;">
                 <div>
-                    <img data-u="image" src="../resource/assets/logo1.jpg"/>
+                    <a href="https://www.erhardt-markisen.de/nl"> <img data-u="image" src="../resource/assets/logo1.jpg"/></a>
                 </div>
                 <div>
-                    <img data-u="image" src="../resource/assets/logo2.jpg"/>
+                    <a href="https://www.smitsrolluiken.nl/nl"> <img data-u="image" src="../resource/assets/logo2.jpg"/></a>
                 </div>
                 <div>
-                    <img data-u="image" src="../resource/assets/logo3.jpg"/>
+                    <a href="https://www.somfy.nl/"><img data-u="image" src="../resource/assets/logo3.jpg"/></a>
                 </div>
                 <div>
-                    <img data-u="image" src="../resource/assets/logo4.jpg"/>
+                    <a href="https://www.tibelly.nl/"><img data-u="image" src="../resource/assets/logo4.jpg"/></a>
                 </div>
                 <div>
-                    <img data-u="image" src="../resource/assets/logo5.jpg"/>
+                    <a href="http://www.unilux.nl/nl/"><img data-u="image" src="../resource/assets/logo5.jpg"/></a>
                 </div>
                 <div>
-                    <img data-u="image" src="../resource/assets/logo6.jpg"/>
+                    <a href="http://www.vekakozijn.nl/systeem/home.html"> <img data-u="image" src="../resource/assets/logo6.jpg"/></a>
                 </div>
                 <div>
-                    <img data-u="image" src="../resource/assets/logo7.jpg"/>
+                    <a href="https://www.awgaragedeuren.nl/"> <img data-u="image" src="../resource/assets/logo7.jpg"/></a>
                 </div>
                 <div>
-                    <img data-u="image" src="../resource/assets/logo8.jpg"/>
+                    <a href="http://www.dickson-constant.com/nl/NL"><img data-u="image" src="../resource/assets/logo8.jpg"/></a>
                 </div>
                 <div>
-                    <img data-u="image" src="../resource/assets/logo9.jpg"/>
+                    <a href="http://www.wigger.de/"> <img data-u="image" src="../resource/assets/logo9.jpg"/></a>
                 </div>
                 <div>
-                    <img data-u="image" src="../resource/assets/logo10.jpg"/>
+                    <a href="http://www.alluma.nl/"><img data-u="image" src="../resource/assets/logo10.jpg"/></a>
                 </div>
             </div>
         </div>
