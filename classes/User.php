@@ -90,7 +90,7 @@ class User
 
                 return true;
             } else {
-                array_push($this->errorList, "Gebruikersnaam of wachtwoord is fout.");
+                array_push($this->errorList, "Uw gebruikersnaam of wachtwoord is onjuist.");
                 return false;
             }
         } else {
@@ -111,17 +111,17 @@ class User
 
 //        Validatie proces
         if (!$uppercase || !$lowercase || !$number || strlen($password) < 8 || !$symbols) {
-            array_push($this->errorList, "Het wachtwoord moet minimaal een hoofdletter, nummer, speciale teken en minimaal 8 characters bevatten.");
+            array_push($this->errorList, "Het wachtwoord moet een hoofdletter, kleine letter, cijfer en speciaalteken bevatten en minimaal 8 tekens lang zijn.");
             $valid = false;
         }
 
         if ($password != $passwordRepeat) {
-            array_push($this->errorList, "De wachtwoorden komen niet met elkaar overeen.");
+            array_push($this->errorList, "De ingevulde wachtwoorden komen niet overeen.");
             $valid = false;
         }
 
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            array_push($this->errorList, "Het email adres klopt niet.");
+            array_push($this->errorList, "Het emailadres is niet of niet correct ingevuld.");
             $valid = false;
         }
 

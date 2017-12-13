@@ -2,7 +2,7 @@
 
 //Lijst met errors
 $errors = [];
-
+//Login form
 //checkt of de login formulier is ontvangen
 if (isset($_POST["login"])) {
 
@@ -20,6 +20,7 @@ if (isset($_POST["login"])) {
 }
 
 //Checkt of contact formulier is verstuurd
+//Contact form
 if (isset($_POST["contactsend"])) {
     //Nieuwe instantie van contact aanmaken
     $contact = new Contact();
@@ -55,9 +56,11 @@ if (isset($_POST["contactsend"])) {
 
         //Kijkt of er response is
         if ($_POST["g-recaptcha-response"] != '') {
+            if ($contact->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnummer'], $_POST['woonplaats'], $_POST['bericht'])) {
             //Contact formulier versturen naar back-end
             if ($contact->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnumer'], $_POST['woonplaats'], $_POST['bericht'])) {
                 $sent = true;
+                header("Location: ?page=index");
             } else {
                 //  Errors in een lijst neer zetten
                 $errors = $contact->errorList;
@@ -74,6 +77,7 @@ if (isset($_POST["contactsend"])) {
 
 
 //Kijkt of register formulier is verstuurd
+//Register form
 if (isset($_POST["register"])) {
 
     //Google ReCaptcha API url

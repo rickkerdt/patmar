@@ -1,3 +1,43 @@
+<?php
+$errors = [];
+if (isset($_POST["offertesend"])) {
+    $contact = new Contact();
+    $sent = false;
+
+    $url = "https://www.google.com/recaptcha/api/siteverify";
+    $data = [
+        "secret" => "6LdLDzwUAAAAAFjh7PJWnBXmxKTs87I03ZSCMwV8",
+        "response" => $_POST["g-recaptcha-response"],
+        "remoteip" => $_SERVER['REMOTE_ADDR']
+    ];
+
+    $options = array(
+        'http' => array(
+            'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+            'method' => 'POST',
+            'content' => http_build_query($data)
+        )
+    );
+
+    $context = stream_context_create($options);
+    $result = file_get_contents($url, false, $context);
+
+    if ($result["success"] == true) {
+        if($_POST["g-recaptcha-response"] != ''){
+            if ($contact->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnumer'], $_POST['woonplaats'], $_POST['bericht'])) {
+                $sent = true;
+            } else {
+                $errors = $contact->errorList;
+            }
+        } else {
+            array_push($errors, "Los A.U.B. de recaptcha op.");
+        }
+    } else {
+        array_push($errors, "Los A.U.B. de recaptcha op.");
+    }
+}
+?>
+
 <div class="container" style="margin-top: 100px">
     <div class="row">
 
@@ -7,8 +47,8 @@
 
             <br>
             <p>Heeft u vragen? &nbsp;<span style="line-height: 1.4;">Vul dan onderstaand formulier in.<br/>
-            Wij zullen zo spoedig mogelijk contact met u opnemen.<br/>
-            Voor een directe reactie kunt u ook bellen tijdens kantooruren.</span></p>
+            Wij nemen dan zo spoedig mogelijk contact met u op.<br/>
+            Wilt u rechtstreeks contact dan kunt u ons bellen.</span></p>
             <br>
 
             <form action="?page=contact" method="post">
@@ -20,11 +60,7 @@
                         </div>
                     <?php endforeach; ?>
                 <?php endif; ?>
-                <div class="form-group">
-                    <?php if ($sent): ?>
-                        <div class="alert alert-success"><strong>Uw contactaanvraag is succesvol verzonden.</strong></div>
-                    <?php endif; ?>
-                </div>
+
                 <div class="form-group">
                     <div class="row">
                         <div class="form-group">
@@ -36,7 +72,7 @@
                     <div class="row">
                         <div class="form-group">
 
-                            <input type="text" class="form-control" name="naam" id="name"
+                            <input type="text" class="form-control" name="name" id="name"
                                    placeholder="Naam *">
                         </div>
                     </div>
@@ -57,7 +93,7 @@
                     <div class="row">
                         <div class="form-group">
 
-                            <input cols="40" type="text" class="form-control" name="telefoonnummer" id="Telefoonnummer"
+                            <input cols="40" type="text" class="form-control" name="Telefoonnummer" id="Telefoonnummer"
                                    placeholder="Telefoonnummer *">
                         </div>
                     </div>
@@ -65,7 +101,7 @@
 
                         <div class="form-group">
 
-                            <textarea rows="4" cols="40" class="form-control" name="bericht" id="Bericht"
+                            <textarea rows="4" cols="40" class="form-control" name="Bericht" id="Bericht"
                                       placeholder="Bericht *"></textarea>
                         </div>
                     </div>
@@ -79,9 +115,13 @@
 
                             <br>
                             <br>
-                            <p style="font-size: 0.9em;">Velden met een * zijn verplicht.</p>
+                            <p>* Verplicht in te vullen</p>
                         </div>
-
+                        <div class="form-group">
+                            <?php if ($sent): ?>
+                                Het is verstuurd
+                            <?php endif; ?>
+                        </div>
                     </div>
                 </div>
             </form>

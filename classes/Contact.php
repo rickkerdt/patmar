@@ -36,23 +36,23 @@ class Contact
         $valid = true;
 
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            array_push($this->errorList, "Het email adres klopt niet.");
+            array_push($this->errorList, "Het emailadres is niet of niet correct ingevuld.");
             $valid = false;
         }
         if (!preg_match('@[a-zA-Z]@',$naam)) {
-            array_push($this->errorList, "U moet uw naam nog invullen.");
+            array_push($this->errorList, "Uw naam is niet of niet correct ingevuld.");
             $valid = false;
       }
         if (!preg_match('@[a-zA-Z]@',$woonplaats)) {
-             array_push($this->errorList, "Woonplaats invullen is verplicht.");
+             array_push($this->errorList, "Uw woonplaats is niet ingevuld.");
          $valid = false;
         }
         if (!preg_match('@[0-9]@', $telefoonnumer)) {
-            array_push($this->errorList, "Er moet een telefoon nummer ingevuld worden.");
+            array_push($this->errorList, "Uw telefoonnummer is niet of niet correct ingevuld");
             $valid = false;
         }
         if (!preg_match('@[a-zA-Z0-9]@',$bericht)) {
-            array_push($this->errorList, "U moet een bericht invullen.");
+            array_push($this->errorList, "het berichtveld moet een bericht bevatten.");
             $valid = false;
         }
 

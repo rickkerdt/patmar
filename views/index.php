@@ -92,8 +92,8 @@
                 <p>Ons bedrijf Patmar is al meer dan 58 jaar een toonaangevend zonwering bedrijf in de regio Flevoland /
                     Drenthe</p>
 
-                <p>Wij leveren aan particulieren en bedrijven, alle soorten zonwering, kunststof kozijnen, dakkapellen,
-                    garagedeuren, glasschuifwanden, terrasoverkappingen o.a. veranda's en tuinkamers. Ook raamdecoratie
+                <p>Aan particulieren en bedrijven leveren wij alle soorten zonwering, kunststof kozijnen, dakkapellen,
+                    garagedeuren, glazenschuifwanden, terrasoverkappingen waaronder veranda's en tuinkamers. Ook raamdecoratie
                     hebben wij in ons assortiment.</p>
 
                 <p>Als A5 Deco dealer onderscheiden wij ons door gedegen vakmanschap.<br>
@@ -105,15 +105,15 @@
                     Wij als A5 dealer geven u graag een gedegen interieuradvies gericht op woningstoffering en
                     kleurgebruik.<br>
                     Daarnaast zult u zien dat de binnenzonweringen, buitenzonwering, kunststof kozijnen, garagedeuren,
-                    rolluiken ect wat kleur betreft goed op elkaar af te stemmen zijn.</p>
+                    rolluiken ect. wat kleur betreft goed op elkaar af te stemmen zijn.</p>
 
-                <p>Ook voor verandadaken ook wel veranda's genoemd bent u bij ons aan het juiste adres, er is een keuze
-                    uit verschillende goten rond, vlak en klassiek.<br>
-                    En er zijn verschillende soorten dakplaten veiligheidsglas, helder, opaal en de zonwerende plaat.
+                <p>Ook voor verandadaken, ook wel veranda's genoemd, bent u bij ons aan het juiste adres. Er is een keuze
+                    uit verschillende goten: rond, vlak of klassiek.<br>
+                    Ook zijn er verschillende soorten dakplaten: veiligheidsglas, helder, opaal en de zonwerende plaat.
                 </p>
 
-                <p>Sinds langere tijd zijn wij al dealer van VEKA Kunststof kozijnen deze kozijnen zijn een begrip in
-                    Nederland vanwege de goede kwaliteit en afwerking. Heeft u nieuwe kozijnen nodig bel of mail en wij
+                <p>Sinds langere tijd zijn wij al dealer van VEKA kunststof kozijnen. Deze kozijnen zijn een begrip in
+                    Nederland vanwege de goede kwaliteit en afwerking. Heeft u nieuwe kozijnen nodig bel ons of stuur ons een mailtje en wij
                     zullen op al uw vragen een passend antwoord geven.</p>
                 </p>
             </div>
