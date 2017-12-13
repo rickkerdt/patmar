@@ -866,7 +866,7 @@
                 var jssor_1_options = {
                     $AutoPlay: 1,
                     $AutoPlaySteps: 2,
-                    $SlideDuration: 160,
+                    $SlideDuration: 200,
                     $SlideWidth: 200,
                     $SlideSpacing: 2,
                     $Cols: 12,
@@ -944,6 +944,106 @@
     </div>
     <script type="text/javascript">jssor_1_slider_init();</script>
 </div>
+
+<div>
+    <script src="../resource/js/logoslider.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jssor_2_slider_init = function () {
+
+            var jssor_2_options = {
+                $AutoPlay: 1,
+                $AutoPlaySteps: 2,
+                $SlideDuration: 160,
+                $SlideWidth: 200,
+                $SlideSpacing: 2,
+                $Cols: 12,
+                $Align: 400,
+            };
+
+            var jssor_2_slider = new $JssorSlider$("jssor_2", jssor_2_options);
+
+            var MAX_WIDTH = 1200;
+
+            function ScaleSlider() {
+                var containerElement = jssor_2_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_2_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+        };
+    </script>
+
+    <div id="jssor_2" class="col" style="padding-top:50px; margin: 0 auto; width: inherit">
+        <!-- Loading Screen -->
+
+        <div data-u="loading" class="jssor2-009-spin"
+             style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:0px;height:28px;" src=""/>
+        </div>
+        <div data-u="slides" class="row mx-auto"
+             style="cursor:default;position:relative;top:0px;left:0px;width: 1200px;height:75px;overflow:hidden;">
+            <div>
+                <a href="https://www.bna.nl/over-bna/"><img data-u="image" src="../resource/assets/logo11.png"/></a>
+            </div>
+            <div>
+                <a href="http://www.bau-bouwbegeleiding.nl/begeleiden/"><img data-u="image" src="../resource/assets/logo12.png"/></a>
+            </div>
+            <div>
+                <a href="http://www.bouwbedrijfvanderkolkbv.nl/"><img data-u="image" src="../resource/assets/logo13.jpg"/></a>
+            </div>
+            <div>
+                <a href="http://www.bouwbedrijfpost.nl/"><img data-u="image" src="../resource/assets/logo14.jpg"/></a>
+            </div>
+            <div>
+                <a href="http://www.korfker.nl/"><img data-u="image" src="../resource/assets/logo15.png"/></a>
+            </div>
+            <div>
+                <a href="https://www.vanwijnen.nl/meer-dan-bouwen/" ><img data-u="image"  src="../resource/assets/logo16.png"/></a>
+            </div>
+            <div>
+                <a href="https://www.weever.nl/"><img data-u="image" src="../resource/assets/logo17.jpg"/></a>
+            </div>
+            <div>
+                <a href="https://www.bna.nl/over-bna/"><img data-u="image" src="../resource/assets/logo11.png"/></a>
+            </div>
+            <div>
+                <a href="http://www.bau-bouwbegeleiding.nl/begeleiden/"><img data-u="image" src="../resource/assets/logo12.png"/></a>
+            </div>
+            <div>
+                <a href="http://www.bouwbedrijfvanderkolkbv.nl/"><img data-u="image" src="../resource/assets/logo13.jpg"/></a>
+            </div>
+            <div>
+                <a href="http://www.bouwbedrijfpost.nl/"><img data-u="image" src="../resource/assets/logo14.jpg"/></a>
+            </div>
+            <div>
+                <a href="http://www.korfker.nl/"><img data-u="image" src="../resource/assets/logo15.png"/></a>
+            </div>
+            <div>
+                <a href="https://www.vanwijnen.nl/meer-dan-bouwen/" ><img data-u="image" src="../resource/assets/logo16.png"/></a>
+            </div>
+            <div>
+                <a href="https://www.weever.nl/"> <img data-u="image" src="../resource/assets/logo17.jpg"/></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">jssor_2_slider_init();</script>
+</div>
+
 <div class="map-responsive" style="width: 100%">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2417.519901554985!2d6.18677146522699!3d52.704760720686316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c87285002ce80b%3A0xf96a8753275e97c5!2sJohan+van+Oldenbarneveltstraat+3%2C+7942+GZ+Meppel!5e0!3m2!1snl!2snl!4v1481278702622" height="450" frameborder="0" style="border:0; width: inherit" allowfullscreen></iframe>
 </div>
