@@ -15,17 +15,16 @@ if (isset($_POST["register"])) {
 
     $options = array(
         'http' => array(
-            'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
-            'method'  => 'POST',
+            'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+            'method' => 'POST',
             'content' => http_build_query($data)
         )
     );
 
-    $context  = stream_context_create($options);
+    $context = stream_context_create($options);
     $result = file_get_contents($url, false, $context);
 
-    if($result["success"] == true)
-    {
+    if ($result["success"] == true) {
         $user = new User();
         if ($user->register($_POST["email"], $_POST["password"], $_POST["passwordrepeat"], $_POST["firstname"], $_POST["lastname"])) {
             header("Location: /index.php?page=login");
@@ -34,7 +33,7 @@ if (isset($_POST["register"])) {
             $errors = $user->errorList;
         }
     } else {
-        die("<br><br><br> <h1>ERROR</h1>");
+        array_push($errors, "Los de recaptcha a.u.b. op.");
     }
 }
 
@@ -85,10 +84,10 @@ if (isset($_POST["register"])) {
                     <input type="password" class="form-control" name="passwordrepeat" id="passwordrepeat"
                            placeholder="********">
                 </div>
-                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-                    <div class="g-recaptcha"  data-sitekey="6LdLDzwUAAAAAO4DFj_pzlNNfrDeZ_up8UjwA_xj"></div>
-                    <br/>
-
+                <div class="form-group">
+                    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                    <div class="g-recaptcha" data-sitekey="6LdLDzwUAAAAAO4DFj_pzlNNfrDeZ_up8UjwA_xj"></div>
+                </div>
                 <div class="form-group">
                     <input type="submit" class="form-control btn btn-primary" name="register" value="Registreren">
                 </div>
