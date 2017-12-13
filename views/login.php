@@ -2,7 +2,7 @@
 if ($_SESSION["loggedIn"])
     echo "
 <script>
-    window.location.replace(\"?page=login\");
+    window.location.replace(\"?page=home\");
 </script>";
 ?>
 
