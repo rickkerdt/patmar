@@ -10,27 +10,6 @@ if (isset($_POST["login"])) {
     }
     if (isset($_SESSION["wrongpassword"]) && $_SESSION["wrongpassword"] < 5 && !isset($_SESSION["LAST_ACTIVITY"])) {
 
-        $url = "https://www.google.com/recaptcha/api/siteverify";
-        $data = [
-            "secret" => "6LdLDzwUAAAAAFjh7PJWnBXmxKTs87I03ZSCMwV8",
-            "response" => $_POST["g-recaptcha-response"],
-            "remoteip" => $_SERVER['REMOTE_ADDR']
-        ];
-
-        $options = array(
-            'http' => array(
-                'header' => "Content-type: application/x-www-form-urlencoded\r\n",
-                'method' => 'POST',
-                'content' => http_build_query($data)
-            )
-        );
-
-        $context = stream_context_create($options);
-        $result = file_get_contents($url, false, $context);
-
-
-//    if ($result["success"] == true) {
-//        if ($_POST["g-recaptcha-response"] != '') {
         $user = new User();
         if ($user->login($_POST["email"], $_POST["password"])) {
             header("Location: /index.php?page=home");
@@ -43,12 +22,6 @@ if (isset($_POST["login"])) {
                 $_SESSION["wrongpassword"] = $_SESSION["wrongpassword"] + 1;
             }
         }
-//        } else {
-//            array_push($errors, "Los de recaptcha a.u.b. op.");
-//        }
-//    } else {
-//        array_push($errors, "Los de recaptcha a.u.b. op.");
-//    }
     } else {
         array_push($errors, "U heeft te vaak verkeerde wachtwoord ingevoerd.");
 
