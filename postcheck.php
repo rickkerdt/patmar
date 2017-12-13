@@ -36,7 +36,7 @@ if (isset($_POST["contactsend"])) {
 
     if ($result["success"] == true) {
         if ($_POST["g-recaptcha-response"] != '') {
-            if ($contact->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnumer'], $_POST['woonplaats'], $_POST['bericht'])) {
+            if ($contact->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnummer'], $_POST['woonplaats'], $_POST['bericht'])) {
                 $sent = true;
             } else {
                 $errors = $contact->errorList;
