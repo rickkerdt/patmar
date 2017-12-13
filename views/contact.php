@@ -7,8 +7,8 @@
 
             <br>
             <p>Heeft u vragen? &nbsp;<span style="line-height: 1.4;">Vul dan onderstaand formulier in.<br/>
-            Wij nemen dan zo spoedig mogelijk contact met u op.<br/>
-            Wilt u rechtstreeks contact dan kunt u ons bellen.</span></p>
+            Wij zullen zo spoedig mogelijk contact met u opnemen.<br/>
+            Voor een directe reactie kunt u ook bellen tijdens kantooruren.</span></p>
             <br>
 
             <form action="?page=contact" method="post">
@@ -75,11 +75,11 @@
 
                             <br>
                             <br>
-                            <p>* Verplicht in te vullen</p>
+                            <p style="font-size: 10em;">Velden met een * zijn verplicht.</p>
                         </div>
                         <div class="form-group">
                             <?php if ($sent): ?>
-                                Het is verstuurd
+                                Uw contactaanvraag is verzonden.
                             <?php endif; ?>
                         </div>
                     </div>
