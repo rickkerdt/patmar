@@ -109,7 +109,4 @@
             </div>
         </div>
     </div>
-    <?php if($sent): ?>
-    <script> alert("<div class='alert alert-success'><strong>Contact aanvraag succesvol verzonden.</strong> </div>") </script>
-    <?php endif; ?>
 </header>
