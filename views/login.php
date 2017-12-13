@@ -1,19 +1,9 @@
 <?php
 if ($_SESSION["loggedIn"])
-    header("Location: /index.php?page=home");
-
-$errors = [];
-
-if (isset($_POST["login"])) {
-
-    $user = new User();
-    if ($user->login($_POST["email"], $_POST["password"])) {
-        header("Location: /index.php?page=home");
-    } else {
-        $errors = $user->errorList;
-    }
-}
-
+    echo "
+<script>
+    window.location.replace(\"?page=login\");
+</script>";
 ?>
 
 <div class="container" style="margin-top: 100px">
