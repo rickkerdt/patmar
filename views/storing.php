@@ -20,7 +20,7 @@
             Voor een directe reactie kunt u ook bellen tijdens kantooruren.</span></p>
             <br>
 
-            <form action="?page=storing.php" method="post">
+            <form action="?page=storing" method="post">
 
                 <?php if (count($errors) > 0) : ?>
     <?php foreach ($errors as $error) : ?>
