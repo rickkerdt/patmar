@@ -77,6 +77,122 @@ if (isset($_POST["contactsend"])) {
     }
 }
 
+//Kijkt of Storing formulier is verstuurd
+//Storing form
+if (isset($_POST["storingsend"])) {
+    //Nieuwe instantie van contact aanmaken
+    $storing = new Storing();
+    //boolean waarde voor of het verzonden is
+    $sent = false;
+
+    //Url voor Google ReCaptcha api
+    $url = "https://www.google.com/recaptcha/api/siteverify";
+
+    //Data wat er verstuurd moest worden
+    $data = [
+        "secret" => "6LdLDzwUAAAAAFjh7PJWnBXmxKTs87I03ZSCMwV8",
+        "response" => $_POST["g-recaptcha-response"],
+        "remoteip" => $_SERVER['REMOTE_ADDR']
+    ];
+
+    //Opties voor de http request
+    $options = array(
+        'http' => array(
+            'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+            'method' => 'POST',
+            'content' => http_build_query($data)
+        )
+    );
+
+    //Context voor stream aanmaken
+    $context = stream_context_create($options);
+    //Resultaat ophalen van de url
+    $result = file_get_contents($url, false, $context);
+
+    //Kijkt of het succesvol is
+    if ($result["success"] == true) {
+
+        //Kijkt of er response is
+        if ($_POST["g-recaptcha-response"] != '') {
+            if ($storing->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnummer'], $_POST['woonplaats'], $_POST['bericht'])) {
+                //Contact formulier versturen naar back-end
+                if ($storing->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnummer'], $_POST['woonplaats'], $_POST['bericht'])) {
+                    $_SESSION["sent"] = true;
+                    header("Location: ?page=storing");
+                    die();
+                } else {
+                    //  Errors in een lijst neer zetten
+                    $errors = $storing->errorList;
+                }
+            } else {
+                //Error toevoegen aan lijst
+                array_push($errors, "Los de recaptcha a.u.b. op.");
+            }
+        } else {
+            //Error toevoegen aan lijst
+            array_push($errors, "Los de recaptcha a.u.b. op.");
+        }
+    }
+}
+
+//Kijkt of offerte formulier is verstuurd
+//Offerte form
+if (isset($_POST["offertesend"])) {
+    //Nieuwe instantie van contact aanmaken
+    $offerte = new Offerte();
+    //boolean waarde voor of het verzonden is
+    $sent = false;
+
+    //Url voor Google ReCaptcha api
+    $url = "https://www.google.com/recaptcha/api/siteverify";
+
+    //Data wat er verstuurd moest worden
+    $data = [
+        "secret" => "6LdLDzwUAAAAAFjh7PJWnBXmxKTs87I03ZSCMwV8",
+        "response" => $_POST["g-recaptcha-response"],
+        "remoteip" => $_SERVER['REMOTE_ADDR']
+    ];
+
+    //Opties voor de http request
+    $options = array(
+        'http' => array(
+            'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+            'method' => 'POST',
+            'content' => http_build_query($data)
+        )
+    );
+
+    //Context voor stream aanmaken
+    $context = stream_context_create($options);
+    //Resultaat ophalen van de url
+    $result = file_get_contents($url, false, $context);
+
+    //Kijkt of het succesvol is
+    if ($result["success"] == true) {
+
+        //Kijkt of er response is
+        if ($_POST["g-recaptcha-response"] != '') {
+            if ($offerte->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnummer'], $_POST['woonplaats'], $_POST['bericht'])) {
+                //Contact formulier versturen naar back-end
+                if ($offerte->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnummer'], $_POST['woonplaats'], $_POST['bericht'])) {
+                    $_SESSION["sent"] = true;
+                    header("Location: ?page=offerte");
+                    die();
+                } else {
+                    //  Errors in een lijst neer zetten
+                    $errors = $offerte->errorList;
+                }
+            } else {
+                //Error toevoegen aan lijst
+                array_push($errors, "Los de recaptcha a.u.b. op.");
+            }
+        } else {
+            //Error toevoegen aan lijst
+            array_push($errors, "Los de recaptcha a.u.b. op.");
+        }
+    }
+}
+
 //Kijkt of register formulier is verstuurd
 //Register form
 if (isset($_POST["register"])) {
