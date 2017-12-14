@@ -66,6 +66,14 @@
                                       placeholder="Bericht *" required></textarea>
                 </div>
             </div>
+            <!--Upload knop voor foto's-->
+            <div>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                Select image to upload:
+                <input type="file" name="fileToUpload" id="fileToUpload"></br>
+            </form>
+            </div>
+            <!--Google recaptcha-->
             <div class="form-group">
                 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                 <div class="g-recaptcha" data-sitekey="6LdLDzwUAAAAAO4DFj_pzlNNfrDeZ_up8UjwA_xj"></div>
