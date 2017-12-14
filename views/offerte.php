@@ -26,35 +26,35 @@
                 <div class="form-group">
 
                     <input type="email" class="form-control" name="email" id="email"
-                           placeholder="voorbeeld@mail.nl *">
+                           placeholder="voorbeeld@mail.nl *" required>
                 </div>
             </div>
             <div class="row">
                 <div class="form-group">
 
                     <input type="text" class="form-control" name="naam" id="name"
-                           placeholder="Naam *">
+                           placeholder="Naam *" required>
                 </div>
             </div>
             <div class="row">
                 <div class="form-group">
 
                     <input type="text" class="form-control" name="adres" id="adres"
-                           placeholder="Adres">
+                           placeholder="Adres *" required>
                 </div>
             </div>
             <div class="row">
                 <div class="form-group">
 
                     <input type="text" class="form-control" name="woonplaats" id="woonplaats"
-                           placeholder="Woonplaats *">
+                           placeholder="Woonplaats *" required>
                 </div>
             </div>
             <div class="row">
                 <div class="form-group">
 
                     <input cols="40" type="text" class="form-control" name="telefoonnummer" id="Telefoonnummer"
-                           placeholder="Telefoonnummer *">
+                           placeholder="Telefoonnummer *"required>
                 </div>
             </div>
             <div class="row">
@@ -62,7 +62,7 @@
                 <div class="form-group">
 
                             <textarea rows="4" cols="40" class="form-control" name="bericht" id="Bericht"
-                                      placeholder="Bericht *"></textarea>
+                                      placeholder="Bericht *" required></textarea>
                 </div>
             </div>
             <div class="form-group">
