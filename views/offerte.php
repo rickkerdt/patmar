@@ -1,5 +1,5 @@
 <div class="col-md-6 jumbotron mx-auto">
-    <h1 class="text">Contact</h1>
+    <h1 class="text">Offerte aanvragen</h1>
 
     <br>
     <p>&nbsp;<span style="line-height: 1.4;">Vul onderstaand formulier in voor een offerte.<br/>
