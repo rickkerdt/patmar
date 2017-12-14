@@ -85,9 +85,9 @@
         </div>
     </div>
     <div class="col-sm-12 col-md-9 d-block mx-auto"
-         style="padding-right: 4%;padding-left: 30px; padding-top: 50px; padding-bottom: 50px;">
+         style="padding-right: 30px; padding-left: 30px; padding-top: 50px; padding-bottom: 50px;">
         <div class="card ">
-            <div class="card-block" style="padding-left: 5px; border-color: #00769f">
+            <div class="card-block" style="padding-left: 5px; padding-right: 5px; border-color: #00769f">
                 <h3 class="card-title text-center">Over Patmar</h3>
                 <p class="card-text">
                 <p>Ons bedrijf Patmar is al meer dan 58 jaar een toonaangevend zonwering bedrijf in de regio Flevoland /
