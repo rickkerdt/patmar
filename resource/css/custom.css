@@ -195,7 +195,7 @@ nav{
 /* remove link color */
 a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
 }
 a:hover{
     color: black;
