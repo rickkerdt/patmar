@@ -7,7 +7,8 @@
  */
 // De stylesheet voor de cards
 ?>
-
+<html>
+<head>
 <style>
     .card {
         position: relative;
@@ -333,17 +334,20 @@
     }
 </style>
 <!--HTML code voor de cards -->
-<div style="padding-top:150px"></div>
+</head>
+<body>
+<div class="d-none d-lg-block d-xl-block" style="padding-top:160px;"></div>
+<div class="d-lg-none d-xl-none d-md-block d-sm-block" style="padding-top:60px;"></div>
 
 <link rel="stylesheet" href="" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
-<div class="container">
+<div class="container ">
 <div class="row">
-    <div class="col-sm-6 text-center dealer">
-        <div class="card card-inverse card-info mb-3" style= "width: 30rem;">
+    <div class="col-lg-6 col-md-12 text-center mx-auto" style="border-radius: 100%;">
+        <div class="card card-inverse card-info mb-3">
             <div class="card-block">
                 <h3 class="card-title">A5 Patmar Marknesse</h3>
-                <p class="card-text">Hoge Sluiswal 47<br>
+                <p class="card-text">Hoge Sluiswal 47<br>s
                     8316 AA Marknesse<br>
                     tel. 0527-612277, fax: 0527-620955<br>
                     info@patmar.nl --
@@ -356,8 +360,8 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-6 text-center dealer">
-        <div class="card card-inverse card-info mb-3" style="width: 30rem;">
+    <div class="col-lg-6 col-md-12  text-center mx-auto">
+        <div class="card card-inverse card-info mb-3">
             <div class="card-block">
                 <h3 class="card-title">A5 Habridon Barneveld</h3>
                 <p class="card-text">Pascalstraat 26<br>
@@ -372,8 +376,10 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-6 text-center dealer">
-        <div class="card card-inverse card-info mb-3" style="width: 30rem;">
+</div>
+    <div class="row">
+    <div class="col-lg-6 col-md-12 text-center mx-auto">
+        <div class="card card-inverse card-info mb-3">
             <div class="card-block">
                 <h3 class="card-title">A5 Deco Middelbeers </h3>
                 <p class="card-text">Industrieweg 8<br>
@@ -389,8 +395,8 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-6 text-center dealer">
-        <div class="card card-inverse card-info mb-3" style="width: 30rem;">
+    <div class="col-lg-6 col-md-12 text-center mx-auto">
+        <div class="card card-inverse card-info mb-3" >
             <div class="card-block">
                 <h3 class="card-title">A5 Patmar Meppel  </h3>
                 <p class="card-text">Johan van Oldebarneveldstraat 3<br>
@@ -406,8 +412,10 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-6 text-center dealer">
-        <div class="card card-inverse card-info mb-3" style="width: 30rem;">
+    </div>
+    <div class="row">
+    <div class=" col-lg-6 col-md-12 text-center mx-auto">
+        <div class="card card-inverse card-info mb-3">
             <div class="card-block">
                 <h3 class="card-title">A5 Deco Zwolle   </h3>
                 <p class="card-text">Amperestraat 8<br>
@@ -423,8 +431,8 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-6 text-center dealer">
-        <div class="card card-inverse card-info mb-3" style="width: 30rem;">
+    <div class="col-lg-6 col-md-12 text-center mx-auto">
+        <div class="card card-inverse card-info mb-3">
             <div class="card-block">
                 <h3 class="card-title">A5 Deco Oosterhout</h3>
                 <p class="card-text">De Boedingen 9/A<br>
@@ -442,3 +450,7 @@
     </div>
 </div>
 </div>
+<div class="d-none d-lg-block d-xl-block" style="padding-bottom:100px;"></div>
+<div class="d-lg-none d-xl-none d-md-block d-sm-block" style="padding-bottom:60px;"></div>
+</body>
+</html>
