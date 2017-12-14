@@ -42,7 +42,7 @@ class User
             if ($q->execute()) {
 //              Verbinding afsluiten
                 $q->closeCursor();
-                if ($this->insertInfo($firstname, $lastname)) {
+                if ($this->insertInfo($userID, $firstname, $lastname)) {
                     return true;
                 }
             } else {
@@ -55,15 +55,16 @@ class User
         }
     }
 
-    private function insertInfo($firstname, $lastname)
+    private function insertInfo($userID, $firstname, $lastname)
     {
 //        Verbinding maken met database
         $db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
 //      Query opbouwen
-        $q2 = $db->prepare("INSERT INTO Userinfo(FirstName, LastName) VALUES (?,?)");
+        $q2 = $db->prepare("INSERT INTO Userinfo( ?, FirstName, LastName) VALUES (?,?)");
 //      Anti SQL injectie
-        $q2->bindValue(1, $firstname);
-        $q2->bindValue(2, $lastname);
+        $q2->bindValue(1, $userID);
+        $q2->bindValue(2, $firstname);
+        $q2->bindValue(3, $lastname);
 //      Query uitvoeren
         if ($q2->execute()) {
             return true;
