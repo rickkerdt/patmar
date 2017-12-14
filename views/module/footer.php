@@ -1,5 +1,5 @@
-<footer style="background-color: #212529;">
-    <div style="background-color: #1b1e21;">
+<footer style="background-color: #00769f;">
+    <div style="">
     <div class="container mx-auto" style="color: white; padding-top: 20px; font-size: 0.7em;">
         <!-- begin bovenste rij footer -->
         <div class="row">
