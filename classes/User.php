@@ -42,18 +42,9 @@ class User
             if ($q->execute()) {
 //              Verbinding afsluiten
                 $q->closeCursor();
-
-//                $q2 = $db->prepare("INSERT INTO Userinfo(, FirstName, LastName) VALUES (?,?)");
-//
-//                $q2->bindValue(1, $firstname);
-//                $q2->bindValue(2, $lastname);
-//
-//                if ($q2->execute()) {
-//                    return true;
-//                } else {
-//                    array_push($this->errorList, "Er is iets fout gegaan." . $q2->errorCode());
-//                    return false;
-//                }
+                if ($this->insertInfo($firstname, $lastname)) {
+                    return true;
+                }
             } else {
 //                Fout toevoegen aan errorlist
                 array_push($this->errorList, "Er is iets fout gegaan." . $q->errorCode());
@@ -62,7 +53,24 @@ class User
         } else {
             return false;
         }
-        return false;
+    }
+
+    private function insertInfo($firstname, $lastname)
+    {
+//        Verbinding maken met database
+        $db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
+//      Query opbouwen
+        $q2 = $db->prepare("INSERT INTO Userinfo(, FirstName, LastName) VALUES (?,?)");
+//      Anti SQL injectie
+        $q2->bindValue(1, $firstname);
+        $q2->bindValue(2, $lastname);
+//      Query uitvoeren
+        if ($q2->execute()) {
+            return true;
+        } else {
+            array_push($this->errorList, "Er is iets fout gegaan." . $q2->errorCode());
+            return false;
+        }
     }
 
 //    Login functie

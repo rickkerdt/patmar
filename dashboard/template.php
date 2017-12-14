@@ -28,14 +28,14 @@
 <div class="container-fluid">
 
     <div class="row">
-        <div class="col-md-2" style="padding: 0 0 75px 0; margin: 0; background-color: #212529;">
+        <div class="col-md-3" style="padding: 0 0 75px 0; margin: 0; background-color: #212529;">
             <div class="dashboard-side-button active"><a href="/dashboard/?page=index">Overzicht</a></div>
             <div class="dashboard-side-button"><a href="/dashboard/?page=accounts">Accounts</a></div>
             <div class="dashboard-side-button"><a href="/dashboard/?page=offertes">Offertes</a></div>
             <div class="dashboard-side-button"><a href="/dashboard/?page=sitebeheer">Site Beheer</a></div>
             <div class="dashboard-side-button"><a href="/dashboard/?page=storingen">Storingen</a></div>
         </div>
-        <div class="col-md-10" style="margin-top: 15px">
+        <div class="col" style="margin-top: 15px">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/dashboard/">Dashboard</a></li>
                 <?php if (isset($_GET["page"])) : ?>
@@ -85,7 +85,7 @@
     .dashboard-side-button a {
         width: inherit;
         height: inherit;
-        padding: 20px 60px;
+        padding: 20px 120px;
         color: grey;
     }
 </style>
