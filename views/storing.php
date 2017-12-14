@@ -6,7 +6,10 @@
  * Time: 09:29
  */
 ?>
-
+<html>
+<head>
+</head>
+<body>
 <div class="container" style="margin-top: 100px">
     <div class="row">
 
@@ -121,3 +124,6 @@
     </div>
 </div>
 </div>
+</div>
+</body>
+</html>
