@@ -191,3 +191,13 @@ nav{
 .jssora073:hover {opacity:.8;}
 .jssora073.jssora073dn {opacity:.4;}
 .jssora073.jssora073ds {opacity:.3;pointer-events:none;}
+
+/* remove link color */
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: lightseagreen;
+    text-decoration: none;
+}
