@@ -41,7 +41,7 @@ class User
 //           Query uitvoeren
             if ($q->execute()) {
 
-                $q2 = $db->prepare("SELECT UserID FROM Userinfo WHERE (SELECT UserID FROM User WHERE Email = ?)");
+                $q2 = $db->prepare("SELECT UserID FROM User WHERE Email = ?");
                 $q2->bindValue(1, $email);
                 $q2->execute();
                 $q2r = $q2->fetchColumn(1);
