@@ -5,12 +5,12 @@
         <div class="row">
             <!-- begin bovenste kolom footer -->
             <div class="d-none d-xs-none d-sm-none d-md-block d-lg-block d-xl-block col-3 mx-auto">
-                <p>Patmar.nl<br>
-                    Home<br>
-                    Producten<br>
-                    Contactaanvraag<br>
-                    Storing melden<br>
-                    Offerteaanvraag
+                <p><a href="https://patmar.win">Patmar.nl</a><br>
+                    <a href="https://patmar.win">Home</a><br>
+                    <a href="https://patmar.win#producten">Producten</a><br>
+                    <a href="https://patmar.win?page=contact">Contactaanvraag</a><br>
+                    <a href="https://patmar.win?page=storing">Storing melden</a><br>
+                    <a href="https://patmar.win?page=offerte">Offerteaanvraag</a>
                 </p>
             </div>
             <div class="col-md-6 col-sm-12 mx-auto">
