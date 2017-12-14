@@ -56,7 +56,6 @@ if (isset($_POST["contactsend"])) {
 
         //Kijkt of er response is
         if ($_POST["g-recaptcha-response"] != '') {
-            if ($contact->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnummer'], $_POST['woonplaats'], $_POST['bericht'])) {
                 //Contact formulier versturen naar back-end
                 if ($contact->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnummer'], $_POST['woonplaats'], $_POST['bericht'])) {
                     $_SESSION["sent"] = true;
@@ -66,7 +65,6 @@ if (isset($_POST["contactsend"])) {
                     //  Errors in een lijst neer zetten
                     $errors = $contact->errorList;
                 }
-            }
         } else {
             //Error toevoegen aan lijst
             array_push($errors, "Los de recaptcha a.u.b. op.");
@@ -115,7 +113,6 @@ if (isset($_POST["storingsend"])) {
 
         //Kijkt of er response is
         if ($_POST["g-recaptcha-response"] != '') {
-            if ($storing->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnummer'], $_POST['woonplaats'], $_POST['bericht'])) {
                 //Contact formulier versturen naar back-end
                 if ($storing->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnummer'], $_POST['woonplaats'], $_POST['bericht'])) {
                     $_SESSION["sent"] = true;
@@ -125,8 +122,7 @@ if (isset($_POST["storingsend"])) {
                     //  Errors in een lijst neer zetten
                     $errors = $storing->errorList;
                 }
-            }
-        } else {
+        }else {
             //Error toevoegen aan lijst
             array_push($errors, "Los de recaptcha a.u.b. op.");
         }
@@ -174,7 +170,6 @@ if (isset($_POST["offertesend"])) {
 
         //Kijkt of er response is
         if ($_POST["g-recaptcha-response"] != '') {
-            if ($offerte->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnummer'], $_POST['woonplaats'], $_POST['bericht'])) {
                 //Contact formulier versturen naar back-end
                 if ($offerte->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnummer'], $_POST['woonplaats'], $_POST['bericht'])) {
                     $_SESSION["sent"] = true;
@@ -184,8 +179,7 @@ if (isset($_POST["offertesend"])) {
                     //  Errors in een lijst neer zetten
                     $errors = $offerte->errorList;
                 }
-            }
-        } else {
+        }else {
             //Error toevoegen aan lijst
             array_push($errors, "Los de recaptcha a.u.b. op.");
         }
