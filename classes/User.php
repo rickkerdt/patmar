@@ -41,8 +41,7 @@ class User
 //           Query uitvoeren
             if ($q->execute()) {
 //              Verbinding afsluiten
-                $q->closeCursor();
-                if ($this->insertInfo($userID, $firstname, $lastname)) {
+                if ($this->insertInfo($db->lastInsertId(), $firstname, $lastname)) {
                     return true;
                 }
             } else {
