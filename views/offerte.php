@@ -1,4 +1,5 @@
-<div class="col-md-6 jumbotron mx-auto" style="padding-top: 100px;">
+<div style="padding-top: 100px;"></div>
+<div class="col-md-6 jumbotron mx-auto" >
     <h1 class="text">Offerte aanvragen</h1>
 
     <br>
