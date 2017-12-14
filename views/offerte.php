@@ -7,7 +7,7 @@
             Voor vragen kunt u ook bellen tijdens kantooruren of mailen via ons contact formulier.</span></p>
     <br>
 
-    <form action="?page=contact" method="post">
+    <form action="?page=offerte" method="post">
 
         <?php if (count($errors) > 0) : ?>
             <?php foreach ($errors as $error) : ?>
