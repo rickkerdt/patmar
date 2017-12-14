@@ -37,7 +37,7 @@
                 <li class="nav-item">
                     <a class="nav-link <?php if ($_GET["page"] == "quotation") {
                         echo "active";
-                    } ?>" href="?page=quotation">Offerte Aanvraag</a>
+                    } ?>" href="?page=offerte">Offerte Aanvraag</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link <?php if ($_GET["page"] == "contact") {
