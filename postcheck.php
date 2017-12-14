@@ -76,7 +76,7 @@ if (isset($_POST["contactsend"])) {
         array_push($errors, "Los de recaptcha a.u.b. op.");
     }
 }
-}
+
 
 //Kijkt of Storing formulier is verstuurd
 //Storing form
@@ -135,7 +135,7 @@ if (isset($_POST["storingsend"])) {
         array_push($errors, "Los de recaptcha a.u.b. op.");
     }
 }
-}
+
 
 //Kijkt of offerte formulier is verstuurd
 //Offerte form
