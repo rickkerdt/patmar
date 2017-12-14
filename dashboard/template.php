@@ -22,26 +22,51 @@
             integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
             crossorigin="anonymous"></script>
 </head>
+<body>
 
 <?php include_once "views/modules/nav.php"; ?>
-<body>
-<div class="row">
-    <div class="col-md-2" style="padding: 50px 0 75px 0; background-color: #212529;">
-        <div class="dashboard-side-button active"><a href="#">Overzicht</a></div>
-        <div class="dashboard-side-button"><a href="#">Accounts</a></div>
-        <div class="dashboard-side-button"><a href="#">Offertes</a></div>
-        <div class="dashboard-side-button"><a href="#">Site Beheer</a></div>
-        <div class="dashboard-side-button"><a href="#">Storingen</a></div>
-    </div>
-    <div class="col">
-        <div class="jumbotron">
-            <h1>test</h1>
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-md-2" style="padding: 0 0 75px 0; margin: 0; background-color: #212529;">
+            <div class="dashboard-side-button active"><a href="/dashboard/?page=index">Overzicht</a></div>
+            <div class="dashboard-side-button"><a href="/dashboard/?page=accounts">Accounts</a></div>
+            <div class="dashboard-side-button"><a href="/dashboard/?page=offertes">Offertes</a></div>
+            <div class="dashboard-side-button"><a href="/dashboard/?page=sitebeheer">Site Beheer</a></div>
+            <div class="dashboard-side-button"><a href="/dashboard/?page=storingen">Storingen</a></div>
+        </div>
+        <div class="col-md-10" style="margin-top: 15px">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/dashboard/">Dashboard</a></li>
+                <?php if (isset($_GET["page"])) : ?>
+                    <li class="breadcrumb-item active"><?php echo ucfirst($_GET["page"]) ?></li>
+                <?php endif; ?>
+            </ol>
+
+            <?php
+
+            if (isset($_GET["page"]) && $_GET["page"] != "") {
+                if (file_exists("views/" . $_GET["page"] . ".php")) {
+                    @include_once "views/" . $_GET["page"] . ".php";
+                } elseif ($_GET["page"] == "home") {
+                    @include_once "views/index.php";
+                } else {
+                    @include_once "../views/errors/404.php";
+                }
+
+            } else {
+                @include_once "views/index.php";
+            }
+
+            ?>
         </div>
     </div>
 </div>
+</body>
+<?php include_once "views/modules/footer.php"; ?>
 <style>
     .dashboard-side-button {
-        width: inherit;
+        width: 100%;
         height: 50px;
         line-height: 50px;
         text-align: center;
@@ -63,31 +88,5 @@
         padding: 20px 60px;
         color: grey;
     }
-
-    .active {
-        background-color: #0c5460;
-    }
-
-    .active a {
-        color: white;
-    }
 </style>
-<?php
-
-if (isset($_GET["page"]) && $_GET["page"] != "") {
-    if (file_exists("views/" . $_GET["page"] . ".php")) {
-        @include_once "views/" . $_GET["page"] . ".php";
-    } elseif ($_GET["page"] == "home") {
-        @include_once "views/index.php";
-    } else {
-        @include_once "../views/errors/404.php";
-    }
-
-} else {
-    @include_once "views/index.php";
-}
-
-?>
-</body>
-<?php include_once "views/modules/footer.php"; ?>
 </html>
