@@ -49,6 +49,7 @@
                     www.patmar.nl</p>
                 </p>
                 <a href="#" class="btn btn-primary">Route</a>
+                <!-- klantenschrijven -->
                 <div id="ks_banier">
                     <div id="ks_kop">
                         <div id="ks_koptekst">
@@ -81,6 +82,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- einde klantschrijven -->
             </div>
         </div>
     </div>
