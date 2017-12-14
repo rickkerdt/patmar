@@ -44,7 +44,7 @@ class User
                 $q2 = $db->prepare("SELECT UserID FROM User WHERE Email = ?");
                 $q2->bindValue(1, $email);
                 $q2->execute();
-                $q2r = $q2->fetchColumn(1);
+                $q2r = $q2->fetchAll()[0];
 //              Verbinding afsluiten
                 if ($this->insertInfo($q2r["UserID"], $firstname, $lastname)) {
                     return true;

@@ -23,19 +23,19 @@ if ($_SESSION["loggedIn"])
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control" name="email" id="email" placeholder="voorbeeld@mail.nl">
+                    <input required type="email" class="form-control" name="email" id="email" placeholder="voorbeeld@mail.nl">
                 </div>
                 <div class="form-group">
                     <div class="row">
                         <div class="col-md-6">
 
                             <label for="firstname">Voornaam</label>
-                            <input type="text" class="form-control" name="firstname" id="firstname" placeholder="Jan">
+                            <input required type="text" class="form-control" name="firstname" id="firstname" placeholder="Jan">
                         </div>
                         <div class="col-md-6">
 
                             <label for="lastname">Achternaam</label>
-                            <input type="text" class="form-control" name="lastname" id="lastname"
+                            <input required type="text" class="form-control" name="lastname" id="lastname"
                                    placeholder="de Vries">
                         </div>
                     </div>
@@ -44,11 +44,11 @@ if ($_SESSION["loggedIn"])
                 </div>
                 <div class="form-group">
                     <label for="password">Wachtwoord</label>
-                    <input type="password" class="form-control" name="password" id="password" placeholder="********">
+                    <input required type="password" class="form-control" name="password" id="password" placeholder="********">
                 </div>
                 <div class="form-group">
                     <label for="password">Wachtwoord herhalen</label>
-                    <input type="password" class="form-control" name="passwordrepeat" id="passwordrepeat"
+                    <input required type="password" class="form-control" name="passwordrepeat" id="passwordrepeat"
                            placeholder="********">
                 </div>
                 <div class="form-group">
@@ -56,7 +56,7 @@ if ($_SESSION["loggedIn"])
                     <div class="g-recaptcha" data-sitekey="6LdLDzwUAAAAAO4DFj_pzlNNfrDeZ_up8UjwA_xj"></div>
                 </div>
                 <div class="form-group">
-                    <input type="submit" class="form-control btn btn-primary" name="register" value="Registreren">
+                    <input required type="submit" class="form-control btn btn-primary" name="register" value="Registreren">
                 </div>
                 <div class="form-group">
                     <span>Al een account?</span>
