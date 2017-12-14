@@ -24,7 +24,7 @@ if (isset($_POST["login"])) {
 if (isset($_POST["contactsend"])) {
     //Nieuwe instantie van contact aanmaken
     $contact = new Contact();
-    //boolean waarde voor of het verzonden is
+    //boolean waarde om te controleren of het verzonden is
     $sent = false;
 
     //Url voor Google ReCaptcha api
