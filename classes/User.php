@@ -86,7 +86,7 @@ class User
         if ($q->execute()) {
             if ($q->rowCount() > 0) {
                 $_SESSION["loggedIn"] = true;
-                $_SESSION["email"] = $q->fetchAll()[0]["email"];
+                $_SESSION["email"] = $this->email;
 
                 return true;
             } else {
