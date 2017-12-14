@@ -24,6 +24,7 @@
     </div>
 
 </div>
+<div class="d-lg-none d-xl-none d-md-block d-sm-block d-xs-block" style="padding-top:60px;"></div>
 <div class="row">
     <div class="col-md-3 d-none d-lg-block d-xl-block mx-auto"
          style="padding-left: 4%; padding-top: 50px; padding-bottom: 50px; width: 220px;">

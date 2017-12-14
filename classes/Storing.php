@@ -2,11 +2,11 @@
 /**
  * Created by PhpStorm.
  * User: flori
- * Date: 30-11-2017
- * Time: 13:54
+ * Date: 14-12-2017
+ * Time: 09:41
  */
 
-class Contact
+class Storing
 {
     public $errorList = [];
 
@@ -14,9 +14,9 @@ class Contact
     public function sendform($email, $naam, $telefoonnumer, $woonplaats, $bericht)
     {
         if ($this->checkForm($email, $telefoonnumer,$naam,$woonplaats,$bericht)) {
-//
+
             $to = "admin@patmar.com";
-            $subject = "Contact";
+            $subject = "Storing";
             $message = $bericht;
             $headers = 'From: ' . $email . "\r\n" .
                 'Reply-To: admin@patmar.win' . "\r\n" .
@@ -42,10 +42,10 @@ class Contact
         if (!preg_match('@[a-zA-Z]@',$naam)) {
             array_push($this->errorList, "Uw naam is niet of niet correct ingevuld.");
             $valid = false;
-      }
+        }
         if (!preg_match('@[a-zA-Z]@',$woonplaats)) {
-             array_push($this->errorList, "Uw woonplaats is niet ingevuld.");
-         $valid = false;
+            array_push($this->errorList, "Uw woonplaats is niet ingevuld.");
+            $valid = false;
         }
         if (!preg_match('@[0-9]@', $telefoonnumer)) {
             array_push($this->errorList, "Uw telefoonnummer is niet of niet correct ingevuld");
@@ -59,6 +59,6 @@ class Contact
         if ($valid) {
             return true;
         }
-            return false;
+        return false;
     }
 }
