@@ -40,9 +40,16 @@ class User
 
 //           Query uitvoeren
             if ($q->execute()) {
+
+                $q2 = $db->prepare("SELECT UserID FROM Userinfo WHERE (SELECT UserID FROM User WHERE Email = ?)");
+                $q2->bindValue(1, $email);
+                $q2->execute();
+                $q2r = $q2->fetchColumn(1);
 //              Verbinding afsluiten
-                if ($this->insertInfo($db->lastInsertId(), $firstname, $lastname)) {
+                if ($this->insertInfo($q2r["UserID"], $firstname, $lastname)) {
                     return true;
+                } else {
+                    array_push($this->errorList, "Er is iets fout gegaan." . $q2->errorCode());
                 }
             } else {
 //                Fout toevoegen aan errorlist
