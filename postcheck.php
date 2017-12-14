@@ -24,7 +24,7 @@ if (isset($_POST["login"])) {
 if (isset($_POST["contactsend"])) {
     //Nieuwe instantie van contact aanmaken
     $contact = new Contact();
-    //boolean waarde voor of het verzonden is
+    //boolean waarde om te controleren of het verzonden is
     $sent = false;
 
     //Url voor Google ReCaptcha api
@@ -66,15 +66,16 @@ if (isset($_POST["contactsend"])) {
                     //  Errors in een lijst neer zetten
                     $errors = $contact->errorList;
                 }
-            } else {
-                //Error toevoegen aan lijst
-                array_push($errors, "Los de recaptcha a.u.b. op.");
             }
         } else {
             //Error toevoegen aan lijst
             array_push($errors, "Los de recaptcha a.u.b. op.");
         }
+    } else {
+        //Error toevoegen aan lijst
+        array_push($errors, "Los de recaptcha a.u.b. op.");
     }
+}
 }
 
 //Kijkt of Storing formulier is verstuurd
@@ -124,15 +125,16 @@ if (isset($_POST["storingsend"])) {
                     //  Errors in een lijst neer zetten
                     $errors = $storing->errorList;
                 }
-            } else {
-                //Error toevoegen aan lijst
-                array_push($errors, "Los de recaptcha a.u.b. op.");
             }
         } else {
             //Error toevoegen aan lijst
             array_push($errors, "Los de recaptcha a.u.b. op.");
         }
+    } else {
+        //Error toevoegen aan lijst
+        array_push($errors, "Los de recaptcha a.u.b. op.");
     }
+}
 }
 
 //Kijkt of offerte formulier is verstuurd
@@ -182,15 +184,16 @@ if (isset($_POST["offertesend"])) {
                     //  Errors in een lijst neer zetten
                     $errors = $offerte->errorList;
                 }
-            } else {
-                //Error toevoegen aan lijst
-                array_push($errors, "Los de recaptcha a.u.b. op.");
             }
         } else {
             //Error toevoegen aan lijst
             array_push($errors, "Los de recaptcha a.u.b. op.");
         }
+    } else {
+        //Error toevoegen aan lijst
+        array_push($errors, "Los de recaptcha a.u.b. op.");
     }
+
 }
 
 //Kijkt of register formulier is verstuurd
