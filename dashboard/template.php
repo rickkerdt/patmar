@@ -37,7 +37,7 @@
             <div class="dashboard-side-button"><a href="/dashboard/?page=offertes">Offertes</a></div>
             <div class="dashboard-side-button"><a href="/dashboard/?page=storingen">Storingen</a></div>
         </div>
-        <div class="col" style="margin-top: 15px">
+        <div class="col-md-9" style="margin-top: 15px">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/dashboard/">Dashboard</a></li>
                 <?php if (isset($_GET["page"])) : ?>
