@@ -1,3 +1,4 @@
+<!-- logout session vernietigd de logged in session -->
 <?php
 session_unset();
 session_destroy();

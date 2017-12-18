@@ -5,7 +5,7 @@ if ($_SESSION["loggedIn"])
     window.location.replace(\"?page=home\");
 </script>";
 ?>
-
+<!-- login pagina -->
 <div class="container" style="margin-top: 100px">
     <div class="row">
         <div class="col">&nbsp;</div>
@@ -13,6 +13,7 @@ if ($_SESSION["loggedIn"])
             <h1 class="text-center">Login</h1>
             <form action="?page=login" method="post">
                 <div class="row">
+                    <!-- alerts wanneer velden niet goed zijn ingevuld -->
                     <?php if (count($errors) > 0) : ?>
                         <?php foreach ($errors as $error) : ?>
                             <div class="alert alert-warning">

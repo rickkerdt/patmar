@@ -1,3 +1,4 @@
+<!-- Dit is het contact formulier -->
 <div class="container" style="margin-top: 100px">
     <div class="row">
 
@@ -12,7 +13,7 @@
             <br>
 
             <form action="?page=contact" method="post">
-
+            <!-- Als er errors voor komen worden die gegeven -->
                 <?php if (count($errors) > 0) : ?>
                     <?php foreach ($errors as $error) : ?>
                         <div class="alert alert-warning">
@@ -20,11 +21,13 @@
                         </div>
                     <?php endforeach; ?>
                 <?php endif; ?>
+                <!-- Wanneer er geen errors voor komen wordt er een succes gegeven aan de user -->
                 <div class="form-group">
                     <?php if ($_SESSION["sent"]): $_SESSION["sent"] = false; ?>
                         <div class="alert alert-success"><strong>Uw contactaanvraag is succesvol verzonden.</strong></div>
                     <?php endif; ?>
                 </div>
+                <!-- HTML document voor het contact op nemen -->
                 <div class="form-group">
                     <div class="row">
                         <div class="form-group">
