@@ -5,7 +5,7 @@
         <!-- begin bovenste rij footer -->
         <div class="row">
             <!-- begin bovenste kolom footer -->
-            <div class="d-none d-xs-none d-sm-none d-md-block d-lg-block d-xl-block col-3 mx-auto">
+            <div class="d-none d-xs-none d-sm-none d-md-block d-lg-block d-xl-block col-3 mx-auto footer">
                 <p><a href="https://patmar.win" class="footer">Patmar.nl</a><br>
                     <a href="https://patmar.win" class="footer">Home</a><br>
                     <a href="https://patmar.win#producten" class="footer">Producten</a><br>
@@ -14,7 +14,7 @@
                     <a href="https://patmar.win?page=offerte" class="footer">Offerteaanvraag</a>
                 </p>
             </div>
-            <div class="col-md-6 col-sm-12 mx-auto">
+            <div class="col-md-6 col-sm-12 mx-auto footer">
                 <p>
                 Contact info:<br>
                     <div class="row">

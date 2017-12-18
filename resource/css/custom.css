@@ -196,12 +196,14 @@ nav{
 
 
 .footer a {
-    text-decoration: none;
     color: #ffffff !important;
+    text-decoration: none;
+
+
 }
 
 .footer a:hover {
-    color: black;
-    text-decoration: underline;
+    color: #afffff !important;
+    text-decoration: underline !important;
 }
 
