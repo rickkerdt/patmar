@@ -14,7 +14,7 @@ class Offerte
     public function sendform($email, $naam, $telefoonnumer, $woonplaats, $bericht)
     {
         if ($this->checkForm($email, $telefoonnumer,$naam,$woonplaats,$bericht)) {
-
+        //wanneer de velden gecheked zijn wordt er een mail aangemaakt met de inhoud van de ingevulde velden.
             $to = "admin@patmar.com";
             $subject = "Offerte";
             $message = $bericht;
@@ -32,7 +32,7 @@ class Offerte
 
     private function checkForm($email,$naam,$woonplaats,$telefoonnumer, $bericht)
     {
-//Errors die gegeven worden  als er velden leeg zijn of niet zijn ingevuld.
+        //Errors die gegeven worden  als er velden leeg zijn of niet zijn ingevuld.
         $valid = true;
 
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {

@@ -1,3 +1,5 @@
+<!-- 404 error wanneer iets wordt opgevraagt en niet gevonden kan worden -->
+
 <h1>Error: 404, The page you requested could not be found.</h1>
 <style>
     h1  {
