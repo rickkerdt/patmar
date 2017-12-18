@@ -10,7 +10,7 @@ class Storing
 {
     public $errorList = [];
 
-    //cheken of de benodigde velden niet leeg zijn.
+    //checken of de benodigde velden niet leeg zijn.
     public function sendform($email, $naam, $telefoonnumer, $woonplaats, $bericht)
     {
         if ($this->checkForm($email, $telefoonnumer,$naam,$woonplaats,$bericht)) {

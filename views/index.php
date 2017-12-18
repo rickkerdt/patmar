@@ -28,97 +28,39 @@
 </div>
 <div class="d-lg-none d-xl-none d-md-block d-sm-block d-xs-block" style="padding-top:60px;"></div>
 <div class="row">
-    <div class="col-md-3 d-none d-lg-block d-xl-block mx-auto"
-         style="padding-left: 4%; padding-top: 50px; padding-bottom: 50px; width: 220px;">
-        <div class="card">
-            <div class="card-block" style="padding-left: 5px; border-color: #00769f ">
-                <h3 class="card-title">Contact</h3>
-                <p class="card-text">
-                <h6 class="card-subtitle">A5 Patmar Marknesse</h6>
-                Hoge Sluiswal 47<br>
-                8316 AA Marknesse<br>
-                TEL: 0527 - 61 22 77<br>
-
-                <p>info@patmar.nl<br>
-                    www.patmar.nl</p>
-
-                <br><h6 class="card-subtitle">A5 Patmar Meppel</h6>
-                Johan van Oldenbarneveltstraat 3<br>
-                7942 GZ MEPPEL<br>
-                Tel. 0522 - 24 48 88<br>
-
-                <p>info@patmar.nl<br>
-                    www.patmar.nl</p>
-                </p>
-                <a href="https://www.google.nl/maps/place/A5+Patmar+Zonwering+%26+Kunststof+Kozijnen/@52.7074792,5.8634793,17z/data=!3m1!4b1!4m5!3m4!1s0x47c87ce82221a80b:0x14df3ecfb0314805!8m2!3d52.707476!4d5.865668" class="btn btn-primary">Route</a>
-                <!-- klantenschrijven -->
-                <div id="ks_banier">
-                    <div id="ks_kop">
-                        <div id="ks_koptekst">
-                            Wat schrijven onze klanten?
-                        </div>
-                    </div>
-                    <div id="ks_inhoud">
-                        <div id="ks_score">
-                            <div id="ks_scorekop">
-                                Score
-                            </div>
-                            <div id="ks_scoreinhoud">
-                                9,3
-                            </div>
-                            <div id="ks_scoresterren">
-                                *****<span id='ks_scoregedoofd'></span></div>
-                        </div>
-                        <div id="ks_pijlhouder">
-                            <a href="/beoordeling/patmar-bv" target="_blank" class="ks_link">
-                                Dit schrijven ze
-                                <div class="ks_pijl"></div>
-                            </a>
-                            <a href="/oordeel/patmar-bv" target="_blank" class="ks_link">
-                                Beoordeel ons
-                                <div class="ks_pijl"></div>
-                            </a>
-                        </div>
-                        <div id="ks_copyright">
-                            © Klantenschrijven.nl
-                        </div>
-                    </div>
-                </div>
-                <!-- einde klantschrijven -->
-            </div>
         </div>
     </div>
-    <div class="col-sm-12 col-md-9 d-block mx-auto"
+    <div class="col-sm-12 col-md-11 d-block mx-auto"
          style="padding-right: 30px; padding-left: 30px; padding-top: 50px; padding-bottom: 50px;">
-        <div class="card ">
+        <div class="card card-inverse card-info">
             <div class="card-block" style="padding-left: 5px; padding-right: 5px; border-color: #00769f">
-                <h3 class="card-title text-center">Over Patmar</h3>
+                <h1 class="card-title text-center">Over Patmar</h1>
                 <p class="card-text">
                 <!-- Omschrijving van wie patmar is  -->
-                <p>Ons bedrijf Patmar is al meer dan 58 jaar een toonaangevend zonwering bedrijf in de regio Flevoland /
+                <p class="text-center">Ons bedrijf Patmar is al meer dan 58 jaar een toonaangevend zonwering bedrijf in de regio Flevoland /
                     Drenthe</p>
 
-                <p>Aan particulieren en bedrijven leveren wij alle soorten zonwering, kunststof kozijnen, dakkapellen,
+                <p class="text-center">Aan particulieren en bedrijven leveren wij alle soorten zonwering, kunststof kozijnen, dakkapellen,
                     garagedeuren, glazenschuifwanden, terrasoverkappingen waaronder veranda's en tuinkamers. Ook raamdecoratie
                     hebben wij in ons assortiment.</p>
 
-                <p>Als A5 Deco dealer onderscheiden wij ons door gedegen vakmanschap.<br>
+                <p class="text-center">Als A5 Deco dealer onderscheiden wij ons door gedegen vakmanschap.<br>
                     Al onze medewerkers zijn VCA opgeleid om optimaal advies te kunnen geven.<br>
                     De werkzaamheden worden door ons eigen team uitgevoerd, al onze werknemers zijn gespecialiseerde
                     vakmensen.</p>
 
-                <p>Zo dragen wij er zorg voor dat al de werkzaamheden correct en volgens afspraak worden uitgevoerd.<br>
+                <p class="text-center">Zo dragen wij er zorg voor dat al de werkzaamheden correct en volgens afspraak worden uitgevoerd.<br>
                     Wij als A5 dealer geven u graag een gedegen interieuradvies gericht op woningstoffering en
                     kleurgebruik.<br>
                     Daarnaast zult u zien dat de binnenzonweringen, buitenzonwering, kunststof kozijnen, garagedeuren,
                     rolluiken ect. wat kleur betreft goed op elkaar af te stemmen zijn.</p>
 
-                <p>Ook voor verandadaken, ook wel veranda's genoemd, bent u bij ons aan het juiste adres. Er is een keuze
+                <p class="text-center">Ook voor verandadaken, ook wel veranda's genoemd, bent u bij ons aan het juiste adres. Er is een keuze
                     uit verschillende goten: rond, vlak of klassiek.<br>
                     Ook zijn er verschillende soorten dakplaten: veiligheidsglas, helder, opaal en de zonwerende plaat.
                 </p>
 
-                <p>Sinds langere tijd zijn wij al dealer van VEKA kunststof kozijnen. Deze kozijnen zijn een begrip in
+                <p class="text-center">Sinds langere tijd zijn wij al dealer van VEKA kunststof kozijnen. Deze kozijnen zijn een begrip in
                     Nederland vanwege de goede kwaliteit en afwerking. Heeft u nieuwe kozijnen nodig bel ons of stuur ons een mailtje en wij
                     zullen op al uw vragen een passend antwoord geven.</p>
                 </p>
