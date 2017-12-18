@@ -1,3 +1,4 @@
+<!-- template wordt ingeladen voor het dashboard  -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -28,7 +29,7 @@
 
 <?php include_once "views/modules/nav.php"; ?>
 <div class="container-fluid">
-
+<!-- knoppen voor het dashboard -->
     <div class="row">
         <div class="col-md-3" style="padding: 0 0 75px 0; margin: 0; background-color: #212529;">
             <div class="dashboard-side-button active"><a href="/dashboard/?page=index">Overzicht</a></div>
@@ -45,8 +46,8 @@
                 <?php endif; ?>
             </ol>
 
+            <!-- Wanneer de knop page wordt ingedrukt word de pagina naar "home" gestuurd -->
             <?php
-
             if (isset($_GET["page"]) && $_GET["page"] != "") {
                 if (file_exists("views/" . $_GET["page"] . ".php")) {
                     @include_once "views/" . $_GET["page"] . ".php";
@@ -65,6 +66,7 @@
     </div>
 </div>
 </body>
+<!-- style voor dashboard -->
 <?php include_once "views/modules/footer.php"; ?>
 <style>
     .dashboard-side-button {
