@@ -18,10 +18,10 @@ $userlist = $users->getUserList($pagination);
                     <div class="col-md-4">
                         <strong>Email</strong>
                     </div>
-                    <div class="col-md-4 text-truncate">
+                    <div class="col-md-5 text-truncate">
                         <strong>Hash</strong>
                     </div>
-                    <div class="col-md-3 text-truncate">
+                    <div class="col-md-2 text-truncate">
                         <strong>&nbsp;</strong>
                     </div>
                 </div>
@@ -36,10 +36,10 @@ $userlist = $users->getUserList($pagination);
                             <div class="col-md-4">
                                 <?php echo $user["Email"]; ?>
                             </div>
-                            <div class="col-md-4 text-truncate">
+                            <div class="col-md-5 text-truncate">
                                 <?php echo $user["PassHash"]; ?>
                             </div>
-                            <div class="col-md-3 text-truncate">
+                            <div class="col-md-2 text-truncate">
                                 <input type="submit" name="edit" value="Bewerk" class="btn btn-light float-right">
                             </div>
                         </div>
