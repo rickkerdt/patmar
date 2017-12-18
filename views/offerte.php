@@ -10,7 +10,7 @@
     <br>
 
     <form action="?page=offerte" method="post">
-
+        <!-- Als er errors voor komen worden die gegeven -->
         <?php if (count($errors) > 0) : ?>
             <?php foreach ($errors as $error) : ?>
                 <div class="alert alert-warning">
@@ -19,10 +19,12 @@
             <?php endforeach; ?>
         <?php endif; ?>
         <div class="form-group">
+            <!-- Wanneer er geen errors voor komen wordt er een succes gegeven aan de user -->
             <?php if ($_SESSION["sent"]): $_SESSION["sent"] = false; ?>
                 <div class="alert alert-success"><strong>Uw offerteaanvraag is succesvol verzonden.</strong></div>
             <?php endif; ?>
         </div>
+        <!-- HTML form-->
         <div class="form-group">
             <div class="row">
                 <div class="form-group">
@@ -71,7 +73,7 @@
             <div>
             <form action="upload.php" method="post" enctype="multipart/form-data">
                 Select image to upload:
-                <input type="file" name="fileToUpload" id="fileToUpload"></br>
+                <input type="file" name="BestandUpload" id="BestandUpload"></br>
             </form>
             </div>
             <!--Google recaptcha-->

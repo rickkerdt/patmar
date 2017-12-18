@@ -5,13 +5,15 @@
  * Date: 14-12-2017
  * Time:14:08
 */
+
+// Control sheet voor de
      $target_dir = "uploads/";
-            $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+            $target_file = $target_dir . basename($_FILES["BestandUpload"]["name"]);
             $uploadOk = 1;
             $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
             // Checken of bestand wel een foto is.
             if(isset($_POST["submit"])) {
-                $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+                $check = getimagesize($_FILES["BestandUpload"]["tmp_name"]);
                 if($check !== false) {
                     print "File is an image - " . $check["mime"] . ".";
                     $uploadOk = 1;
