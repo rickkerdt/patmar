@@ -13,40 +13,34 @@ $userlist = $users->getUserList($pagination);
             <li class="list-group-item">
                 <div class="row">
                     <div class="col-md-1">
-                        <strong>&nbsp;</strong>
-                    </div>
-                    <div class="col-md-1">
                         <strong>UserID</strong>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <strong>Email</strong>
                     </div>
                     <div class="col-md-4 text-truncate">
                         <strong>Hash</strong>
                     </div>
-                    <div class="col-md-2 text-truncate">
+                    <div class="col-md-3 text-truncate">
                         <strong>&nbsp;</strong>
                     </div>
                 </div>
             </li>
             <?php foreach ($userlist as $user) : ?>
                 <li class="list-group-item">
-                    <form action="" method="post">
+                    <form action="/dashboard?page=accountedit" method="post">
                         <div class="row">
-                            <div class="col-md-1">
-                                <input type="checkbox" name="selected">
-                            </div>
                             <div class="col-md-1">
                                 <?php echo $user["UserID"]; ?>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <?php echo $user["Email"]; ?>
                             </div>
                             <div class="col-md-4 text-truncate">
                                 <?php echo $user["PassHash"]; ?>
                             </div>
-                            <div class="col-md-2 text-truncate">
-                                <input type="submit" name="edit" value="Bewerk" class="btn btn-light">
+                            <div class="col-md-3 text-truncate">
+                                <input type="submit" name="edit" value="Bewerk" class="btn btn-light float-right">
                             </div>
                         </div>
                     </form>
