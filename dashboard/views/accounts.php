@@ -18,8 +18,11 @@ $userlist = $users->getUserList($pagination);
                     <div class="col-md-4">
                         <strong>Email</strong>
                     </div>
-                    <div class="col-md-5 text-truncate">
+                    <div class="col-md-4 text-truncate">
                         <strong>Hash</strong>
+                    </div>
+                    <div class="col-md-1">
+                        <strong>Functie</strong>
                     </div>
                     <div class="col-md-2 text-truncate">
                         <strong>&nbsp;</strong>
@@ -28,7 +31,9 @@ $userlist = $users->getUserList($pagination);
             </li>
             <?php foreach ($userlist as $user) : ?>
                 <li class="list-group-item">
-                    <form action="/dashboard?page=accountedit" method="post">
+                    <form action="/dashboard/" method="get">
+                        <input type="hidden" name="page" value="accountedit">
+                        <input type="hidden" name="userID" value="<?php echo $user["UserID"]; ?>">
                         <div class="row">
                             <div class="col-md-1">
                                 <?php echo $user["UserID"]; ?>
@@ -36,11 +41,14 @@ $userlist = $users->getUserList($pagination);
                             <div class="col-md-4">
                                 <?php echo $user["Email"]; ?>
                             </div>
-                            <div class="col-md-5 text-truncate">
+                            <div class="col-md-4 text-truncate">
                                 <?php echo $user["PassHash"]; ?>
                             </div>
+                            <div class="col-md-1 text-truncate">
+                                <?php echo $user["Functionname"]; ?>
+                            </div>
                             <div class="col-md-2 text-truncate">
-                                <input type="submit" name="edit" value="Bewerk" class="btn btn-light float-right">
+                                <input type="submit" value="Bewerk" class="btn btn-light float-right">
                             </div>
                         </div>
                     </form>
