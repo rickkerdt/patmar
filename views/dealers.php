@@ -6,6 +6,8 @@
  * Time: 10:20
  */
 // De stylesheet voor de cards
+//Omdat er iets fout gaat wanneer we de standaard bootstrap template gebruiken worden de cards niet goed weergegeven,
+//hebben we een nieuwe stijl moeten gebruiken.
 ?>
 <html>
 <head>

@@ -20,7 +20,7 @@
             <br>
 
             <form action="?page=storing" method="post">
-
+                <!-- Als er errors voor komen worden die gegeven -->
                 <?php if (count($errors) > 0) : ?>
     <?php foreach ($errors as $error) : ?>
         <div class="alert alert-warning">
@@ -29,10 +29,11 @@
     <?php endforeach; ?>
 <?php endif; ?>
 <div class="form-group">
+    <!-- Wanneer er geen errors voor komen wordt er een succes gegeven aan de user -->
     <?php if ($_SESSION["sent"]): $_SESSION["sent"] = false; ?>
         <div class="alert alert-success"><strong>Uw storing is succesvol verzonden.</strong></div>
     <?php endif; ?>
-</div>
+</div><!-- HTML form-->
 <div class="form-group">
     <div class="row">
         <div class="form-group">

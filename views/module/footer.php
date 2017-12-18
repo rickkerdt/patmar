@@ -1,3 +1,4 @@
+<!-- Dit is de footer van de pagina -->
 <footer style="background-color: #00769f;">
     <div style="">
     <div class="container mx-auto" style="color: white; padding-top: 20px; font-size: 0.7em;">

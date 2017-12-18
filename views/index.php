@@ -1,3 +1,5 @@
+<!-- De landings pagina van de website -->
+
 <div class="row d-none d-xs-block d-sm-block d-md-block d-lg-none d-xl-none" style="padding-top: 50px;"></div>
 <div class="">
     <!-- <div class="float-right col-sm-0 col-md-2" style="background-color: dodgerblue; border-radius: 5% ">
@@ -48,7 +50,7 @@
                 <p>info@patmar.nl<br>
                     www.patmar.nl</p>
                 </p>
-                <a href="#" class="btn btn-primary">Route</a>
+                <a href="https://www.google.nl/maps/place/A5+Patmar+Zonwering+%26+Kunststof+Kozijnen/@52.7074792,5.8634793,17z/data=!3m1!4b1!4m5!3m4!1s0x47c87ce82221a80b:0x14df3ecfb0314805!8m2!3d52.707476!4d5.865668" class="btn btn-primary">Route</a>
                 <!-- klantenschrijven -->
                 <div id="ks_banier">
                     <div id="ks_kop">
@@ -92,6 +94,7 @@
             <div class="card-block" style="padding-left: 5px; padding-right: 5px; border-color: #00769f">
                 <h3 class="card-title text-center">Over Patmar</h3>
                 <p class="card-text">
+                <!-- Omschrijving van wie patmar is  -->
                 <p>Ons bedrijf Patmar is al meer dan 58 jaar een toonaangevend zonwering bedrijf in de regio Flevoland /
                     Drenthe</p>
 
@@ -862,6 +865,7 @@
         </div>
     </div>
     <div>
+        <!-- Slider 1 onder aan de pagina met de leveranciers  -->
         <script src="../resource/js/logoslider.js" type="text/javascript"></script>
         <script type="text/javascript">
             jssor_1_slider_init = function () {
@@ -947,8 +951,9 @@
     </div>
     <script type="text/javascript">jssor_1_slider_init();</script>
 </div>
-
+<!-- end slider 1 van de leveranciers -->
 <div>
+    <!-- Slider 2 met alle partners waar partmar mee samenwerkt -->
     <script src="../resource/js/logoslider.js" type="text/javascript"></script>
     <script type="text/javascript">
         jssor_2_slider_init = function () {
@@ -1046,7 +1051,9 @@
 </div>
 <script type="text/javascript">jssor_2_slider_init();</script>
 </div>
+<!-- einde slide 2 met de samenwerking partners van patmar-->
 
+<!-- Google maps kaart en locatie van patmar -->
 <div class="map-responsive" style="width: 100%">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2417.519901554985!2d6.18677146522699!3d52.704760720686316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c87285002ce80b%3A0xf96a8753275e97c5!2sJohan+van+Oldenbarneveltstraat+3%2C+7942+GZ+Meppel!5e0!3m2!1snl!2snl!4v1481278702622" height="450" frameborder="0" style="border:0; width: inherit" allowfullscreen></iframe>
 </div>

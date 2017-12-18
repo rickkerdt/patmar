@@ -14,7 +14,7 @@ class Contact
     public function sendform($email, $naam, $telefoonnumer, $woonplaats, $bericht)
     {
         if ($this->checkForm($email, $telefoonnumer,$naam,$woonplaats,$bericht)) {
-//
+//wanneer de velden gecheked zijn wordt er een mail aangemaakt met de inhoud van de ingevulde velden.
             $to = "admin@patmar.com";
             $subject = "Contact";
             $message = $bericht;

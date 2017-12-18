@@ -23,13 +23,13 @@ class User
 //    Register functie
     public function register($email, $password, $repeatpassword, $firstname, $lastname)
     {
-//        Maakt hash aan met wachtwoord en salt
+//        Maakt hash aan met wachtwoord en salt(met salten worden er extra bit toegevoegt aan het wachtwoord)
         $this->passhash = hash("sha512", $password . $this->salt . $email);
-//  Voegd email waarde aan het object
+//         Voegd email waarde aan het object
         $this->email = $email;
-//  Valideer of alles in orde is met de gebruikers input
+//      Valideer of alles in orde is met de gebruikers input
         if ($this->validate($this->email, $password, $repeatpassword)) {
-//            Verbinding maken met database
+//          Verbinding maken met database
             $db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
 //          Query voor het invoegen van gebruiker
             $q = $db->prepare("INSERT INTO User(Email, PassHash, FunctionID) VALUES (?, ?, 2)");
@@ -38,7 +38,7 @@ class User
             $q->bindValue(1, $this->email);
             $q->bindValue(2, $this->passhash);
 
-//           Query uitvoeren
+//          Query uitvoeren
             if ($q->execute()) {
 
                 $q2 = $db->prepare("SELECT UserID FROM User WHERE Email = ?");
@@ -52,7 +52,7 @@ class User
                     array_push($this->errorList, "Er is iets fout gegaan." . $q2->errorCode());
                 }
             } else {
-//                Fout toevoegen aan errorlist
+//              Fout toevoegen aan errorlist
                 array_push($this->errorList, "Er is iets fout gegaan." . $q->errorCode());
                 return false;
             }
@@ -63,7 +63,7 @@ class User
 
     private function insertInfo($userID, $firstname, $lastname)
     {
-//        Verbinding maken met database
+//      Verbinding maken met database
         $db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
 //      Query opbouwen
         $q2 = $db->prepare("INSERT INTO Userinfo( ?, FirstName, LastName) VALUES (?,?)");
@@ -80,10 +80,10 @@ class User
         }
     }
 
-//    Login functie
+//   Login functie
     public function login($email, $password)
     {
-//        wachtwoord hashen
+//   Wachtwoord hashen
         $this->passhash = hash("sha512", $password . $this->salt . $email);
         $this->email = $email;
 
@@ -124,7 +124,7 @@ class User
         $number = preg_match('@[0-9]@', $password);
         $symbols = preg_match('@[!\@#$%&*?]@', $password);
 
-//        Validatie proces
+//        Validatie proces of het wachtwoord voldoet aan de gestelde criteria
         if (!$uppercase || !$lowercase || !$number || strlen($password) < 8 || !$symbols) {
             array_push($this->errorList, "Het wachtwoord moet een hoofdletter, kleine letter, cijfer en speciaalteken bevatten en minimaal 8 tekens lang zijn.");
             $valid = false;

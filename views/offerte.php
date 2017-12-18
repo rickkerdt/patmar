@@ -1,3 +1,4 @@
+<!-- Offerte  -->
 <div style="padding-top: 100px;"></div>
 <div class="col-md-6 jumbotron mx-auto" >
     <h1 class="text">Offerte aanvragen</h1>
@@ -9,7 +10,7 @@
     <br>
 
     <form action="?page=offerte" method="post">
-
+        <!-- Als er errors voor komen worden die gegeven -->
         <?php if (count($errors) > 0) : ?>
             <?php foreach ($errors as $error) : ?>
                 <div class="alert alert-warning">
@@ -18,10 +19,12 @@
             <?php endforeach; ?>
         <?php endif; ?>
         <div class="form-group">
+            <!-- Wanneer er geen errors voor komen wordt er een succes gegeven aan de user -->
             <?php if ($_SESSION["sent"]): $_SESSION["sent"] = false; ?>
                 <div class="alert alert-success"><strong>Uw offerteaanvraag is succesvol verzonden.</strong></div>
             <?php endif; ?>
         </div>
+        <!-- HTML form-->
         <div class="form-group">
             <div class="row">
                 <div class="form-group">
@@ -66,6 +69,14 @@
                                       placeholder="Bericht *" required></textarea>
                 </div>
             </div>
+            <!--Upload knop voor foto's-->
+            <div>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                Select image to upload:
+                <input type="file" name="BestandUpload" id="BestandUpload"></br>
+            </form>
+            </div>
+            <!--Google recaptcha-->
             <div class="form-group">
                 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                 <div class="g-recaptcha" data-sitekey="6LdLDzwUAAAAAO4DFj_pzlNNfrDeZ_up8UjwA_xj"></div>

@@ -1,6 +1,6 @@
+<!-- Dit is de navigatie balk boven de pagina -->
 <header>
     <!-- Image and text -->
-
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top navbar-custom mx-auto"
          style=" background-color: #00769f;">
         <div class="d-lg-none d-xl-none navbar-brand">A5 Deco - Patmar</div>
@@ -15,6 +15,7 @@
                          style="padding-top: 0px; position: absolute; border-radius: 35%" alt="1">
                 </div>
             </a>
+            <!-- Hier worden de links gelegt om tussen de veschillende pagina's te navigeren-->
             <ul class="navbar-nav mx-auto w-100 justify-content-center">
                 <li class="nav-item <?php if ($_GET["page"] == "index" || !isset($_GET["page"])) {
                     echo "active";

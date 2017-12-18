@@ -1,3 +1,4 @@
+<!-- wanneer een gebruiker is ingelogt wordt hij naar de "?page=home" gestuurd-->
 <?php
 if ($_SESSION["loggedIn"])
     echo "
@@ -13,6 +14,7 @@ if ($_SESSION["loggedIn"])
             <h1 class="text-center">Registreren</h1>
             <form action="?page=register" method="post">
                 <div class="row">
+                    <!-- Error melding als er een error op komt -->
                     <?php if (count($errors) > 0) : ?>
                         <?php foreach ($errors as $error) : ?>
                             <div class="alert alert-warning">
@@ -21,6 +23,7 @@ if ($_SESSION["loggedIn"])
                         <?php endforeach; ?>
                     <?php endif; ?>
                 </div>
+                <!-- HTML form -->
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input required type="email" class="form-control" name="email" id="email" placeholder="voorbeeld@mail.nl">
@@ -58,6 +61,7 @@ if ($_SESSION["loggedIn"])
                 <div class="form-group">
                     <input required type="submit" class="form-control btn btn-primary" name="register" value="Registreren">
                 </div>
+                <!-- Login button -->
                 <div class="form-group">
                     <span>Al een account?</span>
                     <a href="/index.php?page=login" class="btn-link">Login</a>

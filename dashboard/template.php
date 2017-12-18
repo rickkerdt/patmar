@@ -1,3 +1,4 @@
+<!-- template wordt ingeladen voor het dashboard  -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,6 +9,8 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+          rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -26,16 +29,16 @@
 
 <?php include_once "views/modules/nav.php"; ?>
 <div class="container-fluid">
-
+<!-- knoppen voor het dashboard -->
     <div class="row">
         <div class="col-md-3" style="padding: 0 0 75px 0; margin: 0; background-color: #212529;">
             <div class="dashboard-side-button active"><a href="/dashboard/?page=index">Overzicht</a></div>
+            <div class="dashboard-side-button"><a href="/dashboard/?page=agenda">Agenda</a></div>
             <div class="dashboard-side-button"><a href="/dashboard/?page=accounts">Accounts</a></div>
             <div class="dashboard-side-button"><a href="/dashboard/?page=offertes">Offertes</a></div>
-            <div class="dashboard-side-button"><a href="/dashboard/?page=sitebeheer">Site Beheer</a></div>
             <div class="dashboard-side-button"><a href="/dashboard/?page=storingen">Storingen</a></div>
         </div>
-        <div class="col" style="margin-top: 15px">
+        <div class="col-md-9" style="margin-top: 15px">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/dashboard/">Dashboard</a></li>
                 <?php if (isset($_GET["page"])) : ?>
@@ -43,8 +46,8 @@
                 <?php endif; ?>
             </ol>
 
+            <!-- Wanneer de knop page wordt ingedrukt word de pagina naar "home" gestuurd -->
             <?php
-
             if (isset($_GET["page"]) && $_GET["page"] != "") {
                 if (file_exists("views/" . $_GET["page"] . ".php")) {
                     @include_once "views/" . $_GET["page"] . ".php";
@@ -63,6 +66,7 @@
     </div>
 </div>
 </body>
+<!-- style voor dashboard -->
 <?php include_once "views/modules/footer.php"; ?>
 <style>
     .dashboard-side-button {
