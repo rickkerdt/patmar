@@ -193,11 +193,15 @@ nav{
 .jssora073.jssora073ds {opacity:.3;pointer-events:none;}
 
 /* remove link color */
-a {
+
+
+.footer a {
     text-decoration: none;
     color: #ffffff !important;
 }
-a:hover{
+
+.footer a:hover {
     color: black;
     text-decoration: underline;
 }
+
