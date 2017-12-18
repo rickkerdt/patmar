@@ -50,7 +50,7 @@
                 <p>info@patmar.nl<br>
                     www.patmar.nl</p>
                 </p>
-                <a href="#" class="btn btn-primary">Route</a>
+                <a href="https://www.google.nl/maps/place/A5+Patmar+Zonwering+%26+Kunststof+Kozijnen/@52.7074792,5.8634793,17z/data=!3m1!4b1!4m5!3m4!1s0x47c87ce82221a80b:0x14df3ecfb0314805!8m2!3d52.707476!4d5.865668" class="btn btn-primary">Route</a>
                 <!-- klantenschrijven -->
                 <div id="ks_banier">
                     <div id="ks_kop">
