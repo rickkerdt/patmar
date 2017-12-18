@@ -1,3 +1,3 @@
 <div class="jumbotron">
-    <h1>Test</h1>
+    <h1>Dashbord</h1>
 </div>

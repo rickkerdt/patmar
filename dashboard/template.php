@@ -8,6 +8,8 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+          rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -30,9 +32,9 @@
     <div class="row">
         <div class="col-md-3" style="padding: 0 0 75px 0; margin: 0; background-color: #212529;">
             <div class="dashboard-side-button active"><a href="/dashboard/?page=index">Overzicht</a></div>
+            <div class="dashboard-side-button"><a href="/dashboard/?page=agenda">Agenda</a></div>
             <div class="dashboard-side-button"><a href="/dashboard/?page=accounts">Accounts</a></div>
             <div class="dashboard-side-button"><a href="/dashboard/?page=offertes">Offertes</a></div>
-            <div class="dashboard-side-button"><a href="/dashboard/?page=sitebeheer">Site Beheer</a></div>
             <div class="dashboard-side-button"><a href="/dashboard/?page=storingen">Storingen</a></div>
         </div>
         <div class="col" style="margin-top: 15px">
