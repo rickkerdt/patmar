@@ -10,7 +10,6 @@ class Offerte
 {
     public $errorList = [];
 
-    public $errorList = [];
 
     //cheken of de benodigde velden niet leeg zijn.
     public function sendform($email, $naam, $adres, $telefoonnummer, $woonplaats, $bericht)
