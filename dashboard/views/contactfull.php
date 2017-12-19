@@ -65,14 +65,7 @@ $bericht = $contact["Bericht"];
                         </div>
                         <div class="col-md-9">
                             <div class="form-group">
-                                <table border="2px">
-                                    <td>
                                         <?php print $bericht ?>
-                                    </td>
-                                </table>
-                            <!-- <textarea rows="6" class="form-control" name="bericht" id="Bericht"
-                                      placeholder= style="width: 100%"></textarea> -->
-
                         </div>
                     </div>
             </li>
