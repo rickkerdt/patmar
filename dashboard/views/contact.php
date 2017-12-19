@@ -12,14 +12,17 @@ $contactlist = $users->getContactList($pagination);
         <ul class="list-group">
             <li class="list-group-item">
                 <div class="row">
-                    <div class="col-md-2">
-                        <strong>Contactnummer</strong>
+                    <div class="col-md-1">
+                        <strong>Nummer</strong>
                     </div>
                     <div class="col-md-3 text-truncate">
                         <strong>Naam</strong>
                     </div>
-                    <div class="col-md-7 text-truncate">
+                    <div class="col-md-6 text-truncate">
                         <strong>Bericht</strong>
+                    </div>
+                    <div class="col-md-2 text-truncate">
+                        <strong>&nbsp;</strong>
                     </div>
                 </div>
             </li>
@@ -37,6 +40,9 @@ $contactlist = $users->getContactList($pagination);
                             </div>
                             <div class="col-md-7 text-truncate">
                                 <?php echo $contact["Bericht"]; ?>
+                            </div>
+                            <div class="col-md-2 text-truncate">
+                                <input type="submit" value="Alles <br> Weergeven" class="btn btn-light float-right">
                             </div>
 
                         </div>
