@@ -30,7 +30,7 @@ $contactlist = $users->getContactList($pagination);
                 <li class="list-group-item">
                     <form action="/dashboard/" method="get">
                         <input type="hidden" name="page" value="contactfull">
-                        <input type="hidden" name="userID" value="<?php echo $contact["Contactid"]; ?>">
+                        <input type="hidden" name="Contactid" value="<?php echo $contact["Contactid"]; ?>">
                         <div class="row">
                             <div class="col-md-1">
                                 <?php echo $contact["Contactid"]; ?>
