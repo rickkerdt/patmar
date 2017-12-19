@@ -46,7 +46,7 @@ class Contact
         }
     }
 
-    private function checkForm($email,$naam,$woonplaats,$telefoonnummer, $bericht)
+    private function checkForm($email,$naam,$woonplaats, $adres, $telefoonnummer, $bericht)
     {
 //Errors die gegeven worden  als er velden leeg zijn of niet zijn ingevuld.
         $valid = true;
@@ -58,10 +58,14 @@ class Contact
         if (!preg_match('@[a-zA-Z]@',$naam)) {
             array_push($this->errorList, "Uw naam is niet of niet correct ingevuld.");
             $valid = false;
-      }
+        }
+        if (!preg_match('@[a-zA-Z0-9]@',$adres)) {
+            array_push($this->errorList, "Uw adres is niet ingevuld.");
+            $valid = false;
+        }
         if (!preg_match('@[a-zA-Z]@',$woonplaats)) {
-             array_push($this->errorList, "Uw woonplaats is niet ingevuld.");
-         $valid = false;
+            array_push($this->errorList, "Uw woonplaats is niet ingevuld.");
+            $valid = false;
         }
         if (!preg_match('@[0-9]@', $telefoonnummer)) {
             array_push($this->errorList, "Uw telefoonnummer is niet of niet correct ingevuld");
