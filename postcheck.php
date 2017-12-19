@@ -56,15 +56,15 @@ if (isset($_POST["contactsend"])) {
 
         //Kijkt of er response is
         if ($_POST["g-recaptcha-response"] != '') {
-                //Contact formulier versturen naar back-end
-                if ($contact->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnummer'], $_POST['woonplaats'], $_POST['bericht'])) {
-                    $_SESSION["sent"] = true;
-                    header("Location: ?page=contact");
-                    die();
-                } else {
-                    //  Errors in een lijst neer zetten
-                    $errors = $contact->errorList;
-                }
+            //Contact formulier versturen naar back-end
+            if ($contact->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnummer'], $_POST['woonplaats'], $_POST['bericht'])) {
+                $_SESSION["sent"] = true;
+                header("Location: ?page=contact");
+                die();
+            } else {
+                //  Errors in een lijst neer zetten
+                $errors = $contact->errorList;
+            }
         } else {
             //Error toevoegen aan lijst
             array_push($errors, "Los de recaptcha a.u.b. op.");
@@ -113,16 +113,16 @@ if (isset($_POST["storingsend"])) {
 
         //Kijkt of er response is
         if ($_POST["g-recaptcha-response"] != '') {
-                //Contact formulier versturen naar back-end
-                if ($storing->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnummer'], $_POST['woonplaats'], $_POST['bericht'])) {
-                    $_SESSION["sent"] = true;
-                    header("Location: ?page=storing");
-                    die();
-                } else {
-                    //  Errors in een lijst neer zetten
-                    $errors = $storing->errorList;
-                }
-        }else {
+            //Contact formulier versturen naar back-end
+            if ($storing->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnummer'], $_POST['woonplaats'], $_POST['bericht'])) {
+                $_SESSION["sent"] = true;
+                header("Location: ?page=storing");
+                die();
+            } else {
+                //  Errors in een lijst neer zetten
+                $errors = $storing->errorList;
+            }
+        } else {
             //Error toevoegen aan lijst
             array_push($errors, "Los de recaptcha a.u.b. op.");
         }
@@ -170,16 +170,16 @@ if (isset($_POST["offertesend"])) {
 
         //Kijkt of er response is
         if ($_POST["g-recaptcha-response"] != '') {
-                //Contact formulier versturen naar back-end
-                if ($offerte->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnummer'], $_POST['woonplaats'], $_POST['bericht'])) {
-                    $_SESSION["sent"] = true;
-                    header("Location: ?page=offerte");
-                    die();
-                } else {
-                    //  Errors in een lijst neer zetten
-                    $errors = $offerte->errorList;
-                }
-        }else {
+            //Contact formulier versturen naar back-end
+            if ($offerte->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnummer'], $_POST['woonplaats'], $_POST['bericht'])) {
+                $_SESSION["sent"] = true;
+                header("Location: ?page=offerte");
+                die();
+            } else {
+                //  Errors in een lijst neer zetten
+                $errors = $offerte->errorList;
+            }
+        } else {
             //Error toevoegen aan lijst
             array_push($errors, "Los de recaptcha a.u.b. op.");
         }
@@ -236,4 +236,31 @@ if (isset($_POST["register"])) {
     }
 }
 
+if (isset($_FILES['bestand'])) {
+    print_r($_FILES);
+    $errors = array();
+    $file_name = $_FILES['bestand']['name'];
+    $file_size = $_FILES['bestand']['size'];
+    $file_tmp = $_FILES['bestand']['tmp_name'];
+    $file_type = $_FILES['bestand']['type'];
+    $file_ext = strtolower(end(explode('.', $_FILES['bestand']['name'])));
+
+    $expensions = array("jpeg", "jpg", "png");
+
+    if (in_array($file_ext, $expensions) === false) {
+        $errors[] = "extension not allowed, please choose a JPEG or PNG file.";
+    }
+
+    if ($file_size > 5097152) {
+        $errors[] = 'File size must be excately 4 MB';
+    }
+
+    if (empty($errors) == true) {
+        move_uploaded_file($file_tmp, "uploads/" . $file_name);
+        echo "Success";
+    } else {
+        print_r($errors);
+    }
+}
+?>
 

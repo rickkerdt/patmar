@@ -1,6 +1,6 @@
 <!-- Offerte  -->
 <div style="padding-top: 100px;"></div>
-<div class="col-md-6 jumbotron mx-auto" >
+<div class="col-md-6 jumbotron mx-auto">
     <h1 class="text">Offerte aanvragen</h1>
 
     <br>
@@ -9,7 +9,7 @@
             Voor vragen kunt u ook bellen tijdens kantooruren of mailen via ons contact formulier.</span></p>
     <br>
 
-    <form action="?page=offerte" method="post">
+    <form action="?page=offerte" method="post" enctype="multipart/form-data">
         <!-- Als er errors voor komen worden die gegeven -->
         <?php if (count($errors) > 0) : ?>
             <?php foreach ($errors as $error) : ?>
@@ -58,7 +58,7 @@
                 <div class="form-group">
 
                     <input cols="40" type="text" class="form-control" name="telefoonnummer" id="Telefoonnummer"
-                           placeholder="Telefoonnummer *"required>
+                           placeholder="Telefoonnummer *" required>
                 </div>
             </div>
             <div class="row">
@@ -71,7 +71,7 @@
             </div>
             <!--Upload knop voor foto's-->
 
-            <div enctype="multipart/form-data" action="uploads.php" method="post">
+            <div>
                 Klik om een bestand te uploaden:</br>
                 <input type="file" name="BestandUpload" id="BestandUpload"></br>
 
