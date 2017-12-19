@@ -66,7 +66,7 @@ $contact = $contact->getContact($_GET["Contactid"]);
                             <div class="form-group">
 
                             <textarea rows="6" class="form-control" name="bericht" id="Bericht"
-                                      placeholder="<?php echo $contact["Bericht"]; ?>" style="background: white; color: black !important; font-weight: bolder;"></textarea>
+                                      placeholder="<?php echo $contact["Bericht"]; ?>" style="::placeholder { color: black !important; }"></textarea>
 
                         </div>
                     </div>
