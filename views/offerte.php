@@ -72,7 +72,7 @@
             <!--Upload knop voor foto's-->
 
             <div action="uploads.php" method="post" enctype="multipart/form-data">
-                Select image to upload:
+                Klik om een bestand te uploaden:
                 <input type="file" name="BestandUpload" id="BestandUpload"></br>
             </div>
 
