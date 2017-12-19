@@ -242,11 +242,19 @@ nav{
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
-    color: black;
+    color: black !important;
     background-color: #fff;
     background-image: none;
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: .25rem;
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+
+.contactmsgbox::placeholder{
+    color: black !important;
+}
+
+.contactmsgbox:placeholder{
+    color: black !important;
 }
