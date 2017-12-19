@@ -65,8 +65,8 @@ $contact = $contact->getContact($_GET["Contactid"]);
                         <div class="col-md-9 text-truncate">
                             <div class="form-group">
 
-                            <textarea rows="6" class="form-control contactfull" name="bericht" id="Bericht"
-                                      placeholder="<?php echo $contact["Bericht"]; ?>" disabled="disabled"></textarea>
+                            <textarea rows="6" class="form-control" name="bericht" id="Bericht"
+                                      placeholder="<?php echo $contact["Bericht"]; ?>" disabled="disabled" style="background: white; color: black;"></textarea>
 
                         </div>
                     </div>
