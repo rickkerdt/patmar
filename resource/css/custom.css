@@ -254,11 +254,13 @@ nav{
 #Bericht::placeholder{
     color: black;
     opacity: 1;
+    font-weight: bolder;
 }
 
 #Bericht:placeholder{
     color: black;
     opacity: 1;
+    font-weight: bolder;
 }
 
 #Bericht:disabled, #Bericht[readonly] {
@@ -269,15 +271,18 @@ nav{
 
 #Bericht::-webkit-input-placeholder {
     color: black;
-    opacity: 1
+    opacity: 1;
+    font-weight: bolder;
 }
 
 #Bericht:-ms-input-placeholder {
     color: black;
-    opacity: 1
+    opacity: 1;
+    font-weight: bolder;
 }
 
 #Bericht::-ms-input-placeholder {
     color: black;
-    opacity: 1
+    opacity: 1;
+    font-weight: bolder;
 }
