@@ -47,7 +47,7 @@
                         <div class="form-group">
 
                             <input type="text" class="form-control" name="adres" id="adres"
-                                   placeholder="Adres">
+                                   placeholder="Adres *">
                         </div>
                     </div>
                     <div class="row">
