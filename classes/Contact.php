@@ -13,7 +13,7 @@ class Contact
     //cheken of de benodigde velden niet leeg zijn.
     public function sendform($email, $naam, $telefoonnummer, $woonplaats, $bericht, $adres)
     {
-        if ($this->checkForm($email, $telefoonnummer,$naam,$woonplaats,$bericht, $adres)) {
+        if ($this->checkForm($email, $telefoonnummer,$naam,$woonplaats,$bericht)) {
 //wanneer de velden gecheked zijn wordt er een mail aangemaakt met de inhoud van de ingevulde velden.
             $to = "admin@patmar.com";
             $subject = "Contact";
