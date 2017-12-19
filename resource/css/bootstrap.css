@@ -1950,26 +1950,22 @@ pre code {
 
 .form-control::-webkit-input-placeholder {
     color: #868e96;
-    opacity: 1;
-    font-weight: bolder;
+    opacity: 1
 }
 
 .form-control:-ms-input-placeholder {
     color: #868e96;
-    opacity: 1;
-    font-weight: bolder;
+    opacity: 1
 }
 
 .form-control::-ms-input-placeholder {
     color: #868e96;
-    opacity: 1;
-    font-weight: bolder;
+    opacity: 1
 }
 
 .form-control::placeholder {
     color: #868e96;
-    opacity: 1;
-    font-weight: bolder;
+    opacity: 1
 }
 
 .form-control:disabled, .form-control[readonly] {
