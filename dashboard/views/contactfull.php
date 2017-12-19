@@ -65,7 +65,7 @@ $bericht = $contact["Bericht"];
                         </div>
                         <div class="col-md-9 text-truncate">
                             <div class="form-group">
-                                <table>
+                                <table border="2px">
                                     <td>
                                         <?php print $bericht ?>
                                     </td>
