@@ -3,7 +3,7 @@
 if(isset($_POST["upload"]))
 {
     echo $_FILES["file"]["name"];
-    $dir = getcwd(). "/uploads/";
+    $dir = "uploads/";
     $file = $dir . basename($_FILES["file"]["name"]);
     echo $file;
     try {
