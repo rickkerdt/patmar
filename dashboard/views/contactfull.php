@@ -7,8 +7,9 @@
  */
 $contact = new Contactdash();
 $contact = $contact->getContact($_GET["Contactid"]);
+$bericht = $contact["Bericht"];
 $print = <<<EOT
-$contact["Bericht"]
+Dit is het bericht: $bericht
 EOT;
 ?>
 <div class="row">
