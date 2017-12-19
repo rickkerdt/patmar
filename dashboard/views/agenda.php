@@ -102,10 +102,9 @@
                             success: function (json) {
                                 $('#calendar').fullCalendar('removeEvents', event.id);
                                 alert("Updated Successfully");
+                                console.log(json);
                             }
-                            console.log(json);
-                    })
-                        ;
+                        });
                     }
                 },
                 eventResize: function (event) {
