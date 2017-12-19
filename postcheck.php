@@ -12,7 +12,7 @@ if (isset($_POST["login"])) {
     //Log de gebruiker in
     if ($user->login($_POST["email"], $_POST["password"])) {
         //Verwijzen naar dashboard pagina
-        header("Location: /dashboard/");
+        header("Location: /dashboard/?page=agenda");
     } else {
         //Error lijst ophalen
         $errors = $user->errorList;
