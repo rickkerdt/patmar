@@ -5,8 +5,8 @@
  * Date: 19-12-2017
  * Time: 13:38
  */
-$contact = new Account();
-$contact = $contact->getUser($_GET["Contactid"]);
+$contact = new Contactdash();
+$contact = $contact->getContact($_GET["Contactid"]);
 ?>
 <div class="row">
     <div class="col-md-12">
@@ -18,51 +18,51 @@ $contact = $contact->getUser($_GET["Contactid"]);
                             <strong>Contactnummer</strong>
                         </div>
                         <input type="hidden" name="userID" value="<?php echo $contact["Contactid"]; ?>">
-                        <div class="col-md-1">
+                        <div class="col-md-9">
                             <?php echo $contact["Contactid"]; ?>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-2 text-truncate">
+                        <div class="col-md-3 text-truncate">
                             <strong>Naam</strong>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-9">
                             <?php echo $contact["Naam"]; ?>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-2 text-truncate">
+                        <div class="col-md-3 text-truncate">
                             <strong>Adres</strong>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-9">
                             <?php echo $contact["Adres"]; ?>
                         </div>
-                        <div class="col-md-2 text-truncate">
+                        <div class="col-md-3 text-truncate">
                             <strong>Woonplaats</strong>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-9">
                             <?php echo $contact["Woonplaats"]; ?>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-2 text-truncate">
+                        <div class="col-md-3 text-truncate">
                             <strong>Email</strong>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-9">
                             <?php echo $contact["Email"]; ?>
                         </div>
                         <div class="col-md-3 text-truncate">
                             <strong>Telefoonnummer</strong>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-9">
                             <?php echo $contact["Telefoonnummer"]; ?>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-2 text-truncate">
+                        <div class="col-md-3 text-truncate">
                             <strong>Bericht</strong>
                         </div>
-                        <div class="col-md-8 text-truncate">
+                        <div class="col-md-9 text-truncate">
                             <?php echo $contact["Bericht"]; ?>
                         </div>
                     </div>
