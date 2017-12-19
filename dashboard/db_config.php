@@ -7,6 +7,6 @@
  */
 
 
-$bdd = new PDO('mysql:host=localhost;dbname=laravel_test', 'patmar', 'Patmar1!');
+$bdd = new PDO('mysql:host=localhost;dbname=patmar', 'patmar', 'Patmar1!');
 
 ?>
