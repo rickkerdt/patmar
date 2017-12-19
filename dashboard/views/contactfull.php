@@ -14,11 +14,11 @@ $contact = $contact->getContact($_GET["Contactid"]);
             <li class="list-group-item">
                 <form action="/dashboard/" method="get">
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <strong>Contactnummer</strong>
                         </div>
                         <input type="hidden" name="userID" value="<?php echo $contact["Contactid"]; ?>">
-                        <div class="col-md-1">
+                        <div class="col-md-4">
                             <?php echo $contact["Contactid"]; ?>
                         </div>
                     </div>
@@ -51,10 +51,10 @@ $contact = $contact->getContact($_GET["Contactid"]);
                         <div class="col-md-4">
                             <?php echo $contact["Email"]; ?>
                         </div>
-                        <div class="col-md-3 text-truncate">
+                        <div class="col-md-2 text-truncate">
                             <strong>Telefoonnummer</strong>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <?php echo $contact["Telefoonnummer"]; ?>
                         </div>
                     </div>
