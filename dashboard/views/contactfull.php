@@ -65,7 +65,7 @@ $bericht = $contact["Bericht"];
                         </div>
                         <div class="col-md-9">
                             <div class="form-group">
-                                        <?php print $bericht ?>
+                                        <?php print nl2br($bericht) ?>
                         </div>
                     </div>
             </li>
