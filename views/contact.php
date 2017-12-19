@@ -32,35 +32,35 @@
                     <div class="row">
                         <div class="form-group">
 
-                            <input type="email" class="form-control" name="email" id="email"
+                            <input type="email" class="form-control" maxlength="512" name="email" id="email"
                                    placeholder="voorbeeld@mail.nl *">
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group">
 
-                            <input type="text" class="form-control" name="naam" id="name"
+                            <input type="text" class="form-control" maxlength="90" name="naam" id="name"
                                    placeholder="Naam *">
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group">
 
-                            <input type="text" class="form-control" name="adres" id="adres"
+                            <input type="text" class="form-control" maxlength="64" name="adres" id="adres"
                                    placeholder="Straatnaam + huisnummer *">
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group">
 
-                            <input type="text" class="form-control" name="woonplaats" id="woonplaats"
+                            <input type="text" class="form-control" maxlength="40" name="woonplaats" id="woonplaats"
                                    placeholder="Woonplaats *">
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group">
 
-                            <input cols="40" type="text" class="form-control" name="telefoonnummer" id="Telefoonnummer"
+                            <input cols="40" type="text" class="form-control" maxlength="12" name="telefoonnummer" id="Telefoonnummer"
                                    placeholder="Telefoonnummer *">
                         </div>
                     </div>
