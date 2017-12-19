@@ -235,7 +235,7 @@ nav{
 @media (max-width: 767px) {
 
 }
-.contactfull input[type="text"]:disabled{
+.form-control .contactfull input[type="text"]:disabled{
     background: white !important;
     color: black !important;
 }
