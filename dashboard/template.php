@@ -36,15 +36,14 @@
 <!-- knoppen voor het dashboard -->
     <div class="row">
         <div class="col-md-3" style="padding: 0 0 75px 0; margin: 0; background-color: #212529;">
-            <div class="dashboard-side-button active"><a href="/dashboard/?page=contact">Contactaanvragen</a></div>
-            <div class="dashboard-side-button"><a href="/dashboard/?page=agenda">Agenda</a></div>
+            <div class="dashboard-side-button"><a href="/dashboard/?page=contact">Contact</a></div>
             <div class="dashboard-side-button"><a href="/dashboard/?page=accounts">Accounts</a></div>
             <div class="dashboard-side-button"><a href="/dashboard/?page=offertes">Offertes</a></div>
             <div class="dashboard-side-button"><a href="/dashboard/?page=storingen">Storingen</a></div>
         </div>
         <div class="col-md-9" style="margin-top: 15px">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="dashboard/agenda.php/">Dashboard</a></li>
+                <li class="breadcrumb-item"><a href="/dashboard/?page=agenda">Dashboard</a></li>
                 <?php if (isset($_GET["page"])) : ?>
                     <li class="breadcrumb-item active"><?php echo ucfirst($_GET["page"]) ?></li>
                 <?php endif; ?>
