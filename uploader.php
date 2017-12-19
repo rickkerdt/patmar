@@ -1,3 +1,14 @@
+<?php
+
+if(isset($_POST["upload"]))
+{
+    $dir = "/uploads";
+    $file = $dir . "/" . basename($_FILES["file"]["name"]);
+    move_uploaded_file($_FILES["file"]["tmp_name"], $file);
+}
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
