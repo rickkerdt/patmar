@@ -60,10 +60,10 @@ $bericht = $contact["Bericht"];
                         </div>
                     </div>
                     <div class="row" style="height: 200px;">
-                        <div class="col-md-3 text-truncate">
+                        <div class="col-md-3">
                             <strong>Bericht</strong>
                         </div>
-                        <div class="col-md-9 text-truncate">
+                        <div class="col-md-9">
                             <div class="form-group">
                                 <table border="2px">
                                     <td>
