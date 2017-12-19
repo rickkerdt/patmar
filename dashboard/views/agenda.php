@@ -29,9 +29,9 @@
             var calendar = $('#calendar').fullCalendar({
                 editable: true,
                 header: {
-                    left: 'vorige,volgende vandaag',
+                    left: 'prev,next today',
                     center: 'title',
-                    right: 'maand,Week,dag'
+                    right: 'month,agendaWeek,agendaDay'
                 },
 
 
