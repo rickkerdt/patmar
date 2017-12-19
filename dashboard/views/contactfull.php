@@ -5,12 +5,8 @@
  * Date: 19-12-2017
  * Time: 13:38
  */
-$users = new Contactdash();
-$pagination = 0;
-if (isset($_GET["pagination"]))
-    $pagination = intval($_GET["pagination"]);
-
-$contactlist = $users->getContactList($pagination);
+$contact = new Account();
+$contact = $contact->getUser($_GET["Contactid"]);
 ?>
 <div class="row">
     <div class="col-md-12">

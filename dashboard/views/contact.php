@@ -1,10 +1,10 @@
 <?php
-$users = new Contactdash();
+$contacts = new Contactdash();
 $pagination = 0;
 if (isset($_GET["pagination"]))
     $pagination = intval($_GET["pagination"]);
 
-$contactlist = $users->getContactList($pagination);
+$contactlist = $contacts->getContactList($pagination);
 ?>
 
 <div class="row">

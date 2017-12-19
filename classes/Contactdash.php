@@ -26,4 +26,18 @@ class Contactdash
             return $q->errorCode();
         }
     }
+
+    public function getContact($Contactid)
+    {
+        $q = $this->db->prepare("SELECT * FROM Contact WHERE Contactid = ?");
+        $q->bindValue(1, $Contactid, \PDO::PARAM_INT);
+
+        if ($q->execute()) {
+            return $q->fetchAll()[0];
+        } else {
+            return $q->errorCode();
+        }
+    }
 }
+
+
