@@ -41,13 +41,14 @@ class User
 //          Query uitvoeren
             if ($q->execute()) {
 
+                $q->closeCursor();
+
                 $q2 = $db->prepare("SELECT UserID FROM User WHERE Email = ?");
                 $q2->bindValue(1, $email);
                 $q2->execute();
                 $q2r = $q2->fetchAll()[0];
                 $q2->closeCursor();
                 $db = null;
-                $q2 = null;
 //              Verbinding afsluiten
                 if ($this->insertInfo($q2r["UserID"], $firstname, $lastname)) {
                     return true;
