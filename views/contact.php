@@ -47,7 +47,7 @@
                         <div class="form-group">
 
                             <input type="text" class="form-control" maxlength="64" name="adres" id="adres"
-                                   placeholder="Straatnaam + huisnummer *">
+                                   placeholder="Straatnaam+huisnummer">
                         </div>
                     </div>
                     <div class="row">
