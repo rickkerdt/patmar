@@ -47,7 +47,6 @@ class User
                 $q2r = $q2->fetchAll()[0];
                 $q2->closeCursor();
                 $db = null;
-                $q2 = null;
 //              Verbinding afsluiten
                 if ($this->insertInfo($q2r["UserID"], $firstname, $lastname)) {
                     return true;
