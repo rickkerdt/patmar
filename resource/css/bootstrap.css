@@ -1949,7 +1949,7 @@ pre code {
 }
 
 .form-control::-webkit-input-placeholder {
-    color: #868e96;
+    color: black;
     opacity: 1
 }
 
