@@ -70,12 +70,12 @@
                 </div>
             </div>
             <!--Upload knop voor foto's-->
-            <div>
-            <form action="upload.php" method="post" enctype="multipart/form-data">
+
+            <div action="uploads.php" method="post" enctype="multipart/form-data">
                 Select image to upload:
                 <input type="file" name="BestandUpload" id="BestandUpload"></br>
-            </form>
             </div>
+
             <!--Google recaptcha-->
             <div class="form-group">
                 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -90,7 +90,7 @@
                     <p style="font-size: 0.9em;">Velden met een * zijn verplicht.</p>
                 </div>
 
-            </div>
+            </div>0
         </div>
     </form>
 </div>

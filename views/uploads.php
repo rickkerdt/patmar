@@ -5,24 +5,19 @@
  * Date: 14-12-2017
  * Time:14:08
 */
+$file_result =" ";
 
-// Control sheet voor de
-     $target_dir = "uploads/";
-            $target_file = $target_dir . basename($_FILES["BestandUpload"]["name"]);
-            $uploadOk = 1;
-            $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-            // Checken of bestand wel een foto is.
-            if(isset($_POST["submit"])) {
-                $check = getimagesize($_FILES["BestandUpload"]["tmp_name"]);
-                if($check !== false) {
-                    print "File is an image - " . $check["mime"] . ".";
-                    $uploadOk = 1;
-                } else {
-                    print "Betand is niet een foto.";
-                    $uploadOk = 0;
-                }
-                // chekt of het betand een van de volgende extenties heeft JPG, JPEG, PNG & GIF
-            }  if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" ) {
-    print "Sorry, alleen JPG, JPEG, PNG & GIF files zijn toegestaan.";
-    $uploadOk = 0;
+if($_FILES["file"]["error"]> 0){
+    $file_result .="Geen bestand geupload of een verkeerd bestand";
+    $file_result .="Error Code: ". $_FILES["file"]["error"]."<br>";
+} else{
+    $file_result .=
+        "Upload: ". $_FILES["file"]["name"] ."<br>".
+        "Type: ". $_FILES["file"]["type"] ."<br>".
+        "Size: ". ($_FILES["file"]["size"] / 1024)."Kb<br>".
+        "Temp file: ". $_FILES["files"]["tpm_name"]."<br>";
+
+        move_uploaded_file($_FILES["file"]["tmp_name"],"/uploads".$_FILES["file"]["name"]);
+
+        $file_result .= "Upload gelukt";
 }
