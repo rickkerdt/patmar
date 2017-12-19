@@ -63,7 +63,7 @@ $userlist = $users->getUserList($pagination);
         <div class="btn-group" role="group" aria-label="Basic example">
             <button id="back" <?php if($pagination == 0) echo "disabled"; ?> type="button" class="btn btn-secondary">Vorige</button>
             <button type="button" class="btn btn-primary"><?php echo $pagination + 1 ?></button>
-            <button id="next" type="button" class="btn btn-secondary">Volgende</button>
+            <button id="next" <?php if(count($userlist) < 10) echo "disabled"; ?> type="button" class="btn btn-secondary">Volgende</button>
         </div>
         <script>
             $(function () {

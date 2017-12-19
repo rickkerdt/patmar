@@ -12,7 +12,7 @@ $requete = "SELECT * FROM events ORDER BY id";
 
 
 try {
-    require "db_config.php";
+    require "../dashboard/db_config.php";
 } catch(Exception $e) {
     exit('Unable to connect to database.');
 }
