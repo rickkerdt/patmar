@@ -7,6 +7,9 @@
  */
 $contact = new Contactdash();
 $contact = $contact->getContact($_GET["Contactid"]);
+$print = <<<EOF
+<p>$contact["Bericht"]</p>
+EOF;
 ?>
 <div class="row">
     <div class="col-md-12">
@@ -66,9 +69,6 @@ $contact = $contact->getContact($_GET["Contactid"]);
                             <div class="form-group">
                                 <div class="form-control-plaintext">
                                     <?php
-                                    $print = <<<EOF
-<p>$contact['Bericht']</p>
-EOF;
                                     print $print; ?>
                                 </div>
                             <!-- <textarea rows="6" class="form-control" name="bericht" id="Bericht"
