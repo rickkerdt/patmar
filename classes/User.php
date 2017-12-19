@@ -66,10 +66,9 @@ class User
 //      Verbinding maken met database
         $dbs = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
 //      Query opbouwen
-        $q2 = $dbs->prepare("INSERT INTO Userinfo( UserInfoID, FirstName, LastName, UserID) VALUES (?,?,?,?)");
+        $q2 = $dbs->prepare("INSERT INTO Userinfo(UserID, FirstName, LastName) VALUES (?,?,?)");
 //      Anti SQL injectie
         $q2->bindValue(1, $userID);
-        $q2->bindValue(4, $userID);
         $q2->bindValue(2, $firstname);
         $q2->bindValue(3, $lastname);
 //      Query uitvoeren
