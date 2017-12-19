@@ -8,12 +8,12 @@ $user = $users->getUser($_GET["userID"]);
         <div class="col-md-6">
             <div class="form-group">
                 <label for="name">Naam</label>
-                <input type="text" class="form-control" id="name" placeholder="Naam" name="name" disabled value="<?php echo $user["Name"]; ?>">
+                <input type="text" class="form-control" id="name" placeholder="Naam" name="name" disabled value="<?php echo $user["FirstName"]; ?>">
             </div></div>
         <div class="col-md-6">
             <div class="form-group">
                 <label for="lastname">Achternaam</label>
-                <input type="text" class="form-control" id="lastname" placeholder="Achternaam" name="lastname" disabled value="<?php echo $user["Lastname"]; ?>">
+                <input type="text" class="form-control" id="lastname" placeholder="Achternaam" name="lastname" disabled value="<?php echo $user["LastName"]; ?>">
             </div></div>
     </div>
     <div class="form-group">
