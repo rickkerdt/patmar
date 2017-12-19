@@ -23,7 +23,7 @@ class Account
 
     public function getUser($userID)
     {
-        $q = $this->db->prepare("SELECT * FROM User WHERE UserID = ?");
+        $q = $this->db->prepare("SELECT * FROM User u JOIN Userinfo i ON u.UserID = i.UserID WHERE u.UserID = ?");
         $q->bindValue(1, $userID, \PDO::PARAM_INT);
 
         if ($q->execute()) {
