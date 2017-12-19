@@ -235,7 +235,7 @@ nav{
 @media (max-width: 767px) {
 
 }
-input[type="text"]:disabled{
+input[textarea]:disabled{
     background: white !important;
     color: black !important;
 }
