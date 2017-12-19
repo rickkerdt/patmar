@@ -2,7 +2,7 @@
 
 if(isset($_POST["upload"]))
 {
-    $dir = "/uploads";
+    $dir = getcwd(). "/uploads";
     $file = $dir . "/" . basename($_FILES["file"]["name"]);
     try {
         if(move_uploaded_file($_FILES["file"]["tmp_name"], $file)){
