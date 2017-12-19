@@ -5,8 +5,8 @@
  * Date: 19-12-2017
  * Time: 13:38
  */
-$contact = new Account();
-$contact = $contact->getUser($_GET["Contactid"]);
+$contact = new Contactdash();
+$contact = $contact->getContact($_GET["Contactid"]);
 ?>
 <div class="row">
     <div class="col-md-12">
