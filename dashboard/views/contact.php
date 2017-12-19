@@ -13,19 +13,25 @@ $contactlist = $users->getContactList($pagination);
             <li class="list-group-item">
                 <div class="row">
                     <div class="col-md-1">
-                        <strong>UserID</strong>
+                        <strong>ContactID</strong>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-2">
                         <strong>Email</strong>
                     </div>
-                    <div class="col-md-4 text-truncate">
-                        <strong>Hash</strong>
+                    <div class="col-md-2 text-truncate">
+                        <strong>Naam</strong>
                     </div>
                     <div class="col-md-1">
-                        <strong>Functie</strong>
+                        <strong>Adres</strong>
                     </div>
-                    <div class="col-md-2 text-truncate">
-                        <strong>&nbsp;</strong>
+                    <div class="col-md-1 text-truncate">
+                        <strong>Woonplaats</strong>
+                    </div>
+                    <div class="col-md-1 text-truncate">
+                        <strong>Telefoonnummer</strong>
+                    </div>
+                    <div class="col-md-4 text-truncate">
+                        <strong>Bericht</strong>
                     </div>
                 </div>
             </li>
@@ -38,8 +44,11 @@ $contactlist = $users->getContactList($pagination);
                             <div class="col-md-1">
                                 <?php echo $contact["ContactID"]; ?>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-2">
                                 <?php echo $contact["Email"]; ?>
+                            </div>
+                            <div class="col-md-2">
+                                <?php echo $contact["Naam"]; ?>
                             </div>
                             <div class="col-md-1 text-truncate">
                                 <?php echo $contact["Adres"]; ?>
