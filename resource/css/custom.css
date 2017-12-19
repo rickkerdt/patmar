@@ -236,7 +236,7 @@ nav{
 
 }
 
-.contactmsgbox {
+#Bericht {
     display: block;
     width: 100%;
     padding: .375rem .75rem;
@@ -251,32 +251,33 @@ nav{
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
 }
 
-.contactmsgbox::placeholder{
-    color: black !important;
+#Bericht::placeholder{
+    color: black;
     opacity: 1;
 }
 
-.contactmsgbox:placeholder{
-    color: black !important;
+#Bericht:placeholder{
+    color: black;
     opacity: 1;
 }
 
-.contactmsgbox:disabled, .contactmsgbox[readonly] {
+#Bericht:disabled, #Bericht[readonly] {
     background-color: white;
     opacity: 1;
+    color: black;
 }
 
-.contactmsgbox::-webkit-input-placeholder {
+#Bericht::-webkit-input-placeholder {
     color: black;
     opacity: 1
 }
 
-.contactmsgbox:-ms-input-placeholder {
+#Bericht:-ms-input-placeholder {
     color: black;
     opacity: 1
 }
 
-.contactmsgbox::-ms-input-placeholder {
+#Bericht::-ms-input-placeholder {
     color: black;
     opacity: 1
 }
