@@ -38,11 +38,11 @@ $contactlist = $users->getContactList($pagination);
                             <div class="col-md-3">
                                 <?php echo $contact["Naam"]; ?>
                             </div>
-                            <div class="col-md-7 text-truncate">
+                            <div class="col-md-6 text-truncate">
                                 <?php echo $contact["Bericht"]; ?>
                             </div>
                             <div class="col-md-2 text-truncate">
-                                <input type="submit" value="Alles <br> Weergeven" class="btn btn-light float-right">
+                                <input type="submit" value="Alles Weergeven" class="btn btn-light float-right">
                             </div>
 
                         </div>
