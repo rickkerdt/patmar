@@ -10,8 +10,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
@@ -19,7 +20,7 @@
     <script>
 
 
-        $(document).ready(function() {
+        $(document).ready(function () {
             var date = new Date();
             var d = date.getDate();
             var m = date.getMonth();
@@ -38,7 +39,7 @@
                 events: "events.php",
 
 
-                eventRender: function(event, element, view) {
+                eventRender: function (event, element, view) {
                     if (event.allDay === 'true') {
                         event.allDay = true;
                     } else {
@@ -47,7 +48,7 @@
                 },
                 selectable: true,
                 selectHelper: true,
-                select: function(start, end, allDay) {
+                select: function (start, end, allDay) {
                     var title = prompt('Event Title:');
 
 
@@ -56,10 +57,11 @@
                         var end = $.fullCalendar.formatDate(end, "Y-MM-DD HH:mm:ss");
                         $.ajax({
                             url: '/dashboard/add_events.php',
-                            data: 'title='+ title+'&start='+ start +'&end='+ end,
+                            data: 'title=' + title + '&start=' + start + '&end=' + end,
                             type: "POST",
-                            success: function(json) {
+                            success: function (json) {
                                 alert('Added Successfully');
+                                console.log(json);
                             }
                         });
                         calendar.fullCalendar('renderEvent',
@@ -77,40 +79,45 @@
 
 
                 editable: true,
-                eventDrop: function(event, delta) {
+                eventDrop: function (event, delta) {
                     var start = $.fullCalendar.formatDate(event.start, "Y-MM-DD HH:mm:ss");
                     var end = $.fullCalendar.formatDate(event.end, "Y-MM-DD HH:mm:ss");
                     $.ajax({
                         url: '/dashboard/update_events.php',
-                        data: 'title='+ event.title+'&start='+ start +'&end='+ end +'&id='+ event.id ,
+                        data: 'title=' + event.title + '&start=' + start + '&end=' + end + '&id=' + event.id,
                         type: "POST",
-                        success: function(json) {
+                        success: function (json) {
                             alert("Updated Successfully");
+                            console.log(json);
                         }
                     });
                 },
-                eventClick: function(event) {
+                eventClick: function (event) {
                     var decision = confirm("Do you really want to do that?");
                     if (decision) {
                         $.ajax({
                             type: "POST",
                             url: "/dashboard/delete_event.php",
                             data: "&id=" + event.id,
-                            success: function(json) {
+                            success: function (json) {
                                 $('#calendar').fullCalendar('removeEvents', event.id);
-                                alert("Updated Successfully");}
-                        });
+                                alert("Updated Successfully");
+                            }
+                            console.log(json);
+                    })
+                        ;
                     }
                 },
-                eventResize: function(event) {
+                eventResize: function (event) {
                     var start = $.fullCalendar.formatDate(event.start, "yyyy-MM-dd HH:mm:ss");
                     var end = $.fullCalendar.formatDate(event.end, "yyyy-MM-dd HH:mm:ss");
                     $.ajax({
                         url: '/dashboard/update_events.php',
-                        data: 'title='+ event.title+'&start='+ start +'&end='+ end +'&id='+ event.id ,
+                        data: 'title=' + event.title + '&start=' + start + '&end=' + end + '&id=' + event.id,
                         type: "POST",
-                        success: function(json) {
+                        success: function (json) {
                             alert("Updated Successfully");
+                            console.log(json);
                         }
                     });
                 }
@@ -126,8 +133,9 @@
             margin-top: 40px;
             text-align: center;
             font-size: 14px;
-            font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+            font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
         }
+
         #calendar {
             width: 650px;
             margin: 0 auto;
