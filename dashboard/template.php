@@ -44,7 +44,7 @@
         </div>
         <div class="col-md-9" style="margin-top: 15px">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/agenda.php/">Dashboard</a></li>
+                <li class="breadcrumb-item"><a href="dashboard/agenda.php/">Dashboard</a></li>
                 <?php if (isset($_GET["page"])) : ?>
                     <li class="breadcrumb-item active"><?php echo ucfirst($_GET["page"]) ?></li>
                 <?php endif; ?>
