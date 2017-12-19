@@ -71,43 +71,6 @@ $contactlist = $users->getContactList($pagination);
                         </div>
                     </div>
             </li>
-            <?php foreach ($contactlist
-
-            as $contact) : ?>
-            <li class="list-group-item">
-                <form action="/dashboard/" method="get">
-                    <input type="hidden" name="page" value="contactfull">
-
-                    <div class="col-md-2 text-truncate">
-                        <strong>&nbsp;</strong>
-                    </div>
-                    <div class="col-md-3">
-                        <?php echo $contact["Naam"]; ?>
-                    </div>
-
-                    <div class="col-md-2 text-truncate">
-                        <input type="submit" value="Alles Weergeven" class="btn btn-light float-right">
-                    </div>
-
-    </div>
-    </form>
-    </li>
-    <?php endforeach; ?>
     </ul>
 </div>
-</div>
-<div class="row">
-    <div class="col-md-4">&nbsp;</div>
-    <div class="col-md-4">
-        <div class="btn-group" role="group" aria-label="Basic example">
-            <button id="back" <?php if ($pagination == 0) echo "disabled"; ?> type="button" class="btn btn-secondary">
-                Vorige
-            </button>
-            <button type="button" class="btn btn-primary"><?php echo $pagination + 1 ?></button>
-            <button id="next" <?php if (count($userlist) < 10) echo "disabled"; ?> type="button"
-                    class="btn btn-secondary">Volgende
-            </button>
-        </div>
-    </div>
-    <div class="col-md-4">&nbsp;</div>
 </div>
