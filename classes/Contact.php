@@ -24,22 +24,21 @@ class Contact
 
             mail($to, $subject, $message, $headers);
 //Database entry voor dezelfde gegevens:
-            $email = "Hoi@hoi.nl";
-            $naam = "asdfgh";
-            $woonplaats = "fghfds";
-            $telefoonnummer = "123456";
-            $bericht = "Hoi@hoi.nl";
+
+            $adres = "Testest"
+
 //          Verbinding maken met database
             $db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
 //          Query voor het invoegen van gebruiker
-            $q = $db->prepare("INSERT INTO Contact(Email, Naam, Woonplaats, Telefoonnummer, Bericht) VALUES (?, ?, ?, ?, ?)");
+            $q = $db->prepare("INSERT INTO Contact(Email, Naam, Adres, Woonplaats, Telefoonnummer, Bericht) VALUES (?, ?, ?, ?, ?)");
 
 //          Anti SQL Injectie
             $q->bindValue(1, $email);
             $q->bindValue(2, $naam);
-            $q->bindValue(3, $woonplaats);
-            $q->bindValue(4, $telefoonnummer);
-            $q->bindValue(5, $bericht);
+            $q->bindValue(3, $adres);
+            $q->bindValue(4, $woonplaats);
+            $q->bindValue(5, $telefoonnummer);
+            $q->bindValue(6, $bericht);
 
 //          Query uitvoeren
             $q->execute();
