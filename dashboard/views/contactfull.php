@@ -58,7 +58,7 @@ $contact = $contact->getContact($_GET["Contactid"]);
                             <?php echo $contact["Telefoonnummer"]; ?>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" style="height: 200px;">
                         <div class="col-md-3 text-truncate">
                             <strong>Bericht</strong>
                         </div>
