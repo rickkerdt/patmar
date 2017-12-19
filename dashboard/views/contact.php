@@ -13,7 +13,7 @@ $contactlist = $users->getContactList($pagination);
             <li class="list-group-item">
                 <div class="row">
                     <div class="col-md-1">
-                        <strong>ContactID</strong>
+                        <strong>Contactnummer</strong>
                     </div>
                     <div class="col-md-2">
                         <strong>Email</strong>
@@ -39,10 +39,10 @@ $contactlist = $users->getContactList($pagination);
                 <li class="list-group-item">
                     <form action="/dashboard/" method="get">
                         <input type="hidden" name="page" value="accountedit">
-                        <input type="hidden" name="userID" value="<?php echo $contact["ContactID"]; ?>">
+                        <input type="hidden" name="userID" value="<?php echo $contact["Contactid"]; ?>">
                         <div class="row">
                             <div class="col-md-1">
-                                <?php echo $contact["ContactID"]; ?>
+                                <?php echo $contact["Contactid"]; ?>
                             </div>
                             <div class="col-md-2">
                                 <?php echo $contact["Email"]; ?>
