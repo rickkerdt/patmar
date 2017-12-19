@@ -253,8 +253,30 @@ nav{
 
 .contactmsgbox::placeholder{
     color: black !important;
+    opacity: 1;
 }
 
 .contactmsgbox:placeholder{
     color: black !important;
+    opacity: 1;
+}
+
+.contactmsgbox:disabled, .contactmsgbox[readonly] {
+    background-color: white;
+    opacity: 1;
+}
+
+.contactmsgbox::-webkit-input-placeholder {
+    color: black;
+    opacity: 1
+}
+
+.contactmsgbox:-ms-input-placeholder {
+    color: black;
+    opacity: 1
+}
+
+.contactmsgbox::-ms-input-placeholder {
+    color: black;
+    opacity: 1
 }
