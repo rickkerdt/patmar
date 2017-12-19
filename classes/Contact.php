@@ -24,11 +24,11 @@ class Contact
 
             mail($to, $subject, $message, $headers);
 //Database entry voor dezelfde gegevens:
-            $this->email = $email;
-            $this->naam = $naam;
-            $this->woonplaats = $woonplaats;
-            $this->telefoonnummer = $telefoonnummer;
-            $this->bericht = $bericht;
+            $email = "Hoi@hoi.nl";
+            $naam = "asdfgh";
+            $woonplaats = "fghfds";
+            $telefoonnummer = "123456";
+            $bericht = "Hoi@hoi.nl";
 //          Verbinding maken met database
             $db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
 //          Query voor het invoegen van gebruiker
