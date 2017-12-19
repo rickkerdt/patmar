@@ -1,5 +1,6 @@
 <?php
 if(isset($_FILES['image'])){
+    print_r($_FILES);
     $errors= array();
     $file_name = $_FILES['image']['name'];
     $file_size =$_FILES['image']['size'];
