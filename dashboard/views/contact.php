@@ -32,7 +32,7 @@ $contactlist = $users->getContactList($pagination);
                         <input type="hidden" name="page" value="accountedit">
                         <input type="hidden" name="userID" value="<?php echo $contact["Contactid"]; ?>">
                         <div class="row">
-                            <div class="col-md-2">
+                            <div class="col-md-1">
                                 <?php echo $contact["Contactid"]; ?>
                             </div>
                             <div class="col-md-3">
