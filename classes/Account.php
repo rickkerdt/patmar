@@ -11,7 +11,7 @@ class Account
 
     public function getUserList($pagination = 0)
     {
-        $q = $this->db->prepare("SELECT * FROM User u JOIN Function f ON u.FunctionID = f.FunctionID LIMIT 25 OFFSET ?");
+        $q = $this->db->prepare("SELECT * FROM User u JOIN Function f ON u.FunctionID = f.FunctionID LIMIT 10 OFFSET ?");
         $q->bindValue(1, intval($pagination * 25, 10), \PDO::PARAM_INT);
 
         if ($q->execute()) {

@@ -5,7 +5,7 @@ $user = $users->getUser($_GET["userID"]);
 
 <form action="/dashboard/?page=accountedit">
     <div class="form-group">
-        <label for="email">Email adres</label>
+        <label for="email">Email-adres</label>
         <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
                placeholder="Enter email" name="email" disabled value="<?php echo $user["Email"]; ?>">
     </div>
@@ -15,7 +15,7 @@ $user = $users->getUser($_GET["userID"]);
         <small id="emailHelp" class="form-text text-muted">Alleen invullen als je wachtwoord wilt wijzigen.</small>
     </div>
     <div class="form-group">
-        <label for="passwordrepeat">Wachtwoord herlalen</label>
+        <label for="passwordrepeat">Wachtwoord herhalen</label>
         <input type="password" class="form-control" id="passwordrepeat" name="passwordrepeat" placeholder="Password">
     </div>
     <div class="form-check">
