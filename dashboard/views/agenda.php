@@ -55,7 +55,7 @@
                         var start = $.fullCalendar.formatDate(start, "Y-MM-DD HH:mm:ss");
                         var end = $.fullCalendar.formatDate(end, "Y-MM-DD HH:mm:ss");
                         $.ajax({
-                            url: 'add_events.php',
+                            url: '/dashboard/add_events.php',
                             data: 'title='+ title+'&start='+ start +'&end='+ end,
                             type: "POST",
                             success: function(json) {
@@ -81,7 +81,7 @@
                     var start = $.fullCalendar.formatDate(event.start, "Y-MM-DD HH:mm:ss");
                     var end = $.fullCalendar.formatDate(event.end, "Y-MM-DD HH:mm:ss");
                     $.ajax({
-                        url: 'update_events.php',
+                        url: '/dashboard/update_events.php',
                         data: 'title='+ event.title+'&start='+ start +'&end='+ end +'&id='+ event.id ,
                         type: "POST",
                         success: function(json) {
@@ -94,7 +94,7 @@
                     if (decision) {
                         $.ajax({
                             type: "POST",
-                            url: "delete_event.php",
+                            url: "/dashboard/delete_event.php",
                             data: "&id=" + event.id,
                             success: function(json) {
                                 $('#calendar').fullCalendar('removeEvents', event.id);
@@ -106,7 +106,7 @@
                     var start = $.fullCalendar.formatDate(event.start, "yyyy-MM-dd HH:mm:ss");
                     var end = $.fullCalendar.formatDate(event.end, "yyyy-MM-dd HH:mm:ss");
                     $.ajax({
-                        url: 'update_events.php',
+                        url: '/dashboard/update_events.php',
                         data: 'title='+ event.title+'&start='+ start +'&end='+ end +'&id='+ event.id ,
                         type: "POST",
                         success: function(json) {
