@@ -66,8 +66,7 @@ $bericht = $contact["Bericht"];
                         <div class="col-md-9 text-truncate">
                             <div class="form-group">
                                 <div class="form-control-plaintext">
-                                    <label class="col-form-label" for="bericht" style="overflow: hidden;"><?php print $bericht ?></label>
-                                    <input type="hidden" name="bericht">
+                                    <span><?php print $bericht ?></span>
                                 </div>
                             <!-- <textarea rows="6" class="form-control" name="bericht" id="Bericht"
                                       placeholder= style="width: 100%"></textarea> -->
