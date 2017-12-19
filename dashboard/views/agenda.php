@@ -7,82 +7,140 @@
  */
 ?>
 
-<div class="container">
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+    <script>
 
-    <h2>Agenda</h2>
-    <p class="lead">
-        This agenda viewer will let you see multiple events cleanly!
-    </p>
-    <hr />
 
-    <div class="agenda">
-        <div class="table-responsive">
-            <table class="table table-condensed table-bordered">
-                <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Time</th>
-                    <th>Event</th>
-                </tr>
-                </thead>
-                <tbody>
-                <!-- Single event in a single day -->
-                <tr>
-                    <td class="agenda-date" class="active" rowspan="1">
-                        <div class="dayofmonth">26</div>
-                        <div class="dayofweek">Saturday</div>
-                        <div class="shortdate text-muted">July, 2014</div>
-                    </td>
-                    <td class="agenda-time">
-                        5:30 AM
-                    </td>
-                    <td class="agenda-events">
-                        <div class="agenda-event">
-                            <i class="glyphicon glyphicon-repeat text-muted" title="Repeating event"></i> 
-                            Fishing
-                        </div>
-                    </td>
-                </tr>
+        $(document).ready(function() {
+            var date = new Date();
+            var d = date.getDate();
+            var m = date.getMonth();
+            var y = date.getFullYear();
 
-                <!-- Multiple events in a single day (note the rowspan) -->
-                <tr>
-                    <td class="agenda-date" class="active" rowspan="3">
-                        <div class="dayofmonth">24</div>
-                        <div class="dayofweek">Thursday</div>
-                        <div class="shortdate text-muted">July, 2014</div>
-                    </td>
-                    <td class="agenda-time">
-                        8:00 - 9:00 AM
-                    </td>
-                    <td class="agenda-events">
-                        <div class="agenda-event">
-                            Doctor's Appointment
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="agenda-time">
-                        10:15 AM - 12:00 PM
-                    </td>
-                    <td class="agenda-events">
-                        <div class="agenda-event">
-                            Meeting with executives
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="agenda-time">
-                        7:00 - 9:00 PM
-                    </td>
-                    <td class="agenda-events">
-                        <div class="agenda-event">
-                            Aria's dance recital
-                        </div>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
 
+            var calendar = $('#calendar').fullCalendar({
+                editable: true,
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'month,agendaWeek,agendaDay'
+                },
+
+
+                events: "events.php",
+
+
+                eventRender: function(event, element, view) {
+                    if (event.allDay === 'true') {
+                        event.allDay = true;
+                    } else {
+                        event.allDay = false;
+                    }
+                },
+                selectable: true,
+                selectHelper: true,
+                select: function(start, end, allDay) {
+                    var title = prompt('Event Title:');
+
+
+                    if (title) {
+                        var start = $.fullCalendar.formatDate(start, "Y-MM-DD HH:mm:ss");
+                        var end = $.fullCalendar.formatDate(end, "Y-MM-DD HH:mm:ss");
+                        $.ajax({
+                            url: 'add_events.php',
+                            data: 'title='+ title+'&start='+ start +'&end='+ end,
+                            type: "POST",
+                            success: function(json) {
+                                alert('Added Successfully');
+                            }
+                        });
+                        calendar.fullCalendar('renderEvent',
+                            {
+                                title: title,
+                                start: start,
+                                end: end,
+                                allDay: allDay
+                            },
+                            true
+                        );
+                    }
+                    calendar.fullCalendar('unselect');
+                },
+
+
+                editable: true,
+                eventDrop: function(event, delta) {
+                    var start = $.fullCalendar.formatDate(event.start, "Y-MM-DD HH:mm:ss");
+                    var end = $.fullCalendar.formatDate(event.end, "Y-MM-DD HH:mm:ss");
+                    $.ajax({
+                        url: 'update_events.php',
+                        data: 'title='+ event.title+'&start='+ start +'&end='+ end +'&id='+ event.id ,
+                        type: "POST",
+                        success: function(json) {
+                            alert("Updated Successfully");
+                        }
+                    });
+                },
+                eventClick: function(event) {
+                    var decision = confirm("Do you really want to do that?");
+                    if (decision) {
+                        $.ajax({
+                            type: "POST",
+                            url: "delete_event.php",
+                            data: "&id=" + event.id,
+                            success: function(json) {
+                                $('#calendar').fullCalendar('removeEvents', event.id);
+                                alert("Updated Successfully");}
+                        });
+                    }
+                },
+                eventResize: function(event) {
+                    var start = $.fullCalendar.formatDate(event.start, "yyyy-MM-dd HH:mm:ss");
+                    var end = $.fullCalendar.formatDate(event.end, "yyyy-MM-dd HH:mm:ss");
+                    $.ajax({
+                        url: 'update_events.php',
+                        data: 'title='+ event.title+'&start='+ start +'&end='+ end +'&id='+ event.id ,
+                        type: "POST",
+                        success: function(json) {
+                            alert("Updated Successfully");
+                        }
+                    });
+                }
+
+            });
+
+        });
+
+
+    </script>
+    <style>
+        body {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 14px;
+            font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+        }
+        #calendar {
+            width: 650px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+
+<body>
+<h2>Full calendar php mysql example</h2>
+<br/>
+<div id='calendar'></div>
+</body>
+
+
+</html>
