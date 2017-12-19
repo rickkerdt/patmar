@@ -5,6 +5,7 @@ if(isset($_POST["upload"]))
     echo $_FILES["file"]["name"];
     $dir = getcwd(). "/uploads/";
     $file = $dir . basename($_FILES["file"]["name"]);
+    echo $file;
     try {
         if(move_uploaded_file($_FILES["file"]["tmp_name"], $file)){
             echo "works!";
