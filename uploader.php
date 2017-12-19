@@ -5,10 +5,14 @@ if(isset($_POST["upload"]))
     $dir = "/uploads";
     $file = $dir . "/" . basename($_FILES["file"]["name"]);
     try {
-        move_uploaded_file($_FILES["file"]["tmp_name"], $file);
-        echo "works!";
-        die();
-    } catch (ErrorException $e)
+        if(move_uploaded_file($_FILES["file"]["tmp_name"], $file)){
+            echo "works!";
+            die();
+        } else {
+            echo "doesn't work!";
+            die();
+        }
+    } catch (Exception $e)
     {
         var_dump($e);
         die();
