@@ -136,6 +136,35 @@ if (isset($_POST["storingsend"])) {
 //Kijkt of offerte formulier is verstuurd
 //Offerte form
 if (isset($_POST["offertesend"])) {
+
+
+    if (isset($_FILES['bestand'])) {
+        print_r($_FILES);
+        $errors = array();
+        $file_name = $_FILES['bestand']['name'];
+        $file_size = $_FILES['bestand']['size'];
+        $file_tmp = $_FILES['bestand']['tmp_name'];
+        $file_type = $_FILES['bestand']['type'];
+        $file_ext = strtolower(end(explode('.', $_FILES['bestand']['name'])));
+
+        $expensions = array("jpeg", "jpg", "png");
+
+        if (in_array($file_ext, $expensions) === false) {
+            $errors[] = "extension not allowed, please choose a JPEG or PNG file.";
+        }
+
+        if ($file_size > 5097152) {
+            $errors[] = 'File size must be excately 4 MB';
+        }
+
+        if (empty($errors) == true) {
+            move_uploaded_file($file_tmp, "uploads/" . $file_name);
+            echo "Success";
+        } else {
+            print_r($errors);
+        }
+    }
+
     //Nieuwe instantie van contact aanmaken
     $offerte = new Offerte();
     //boolean waarde voor of het verzonden is
@@ -233,33 +262,6 @@ if (isset($_POST["register"])) {
         }
     } else {
         array_push($errors, "Los de recaptcha a.u.b. op.");
-    }
-}
-
-if (isset($_FILES['bestand'])) {
-    print_r($_FILES);
-    $errors = array();
-    $file_name = $_FILES['bestand']['name'];
-    $file_size = $_FILES['bestand']['size'];
-    $file_tmp = $_FILES['bestand']['tmp_name'];
-    $file_type = $_FILES['bestand']['type'];
-    $file_ext = strtolower(end(explode('.', $_FILES['bestand']['name'])));
-
-    $expensions = array("jpeg", "jpg", "png");
-
-    if (in_array($file_ext, $expensions) === false) {
-        $errors[] = "extension not allowed, please choose a JPEG or PNG file.";
-    }
-
-    if ($file_size > 5097152) {
-        $errors[] = 'File size must be excately 4 MB';
-    }
-
-    if (empty($errors) == true) {
-        move_uploaded_file($file_tmp, "uploads/" . $file_name);
-        echo "Success";
-    } else {
-        print_r($errors);
     }
 }
 ?>
