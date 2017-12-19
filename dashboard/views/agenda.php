@@ -137,8 +137,7 @@
 
 
 <body>
-<h2>Full calendar php mysql example</h2>
-<br/>
+
 <div id='calendar'></div>
 </body>
 
