@@ -36,7 +36,7 @@
                 },
 
 
-                events: "events.php",
+                events: "/dashboard/events.php",
 
 
                 eventRender: function (event, element, view) {
