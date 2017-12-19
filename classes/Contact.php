@@ -25,7 +25,7 @@ class Contact
             mail($to, $subject, $message, $headers);
 //Database entry voor dezelfde gegevens:
 
-            $adres = "Testest"
+            $adres = "Testest";
 
 //          Verbinding maken met database
             $db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
