@@ -137,7 +137,6 @@ if (isset($_POST["storingsend"])) {
 //Offerte form
 if (isset($_POST["offertesend"])) {
 
-
     if (isset($_FILES['bestand'])) {
         print_r($_FILES);
         $errors = array();

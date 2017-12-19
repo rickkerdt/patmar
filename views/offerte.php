@@ -73,7 +73,7 @@
 
             <div>
                 Klik om een bestand te uploaden:</br>
-                <input type="file" name="BestandUpload" id="BestandUpload"></br>
+                <input type="file" name="bestand" id="BestandUpload"></br>
 
             </div>
 
