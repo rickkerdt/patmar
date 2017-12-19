@@ -11,9 +11,9 @@ class Contact
     public $errorList = [];
 
     //cheken of de benodigde velden niet leeg zijn.
-    public function sendform($email, $naam, $telefoonnumer, $woonplaats, $bericht)
+    public function sendform($email, $naam, $telefoonnummer, $woonplaats, $bericht)
     {
-        if ($this->checkForm($email, $telefoonnumer,$naam,$woonplaats,$bericht)) {
+        if ($this->checkForm($email, $telefoonnummer,$naam,$woonplaats,$bericht)) {
 //wanneer de velden gecheked zijn wordt er een mail aangemaakt met de inhoud van de ingevulde velden.
             $to = "admin@patmar.com";
             $subject = "Contact";
@@ -30,7 +30,7 @@ class Contact
 //          Verbinding maken met database
             $db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
 //          Query voor het invoegen van gebruiker
-            $q = $db->prepare("INSERT INTO Contact(Email, Naam, Adres, Woonplaats, Telefoonnummer, Bericht) VALUES (?, ?, ?, ?, ?)");
+            $q = $db->prepare("INSERT INTO Contact(Email, Naam, Adres, Woonplaats, Telefoonnummer, Bericht) VALUES (?, ?, ?, ?, ?, ?)");
 
 //          Anti SQL Injectie
             $q->bindValue(1, $email);
@@ -48,7 +48,7 @@ class Contact
         }
     }
 
-    private function checkForm($email,$naam,$woonplaats,$telefoonnumer, $bericht)
+    private function checkForm($email,$naam,$woonplaats,$telefoonnummer, $bericht)
     {
 //Errors die gegeven worden  als er velden leeg zijn of niet zijn ingevuld.
         $valid = true;
@@ -65,7 +65,7 @@ class Contact
              array_push($this->errorList, "Uw woonplaats is niet ingevuld.");
          $valid = false;
         }
-        if (!preg_match('@[0-9]@', $telefoonnumer)) {
+        if (!preg_match('@[0-9]@', $telefoonnummer)) {
             array_push($this->errorList, "Uw telefoonnummer is niet of niet correct ingevuld");
             $valid = false;
         }
