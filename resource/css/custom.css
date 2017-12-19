@@ -235,7 +235,3 @@ nav{
 @media (max-width: 767px) {
 
 }
-input[textarea]:readonly{
-    background: white !important;
-    color: black !important;
-}
