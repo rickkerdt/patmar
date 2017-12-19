@@ -65,10 +65,11 @@ $contact = $contact->getContact($_GET["Contactid"]);
                         <div class="col-md-9 text-truncate">
                             <div class="form-group">
                                 <div class="form-control-plaintext">
-                                    <?php print <<<END
-                                        $contact['Bericht']
-END;
-?>
+                                    <?php
+                                    $print = <<<EOF
+<p>$contact['Bericht']</p>
+EOF;
+                                    print $print; ?>
                                 </div>
                             <!-- <textarea rows="6" class="form-control" name="bericht" id="Bericht"
                                       placeholder="<?php echo $contact["Bericht"]; ?>" style="width: 100%"></textarea> -->
