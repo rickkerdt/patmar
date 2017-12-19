@@ -68,7 +68,7 @@ class Offerte
             array_push($this->errorList, "Uw woonplaats is niet ingevuld.");
             $valid = false;
         }
-        if (!preg_match('@[0-9]@', $telefoonnumer)) {
+        if (!preg_match('@[0-9]@', $telefoonnummer)) {
             array_push($this->errorList, "Uw telefoonnummer is niet of niet correct ingevuld");
             $valid = false;
         }
