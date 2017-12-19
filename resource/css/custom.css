@@ -235,3 +235,7 @@ nav{
 @media (max-width: 767px) {
 
 }
+input[type="text"]:disabled{
+    background: white !important;
+    color: black !important;
+}

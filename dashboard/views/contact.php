@@ -1,10 +1,10 @@
 <?php
-$users = new Contactdash();
+$contacts = new Contactdash();
 $pagination = 0;
 if (isset($_GET["pagination"]))
     $pagination = intval($_GET["pagination"]);
 
-$contactlist = $users->getContactList($pagination);
+$contactlist = $contacts->getContactList($pagination);
 ?>
 
 <div class="row">
@@ -13,54 +13,36 @@ $contactlist = $users->getContactList($pagination);
             <li class="list-group-item">
                 <div class="row">
                     <div class="col-md-1">
-                        <strong>Contactnummer</strong>
+                        <strong>Nummer</strong>
                     </div>
-                    <div class="col-md-2">
-                        <strong>Email</strong>
-                    </div>
-                    <div class="col-md-2 text-truncate">
+                    <div class="col-md-3 text-truncate">
                         <strong>Naam</strong>
                     </div>
-                    <div class="col-md-1">
-                        <strong>Adres</strong>
-                    </div>
-                    <div class="col-md-1 text-truncate">
-                        <strong>Woonplaats</strong>
-                    </div>
-                    <div class="col-md-1 text-truncate">
-                        <strong>Telefoonnummer</strong>
-                    </div>
-                    <div class="col-md-4 text-truncate">
+                    <div class="col-md-6 text-truncate">
                         <strong>Bericht</strong>
+                    </div>
+                    <div class="col-md-2 text-truncate">
+                        <strong>&nbsp;</strong>
                     </div>
                 </div>
             </li>
             <?php foreach ($contactlist as $contact) : ?>
                 <li class="list-group-item">
                     <form action="/dashboard/" method="get">
-                        <input type="hidden" name="page" value="accountedit">
-                        <input type="hidden" name="userID" value="<?php echo $contact["Contactid"]; ?>">
+                        <input type="hidden" name="page" value="contactfull">
+                        <input type="hidden" name="Contactid" value="<?php echo $contact["Contactid"]; ?>">
                         <div class="row">
                             <div class="col-md-1">
                                 <?php echo $contact["Contactid"]; ?>
                             </div>
-                            <div class="col-md-2">
-                                <?php echo $contact["Email"]; ?>
-                            </div>
-                            <div class="col-md-2">
+                            <div class="col-md-3">
                                 <?php echo $contact["Naam"]; ?>
                             </div>
-                            <div class="col-md-1 text-truncate">
-                                <?php echo $contact["Adres"]; ?>
-                            </div>
-                            <div class="col-md-1 text-truncate">
-                                <?php echo $contact["Woonplaats"]; ?>
-                            </div>
-                            <div class="col-md-1 text-truncate">
-                                <?php echo $contact["Telefoonnummer"]; ?>
-                            </div>
-                            <div class="col-md-4 text-truncate">
+                            <div class="col-md-6 text-truncate">
                                 <?php echo $contact["Bericht"]; ?>
+                            </div>
+                            <div class="col-md-2 text-truncate">
+                                <input type="submit" value="Alles Weergeven" class="btn btn-light float-right">
                             </div>
 
                         </div>
