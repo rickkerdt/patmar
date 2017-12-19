@@ -55,10 +55,10 @@ $contactlist = $users->getContactList($pagination);
                         <div class="col-md-4">
                             <?php echo $contact["Email"]; ?>
                         </div>
-                        <div class="col-md-2 text-truncate">
+                        <div class="col-md-3 text-truncate">
                             <strong>Telefoonnummer</strong>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <?php echo $contact["Telefoonnummer"]; ?>
                         </div>
                     </div>
