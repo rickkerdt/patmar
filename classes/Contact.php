@@ -23,8 +23,22 @@ class Contact
                 'X-Mailer: PHP/' . phpversion();
 
             mail($to, $subject, $message, $headers);
+//Database entry voor dezelfde gegevens:
+//          Verbinding maken met database
+            $db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
+//          Query voor het invoegen van gebruiker
+            $q = $db->prepare("INSERT INTO User(Email, Naam, Woonplaats, Telefoonnummer, Bericht) VALUES (?, ?, ?, ?, ?)");
 
-            return true;
+//          Anti SQL Injectie
+            $q->bindValue(1, $this->$email);
+            $q->bindValue(2, $this->$naam);
+            $q->bindValue(3, $this->$woonplaats);
+            $q->bindValue(4, $this->$telefoonnummer);
+            $q->bindValue(5, $this->$bericht);
+
+//          Query uitvoeren
+            $q->execute();
+          return true;
         } else {
             return false;
         }
