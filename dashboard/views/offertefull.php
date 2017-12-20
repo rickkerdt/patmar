@@ -19,7 +19,7 @@ $bericht = $offerte["Bericht"];
                         <div class="col-md-3">
                             <strong>Contactnummer</strong>
                         </div>
-                        <input type="hidden" name="userID" value="<?php echo $offerte["Offerteid"]; ?>">
+                        <input type="hidden" name="Offerteid" value="<?php echo $offerte["Offerteid"]; ?>">
                         <div class="col-md-9">
                             <?php echo $offerte["Offerteid"]; ?>
                         </div>
