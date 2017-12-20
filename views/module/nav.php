@@ -103,7 +103,7 @@
                     maandag gesloten.<br>
                     dinsdag t/m vrijdag<br>
                     van 10.00 - 17.00 uur<br>
-                    zaterdag van 10.00 - 16.00 uur.<br>
+                    zaterdag van 10.00 - 16.00 uur<br>
 
 
                 </div>
