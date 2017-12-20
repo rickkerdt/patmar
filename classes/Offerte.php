@@ -12,9 +12,9 @@ class Offerte
 
 
     //cheken of de benodigde velden niet leeg zijn.
-    public function sendform($email, $naam, $adres, $telefoonnummer, $woonplaats, $bericht)
+    public function sendform($email, $naam, $adres, $telefoonnummer, $woonplaats, $bericht, $categorie)
     {
-        if ($this->checkForm($email, $naam, $adres, $woonplaats, $telefoonnummer, $bericht)) {
+        if ($this->checkForm($email, $naam, $adres, $woonplaats, $telefoonnummer, $bericht, $categorie)) {
 //wanneer de velden gecheked zijn wordt er een mail aangemaakt met de inhoud van de ingevulde velden.
             $to = "admin@patmar.com";
             $subject = "Offerteaanvraag";
@@ -29,15 +29,15 @@ class Offerte
 //          Verbinding maken met database
             $db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
 //          Query voor het invoegen van gebruiker
-            $q = $db->prepare("INSERT INTO Offerte(Email, Naam, Adres, Woonplaats, Telefoonnummer, Bericht) VALUES (?, ?, ?, ?, ?, ?)");
-
+            $q = $db->prepare("INSERT INTO Offerte(CategoryID, Email, Naam, Adres, Woonplaats, Telefoonnummer, Bericht) VALUES (?, ?, ?, ?, ?, ?, ?)");
 //          Anti SQL Injectie
-            $q->bindValue(1, $email);
-            $q->bindValue(2, $naam);
-            $q->bindValue(3, $adres);
-            $q->bindValue(4, $woonplaats);
-            $q->bindValue(5, $telefoonnummer);
-            $q->bindValue(6, $bericht);
+            $q->bindValue(1, $categorie);
+            $q->bindValue(2, $email);
+            $q->bindValue(3, $naam);
+            $q->bindValue(4, $adres);
+            $q->bindValue(5, $woonplaats);
+            $q->bindValue(6, $telefoonnummer);
+            $q->bindValue(7, $bericht);
 
 //          Query uitvoeren
             $q->execute();
@@ -47,7 +47,7 @@ class Offerte
         }
     }
 
-    private function checkForm($email,$naam, $adres, $woonplaats, $telefoonnummer, $bericht)
+    private function checkForm($email,$naam, $adres, $woonplaats, $telefoonnummer, $bericht, $categorie)
     {
         //Errors die gegeven worden  als er velden leeg zijn of niet zijn ingevuld.
         $valid = true;
@@ -76,6 +76,10 @@ class Offerte
             array_push($this->errorList, "Het berichtveld moet een bericht bevatten.");
             $valid = false;
         }
+        if ($categorie == "" || $categorie == 0) {
+            array_push($this->errorList, "Kies een categorie.");
+            $valid = false;
+        }
 
         if ($valid) {
             return true;
@@ -92,7 +96,7 @@ class Offerte
 
     public function getCategoryList()
     {
-        $q = $this->db->prepare("SELECT Name FROM Category WHERE active = 1");
+        $q = $this->db->prepare("SELECT * FROM Category WHERE active = 1");
 
         if ($q->execute()) {
             return $q->fetchAll();

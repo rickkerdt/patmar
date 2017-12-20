@@ -149,11 +149,11 @@ if (isset($_POST["offertesend"])) {
         $expensions = array("jpeg", "jpg", "png");
 
         if (in_array($file_ext, $expensions) === false) {
-            $errors[] = "extension not allowed, please choose a JPEG or PNG file.";
+            array_push($errors, "Kies altublieft een JPEG of PNG bestand.");
         }
 
         if ($file_size > 5097152) {
-            $errors[] = 'File size must be excately 4 MB';
+            array_push($errors, 'Het bestand mag maximaal 4 MB groot zijn');
         }
 
         if (empty($errors) == true) {
@@ -199,7 +199,7 @@ if (isset($_POST["offertesend"])) {
         //Kijkt of er response is
         if ($_POST["g-recaptcha-response"] != '') {
             //Contact formulier versturen naar back-end
-            if ($offerte->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnummer'], $_POST['woonplaats'], $_POST['bericht'])) {
+            if ($offerte->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnummer'], $_POST['woonplaats'], $_POST['bericht'], $_POST['categorie'])) {
                 $_SESSION["sent"] = true;
                 header("Location: ?page=offerte");
                 die();

@@ -2,13 +2,13 @@
 /**
  * Created by PhpStorm.
  * User: joppe
- * Date: 19-12-2017
- * Time: 13:38
+ * Date: 20-12-2017
+ * Time: 12:43
  */
 
-$contact = new Contactdash();
-$contact = $contact->getContact($_GET["Contactid"]);
-$bericht = $contact["Bericht"];
+$offerte = new Offertedash();
+$offerte = $offerte->getOfferte($_GET["Offerteid"]);
+$bericht = $offerte["Bericht"];
 ?>
 <div class="row">
     <div class="col-md-12">
@@ -17,11 +17,11 @@ $bericht = $contact["Bericht"];
                 <form action="/dashboard/" method="get">
                     <div class="row">
                         <div class="col-md-3">
-                            <strong>Contactnummer</strong>
-                        </div>
-                        <input type="hidden" name="userID" value="<?php echo $contact["Contactid"]; ?>">
+                            <strong>Offertenummer</strong>
+                    </div>
+                        <input type="hidden" name="Offerteid" value="<?php echo $offerte["Offerteid"]; ?>">
                         <div class="col-md-9">
-                            <?php echo $contact["Contactid"]; ?>
+                            <?php echo $offerte["Offerteid"]; ?>
                         </div>
                     </div>
                     <div class="row">
@@ -29,7 +29,7 @@ $bericht = $contact["Bericht"];
                             <strong>Naam</strong>
                         </div>
                         <div class="col-md-9">
-                            <?php echo $contact["Naam"]; ?>
+                            <?php echo $offerte["Naam"]; ?>
                         </div>
                     </div>
                     <div class="row">
@@ -37,13 +37,13 @@ $bericht = $contact["Bericht"];
                             <strong>Adres</strong>
                         </div>
                         <div class="col-md-9">
-                            <?php echo $contact["Adres"]; ?>
+                            <?php echo $offerte["Adres"]; ?>
                         </div>
                         <div class="col-md-3 text-truncate">
                             <strong>Woonplaats</strong>
                         </div>
                         <div class="col-md-9">
-                            <?php echo $contact["Woonplaats"]; ?>
+                            <?php echo $offerte["Woonplaats"]; ?>
                         </div>
                     </div>
                     <div class="row">
@@ -51,13 +51,13 @@ $bericht = $contact["Bericht"];
                             <strong>Email</strong>
                         </div>
                         <div class="col-md-9">
-                            <?php echo $contact["Email"]; ?>
+                            <?php echo $offerte["Email"]; ?>
                         </div>
                         <div class="col-md-3 text-truncate">
                             <strong>Telefoonnummer</strong>
                         </div>
                         <div class="col-md-9">
-                            <?php echo $contact["Telefoonnummer"]; ?>
+                            <?php echo $offerte["Telefoonnummer"]; ?>
                         </div>
                     </div>
                     <div class="row" style="height: 200px;">
@@ -66,10 +66,10 @@ $bericht = $contact["Bericht"];
                         </div>
                         <div class="col-md-9">
                             <div class="form-group">
-                                        <?php print nl2br($bericht) ?>
+                                <?php print nl2br($bericht) ?>
+                            </div>
                         </div>
-                    </div>
             </li>
-    </ul>
-</div>
+        </ul>
+    </div>
 </div>
