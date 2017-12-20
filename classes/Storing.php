@@ -43,10 +43,8 @@ class Storing
 
             //Database entry voor dezelfde gegevens:
 
-//          Verbinding maken met database
-            $db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
 //          Query voor het invoegen van gebruiker
-            $q = $db->prepare("INSERT INTO Storing(UserID, CategoryID, Explanation) VALUES (?, ?, ?)");
+            $q = $this->db->prepare("INSERT INTO Storing(UserID, CategoryID, Explanation) VALUES (?, ?, ?)");
 //          Anti SQL Injectie
             $q->bindValue(1, $userinfo['UserID']);
             $q->bindValue(2, $categorie);
