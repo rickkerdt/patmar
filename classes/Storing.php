@@ -45,7 +45,7 @@ class Storing
 //          Query voor het invoegen van gebruiker
             $q = $this->db->prepare("INSERT INTO Storing(UserID, CategoryID, Explanation) VALUES (?, ?, ?)");
 //          Anti SQL Injectie
-            $q->bindValue(1, $userinfo['UserID']);
+            $q->bindValue(1, $userinfo['UserID'], PDO::PARAM_INT);
             $q->bindValue(2, $categorie, PDO::PARAM_INT);
             $q->bindValue(3, $bericht, PDO::PARAM_STR);
 
