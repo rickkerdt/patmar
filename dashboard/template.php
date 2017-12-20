@@ -94,8 +94,8 @@
     .dashboard-side-button a {
         width: inherit;
         height: inherit;
-        padding: 20px auto;
         color: grey;
+        display: block;
     }
 </style>
 </html>
