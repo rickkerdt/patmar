@@ -1,3 +1,3 @@
 <div class="jumbotron">
-    <h1>Welkom <?php echo $_SESSION["firstname"] ?></h1>
+    <h1>Welkom <?php echo $_SESSION["email"] ?></h1>
 </div>
