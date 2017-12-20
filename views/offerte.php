@@ -71,12 +71,11 @@ $categorylist = $categorys->getCategorylist();
 
                     <select name="categorie" required>
                         <option disabled>Categorie</option>
-                        <?php foreach($categorylist as $category) : ?>
-                        <option value="<?php echo $category ?>"><?php echo $category ?></option>
+                        <?php foreach($categorylist as $categoryname) : ?>
+                        <option value="<?php echo $categoryname ?>"><?php echo $categoryname ?></option>
                         <?php endforeach; ?>
-
                     </select>
-                    <?php print_r($categorylist); ?>
+                    <?php print_r($categorylist); print("\n".$categorylist);  ?>
                 </div>
             </div>
             <div class="row">
