@@ -31,11 +31,6 @@
                     } ?>" href="?page=dealers">Samenwerking</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?php if ($_GET["page"] == "storing") {
-                        echo "active";
-                    } ?>" href="?page=storing">Storing Melden</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link <?php if ($_GET["page"] == "offerte") {
                         echo "active";
                     } ?>" href="?page=offerte">Offerte Aanvraag</a>
