@@ -1,5 +1,6 @@
 <!-- Offerte  -->
 <?php
+$categorys = new Offerte();
 $categorylist = $categorys->getCategorylist();
 ?>
 <div class="container" style="margin-top: 100px">
