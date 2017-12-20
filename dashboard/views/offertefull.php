@@ -7,7 +7,7 @@
  */
 
 $offerte = new Offertedash();
-$offerte = $offerte->getOfferte($_GET["OfferteID"]);
+$offerte = $offerte->getOfferte($_GET["Offerteid"]);
 $bericht = $offerte["Bericht"];
 ?>
 <div class="row">
@@ -19,9 +19,9 @@ $bericht = $offerte["Bericht"];
                         <div class="col-md-3">
                             <strong>Contactnummer</strong>
                         </div>
-                        <input type="hidden" name="userID" value="<?php echo $offerte["OfferteID"]; ?>">
+                        <input type="hidden" name="userID" value="<?php echo $offerte["Offerteid"]; ?>">
                         <div class="col-md-9">
-                            <?php echo $offerte["OfferteID"]; ?>
+                            <?php echo $offerte["Offerteid"]; ?>
                         </div>
                     </div>
                     <div class="row">

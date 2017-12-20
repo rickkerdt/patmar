@@ -28,10 +28,10 @@ class Offertedash
         }
     }
 
-    public function getOfferte($OfferteID)
+    public function getOfferte($Offerteid)
     {
-        $q = $this->db->prepare("SELECT * FROM Offerte WHERE OfferteID = ?");
-        $q->bindValue(1, $OfferteID, \PDO::PARAM_INT);
+        $q = $this->db->prepare("SELECT * FROM Offerte WHERE Offerteid = ?");
+        $q->bindValue(1, $Offerteid, \PDO::PARAM_INT);
 
         if ($q->execute()) {
             return $q->fetchAll()[0];

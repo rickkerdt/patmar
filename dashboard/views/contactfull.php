@@ -5,6 +5,7 @@
  * Date: 19-12-2017
  * Time: 13:38
  */
+
 $contact = new Contactdash();
 $contact = $contact->getContact($_GET["Contactid"]);
 $bericht = $contact["Bericht"];
