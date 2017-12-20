@@ -5,12 +5,12 @@
  * Date: 12/18/2017
  * Time: 09:34
  */
-$contacts = new Contactdash();
+$storingen = new Storingdash();
 $pagination = 0;
 if (isset($_GET["pagination"]))
     $pagination = intval($_GET["pagination"]);
 
-$contactlist = $contacts->getContactList($pagination);
+$storingenlist = $storingen->getStoringenList($pagination);
 ?>
 
 <div class="row">
@@ -32,20 +32,20 @@ $contactlist = $contacts->getContactList($pagination);
                     </div>
                 </div>
             </li>
-            <?php foreach ($contactlist as $contact) : ?>
+            <?php foreach ($storinglist as $storing) : ?>
                 <li class="list-group-item">
                     <form action="/dashboard/" method="get">
-                        <input type="hidden" name="page" value="contactfull">
-                        <input type="hidden" name="Contactid" value="<?php echo $contact["Contactid"]; ?>">
+                        <input type="hidden" name="page" value="storingfull">
+                        <input type="hidden" name="StoringID" value="<?php echo $storing["StoringID"]; ?>">
                         <div class="row">
                             <div class="col-md-1">
-                                <?php echo $contact["Contactid"]; ?>
+                                <?php echo $storing["o.StoringID"]; ?>
                             </div>
                             <div class="col-md-3">
-                                <?php echo $contact["Naam"]; ?>
+                                <?php echo $storing["u.FirstName"]; ?>
                             </div>
                             <div class="col-md-6 text-truncate">
-                                <?php echo $contact["Bericht"]; ?>
+                                <?php echo $storing["o.Bericht"]; ?>
                             </div>
                             <div class="col-md-2 text-truncate">
                                 <input type="submit" value="Alles Weergeven" class="btn btn-light float-right">
