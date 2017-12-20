@@ -6,7 +6,7 @@
     $user = $users->getUser($_GET["userID"]);
 
     if (isset($_POST["saveUserChanges"])) {
-        if (isset($_POST["password"])) {
+        if (isset($_POST["password"]) && $_POST["password"] != "") {
             if ($_POST["password"] == $_POST["passwordrepeat"]) {
                 if ($users->updatePassword($_POST["password"])) {
                     echo "<div class='alert alert-success'><strong>Gelukt!</strong> Gegevens zijn aangepast.</div>";
