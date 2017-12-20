@@ -35,8 +35,8 @@ $offertelist = $offertes->getOfferteList($pagination);
             <?php foreach ($offertelist as $offerte) : ?>
                 <li class="list-group-item">
                     <form action="/dashboard/" method="get">
-                        <input type="hidden" name="page" value="contactfull">
-                        <input type="hidden" name="Contactid" value="<?php echo $offerte["OfferteID"]; ?>">
+                        <input type="hidden" name="page" value="offertefull">
+                        <input type="hidden" name="Offerteid" value="<?php echo $offerte["OfferteID"]; ?>">
                         <div class="row">
                             <div class="col-md-1">
                                 <?php echo $offerte["OfferteID"]; ?>
