@@ -32,7 +32,7 @@ $storingenlist = $storingen->getStoringenList($pagination);
                     </div>
                 </div>
             </li>
-            <?php foreach ($storinglist as $storing) : ?>
+            <?php foreach ($storingenlist as $storing) : ?>
                 <li class="list-group-item">
                     <form action="/dashboard/" method="get">
                         <input type="hidden" name="page" value="storingfull">
