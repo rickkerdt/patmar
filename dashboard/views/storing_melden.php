@@ -6,7 +6,7 @@
  * Time: 09:52
  */
 ?>
-<div class="container mx-auto" style="margin-top: 100px">
+<div class="container mx-auto storing" style="margin-top: 100px">
     <div class="row">
 
         <div class="col">&nbsp;</div>
@@ -95,6 +95,12 @@ Voor een directe reactie kunt u ook bellen tijdens kantooruren.</span></p>
 </div>
 </form>
 </div>
+        <style>
+            #storing {
+                width: inherit;
+                margin: 0 auto;
+            }
+        </style>
 
     </div>
 </div>
