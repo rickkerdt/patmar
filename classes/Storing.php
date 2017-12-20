@@ -40,6 +40,7 @@ class Storing
 
             mail($to, $subject, $message, $headers);
 
+            echo "<script>console.log('Mail passed')</script>";
             //Database entry voor dezelfde gegevens:
 
 //          Query voor het invoegen van gebruiker
@@ -52,8 +53,10 @@ class Storing
 //          Query uitvoeren
             if($q->execute())
             {
-                echo "<script>console.log('executed')</script>";
+                echo "<script>console.log('Database passed')</script>";
                 return true;
+            } else {
+                echo "<script>console.log('" . $q->errorCode() . "')</script>";
             }
         } else {
             return false;
