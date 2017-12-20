@@ -33,16 +33,27 @@
 
 <?php include_once "views/modules/nav.php"; ?>
 <div class="container-fluid">
-<!-- knoppen voor het dashboard -->
+    <!-- knoppen voor het dashboard -->
     <div class="row">
-        <div class="col-md-3" style="padding: 0 0 75px 0; margin: 0; background-color: #212529;">
-            <div class="dashboard-side-button"><a href="/dashboard/?page=contact">Contact</a></div>
-            <div class="dashboard-side-button"><a href="/dashboard/?page=accounts">Accounts</a></div>
-            <div class="dashboard-side-button"><a href="/dashboard/?page=offertes">Offertes</a></div>
-            <div class="dashboard-side-button"><a href="/dashboard/?page=storingen">Storingen</a></div>
-            <div class="dashboard-side-button"><a href="/dashboard/?page=agenda">Agenda</a></div>
-            <div class="dashboard-side-button"><a href="/dashboard/?page=storing_melden">storing melden</a></div>
-        </div>
+
+        <?php if ($_SESSION["permission"] == 1) : ?>
+            <div class="col-md-3" style="padding: 0 0 75px 0; margin: 0; background-color: #212529;">
+                <div class="dashboard-side-button"><a href="/dashboard/?page=contact">Contact</a></div>
+                <div class="dashboard-side-button"><a href="/dashboard/?page=accounts">Accounts</a></div>
+                <div class="dashboard-side-button"><a href="/dashboard/?page=offertes">Offertes</a></div>
+                <div class="dashboard-side-button"><a href="/dashboard/?page=storingen">Storingen</a></div>
+                <div class="dashboard-side-button"><a href="/dashboard/?page=agenda">Agenda</a></div>
+            </div>
+        <?php elseif ($_SESSION["permission"] == 3) : ?>
+            <div class="col-md-3" style="padding: 0 0 75px 0; margin: 0; background-color: #212529;">
+                <div class="dashboard-side-button"><a href="/dashboard/?page=agenda">Agenda</a></div>
+            </div>
+        <?php elseif ($_SESSION["permission"] == 2) : ?>
+            <div class="col-md-3" style="padding: 0 0 75px 0; margin: 0; background-color: #212529;">
+                <div class="dashboard-side-button"><a href="/dashboard/?page=storing_melden">storing melden</a></div>
+            </div>
+        <?php endif; ?>
+
         <div class="col-md-9" style="margin-top: 15px">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/dashboard/?page=agenda">Dashboard</a></li>
