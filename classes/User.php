@@ -106,6 +106,7 @@ class User
             if ($q->rowCount() > 0) {
                 $_SESSION["loggedIn"] = true;
                 $_SESSION["email"] = $this->email;
+                $_SESSION["permission"] = $q->fetchAll()[0]["FunctionID"];
 
                 return true;
             } else {
