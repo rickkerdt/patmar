@@ -19,8 +19,6 @@ class Storing
     //checken of de benodigde velden niet leeg zijn.
     public function sendform($categorie, $bericht)
     {
-
-
         $qu = $this->db->prepare("SELECT * FROM User WHERE UserID = ?");
         $qu->bindValue(1, $_SESSION['UserID'], PDO::PARAM_INT);
 
