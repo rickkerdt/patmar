@@ -41,6 +41,7 @@
             <div class="dashboard-side-button"><a href="/dashboard/?page=offertes">Offertes</a></div>
             <div class="dashboard-side-button"><a href="/dashboard/?page=storingen">Storingen</a></div>
             <div class="dashboard-side-button"><a href="/dashboard/?page=agenda">Agenda</a></div>
+            <div class="dashboard-side-button"><a href="/dashboard/?page=storing_melden">storing melden</a></div>
         </div>
         <div class="col-md-9" style="margin-top: 15px">
             <ol class="breadcrumb">
