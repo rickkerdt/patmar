@@ -68,16 +68,18 @@ class User
         } else {
             return false;
         }
+        return false;
     }
 
     private function insertInfo($userID, $firstname, $lastname)
     {
 //      Query opbouwen
-        $q2 = $this->db->prepare("INSERT INTO Userinfo(UserID, FirstName, LastName) VALUES (?,?,?)");
+        $q2 = $this->db->prepare('INSERT INTO Userinfo(UserID, FirstName, LastName, Function) VALUES (?,?,?,?)');
 //      Anti SQL injectie
-        $q2->bindValue(1, $userID);
-        $q2->bindValue(2, $firstname);
-        $q2->bindValue(3, $lastname);
+        $q2->bindValue(1, $userID, PDO::PARAM_INT);
+        $q2->bindValue(2, $firstname, PDO::PARAM_STR);
+        $q2->bindValue(3, $lastname, PDO::PARAM_STR);
+        $q2->bindValue(4, "Klant", PDO::PARAM_STR);
 //      Query uitvoeren
         if ($q2->execute()) {
             return true;
