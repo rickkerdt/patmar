@@ -1,28 +1,28 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: flori
- * Date: 14-12-2017
- * Time: 09:29
+ * User: rickpaassen
+ * Date: 20-12-17
+ * Time: 09:52
  */
 ?>
-<div class="container" style="margin-top: 100px">
+<div class="container mx-auto storing" style="margin-top: ">
     <div class="row">
 
-        <div class="col">&nbsp;</div>
-        <div class="col-md-6 jumbotron">
+
+        <div class="col-md-8 mx-auto jumbotron">
             <h1 class="text">Storing melden</h1>
 
             <br>
             <p> Heeft u een storing aan uw product?&nbsp;<span style="line-height: 1.4;">Dan kunt u dit melden via onderstaand formulier.
-            Wij zullen dan zo spoedig mogelijk contact met u opnemen.
-            Voor een directe reactie kunt u ook bellen tijdens kantooruren.</span></p>
+Wij zullen dan zo spoedig mogelijk contact met u opnemen.
+Voor een directe reactie kunt u ook bellen tijdens kantooruren.</span></p>
             <br>
 
             <form action="?page=storing" method="post">
                 <!-- Als er errors voor komen worden die gegeven -->
                 <?php if (count($errors) > 0) : ?>
-            <?php foreach ($errors as $error) : ?>
+    <?php foreach ($errors as $error) : ?>
         <div class="alert alert-warning">
             <strong>Fout!</strong> <?php echo $error; ?>
         </div>
@@ -95,29 +95,13 @@
 </div>
 </form>
 </div>
-<div class="col d-none d-sm-block d-md-none"></div>
-<div class="col-md-3 d-none d-lg-block d-xl-block float-left" style="padding-left: 4%;padding-bottom: 50px;">
-    <div class="card">
-        <div class="card-block" style="padding-left: 5px; border-color: #00769f">
-            <h3 class="card-title"></h3>
-            <p class="card-text">
-            <h6 class="card-subtitle">A5 Patmar Marknesse</h6>
-            Hoge Sluiswal 47<br>
-            8316 AA Marknesse<br>
-            TEL: 0527 - 61 22 77<br>
+        <style>
+            #storing {
+                width: inherit;
+                margin: 0 auto;
+            }
+        </style>
 
-            <p>info@patmar.nl<br>
-            </p>
-
-            <br><h6 class="card-subtitle">A5 Patmar Meppel</h6>
-            Johan van Oldenbarneveltstraat 3<br>
-            7942 GZ Meppel<br>
-            Tel. 0522 - 24 48 88<br>
-
-            <p>info@patmar.nl<br>
-            </p>
-
-        </div>
     </div>
 </div>
 </div>

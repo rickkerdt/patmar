@@ -31,11 +31,6 @@
                     } ?>" href="?page=dealers">Samenwerking</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?php if ($_GET["page"] == "storing") {
-                        echo "active";
-                    } ?>" href="?page=storing">Storing Melden</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link <?php if ($_GET["page"] == "offerte") {
                         echo "active";
                     } ?>" href="?page=offerte">Offerte Aanvraag</a>
@@ -103,7 +98,7 @@
                     maandag gesloten.<br>
                     dinsdag t/m vrijdag<br>
                     van 10.00 - 17.00 uur<br>
-                    zaterdag van 10.00 - 16.00 uur.<br>
+                    zaterdag van 10.00 - 16.00 uur<br>
 
 
                 </div>

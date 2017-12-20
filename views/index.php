@@ -145,7 +145,7 @@
                     <div class="" style="padding-left: 14px;">
                         <h3 class="card-subtitle" style="padding-top: 10px; ">Rolluiken</h3>
 
-                        Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 PATMAR rolluiken de ideale oplossing!
+                        Wilt u af van hinderlijk geluid, tochtige ramen en/of felle zon: dan zijn de A5 Patmar rolluiken de ideale oplossing!
                         Ook kunnen wij voor u industriële en brandwerende rolluiken leveren.
                         Heeft u weinig ruimte?
                         Er zijn al rolluiken met een kastmaat van 125 mm.
@@ -432,7 +432,7 @@
                     <div class="" style="padding-left: 14px;">
                         <h3 class="card-subtitle" style="padding-top: 10px; ">Raamdecoratie</h3>
 
-                        Ook voor  al uw raamdecoraties kunt u bij A5 PATMAR terecht. Bij A5 PATMAR is een ruime keuze aanwezig voor rolgordijnen,
+                        Ook voor  al uw raamdecoraties kunt u bij A5 Patmar terecht. Bij A5 Patmar is een ruime keuze aanwezig voor rolgordijnen,
                         jalouzieën zowel horizontaal als verticaal, plissé gordijnen, vouwgordijnen en (elektrische) gordijnen. Wij werken met ons
                         huismerk A5 SUNDRAPE en met B&C raamdecoraties. Ook voor kunststof ramen hebben wij de ideale oplossing: raamdecoratie monteren zonder te boren!
                     </div>
@@ -561,7 +561,7 @@
                 <div class="col-sm-12 text-sm-left col-md-10 mx-auto text-md-center" style="padding-left: 14px;">
                     <h3 class="card-subtitle" style="padding-top: 10px;">Garagedeuren</h3>
 
-                    A5 PATMAR is leverancier van AW Wisniowski sectionaal garagedeuren. De deuren worden door ons ingemeten <br>
+                    A5 Patmar is leverancier van AW Wisniowski sectionaal garagedeuren. De deuren worden door ons ingemeten <br>
                     en door eigen monteurs geplaatst. Er is een keuze uit diverse uitvoeringen. De bediening kan naar
                     keuze handmatig of elektrisch met handzender.
                 </div>
@@ -638,7 +638,7 @@
                     <h3 class="card-subtitle" style="padding-top: 10px;">Terrasoverkappingen</h3>
 
                     Voor al uw houten en aluminium terrasoverkappingen, pergolazonwering, carport, veranda's en serre's
-                    bent u bij A5 PATMAR <br> aan het juiste adres! Ook kunnen wij de veranda uitbreiden naar een tuinkamer met
+                    bent u bij A5 Patmar <br> aan het juiste adres! Ook kunnen wij de veranda uitbreiden naar een tuinkamer met
                     verschillende onderbouw elementen, zoals een <br> schuifpui, glazen kantel en/of schuifdeuren. Tevens zijn
                     vaste puien natuurlijk ook mogelijk. Op of onder het dak is het mogelijk <br> een zonwering te plaatsen.
                     Als beplating is er een keuze uit diverse polycarbonaat platen of gehard veiligheidsglas.
@@ -797,7 +797,7 @@
                 <div class="col-sm-12 text-sm-left col-md-10 mx-auto text-md-center" style="padding-left: 14px;">
                     <h3 class="card-subtitle" style="padding-top: 10px;">Zonweringsdoeken</h3>
 
-                    Wij A5 PATMAR zijn leverancier van VeKa kunststof kozijnen. Wij leveren de kozijnen zowel particulier
+                    Wij A5 Patmar zijn leverancier van VeKa kunststof kozijnen. Wij leveren de kozijnen zowel particulier
                     als bij de aannemers. <br> De kozijnen worden op maat gemaakt en worden bij u thuis afgeleverd. Ook hebben
                     wij een eigen montage team voor het <br> demonteren van uw bestaande kozijnen, het afvoeren hiervan en het
                     plaatsen van de nieuwe kozijnen. Uiteraard kunnen wij u ook <br> houten en aluminium kozijnen leveren/monteren.

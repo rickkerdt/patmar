@@ -2,9 +2,10 @@
 <?php
 $categorylist = $categorys->getCategorylist();
 ?>
-<div style="padding-top: 100px;"></div>
-<div class="col-md-6 jumbotron mx-auto">
-    <h1 class="text">Offerte aanvragen</h1>
+<div class="container" style="margin-top: 100px">
+    <div class="row"></div>
+        <div class="col-md-6 mx-auto jumbotron">
+            <h1 class="text">Offerte aanvragen</h1>
 
     <br>
     <p>&nbsp;<span style="line-height: 1.4;">Vul onderstaand formulier in voor een offerte.<br/>
@@ -84,7 +85,6 @@ $categorylist = $categorys->getCategorylist();
                 </div>
             </div>
             <!--Upload knop voor foto's-->
-
             <div>
                 Klik om een bestand te uploaden:</br>
                 <input type="file" name="bestand" id="BestandUpload"></br>
@@ -108,4 +108,5 @@ $categorylist = $categorys->getCategorylist();
             </div>
         </div>
     </form>
+</div>
 </div>
