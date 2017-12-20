@@ -149,11 +149,11 @@ if (isset($_POST["offertesend"])) {
         $expensions = array("jpeg", "jpg", "png");
 
         if (in_array($file_ext, $expensions) === false) {
-            $errors[] = "extension not allowed, please choose a JPEG or PNG file.";
+            array_push($errors, "Kies altublieft een JPEG of PNG bestand.");
         }
 
         if ($file_size > 5097152) {
-            $errors[] = 'File size must be excately 4 MB';
+            array_push($errors, 'Het bestand mag maximaal 4 MB groot zijn');
         }
 
         if (empty($errors) == true) {
