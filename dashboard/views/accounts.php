@@ -60,6 +60,7 @@
             </ul>
         </div>
     </div>
+    <br>
     <div class="row">
         <div class="col-md-4">&nbsp;</div>
         <div class="col-md-4">
@@ -76,7 +77,7 @@
                 $(function () {
                     $("#back").on('click', function () {
                         window.location.replace("/dashboard?page=accounts&pagination=<?php echo $pagination - 1 ?>")
-                    })
+                    });
                     $("#next").on('click', function () {
                         window.location.replace("/dashboard?page=accounts&pagination=<?php echo $pagination + 1 ?>")
                     })
