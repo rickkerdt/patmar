@@ -57,6 +57,7 @@ class Storing
                 return true;
             } else {
                 echo "<script>console.log('" . $q->errorCode() . "')</script>";
+                echo "<script>console.log('" . var_dump($_SESSION) . "')</script>";
             }
         } else {
             return false;
