@@ -23,6 +23,7 @@ class Storing
 
         $qu = $this->db->prepare("SELECT * FROM User WHERE UserID = ?");
         $qu->bindValue(1, $_SESSION['UserID']);
+        $qu->execute();
 
         if ($qu->execute()) {
             $userinfo = $qu->fetchAll();
