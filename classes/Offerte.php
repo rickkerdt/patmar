@@ -31,7 +31,7 @@ class Offerte
 //          Query voor het invoegen van gebruiker
             $q = $db->prepare("INSERT INTO Offerte(CategoryID, Email, Naam, Adres, Woonplaats, Telefoonnummer, Bericht) VALUES (?, ?, ?, ?, ?, ?)");
 //          Anti SQL Injectie
-            $q->bindValue(1, $email);
+            $q->bindValue(1, $categorie);
             $q->bindValue(2, $email);
             $q->bindValue(3, $naam);
             $q->bindValue(4, $adres);
