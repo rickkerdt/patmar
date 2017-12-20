@@ -71,6 +71,17 @@ Voor een directe reactie kunt u ook bellen tijdens kantooruren.</span></p>
         </div>
     </div>
     <div class="row">
+        <div class="form-group">
+
+            <select name="categorie" required>
+                <option readonly="readonly" selected value="0">Categorie</option>
+                <?php foreach($categorylist as $category) : ?>
+                    <option value="<?php echo $category["CategoryID"] ?>"><?php echo $category["Name"] ?></option>
+                <?php endforeach; ?>
+            </select>
+        </div>
+    </div>
+    <div class="row">
 
         <div class="form-group">
 

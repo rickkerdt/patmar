@@ -116,7 +116,7 @@ if (isset($_POST["storingsend"])) {
             //Contact formulier versturen naar back-end
             if ($storing->sendform($_POST["categorie"], $_POST["bericht"])) {
                 $_SESSION["sent"] = true;
-                header("Location: /dashboard/?page=storing");
+                header("Location: /dashboard/?page=storing_melden");
                 die();
             } else {
                 //  Errors in een lijst neer zetten
