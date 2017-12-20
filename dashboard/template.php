@@ -50,9 +50,6 @@
             </div>
         <?php elseif ($_SESSION["permission"] == 2) : ?>
             <div class="col-md-3" style="padding: 0 0 75px 0; margin: 0; background-color: #212529;">
-                <div class="dashboard-side-button"><a href="/dashboard/?page=contact">Contact</a></div>
-                <div class="dashboard-side-button"><a href="/dashboard/?page=offertes">Offertes</a></div>
-                <div class="dashboard-side-button"><a href="/dashboard/?page=storingen">Storingen</a></div>
                 <div class="dashboard-side-button"><a href="/dashboard/?page=storing_melden">storing melden</a></div>
             </div>
         <?php endif; ?>
