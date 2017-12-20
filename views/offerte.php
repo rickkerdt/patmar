@@ -70,7 +70,7 @@ $categorylist = $categorys->getCategorylist();
                 <div class="form-group">
 
                     <select name="categorie" required>
-                        <option disabled selected value="0">Categorie</option>
+                        <option readonly="readonly" selected value="0">Categorie</option>
                         <?php foreach($categorylist as $category) : ?>
                         <option value="<?php echo $category["CategoryID"] ?>"><?php echo $category["Name"] ?></option>
                         <?php endforeach; ?>
