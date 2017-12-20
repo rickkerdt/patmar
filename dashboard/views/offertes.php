@@ -5,12 +5,12 @@
  * Date: 12/18/2017
  * Time: 09:34
  */
-$contacts = new Contactdash();
+$offertes = new Offertedash();
 $pagination = 0;
 if (isset($_GET["pagination"]))
     $pagination = intval($_GET["pagination"]);
 
-$contactlist = $contacts->getContactList($pagination);
+$offertelist = $offertes->getOfferteList($pagination);
 ?>
 
 <div class="row">
@@ -32,20 +32,20 @@ $contactlist = $contacts->getContactList($pagination);
                     </div>
                 </div>
             </li>
-            <?php foreach ($contactlist as $contact) : ?>
+            <?php foreach ($offertelist as $offerte) : ?>
                 <li class="list-group-item">
                     <form action="/dashboard/" method="get">
                         <input type="hidden" name="page" value="contactfull">
-                        <input type="hidden" name="Contactid" value="<?php echo $contact["Contactid"]; ?>">
+                        <input type="hidden" name="Contactid" value="<?php echo $offerte["OfferteID"]; ?>">
                         <div class="row">
                             <div class="col-md-1">
-                                <?php echo $contact["Contactid"]; ?>
+                                <?php echo $offerte["OfferteID"]; ?>
                             </div>
                             <div class="col-md-3">
-                                <?php echo $contact["Naam"]; ?>
+                                <?php echo $offerte["Naam"]; ?>
                             </div>
                             <div class="col-md-6 text-truncate">
-                                <?php echo $contact["Bericht"]; ?>
+                                <?php echo $cfferte["Bericht"]; ?>
                             </div>
                             <div class="col-md-2 text-truncate">
                                 <input type="submit" value="Alles Weergeven" class="btn btn-light float-right">
@@ -64,7 +64,7 @@ $contactlist = $contacts->getContactList($pagination);
         <div class="btn-group" role="group" aria-label="Basic example">
             <button id="back" <?php if($pagination == 0) echo "disabled"; ?> type="button" class="btn btn-secondary">Vorige</button>
             <button type="button" class="btn btn-primary"><?php echo $pagination + 1 ?></button>
-            <button id="next" <?php if(count($userlist) < 10) echo "disabled"; ?> type="button" class="btn btn-secondary">Volgende</button>
+            <button id="next" <?php if(count($offertlist) < 10) echo "disabled"; ?> type="button" class="btn btn-secondary">Volgende</button>
         </div>
         <script>
             $(function () {
