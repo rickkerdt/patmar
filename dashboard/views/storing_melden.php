@@ -6,10 +6,9 @@
  * Time: 09:52
  */
 $categorys = new Storing();
-
 $categorylist = $categorys->getCategorylist();
 ?>
-?>
+
 <div class="container mx-auto storing" style="margin-top: ">
     <div class="row">
 
