@@ -114,9 +114,9 @@ if (isset($_POST["storingsend"])) {
         //Kijkt of er response is
         if ($_POST["g-recaptcha-response"] != '') {
             //Contact formulier versturen naar back-end
-            if ($storing->sendform($_POST["email"], $_POST["naam"], $_POST['adres'], $_POST['telefoonnummer'], $_POST['woonplaats'], $_POST['bericht'])) {
+            if ($storing->sendform($_POST["categorie"], $_POST["bericht"])) {
                 $_SESSION["sent"] = true;
-                header("Location: ?page=storing");
+                header("Location: /dashboard/?page=storing");
                 die();
             } else {
                 //  Errors in een lijst neer zetten
