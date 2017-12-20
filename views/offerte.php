@@ -1,7 +1,12 @@
 <!-- Offerte  -->
-<div style="padding-top: 100px;"></div>
-<div class="col-md-6 jumbotron mx-auto">
-    <h1 class="text">Offerte aanvragen</h1>
+<?php
+$categorys = new Offerte();
+$categorylist = $categorys->getCategorylist();
+?>
+<div class="container" style="margin-top: 100px">
+    <div class="row"></div>
+        <div class="col-md-6 mx-auto jumbotron">
+            <h1 class="text">Offerte aanvragen</h1>
 
     <br>
     <p>&nbsp;<span style="line-height: 1.4;">Vul onderstaand formulier in voor een offerte.<br/>
@@ -62,6 +67,17 @@
                 </div>
             </div>
             <div class="row">
+                <div class="form-group">
+
+                    <select name="categorie" required>
+                        <option disabled selected>Categorie</option>
+                        <?php foreach($categorylist as $category) : ?>
+                        <option value="<?php echo $category["Name"] ?>"><?php echo $category["Name"] ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
 
                 <div class="form-group">
 
@@ -70,7 +86,6 @@
                 </div>
             </div>
             <!--Upload knop voor foto's-->
-
             <div>
                 Klik om een bestand te uploaden:</br>
                 <input type="file" name="bestand" id="BestandUpload"></br>
@@ -94,4 +109,5 @@
             </div>
         </div>
     </form>
+</div>
 </div>

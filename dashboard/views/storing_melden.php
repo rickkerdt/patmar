@@ -6,11 +6,11 @@
  * Time: 09:52
  */
 ?>
-<div class="container mx-auto storing" style="margin-top: 100px">
+<div class="container mx-auto storing" style="margin-top: ">
     <div class="row">
 
-        <div class="col">&nbsp;</div>
-        <div class="col-md-6 jumbotron">
+
+        <div class="col-md-8 mx-auto jumbotron">
             <h1 class="text">Storing melden</h1>
 
             <br>

@@ -22,7 +22,7 @@
             <form action="?page=storing" method="post">
                 <!-- Als er errors voor komen worden die gegeven -->
                 <?php if (count($errors) > 0) : ?>
-    <?php foreach ($errors as $error) : ?>
+            <?php foreach ($errors as $error) : ?>
         <div class="alert alert-warning">
             <strong>Fout!</strong> <?php echo $error; ?>
         </div>
