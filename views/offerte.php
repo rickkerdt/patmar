@@ -1,7 +1,9 @@
 <!-- Offerte  -->
-<div style="padding-top: 100px;"></div>
-<div class="col-md-6 jumbotron mx-auto">
-    <h1 class="text">Offerte aanvragen</h1>
+<div class="container" style="margin-top: 100px">
+    <div class="row"></div>
+        <div class="col">&nbsp;</div>
+        <div class="col-md-6 mx-auto jumbotron">
+            <h1 class="text">Offerte aanvragen</h1>
 
     <br>
     <p>&nbsp;<span style="line-height: 1.4;">Vul onderstaand formulier in voor een offerte.<br/>
@@ -94,4 +96,5 @@
             </div>
         </div>
     </form>
+</div>
 </div>
