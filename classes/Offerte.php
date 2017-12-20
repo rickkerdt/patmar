@@ -92,7 +92,7 @@ class Offerte
 
     public function getCategoryList()
     {
-        $q = $this->db->prepare("SELECT * FROM Category WHERE active = 1");
+        $q = $this->db->prepare("SELECT Name FROM Category WHERE active = 1");
 
         if ($q->execute()) {
             return $q->fetchAll();
