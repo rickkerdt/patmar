@@ -95,6 +95,12 @@ Voor een directe reactie kunt u ook bellen tijdens kantooruren.</span></p>
 </div>
 </form>
 </div>
+        <style>
+            #calendar {
+                width: inherit;
+                margin: 0 auto;
+            }
+        </style>
 
     </div>
 </div>
