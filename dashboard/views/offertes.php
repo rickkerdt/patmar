@@ -42,7 +42,7 @@ $offertelist = $offertes->getOfferteList($pagination);
                                 <?php echo $offerte["OfferteID"]; ?>
                             </div>
                                 <div class="col-md-3">
-                                <?php echo $offerte["Name"]; ?>
+                                <?php echo $offerte["Naam"]; ?>
                             </div>
                             <div class="col-md-6 text-truncate">
                                 <?php echo $cfferte["Bericht"]; ?>
