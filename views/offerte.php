@@ -74,8 +74,9 @@ $categorylist = $categorys->getCategorylist();
                         <?php foreach($categorylist as $category) : ?>
                         <option value="<?php echo $category ?>"><?php echo $category ?></option>
                         <?php endforeach; ?>
-                        <?php print_r($categorylist); ?>
+
                     </select>
+                    <?php print_r($categorylist); ?>
                 </div>
             </div>
             <div class="row">
