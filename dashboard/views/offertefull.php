@@ -17,8 +17,8 @@ $bericht = $offerte["Bericht"];
                 <form action="/dashboard/" method="get">
                     <div class="row">
                         <div class="col-md-3">
-                            <strong>Contactnummer</strong>
-                        </div>
+                            <strong>Offertenummer</strong>
+                    </div>
                         <input type="hidden" name="Offerteid" value="<?php echo $offerte["Offerteid"]; ?>">
                         <div class="col-md-9">
                             <?php echo $offerte["Offerteid"]; ?>

@@ -36,10 +36,10 @@ $offertelist = $offertes->getOfferteList($pagination);
                 <li class="list-group-item">
                     <form action="/dashboard/" method="get">
                         <input type="hidden" name="page" value="offertefull">
-                        <input type="hidden" name="Offerteid" value="<?php echo $offerte["OfferteID"]; ?>">
+                        <input type="hidden" name="Offerteid" value="<?php echo $offerte["Offerteid"]; ?>">
                         <div class="row">
                             <div class="col-md-1">
-                                <?php echo $offerte["OfferteID"]; ?>
+                                <?php echo $offerte["Offerteid"]; ?>
                             </div>
                                 <div class="col-md-3">
                                 <?php echo $offerte["Naam"]; ?>
