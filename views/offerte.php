@@ -71,9 +71,10 @@ $categorylist = $categorys->getCategorylist();
 
                     <select name="categorie" required>
                         <option disabled>Categorie</option>
-                        <?php foreach($categorys as $category) : ?>
+                        <?php foreach($categorylist as $category) : ?>
                         <option value="<?php echo $category ?>"><?php echo $category ?></option>
                         <?php endforeach; ?>
+                        <?php print_r($categorylist); ?>
                     </select>
                 </div>
             </div>
