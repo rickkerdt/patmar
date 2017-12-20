@@ -349,7 +349,7 @@
         <div class="card card-inverse card-info mb-3">
             <div class="card-block">
                 <h3 class="card-title">A5 Patmar Marknesse</h3>
-                <p class="card-text">Hoge Sluiswal 47<br>s
+                <p class="card-text">Hoge Sluiswal 47<br>
                     8316 AA Marknesse<br>
                     tel. 0527-612277, fax: 0527-620955<br>
                     info@patmar.nl --
