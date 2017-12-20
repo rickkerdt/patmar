@@ -1,9 +1,24 @@
 <?php
 $users = new Account();
 $user = $users->getUser($_GET["userID"]);
+
+if(isset($_POST["saveUserChanges"]))
+{
+    if(isset($_POST["password"]))
+    {
+        if($_POST["password"] == $_POST["passwordrepeat"])
+        {
+            if($users->updatePassword($_POST["password"])) {
+                echo "<div class='alert alert-success'><strong>Gelukt!</strong> Gegevens zijn aangepast.</div>";
+            } else {
+                echo "<script>console.log('". $users->errorList[0] ."')</script>";
+            }
+        }
+    }
+}
 ?>
 
-<form action="/dashboard/?page=accountedit">
+<form action="/dashboard/?page=accountedit&userID=<?php echo $_GET["userID"] ?>" method="post">
     <div class="row">
         <div class="col-md-6">
             <div class="form-group">
@@ -30,11 +45,7 @@ $user = $users->getUser($_GET["userID"]);
         <label for="passwordrepeat">Wachtwoord herhalen</label>
         <input type="password" class="form-control" id="passwordrepeat" name="passwordrepeat" placeholder="Password">
     </div>
-    <div class="form-check">
-        <label class="form-check-label">
-            <input type="checkbox" class="form-check-input">
-            Check me out
-        </label>
+    <div class="form-group">
+        <input type="submit" name="saveUserChanges" value="Opslaan" class="btn btn-outline-primary">
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
 </form>
