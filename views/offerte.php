@@ -71,7 +71,6 @@
                 </div>
             </div>
             <!--Upload knop voor foto's-->
-
             <div>
                 Klik om een bestand te uploaden:</br>
                 <input type="file" name="bestand" id="BestandUpload"></br>

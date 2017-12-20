@@ -9,7 +9,7 @@
 <div class="container mx-auto storing" style="margin-top: 100px">
     <div class="row">
 
-        <div class="col">&nbsp;</div>
+
         <div class="col-md-6 jumbotron">
             <h1 class="text">Storing melden</h1>
 
