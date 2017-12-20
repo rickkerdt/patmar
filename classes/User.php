@@ -109,10 +109,12 @@ class User
 //        Query uitvoeren
         if ($q->execute()) {
             if ($q->rowCount() > 0) {
+                $user = $q->fetchAll()[0];
+
                 $_SESSION["loggedIn"] = true;
                 $_SESSION["email"] = $this->email;
-                $_SESSION["permission"] = $q->fetchAll()[0]["FunctionID"];
-                $_SESSION["UserID"] = $q->fetchAll()[0]["UserID"];
+                $_SESSION["permission"] = $user["FunctionID"];
+                $_SESSION["UserID"] = $user["UserID"];
 
                 return true;
             } else {
