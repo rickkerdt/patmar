@@ -46,13 +46,13 @@ class Storing
             $q = $this->db->prepare("INSERT INTO Storing(UserID, CategoryID, Explanation) VALUES (?, ?, ?)");
 //          Anti SQL Injectie
             $q->bindValue(1, $userinfo['UserID']);
-            $q->bindValue(2, $categorie);
-            $q->bindValue(3, $bericht);
+            $q->bindValue(2, $categorie, PDO::PARAM_INT);
+            $q->bindValue(3, $bericht, PDO::PARAM_STR);
 
 //          Query uitvoeren
             if($q->execute())
             {
-                echo "<script>console.log('checkform passed')</script>";
+                echo "<script>console.log('executed')</script>";
                 return true;
             }
         } else {
