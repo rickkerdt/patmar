@@ -11,8 +11,12 @@ if(isset($_POST["saveUserChanges"]))
             if($users->updatePassword($_POST["password"])) {
                 echo "<div class='alert alert-success'><strong>Gelukt!</strong> Gegevens zijn aangepast.</div>";
             } else {
-                echo "<script>console.log('". $users->errorList[0] ."')</script>";
+                foreach ($users->errorList as $error) {
+                    echo "<div class='alert alert-danger'><strong>Fout!</strong> " . $error . "</div>";
+                }
             }
+        } else {
+            echo "<div class='alert alert-danger'><strong>Fout!</strong> Het wachtwoord komt niet met elkaar overeen.</div>";
         }
     }
 }

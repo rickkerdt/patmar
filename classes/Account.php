@@ -40,20 +40,46 @@ class Account
 
     public function updatePassword($password)
     {
-        $getmail = $this->db->prepare("SELECT Email FROM User WHERE UserID = ?");
-        $getmail->bindValue(1, $this->userID);
-        $getmail->execute();
-        $email = $getmail->fetchAll()[0]["Email"];
+        if($this->validate($password)) {
+            $getmail = $this->db->prepare("SELECT Email FROM User WHERE UserID = ?");
+            $getmail->bindValue(1, $this->userID);
+            $getmail->execute();
+            $email = $getmail->fetchAll()[0]["Email"];
 
-        $passhash = hash("sha512", $password . $this->salt . $email);
-        $q = $this->db->prepare("UPDATE User SET PassHash = ? WHERE UserID = ?");
-        $q->bindValue(1, $passhash);
-        $q->bindValue(2, $this->userID);
-        if($q->execute()) {
-            return true;
+            $passhash = hash("sha512", $password . $this->salt . $email);
+            $q = $this->db->prepare("UPDATE User SET PassHash = ? WHERE UserID = ?");
+            $q->bindValue(1, $passhash);
+            $q->bindValue(2, $this->userID);
+            if($q->execute()) {
+                return true;
+            } else {
+                array_push($this->errorList, "Er is iets fout gegaan: " . $q->errorCode());
+                return false;
+            }
         } else {
-            array_push($this->errorList, "Er is iets fout gegaan: " . $q->errorCode());
             return false;
         }
+    }
+
+    //    Validatie functie
+    public function validate($password)
+    {
+//        Regex om te valideren
+        $valid = true;
+        $uppercase = preg_match('@[A-Z]@', $password);
+        $lowercase = preg_match('@[a-z]@', $password);
+        $number = preg_match('@[0-9]@', $password);
+        $symbols = preg_match('@[!\@#$%&*?]@', $password);
+
+//        Validatie proces of het wachtwoord voldoet aan de gestelde criteria
+        if (!$uppercase || !$lowercase || !$number || strlen($password) < 8 || !$symbols) {
+            array_push($this->errorList, "Het wachtwoord moet een hoofdletter, kleine letter, cijfer en speciaalteken bevatten en minimaal 8 tekens lang zijn.");
+            $valid = false;
+        }
+
+        if ($valid) {
+            return true;
+        }
+        return false;
     }
 }
