@@ -31,6 +31,7 @@ class Storing
         }
 
         if ($this->checkForm($categorie, $bericht)) {
+            echo "<script>console.log('checkform passed')</script>";
             //wanneer de velden gecheked zijn wordt er een mail aangemaakt met de inhoud van de ingevulde velden.
             $to = "admin@patmar.com";
             $subject = "Storing";
@@ -51,8 +52,11 @@ class Storing
             $q->bindValue(3, $bericht);
 
 //          Query uitvoeren
-            $q->execute();
-            return true;
+            if($q->execute())
+            {
+                echo "<script>console.log('checkform passed')</script>";
+                return true;
+            }
         } else {
             return false;
         }
