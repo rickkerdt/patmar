@@ -79,4 +79,14 @@ class Storing
         }
         return false;
     }
+    public function getCategoryList()
+    {
+        $q = $this->db->prepare("SELECT * FROM Category WHERE active = 1");
+
+        if ($q->execute()) {
+            return $q->fetchAll();
+        } else {
+            return $q->errorCode();
+        }
+    }
 }
