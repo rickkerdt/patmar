@@ -48,7 +48,7 @@
                     </li>
                 <?php elseif ($_SESSION["loggedIn"] != ""): ?>
                     <li class="nav-item">
-                        <a class="nav-link" href="/dashboard/?page=dashboard">Dashboard</a>
+                        <a class="nav-link" href="/dashboard/?page=home">Dashboard</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="?page=logout">Logout</a>
