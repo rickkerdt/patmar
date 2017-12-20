@@ -38,11 +38,11 @@
 
         <?php if ($_SESSION["permission"] == 1) : ?>
             <div class="col-md-3" style="padding: 0 0 75px 0; margin: 0; background-color: #212529;">
+                <div class="dashboard-side-button"><a href="/dashboard/?page=agenda">Agenda</a></div>
                 <div class="dashboard-side-button"><a href="/dashboard/?page=contact">Contactaanvragen</a></div>
                 <div class="dashboard-side-button"><a href="/dashboard/?page=accounts">Accounts beheren</a></div>
                 <div class="dashboard-side-button"><a href="/dashboard/?page=offertes">Offerteaanvragen</a></div>
                 <div class="dashboard-side-button"><a href="/dashboard/?page=storingen">Gemelde storingen</a></div>
-                <div class="dashboard-side-button"><a href="/dashboard/?page=agenda">Agenda</a></div>
             </div>
         <?php elseif ($_SESSION["permission"] == 3) : ?>
             <div class="col-md-3" style="padding: 0 0 75px 0; margin: 0; background-color: #212529;">
