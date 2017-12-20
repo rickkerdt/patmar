@@ -1,7 +1,6 @@
 <!-- Offerte  -->
 <div class="container" style="margin-top: 100px">
     <div class="row"></div>
-        <div class="col">&nbsp;</div>
         <div class="col-md-6 mx-auto jumbotron">
             <h1 class="text">Offerte aanvragen</h1>
 
