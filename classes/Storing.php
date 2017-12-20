@@ -22,10 +22,10 @@ class Storing
 
 
         $qu = $this->db->prepare("SELECT * FROM User WHERE UserID = ?");
-        $qu->bindValue(1, $_SESSION['UserID']);
+        $qu->bindValue(1, $_SESSION['UserID'], PDO::PARAM_INT);
 
         if ($qu->execute()) {
-            $userinfo = $qu->fetchAll();
+            $userinfo = $qu->fetchAll()[0];
         } else {
             return $qu->errorCode();
         }
