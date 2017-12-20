@@ -29,7 +29,7 @@ class Offerte
 //          Verbinding maken met database
             $db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
 //          Query voor het invoegen van gebruiker
-            $q = $db->prepare("INSERT INTO Offerte(CategoryID, Email, Naam, Adres, Woonplaats, Telefoonnummer, Bericht) VALUES (?, ?, ?, ?, ?, ?)");
+            $q = $db->prepare("INSERT INTO Offerte(CategoryID, Email, Naam, Adres, Woonplaats, Telefoonnummer, Bericht) VALUES (?, ?, ?, ?, ?, ?, ?)");
 //          Anti SQL Injectie
             $q->bindValue(1, $categorie);
             $q->bindValue(2, $email);
