@@ -45,7 +45,7 @@ $offertelist = $offertes->getOfferteList($pagination);
                                 <?php echo $offerte["Naam"]; ?>
                             </div>
                             <div class="col-md-6 text-truncate">
-                                <?php echo $cfferte["Bericht"]; ?>
+                                <?php echo $offerte["Bericht"]; ?>
                             </div>
                             <div class="col-md-2 text-truncate">
                                 <input type="submit" value="Alles Weergeven" class="btn btn-light float-right">
