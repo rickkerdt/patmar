@@ -10,7 +10,7 @@
     <div class="row">
 
 
-        <div class="col-md-6 jumbotron">
+        <div class="col-md-8 mx-auto jumbotron">
             <h1 class="text">Storing melden</h1>
 
             <br>
