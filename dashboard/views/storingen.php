@@ -19,7 +19,7 @@ $storingenlist = $storingen->getStoringenList($pagination);
             <li class="list-group-item">
                 <div class="row">
                     <div class="col-md-1">
-                        <strong>Nummer</strong>
+                        <strong>HOI</strong>
                     </div>
                     <div class="col-md-3 text-truncate">
                         <strong>Naam</strong>
