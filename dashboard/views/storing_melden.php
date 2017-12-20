@@ -6,7 +6,7 @@
  * Time: 09:52
  */
 ?>
-<div class="container mx-auto storing" style="margin-top: 100px">
+<div class="container mx-auto storing" style="margin-top: ">
     <div class="row">
 
 
