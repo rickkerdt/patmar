@@ -39,13 +39,13 @@ $storingenlist = $storingen->getStoringenList($pagination);
                         <input type="hidden" name="StoringID" value="<?php echo $storing["StoringID"]; ?>">
                         <div class="row">
                             <div class="col-md-1">
-                                <?php echo $storing["o.StoringID"]; ?>
+                                <?php echo $storing["s.StoringID"]; ?>
                             </div>
                             <div class="col-md-3">
                                 <?php echo $storing["u.FirstName"]; ?>
                             </div>
                             <div class="col-md-6 text-truncate">
-                                <?php echo $storing["o.Bericht"]; ?>
+                                <?php echo $storing["s.Bericht"]; ?>
                             </div>
                             <div class="col-md-2 text-truncate">
                                 <input type="submit" value="Alles Weergeven" class="btn btn-light float-right">
