@@ -5,6 +5,10 @@
  * Date: 20-12-17
  * Time: 09:52
  */
+$categorys = new Storing();
+
+$categorylist = $categorys->getCategorylist();
+?>
 ?>
 <div class="container mx-auto storing" style="margin-top: ">
     <div class="row">
@@ -19,7 +23,7 @@ Wij zullen dan zo spoedig mogelijk contact met u opnemen.
 Voor een directe reactie kunt u ook bellen tijdens kantooruren.</span></p>
             <br>
 
-            <form action="?page=storing" method="post">
+            <form action="?page=storing_melden" method="post">
                 <!-- Als er errors voor komen worden die gegeven -->
                 <?php if (count($errors) > 0) : ?>
     <?php foreach ($errors as $error) : ?>
@@ -68,6 +72,17 @@ Voor een directe reactie kunt u ook bellen tijdens kantooruren.</span></p>
 
             <input cols="40" type="text" class="form-control" name="telefoonnummer" id="Telefoonnummer"
                    placeholder="Telefoonnummer *">
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group">
+
+            <select name="categorie" required>
+                <option readonly="readonly" selected value="0">Categorie</option>
+                <?php foreach($categorylist as $category) : ?>
+                    <option value="<?php echo $category["CategoryID"] ?>"><?php echo $category["Name"] ?></option>
+                <?php endforeach; ?>
+            </select>
         </div>
     </div>
     <div class="row">
