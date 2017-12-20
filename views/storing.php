@@ -53,7 +53,7 @@
         <div class="form-group">
 
             <input type="text" class="form-control" name="adres" id="adres"
-                   placeholder="Adres">
+                   placeholder="Straatnaam + huisnummer ">
         </div>
     </div>
     <div class="row">
@@ -111,7 +111,7 @@
 
             <br><h6 class="card-subtitle">A5 Patmar Meppel</h6>
             Johan van Oldenbarneveltstraat 3<br>
-            7942 GZ MEPPEL<br>
+            7942 GZ Meppel<br>
             Tel. 0522 - 24 48 88<br>
 
             <p>info@patmar.nl<br>
