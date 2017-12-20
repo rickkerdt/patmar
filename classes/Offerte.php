@@ -82,4 +82,22 @@ class Offerte
         }
         return false;
     }
+
+    private $db;
+
+    public function __construct()
+    {
+        $this->db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
+    }
+
+    public function getCategoryList()
+    {
+        $q = $this->db->prepare("SELECT * FROM Category WHERE active = 1");
+
+        if ($q->execute()) {
+            return $q->fetchAll();
+        } else {
+            return $q->errorCode();
+        }
+    }
 }

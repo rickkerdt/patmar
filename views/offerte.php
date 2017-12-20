@@ -1,4 +1,7 @@
 <!-- Offerte  -->
+<?php
+$categorylist = $categorys->getCategorylist();
+?>
 <div style="padding-top: 100px;"></div>
 <div class="col-md-6 jumbotron mx-auto">
     <h1 class="text">Offerte aanvragen</h1>
@@ -59,6 +62,17 @@
 
                     <input cols="40" type="text" class="form-control" name="telefoonnummer" id="Telefoonnummer"
                            placeholder="Telefoonnummer *" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+
+                    <select name="categorie" required>
+                        <option disabled>Categorie</option>
+                        <?php foreach($categorylist as $category) : ?>
+                        <option value="<?php echo $category ?>"><?php echo $category ?></option>
+                        <?php endforeach; ?>
+                    </select>
                 </div>
             </div>
             <div class="row">
