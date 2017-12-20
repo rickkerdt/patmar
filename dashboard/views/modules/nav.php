@@ -7,7 +7,7 @@
         <ul class="navbar-nav mx-auto w-100 justify-content-end">
             <li class="nav-item active"><a class="nav-link" style="color: white !important;" href="#"><?php echo $_SESSION["email"] ?></a></li>
             <li class="nav-item">
-                <a class="nav-link" href="?page=logout">Logout</a>
+                <a class="nav-link" href="/?page=logout">Logout</a>
             </li>
         </ul>
     </nav>
