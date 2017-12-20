@@ -13,12 +13,19 @@ class User
     private $passhash;
     private $sessionToken;
     public $creationdate;
+    private $db;
 
 //    Salt om wachtwoord te hashen
     private $salt = "AJGEA";
 
 //    Errors lijst om later op te halen
     public $errorList = [];
+
+    public function __construct()
+    {
+//          Verbinding maken met database
+        $this->db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
+    }
 
 //    Register functie
     public function register($email, $password, $repeatpassword, $firstname, $lastname)
@@ -29,10 +36,8 @@ class User
         $this->email = $email;
 //      Valideer of alles in orde is met de gebruikers input
         if ($this->validate($this->email, $password, $repeatpassword)) {
-//          Verbinding maken met database
-            $db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
 //          Query voor het invoegen van gebruiker
-            $q = $db->prepare("INSERT INTO User(Email, PassHash, FunctionID) VALUES (?, ?, 2)");
+            $q = $this->db->prepare("INSERT INTO User(Email, PassHash, FunctionID) VALUES (?, ?, 2)");
 
 //          Anti SQL Injectie
             $q->bindValue(1, $this->email);
@@ -43,7 +48,7 @@ class User
 
                 $q->closeCursor();
 
-                $q2 = $db->prepare("SELECT UserID FROM User WHERE Email = ?");
+                $q2 = $this->db->prepare("SELECT UserID FROM User WHERE Email = ?");
                 $q2->bindValue(1, $email);
                 $q2->execute();
                 $q2r = $q2->fetchAll()[0];
@@ -67,10 +72,8 @@ class User
 
     private function insertInfo($userID, $firstname, $lastname)
     {
-//      Verbinding maken met database
-        $dbs = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
 //      Query opbouwen
-        $q2 = $dbs->prepare("INSERT INTO Userinfo(UserID, FirstName, LastName) VALUES (?,?,?)");
+        $q2 = $this->db->prepare("INSERT INTO Userinfo(UserID, FirstName, LastName) VALUES (?,?,?)");
 //      Anti SQL injectie
         $q2->bindValue(1, $userID);
         $q2->bindValue(2, $firstname);
