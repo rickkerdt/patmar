@@ -42,10 +42,10 @@ $storingenlist = $storingen->getStoringenList($pagination);
                                 <?php echo $storing["s.StoringID"]; ?>
                             </div>
                             <div class="col-md-3">
-                                <?php echo $storing["u.FirstName"]; ?>
+                                <?php echo $storing["s.UserID"]; ?>
                             </div>
                             <div class="col-md-6 text-truncate">
-                                <?php echo $storing["s.Bericht"]; ?>
+                                <?php echo $storing["s.Explanation"]; ?>
                             </div>
                             <div class="col-md-2 text-truncate">
                                 <input type="submit" value="Alles Weergeven" class="btn btn-light float-right">
