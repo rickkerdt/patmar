@@ -76,7 +76,7 @@ class Offerte
             array_push($this->errorList, "Het berichtveld moet een bericht bevatten.");
             $valid = false;
         }
-        if ($categorie == "" || $categorie == 1) {
+        if ($categorie == "" || $categorie == 0) {
             array_push($this->errorList, "Kies een categorie.");
             $valid = false;
         }
