@@ -6,7 +6,7 @@
  * Time: 09:41
  */
 $storing = new Storingdash();
-$storing = $storing->getstoring($_GET["StoringID"]);
+$storing = $storing->getStoring($_GET["StoringID"]);
 $bericht = $storing["Explanation"];
 ?>
 <div class="row">
