@@ -42,7 +42,7 @@ $storingenlist = $storingen->getStoringenList($pagination);
                                 <?php echo $storing["StoringID"]; ?>
                             </div>
                             <div class="col-md-3">
-                                <?php echo $storing["UserID"]; ?>
+                                <?php echo $storing["i.FirstName"]." ".$storing["i.LastName"]; ?>
                             </div>
                             <div class="col-md-6">
                                 <?php echo $storing["Explanation"]; ?>
