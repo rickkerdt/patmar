@@ -38,6 +38,7 @@ if (isset($_GET["page"]) && $_GET["page"] != "") {
         @include_once "views/errors/404.php";
     }
 
+
 } else {
     @include_once "views/index.php";
 }

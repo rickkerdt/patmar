@@ -78,7 +78,7 @@
                     </div>
                     <div class="row">
                         <div class="form-group">
-                            <input type="submit" value="Versturen" name="contactsend">
+                            <input type="submit" value="Versturen" name="contactsend" class="btn btn-primary">
 
                             <br>
                             <br>
