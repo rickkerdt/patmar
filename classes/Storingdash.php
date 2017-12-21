@@ -38,7 +38,7 @@ class Storingdash
         $q->bindValue(1, $StoringID, \PDO::PARAM_INT);
 
         if ($q->execute()) {
-            return $q->fetchAll();
+            return $q->fetchAll()[0];
         } else {
             return $q->errorCode();
         }
