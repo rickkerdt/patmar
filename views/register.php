@@ -55,13 +55,13 @@ if ($_SESSION["loggedIn"])
                         </div>
                         <div class="col-md-3">
                             <label for="housenumber">Huis nummer</label>
-                            <input required type="text" class="form-control" name="housenumber" id="housenumber"
+                            <input required type="text" class="form-control" name="houseNumber" id="housenumber"
                                    placeholder="7">
                         </div>
                         <div class="col-md-3">
 
                             <label for="addition">Toevoeging</label>
-                            <input required type="text" class="form-control" name="addition" id="addition"
+                            <input type="text" class="form-control" name="addition" id="addition"
                                    placeholder="B">
                         </div>
                     </div>
