@@ -32,7 +32,7 @@ class Storingdash
 
     public function getStoring($Offerteid)
     {
-        $q = $this->db->prepare("SELECT * FROM Storing WHERE Offerteid = ?");
+        $q = $this->db->prepare("SELECT * FROM Storing s JOIN User u ON s.UserID = u.UserID JOIN Userinfo i ON u.UserID = i.UserID JOIN Address a ON u.UserID = a.UserID WHERE Offerteid = ?");
         $q->bindValue(1, $Offerteid, \PDO::PARAM_INT);
 
         if ($q->execute()) {
