@@ -2,15 +2,14 @@
     <div class='alert alert-danger'><strong>Fout!</strong> Niet toegestaan!</div>
 <?php elseif ($_SESSION["permission"] == "1"):
 
-$storingen = new Storingdash();
-$pagination = 0;
-if (isset($_GET["pagination"]))
+    $storingen = new Storingdash();
+    $pagination = 0;
+    if (isset($_GET["pagination"]))
     $pagination = intval($_GET["pagination"]);
 
-$storingenlist = $storingen->getStoringenList($pagination);
-?>
+    $storingenlist = $storingen->getStoringenList($pagination); ?>
 
-<div class="row">
+    <div class="row">
     <div class="col-md-12">
         <ul class="list-group">
             <li class="list-group-item">
@@ -39,7 +38,7 @@ $storingenlist = $storingen->getStoringenList($pagination);
                                 <?php echo $storing["StoringID"]; ?>
                             </div>
                             <div class="col-md-3">
-                                <?php echo $storing["FirstName"]." ".$storing["LastName"]; ?>
+                                <?php echo $storing["FirstName"] . " " . $storing["LastName"]; ?>
                             </div>
                             <div class="col-md-5 text-truncate">
                                 <?php echo $storing["Explanation"]; ?>
@@ -59,9 +58,13 @@ $storingenlist = $storingen->getStoringenList($pagination);
     <div class="col-md-4">&nbsp;</div>
     <div class="col-md-4">
         <div class="btn-group" role="group" aria-label="Basic example">
-            <button id="back" <?php if($pagination == 0) echo "disabled"; ?> type="button" class="btn btn-secondary">Vorige</button>
+            <button id="back" <?php if ($pagination == 0) echo "disabled"; ?> type="button" class="btn btn-secondary">
+                Vorige
+            </button>
             <button type="button" class="btn btn-primary"><?php echo $pagination + 1 ?></button>
-            <button id="next" <?php if(count($userlist) < 10) echo "disabled"; ?> type="button" class="btn btn-secondary">Volgende</button>
+            <button id="next" <?php if (count($userlist) < 10) echo "disabled"; ?> type="button"
+                    class="btn btn-secondary">Volgende
+            </button>
         </div>
         <script>
             $(function () {
