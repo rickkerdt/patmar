@@ -31,7 +31,7 @@ class User
     public function register($email, $password, $repeatpassword, $firstname, $lastname, $phoneNumber, $city, $streetName, $houseNumber, $addition, $zipcode)
     {
 //        Maakt hash aan met wachtwoord en salt(met salten worden er extra bit toegevoegt aan het wachtwoord)
-        $this->passhash = hash("sha512", $password . $this->salt . $email);
+        $this->passhash = hash("sha512", $password . $this->salt . strtolower($email));
 //         Voegd email waarde aan het object
         $this->email = $email;
 //      Valideer of alles in orde is met de gebruikers input
