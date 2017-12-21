@@ -30,10 +30,10 @@ class Storingdash
         }
     }
 
-    public function getStoring($Offerteid)
+    public function getStoring($StoringID)
     {
         $q = $this->db->prepare("SELECT * FROM Storing s JOIN User u ON s.UserID = u.UserID JOIN Userinfo i ON u.UserID = i.UserID JOIN Address a ON u.UserID = a.UserID WHERE Offerteid = ?");
-        $q->bindValue(1, $Offerteid, \PDO::PARAM_INT);
+        $q->bindValue(1, $StoringID, \PDO::PARAM_INT);
 
         if ($q->execute()) {
             return $q->fetchAll()[0];
