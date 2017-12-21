@@ -24,7 +24,7 @@ class Storingdash
         $q->bindValue(1, intval($pagination * 10, 10), \PDO::PARAM_INT);
 
         if ($q->execute()) {
-            return $q->fetchAll();
+            return $q->fetchAll()[0];
         } else {
             return $q->errorCode();
         }
