@@ -115,7 +115,7 @@ class User
                 $_SESSION["email"] = $this->email;
                 $_SESSION["permission"] = $user["FunctionID"];
                 $_SESSION["UserID"] = $user["UserID"];
-                $_SESSION["Name"] = $user["FirstName"] . " " . $_SESSION["LastName"];
+                $_SESSION["Name"] = $user["FirstName"] . " " . $user["LastName"];
 
                 return true;
             } else {
