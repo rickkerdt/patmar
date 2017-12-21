@@ -50,18 +50,18 @@
 
                     <label for="street">Straat</label>
                     <input required type="text" class="form-control" name="streetName" id="street"
-                           placeholder="Vogelenstraat">
+                           placeholder="Vogelenstraat" value="<?php echo $user["StreetName"]; ?>">
                 </div>
                 <div class="col-md-3">
                     <label for="housenumber">Huis nummer</label>
                     <input required type="text" class="form-control" name="houseNumber" id="housenumber"
-                           placeholder="7">
+                           placeholder="7" value="<?php echo $user["HouseNumber"]; ?>">
                 </div>
                 <div class="col-md-3">
 
                     <label for="addition">Toevoeging</label>
                     <input type="text" class="form-control" name="addition" id="addition"
-                           placeholder="B">
+                           placeholder="B" value="<?php echo $user["Addition"]; ?>">
                 </div>
             </div>
         </div>
@@ -69,19 +69,19 @@
             <div class="row">
                 <div class="col-md-8">
                     <label for="city">Plaats</label>
-                    <input required type="text" class="form-control" name="city" id="city" placeholder="Zwolle">
+                    <input required type="text" class="form-control" name="city" id="city" placeholder="Zwolle" value="<?php echo $user["City"]; ?>">
                 </div>
                 <div class="col-md-4">
                     <label for="zipcode">Postcode</label>
                     <input required type="text" class="form-control" name="zipcode" id="zipcode"
-                           placeholder="7777ZZ">
+                           placeholder="7777ZZ" value="<?php echo $user["ZipCode"]; ?>">
                 </div>
             </div>
         </div>
         <div class="form-group">
             <label for="phoneNumber">Telefoonnummer</label>
             <input required type="tel" class="form-control" name="phoneNumber" id="phoneNumber"
-                   placeholder="0612345678">
+                   placeholder="0612345678" value="<?php echo $user["PhoneNumber"]; ?>">
         </div>
         <div class="form-group">
             <label for="password">Wachtwoord</label>
