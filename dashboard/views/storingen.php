@@ -38,7 +38,7 @@ $storingenlist = $storingen->getStoringenList($pagination);
                         <input type="hidden" name="page" value="storingfull">
                         <input type="hidden" name="StoringID" value="<?php echo $storing["StoringID"]; ?>">
                         <div class="row">
-                            <div class="col-md-2 justify-content-center">
+                            <div class="col-md-2 text-center">
                                 <?php echo $storing["StoringID"]; ?>
                             </div>
                             <div class="col-md-3">
