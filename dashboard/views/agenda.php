@@ -1,6 +1,6 @@
 <?php if ($_SESSION["permission"] != "3" || $_SESSION["permission"] != "1") : ?>
     <div class='alert alert-danger'><strong>Fout!</strong> Niet toegestaan!</div>
-<?php elseif ($_SESSION["permission"] == "3" || $_SESSION["permission"] != "1"): ?>
+<?php elseif ($_SESSION["permission"] == "3" || $_SESSION["permission"] == "1"): ?>
 
 <script>
     $(document).ready(function () {
