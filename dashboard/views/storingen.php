@@ -19,7 +19,7 @@ $storingenlist = $storingen->getStoringenList($pagination);
             <li class="list-group-item">
                 <div class="row">
                     <div class="col-md-1">
-                        <strong>HOI</strong>
+                        <strong>Storingnummer</strong>
                     </div>
                     <div class="col-md-3 text-truncate">
                         <strong>Naam</strong>
@@ -45,7 +45,7 @@ $storingenlist = $storingen->getStoringenList($pagination);
                                 <?php echo $storing["FirstName"]." ".$storing["LastName"]; ?>
                             </div>
                             <div class="col-md-6">
-                                <?php print_r($storingenlist); ?>
+                                <?php echo $storing["Explanation"]; ?>
                             </div>
                             <div class="col-md-2 text-truncate">
                                 <input type="submit" value="Alles Weergeven" class="btn btn-light float-right">
