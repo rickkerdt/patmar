@@ -13,12 +13,12 @@ $bericht = $storing["Explanation"];
     <div class="col-md-12">
         <ul class="list-group">
             <li class="list-group-item">
-               <!-- <form action="/dashboard/" method="get">
+               <form action="/dashboard/" method="get">
                     <div class="row">
                         <div class="col-md-3">
                             <strong>storingnummer</strong>
                         </div>
-                        <input type="hidden" name="StoringID" value="<?php /* echo $storing["StoringID"]; ?>">
+                        <input type="hidden" name="StoringID" value="<?php echo $storing["StoringID"]; ?>">
                         <div class="col-md-9">
                             <?php echo $storing["StoringID"]; ?>
                         </div>
@@ -66,10 +66,9 @@ $bericht = $storing["Explanation"];
                         </div>
                         <div class="col-md-9">
                             <div class="form-group">
-                                <?php print nl2br($bericht) */ ?>
+                                <?php print nl2br($bericht) ?>
                             </div>
                         </div>
-                       --> <?php print_r($storing) ?>
             </li>
         </ul>
     </div>
