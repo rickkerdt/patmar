@@ -1,11 +1,7 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: patip
- * Date: 12/18/2017
- * Time: 09:33
- */
-?>
+<?php if ($_SESSION["permission"] != "3" || $_SESSION["permission"] != "1") : ?>
+    <div class='alert alert-danger'><strong>Fout!</strong> Niet toegestaan!</div>
+<?php elseif ($_SESSION["permission"] == "3" || $_SESSION["permission"] != "1"): ?>
+
 <script>
     $(document).ready(function () {
         var date = new Date();
@@ -122,3 +118,4 @@
 </style>
 
 <div id='calendar'></div>
+<?php endif; ?>
