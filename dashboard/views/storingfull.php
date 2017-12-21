@@ -5,7 +5,7 @@
  * Date: 21-12-2017
  * Time: 09:41
  */
-$storing = new storingdash();
+$storing = new Storingdash();
 $storing = $storing->getstoring($_GET["StoringID"]);
 $bericht = $storing["Explanation"];
 ?>
