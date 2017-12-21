@@ -88,7 +88,7 @@ $categorylist = $categorys->getCategorylist();
             <!--Upload knop voor foto's-->
             <div>
                 Klik om een bestand te uploaden:</br>
-                <input type="file" name="bestand" id="BestandUpload" class="btn btn-secondary></br>
+                <input type="file" name="bestand" id="BestandUpload" class="btn btn-secondary"></br>
 
             </div>
             <!--Google recaptcha-->
