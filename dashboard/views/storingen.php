@@ -44,7 +44,7 @@ $storingenlist = $storingen->getStoringenList($pagination);
                             <div class="col-md-3">
                                 <?php echo $storing["FirstName"]." ".$storing["LastName"]; ?>
                             </div>
-                            <div class="col-md-5 text-truncate">
+                            <div class="col-md-5">
                                 <?php print_r($storingenlist); ?>
                             </div>
                             <div class="col-md-2 text-truncate">
