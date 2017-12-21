@@ -44,8 +44,8 @@ $storingenlist = $storingen->getStoringenList($pagination);
                             <div class="col-md-3">
                                 <?php echo $storing["FirstName"]." ".$storing["LastName"]; ?>
                             </div>
-                            <div class="col-md-5">
-                                <?php print_r($storingenlist); ?>
+                            <div class="col-md-5 text-truncate">
+                                <?php echo $storing["Explanation"]; ?>
                             </div>
                             <div class="col-md-2 text-truncate">
                                 <input type="submit" value="Alles Weergeven" class="btn btn-light float-right">

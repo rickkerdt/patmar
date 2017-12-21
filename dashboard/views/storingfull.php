@@ -5,8 +5,8 @@
  * Date: 21-12-2017
  * Time: 09:41
  */
-$storing = new storingdash();
-$storing = $storing->getstoring($_GET["StoringID"]);
+$storing = new Storingdash();
+$storing = $storing->getStoring($_GET["StoringID"]);
 $bericht = $storing["Explanation"];
 ?>
 <div class="row">
@@ -16,7 +16,7 @@ $bericht = $storing["Explanation"];
                 <form action="/dashboard/" method="get">
                     <div class="row">
                         <div class="col-md-3">
-                            <strong>storingnummer</strong>
+                            <strong>Storingnummer</strong>
                         </div>
                         <input type="hidden" name="StoringID" value="<?php echo $storing["StoringID"]; ?>">
                         <div class="col-md-9">
@@ -36,13 +36,13 @@ $bericht = $storing["Explanation"];
                             <strong>Adres</strong>
                         </div>
                         <div class="col-md-9">
-                            <?php echo $storing["Adres"]; ?>
+                            <?php echo $storing["StreetName"]." ".$storing["HouseNumber"].$storing["Addition"]." ".$storing["ZipCode"]; ?>
                         </div>
                         <div class="col-md-3 text-truncate">
                             <strong>Woonplaats</strong>
                         </div>
                         <div class="col-md-9">
-                            <?php echo $storing["Woonplaats"]; ?>
+                            <?php echo $storing["City"]; ?>
                         </div>
                     </div>
                     <div class="row">
@@ -56,7 +56,8 @@ $bericht = $storing["Explanation"];
                             <strong>Telefoonnummer</strong>
                         </div>
                         <div class="col-md-9">
-                            <?php echo $storing["Telefoonnummer"]; ?>
+                            <?php if($storing["PhoneNumber"] == NULL){echo "Deze gebruiker heeft geen telefoonnummer opgegeven";
+                            } else {echo $storing["PhoneNumber"];}; ?>
                         </div>
                     </div>
                     <div class="row" style="height: 200px;">
