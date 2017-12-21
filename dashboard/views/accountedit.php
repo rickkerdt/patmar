@@ -3,7 +3,6 @@
 <?php elseif ($_SESSION["permission"] == "1"):
 
     $users = new Account();
-    $user = $users->getUser($_GET["userID"]);
 
     if (isset($_POST["saveUserChanges"])) {
         if (isset($_POST["password"]) && $_POST["password"] != "") {
@@ -23,6 +22,8 @@
             $users->updateInfo($_GET["userID"] ,$_POST["city"], $_POST["streetName"], $_POST["houseNumber"], $_POST["addition"], $_POST["zipcode"], $_POST["phoneNumber"]);
         }
     }
+
+    $user = $users->getUser($_GET["userID"]);
     ?>
 
     <form action="/dashboard/?page=accountedit&userID=<?php echo $_GET["userID"] ?>" method="post">
