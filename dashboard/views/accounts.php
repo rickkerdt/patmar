@@ -21,10 +21,10 @@
                         <div class="col-md-4">
                             <strong>Email</strong>
                         </div>
-                        <div class="col-md-4 text-truncate">
+                        <div class="col-md-3 text-truncate">
                             <strong>Hash</strong>
                         </div>
-                        <div class="col-md-1">
+                        <div class="col-md-2">
                             <strong>Functie</strong>
                         </div>
                         <div class="col-md-2 text-truncate">
@@ -44,10 +44,10 @@
                                 <div class="col-md-4">
                                     <?php echo $user["Email"]; ?>
                                 </div>
-                                <div class="col-md-4 text-truncate">
+                                <div class="col-md-3 text-truncate">
                                     <?php echo $user["PassHash"]; ?>
                                 </div>
-                                <div class="col-md-1 text-truncate">
+                                <div class="col-md-2 text-truncate">
                                     <?php echo $user["Functionname"]; ?>
                                 </div>
                                 <div class="col-md-2 text-truncate">
