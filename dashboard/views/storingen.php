@@ -18,13 +18,13 @@ $storingenlist = $storingen->getStoringenList($pagination);
         <ul class="list-group">
             <li class="list-group-item">
                 <div class="row">
-                    <div class="col-md-1">
-                        <strong>HOI</strong>
+                    <div class="col-md-2">
+                        <strong>Storingnummer</strong>
                     </div>
                     <div class="col-md-3 text-truncate">
                         <strong>Naam</strong>
                     </div>
-                    <div class="col-md-6 text-truncate">
+                    <div class="col-md-5 text-truncate">
                         <strong>Bericht</strong>
                     </div>
                     <div class="col-md-2 text-truncate">
@@ -38,13 +38,13 @@ $storingenlist = $storingen->getStoringenList($pagination);
                         <input type="hidden" name="page" value="storingfull">
                         <input type="hidden" name="StoringID" value="<?php echo $storing["StoringID"]; ?>">
                         <div class="row">
-                            <div class="col-md-1">
+                            <div class="col-md-2 text-center">
                                 <?php echo $storing["StoringID"]; ?>
                             </div>
                             <div class="col-md-3">
-                                <?php /* echo $storing["u.UserID"]; */?>
+                                <?php echo $storing["FirstName"]." ".$storing["LastName"]; ?>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-5 text-truncate">
                                 <?php print_r($storingenlist); ?>
                             </div>
                             <div class="col-md-2 text-truncate">
