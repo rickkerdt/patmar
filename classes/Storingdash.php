@@ -6,7 +6,8 @@
  * Time: 13:02
 
 JOIN Userinfo i ON u.UserID = i.UserID
-JOIN User u ON s.UserID = u.UserID*/
+JOIN User u ON s.UserID = u.UserID
+JOIN Address a ON u.UserID = a.UserID*/
 
 class Storingdash
 {
@@ -32,7 +33,7 @@ class Storingdash
 
     public function getStoring($StoringID)
     {
-        $q = $this->db->prepare("SELECT * FROM Storing s JOIN User u ON s.UserID = u.UserID JOIN Userinfo i ON u.UserID = i.UserID JOIN Address a ON u.UserID = a.UserID WHERE Offerteid = ?");
+        $q = $this->db->prepare("SELECT * FROM Storing s JOIN User u ON s.UserID = u.UserID JOIN Userinfo i ON u.UserID = i.UserID WHERE Offerteid = ?");
         $q->bindValue(1, $StoringID, \PDO::PARAM_INT);
 
         if ($q->execute()) {
