@@ -249,7 +249,7 @@ if (isset($_POST["register"])) {
     if ($result["success"] == true) {
         if ($_POST["g-recaptcha-response"] != '') {
             $user = new User();
-            if ($user->register($_POST["email"], $_POST["password"], $_POST["passwordrepeat"], $_POST["firstname"], $_POST["lastname"])) {
+            if ($user->register($_POST["email"], $_POST["password"], $_POST["passwordrepeat"], $_POST["firstname"], $_POST["lastname"], $_POST["phoneNumber"], $_POST["city"], $_POST["streetName"], $_POST["houseNumber"], $_POST["addition"], $_POST["zipcode"])) {
                 header("Location: /index.php?page=login");
                 die();
             } else {
