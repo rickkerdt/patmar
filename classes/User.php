@@ -28,7 +28,7 @@ class User
     }
 
 //    Register functie
-    public function register($email, $password, $repeatpassword, $firstname, $lastname)
+    public function register($email, $password, $repeatpassword, $firstname, $lastname, $phoneNumber, $city, $streetName, $houseNumber, $addition, $zipcode)
     {
 //        Maakt hash aan met wachtwoord en salt(met salten worden er extra bit toegevoegt aan het wachtwoord)
         $this->passhash = hash("sha512", $password . $this->salt . $email);
@@ -40,7 +40,7 @@ class User
             $q = $this->db->prepare("INSERT INTO User(Email, PassHash, FunctionID) VALUES (?, ?, 2)");
 
 //          Anti SQL Injectie
-            $q->bindValue(1, $this->email);
+            $q->bindValue(1, strtolower($this->email));
             $q->bindValue(2, $this->passhash);
 
 //          Query uitvoeren
@@ -56,7 +56,12 @@ class User
                 $db = null;
 //              Verbinding afsluiten
                 if ($this->insertInfo($q2r["UserID"], $firstname, $lastname)) {
-                    return true;
+                    if (
+                    $this->insertContact($q2r["UserID"], $phoneNumber, $city, $streetName, $houseNumber, $addition, $zipcode)) {
+                        return true;
+                    } else {
+                        return false;
+                    }
                 } else {
                     array_push($this->errorList, "Er is iets fout gegaan." . $q2->errorCode());
                 }
@@ -77,8 +82,8 @@ class User
         $q2 = $this->db->prepare('INSERT INTO Userinfo(UserID, FirstName, LastName, Function) VALUES (?,?,?,?)');
 //      Anti SQL injectie
         $q2->bindValue(1, $userID, PDO::PARAM_INT);
-        $q2->bindValue(2, $firstname, PDO::PARAM_STR);
-        $q2->bindValue(3, $lastname, PDO::PARAM_STR);
+        $q2->bindValue(2, htmlentities($firstname), PDO::PARAM_STR);
+        $q2->bindValue(3, htmlentities($lastname), PDO::PARAM_STR);
         $q2->bindValue(4, "Klant", PDO::PARAM_STR);
 //      Query uitvoeren
         if ($q2->execute()) {
@@ -89,12 +94,31 @@ class User
         }
     }
 
+    private function insertContact($userID, $phoneNumber, $city, $streetName, $houseNumber, $addition, $zipcode)
+    {
+        $q = $this->db->prepare("INSERT INTO Address(UserID, City, StreetName, HouseNumber, Addition, ZipCode, PhoneNumber) VALUES (?,?,?,?,?,?,?)");
+        $q->bindValue(1, $userID);
+        $q->bindValue(2, $city);
+        $q->bindValue(3, $streetName);
+        $q->bindValue(4, $houseNumber);
+        $q->bindValue(5, $addition);
+        $q->bindValue(6, $zipcode);
+        $q->bindValue(7, $phoneNumber);
+
+        if ($q->execute()) {
+            return true;
+        } else {
+            array_push($this->errorList, "Er is iets fout gegaan." . $q->errorCode());
+            return false;
+        }
+    }
+
 //   Login functie
     public function login($email, $password)
     {
 //   Wachtwoord hashen
-        $this->passhash = hash("sha512", $password . $this->salt . $email);
-        $this->email = $email;
+        $this->passhash = hash("sha512", $password . $this->salt . strtolower($email));
+        $this->email = strtolower($email);
 
 //        Verbinding maken met database
         $db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
