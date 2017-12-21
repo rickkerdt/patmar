@@ -37,6 +37,11 @@ if (isset($_GET["page"]) && $_GET["page"] != "") {
     } else {
         @include_once "views/errors/404.php";
     }
+    if($_SESSION["permission"] == 2){
+        if($_GET["page"] == "accounts" || $_GET["page"] == "agenda" || $_GET["page"] == "contact" || $_GET["page"] == "contactfull" || $_GET["page"] == "offertefull" || $_GET["page"] == "offertes" || $_GET["page"] == "storingen" || $_GET["page"] == "storingfull" || $_GET["page"] == "accountedit"){
+            @include_once "dashboard/index.php";
+        }
+    }
 
 } else {
     @include_once "views/index.php";
