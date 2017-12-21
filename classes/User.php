@@ -40,7 +40,7 @@ class User
             $q = $this->db->prepare("INSERT INTO User(Email, PassHash, FunctionID) VALUES (?, ?, 2)");
 
 //          Anti SQL Injectie
-            $q->bindValue(1, $this->email);
+            $q->bindValue(1, strtolower($this->email));
             $q->bindValue(2, $this->passhash);
 
 //          Query uitvoeren
@@ -117,8 +117,8 @@ class User
     public function login($email, $password)
     {
 //   Wachtwoord hashen
-        $this->passhash = hash("sha512", $password . $this->salt . $email);
-        $this->email = $email;
+        $this->passhash = hash("sha512", $password . $this->salt . strtolower($email));
+        $this->email = strtolower($email);
 
 //        Verbinding maken met database
         $db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
