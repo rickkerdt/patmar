@@ -1,10 +1,6 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: joppe
- * Date: 20-12-2017
- * Time: 12:43
- */
+<?php if ($_SESSION["permission"] != "1") : ?>
+    <div class='alert alert-danger'><strong>Fout!</strong> Niet toegestaan!</div>
+<?php elseif ($_SESSION["permission"] == "1"):
 
 $offerte = new Offertedash();
 $offerte = $offerte->getOfferte($_GET["Offerteid"]);

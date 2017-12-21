@@ -1,10 +1,6 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: joppe
- * Date: 19-12-2017
- * Time: 13:38
- */
+<?php if ($_SESSION["permission"] != "1") : ?>
+    <div class='alert alert-danger'><strong>Fout!</strong> Niet toegestaan!</div>
+<?php elseif ($_SESSION["permission"] == "1"):
 
 $contact = new Contactdash();
 $contact = $contact->getContact($_GET["Contactid"]);

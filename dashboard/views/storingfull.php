@@ -1,10 +1,7 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: joppe
- * Date: 21-12-2017
- * Time: 09:41
- */
+<?php if ($_SESSION["permission"] != "1") : ?>
+    <div class='alert alert-danger'><strong>Fout!</strong> Niet toegestaan!</div>
+<?php elseif ($_SESSION["permission"] == "1"):
+
 $storing = new Storingdash();
 $storing = $storing->getStoring($_GET["StoringID"]);
 $bericht = $storing["Explanation"];

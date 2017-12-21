@@ -1,4 +1,7 @@
-<?php
+<?php if ($_SESSION["permission"] != "1") : ?>
+    <div class='alert alert-danger'><strong>Fout!</strong> Niet toegestaan!</div>
+<?php elseif ($_SESSION["permission"] == "1"):
+
 $contacts = new Contactdash();
 $pagination = 0;
 if (isset($_GET["pagination"]))
