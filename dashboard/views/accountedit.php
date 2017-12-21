@@ -89,7 +89,7 @@
         </div>
         <div class="form-group">
             <label for="password">Wachtwoord</label>
-            <input type="password" class="form-control" id="password" name="password" placeholder="Password"
+            <input type="password" class="form-control" id="password" name="password" placeholder="******"
                    aria-describedby="emailHelp">
             <small id="passwordHelp" class="form-text text-muted">Alleen invullen als je wachtwoord wilt wijzigen.
             </small>
@@ -97,7 +97,7 @@
         <div class="form-group">
             <label for="passwordrepeat">Wachtwoord herhalen</label>
             <input type="password" class="form-control" id="passwordrepeat" name="passwordrepeat"
-                   placeholder="Password">
+                   placeholder="******">
         </div>
         <div class="form-group">
             <input type="submit" name="saveUserChanges" value="Opslaan" class="btn btn-outline-primary">
