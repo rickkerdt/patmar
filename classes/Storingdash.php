@@ -4,7 +4,9 @@
  * User: joppe
  * Date: 20-12-2017
  * Time: 13:02
- */
+
+JOIN Userinfo i ON u.UserID = i.UserID
+JOIN User u ON s.UserID = u.UserID*/
 
 class Storingdash
 {
@@ -18,7 +20,7 @@ class Storingdash
 
     public function getStoringenList($pagination = 0)
     {
-        $q = $this->db->prepare("SELECT * FROM Storing s JOIN User u ON s.UserID = u.UserID LIMIT 10 OFFSET ?");
+        $q = $this->db->prepare("SELECT * FROM Storing s  LIMIT 10 OFFSET ?");
         $q->bindValue(1, intval($pagination * 10, 10), \PDO::PARAM_INT);
 
         if ($q->execute()) {
