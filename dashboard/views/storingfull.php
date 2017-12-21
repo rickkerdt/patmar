@@ -16,7 +16,7 @@ $bericht = $storing["Explanation"];
                 <form action="/dashboard/" method="get">
                     <div class="row">
                         <div class="col-md-3">
-                            <strong>storingnummer</strong>
+                            <strong>Storingnummer</strong>
                         </div>
                         <input type="hidden" name="StoringID" value="<?php echo $storing["StoringID"]; ?>">
                         <div class="col-md-9">
