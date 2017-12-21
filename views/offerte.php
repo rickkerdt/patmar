@@ -88,10 +88,9 @@ $categorylist = $categorys->getCategorylist();
             <!--Upload knop voor foto's-->
             <div>
                 Klik om een bestand te uploaden:</br>
-                <input type="file" name="bestand" id="BestandUpload"></br>
+                <input type="file" name="bestand" id="BestandUpload" class="btn btn-secondary></br>
 
             </div>
-
             <!--Google recaptcha-->
             <div class="form-group">
                 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -99,7 +98,7 @@ $categorylist = $categorys->getCategorylist();
             </div>
             <div class="row">
                 <div class="form-group">
-                    <input type="submit" value="Versturen" name="offertesend">
+                    <input type="submit" value="Versturen" name="offertesend" class="btn btn-primary">
 
                     <br>
                     <br>
