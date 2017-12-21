@@ -95,7 +95,7 @@ $categorylist = $categorys->getCategorylist();
             <div class="form-group">
                 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                 <div class="g-recaptcha" data-sitekey="6LdLDzwUAAAAAO4DFj_pzlNNfrDeZ_up8UjwA_xj"></div>
-            </div>
+            </div >
             <div class="row">
                 <div class="form-group">
                     <input type="submit" value="Versturen" name="offertesend" class="btn btn-primary">
