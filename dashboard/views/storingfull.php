@@ -36,13 +36,13 @@ $bericht = $storing["Explanation"];
                             <strong>Adres</strong>
                         </div>
                         <div class="col-md-9">
-                            <?php echo $storing["Adres"]; ?>
+                            <?php echo $storing["StreetName"]." ".$storing["HouseNumber"].$storing["Addition"]; ?>
                         </div>
                         <div class="col-md-3 text-truncate">
                             <strong>Woonplaats</strong>
                         </div>
                         <div class="col-md-9">
-                            <?php echo $storing["Woonplaats"]; ?>
+                            <?php echo $storing["City"]; ?>
                         </div>
                     </div>
                     <div class="row">
@@ -56,7 +56,8 @@ $bericht = $storing["Explanation"];
                             <strong>Telefoonnummer</strong>
                         </div>
                         <div class="col-md-9">
-                            <?php echo $storing["Telefoonnummer"]; ?>
+                            <?php if($storing["PhoneNumber"] == NULL){echo "Deze gebruiker heeft geen telefoonnummer opgegeven"
+                            } else {echo $storing["PhoneNumber"]}; ?>
                         </div>
                     </div>
                     <div class="row" style="height: 200px;">
