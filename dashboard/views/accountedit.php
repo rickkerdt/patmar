@@ -15,9 +15,12 @@
                         echo "<div class='alert alert-danger'><strong>Fout!</strong> " . $error . "</div>";
                     }
                 }
+                $users->updateInfo($_GET["userID"] ,$_POST["city"], $_POST["streetName"], $_POST["houseNumber"], $_POST["addition"], $_POST["zipcode"], $_POST["phoneNumber"]);
             } else {
                 echo "<div class='alert alert-danger'><strong>Fout!</strong> Het wachtwoord komt niet met elkaar overeen.</div>";
             }
+        } else {
+            $users->updateInfo($_GET["userID"] ,$_POST["city"], $_POST["streetName"], $_POST["houseNumber"], $_POST["addition"], $_POST["zipcode"], $_POST["phoneNumber"]);
         }
     }
     ?>

@@ -82,4 +82,23 @@ class Account
         }
         return false;
     }
+
+    public function updateInfo($userID, $city, $streetName, $houseNumber, $addition, $zipcode, $phoneNumber)
+    {
+        $q = $this->db->prepare("UPDATE Address SET City = ?, StreetName = ?, HouseNumber = ?, Addition = ?, ZipCode = ?, PhoneNumber = ? WHERE UserID = ?");
+        $q->bindValue(1, $city);
+        $q->bindValue(2, $streetName);
+        $q->bindValue(3, $houseNumber);
+        $q->bindValue(4, $addition);
+        $q->bindValue(5, $zipcode);
+        $q->bindValue(6, $phoneNumber);
+        $q->bindValue(7, $userID);
+
+        if ($q->execute()) {
+            return true;
+        } else {
+            array_push($this->errorList, "Er is iets fout gegaan." . $q->errorCode());
+            return false;
+        }
+    }
 }
