@@ -7,7 +7,7 @@
  */
 $storing = new Storingdash();
 $storing = $storing->getStoring($_GET["StoringID"]);
-$bericht = $storing[3];
+$bericht = $storing["Explanation"];
 ?>
 <div class="row">
     <div class="col-md-12">
@@ -36,7 +36,7 @@ $bericht = $storing[3];
                             <strong>Adres</strong>
                         </div>
                         <div class="col-md-9">
-                            <?php echo $storing["StreetName"]." ".$storing["HouseNumber"].$storing["Addition"]; ?>
+                            <?php echo $storing["StreetName"]." ".$storing["HouseNumber"].$storing["Addition"]." ".$storing["ZipCode"]; ?>
                         </div>
                         <div class="col-md-3 text-truncate">
                             <strong>Woonplaats</strong>
@@ -50,7 +50,7 @@ $bericht = $storing[3];
                             <strong>Email</strong>
                         </div>
                         <div class="col-md-9">
-                            <?php echo $storing[5]; ?>
+                            <?php echo $storing["Email"]; ?>
                         </div>
                         <div class="col-md-3 text-truncate">
                             <strong>Telefoonnummer</strong>
