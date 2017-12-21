@@ -70,3 +70,4 @@ $bericht = $storing["Explanation"];
         </ul>
     </div>
 </div>
+<?php endif; ?>

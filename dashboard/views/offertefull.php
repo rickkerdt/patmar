@@ -69,3 +69,4 @@ $bericht = $offerte["Bericht"];
         </ul>
     </div>
 </div>
+<?php endif; ?>

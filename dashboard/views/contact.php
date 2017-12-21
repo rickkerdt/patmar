@@ -76,3 +76,4 @@ $contactlist = $contacts->getContactList($pagination);
     </div>
     <div class="col-md-4">&nbsp;</div>
 </div>
+<?php endif; ?>

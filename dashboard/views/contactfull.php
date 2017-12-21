@@ -69,3 +69,4 @@ $bericht = $contact["Bericht"];
     </ul>
 </div>
 </div>
+<?php endif; ?>
