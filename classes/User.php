@@ -100,7 +100,7 @@ class User
         $db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
 
 //        Query om te zoeken of er gebruiker is
-        $q = $db->prepare("SELECT * FROM User WHERE Email = ? AND PassHash = ?");
+        $q = $db->prepare("SELECT * FROM User u JOIN Userinfo i ON u.UserID = i.UserID WHERE u.Email = ? AND u.PassHash = ?");
 
 //        Anti SQL injectie
         $q->bindValue(1, $this->email);
@@ -115,6 +115,7 @@ class User
                 $_SESSION["email"] = $this->email;
                 $_SESSION["permission"] = $user["FunctionID"];
                 $_SESSION["UserID"] = $user["UserID"];
+                $_SESSION["Name"] = $user["FirstName"] . " " . $_SESSION["LastName"];
 
                 return true;
             } else {
