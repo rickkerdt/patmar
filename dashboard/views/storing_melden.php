@@ -97,10 +97,10 @@ Voor een directe reactie kunt u ook bellen tijdens kantooruren.</span></p>
                     <div class="row">
                         <div class="form-group">
 
-                            <select name="categorie" class="dropdown-menu" required>
-                                <option readonly="readonly" class="dropdown-item" selected value="0">Categorie</option>
+                            <select name="categorie" class="form-control" required>
+                                <option readonly="readonly"  selected value="0">Categorie</option>
                                 <?php foreach ($categorylist as $category) : ?>
-                                    <option class="dropdown-item" value="<?php echo $category["CategoryID"] ?>"><?php echo $category["Name"] ?></option>
+                                    <option value="<?php echo $category["CategoryID"] ?>"><?php echo $category["Name"] ?></option>
                                 <?php endforeach; ?>
                             </select>
                         </div>
