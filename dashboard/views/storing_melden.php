@@ -94,42 +94,6 @@ Voor een directe reactie kunt u ook bellen tijdens kantooruren.</span></p>
                         <div class="alert alert-success"><strong>Uw storing is succesvol verzonden.</strong></div>
                     <?php endif; ?>
                 </div><!-- HTML form-->
-                <div class="form-group">
-                    <div class="row">
-                        <div class="form-group">
-
-                            <input type="email" class="form-control" name="email" id="email"
-                                   placeholder="voorbeeld@mail.nl *">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group">
-
-                            <input type="text" class="form-control" name="naam" id="name"
-                                   placeholder="Naam *">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group">
-
-                            <input type="text" class="form-control" name="adres" id="adres"
-                                   placeholder="Straatnaam + huisnummer ">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group">
-
-                            <input type="text" class="form-control" name="woonplaats" id="woonplaats"
-                                   placeholder="Woonplaats *">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group">
-
-                            <input cols="40" type="text" class="form-control" name="telefoonnummer" id="Telefoonnummer"
-                                   placeholder="Telefoonnummer *">
-                        </div>
-                    </div>
                     <div class="row">
                         <div class="form-group">
 
