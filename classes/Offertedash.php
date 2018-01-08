@@ -16,6 +16,10 @@ class Offertedash
         $this->db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
     }
 
+    /*
+     * Een lijst met offertes ophalen
+     */
+
     public function getOfferteList($pagination = 0)
     {
         $q = $this->db->prepare("SELECT * FROM Offerte LIMIT 10 OFFSET ?");
@@ -27,6 +31,10 @@ class Offertedash
             return $q->errorCode();
         }
     }
+
+    /*
+     * Een offerte ophalen
+     */
 
     public function getOfferte($Offerteid)
     {

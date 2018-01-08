@@ -20,6 +20,10 @@ class Storingdash
         $this->db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
     }
 
+    /*
+     * Een lijst met storingen ophalen
+     */
+
     public function getStoringenList($pagination = 0)
     {
         $q = $this->db->prepare("SELECT * FROM Storing s JOIN User u ON s.UserID = u.UserID JOIN Userinfo i ON u.UserID = i.UserID LIMIT 10 OFFSET ?");
@@ -31,6 +35,10 @@ class Storingdash
             return $q->errorCode();
         }
     }
+
+    /*
+     * Een storing ophalen
+     */
 
     public function getStoring($StoringID)
     {

@@ -13,6 +13,10 @@ class Account
         $this->db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
     }
 
+    /*
+     * Een lijst van gebruikers ophalen
+     */
+
     public function getUserList($pagination = 0)
     {
         $q = $this->db->prepare("SELECT * FROM User u JOIN Function f ON u.FunctionID = f.FunctionID LIMIT 10 OFFSET ?");
@@ -24,6 +28,10 @@ class Account
             return $q->errorCode();
         }
     }
+
+    /*
+     * Een specifieke gebruiker ophalen
+     */
 
     public function getUser($userID)
     {
@@ -37,6 +45,10 @@ class Account
             return $q->errorCode();
         }
     }
+
+    /*
+     * Wachtwoord veranderen
+     */
 
     public function updatePassword($password)
     {
@@ -82,6 +94,10 @@ class Account
         }
         return false;
     }
+
+    /*
+     * Informatie bijwerken van een gebruiker
+     */
 
     public function updateInfo($userID, $city, $streetName, $houseNumber, $addition, $zipcode, $phoneNumber)
     {

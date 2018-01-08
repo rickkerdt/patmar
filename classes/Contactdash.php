@@ -15,6 +15,10 @@ class Contactdash
         $this->db = new PDO("mysql:host=localhost;dbname=patmar;", "patmar", "Patmar1!");
     }
 
+    /*
+     * Lijst met contact berichten ophalen
+     */
+
     public function getContactList($pagination = 0)
     {
         $q = $this->db->prepare("SELECT * FROM Contact LIMIT 10 OFFSET ?");
@@ -26,6 +30,10 @@ class Contactdash
             return $q->errorCode();
         }
     }
+
+    /*
+     * Contact bericht ophalen
+     */
 
     public function getContact($Contactid)
     {
